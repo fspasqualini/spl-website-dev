@@ -1,0 +1,22 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { brand } from "../data/site";
+---
+
+<BaseLayout title="Contact | Synthetic Physiology Lab">
+  <section class="section">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h1>We are always looking for talent.</h1>
+        <p class="lead">If you like what SPL is doing and think you can contribute, reach out.</p>
+        <a class="cta" href="mailto:francesco.pasqualini@unipv.it">Contact the lab</a>
+      </div>
+      <article class="item">
+        <h3>{brand.address}</h3>
+        <p>University of Pavia</p>
+        <p>This static MVP uses a mail link instead of a hosted form. A Netlify form or other form backend can be added during staging.</p>
+      </article>
+    </div>
+  </section>
+</BaseLayout>

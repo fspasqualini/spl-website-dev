@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { team, withBase } from "../data/site";
+---
+
+<BaseLayout title="Team | Synthetic Physiology Lab">
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Team</p>
+      <h1>Scientists, engineers, artists, and operators.</h1>
+      <p class="lead">Team details were migrated from the current public website. Portraits are scraped Wix versions and should be replaced with originals where available.</p>
+      <div class="people-grid">
+        {team.map((person) => (
+          <article class="person">
+            <img src={withBase(person.image)} alt={person.name} />
+            <div>
+              <h3>{person.name}</h3>
+              <p><strong>{person.role}</strong></p>
+              <p>{person.focus}</p>
+              <a href={`mailto:${person.email}`}>{person.email}</a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

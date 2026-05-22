@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { researchAreas, withBase } from "../data/site";
+---
+
+<BaseLayout title="Research | Synthetic Physiology Lab">
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Research</p>
+      <h1>Laboratories built around engineered physiology.</h1>
+      <p class="lead">Four connected efforts, each anchored in published work and reusable tools.</p>
+      <div class="grid two">
+        {researchAreas.map((area) => (
+          <article class="research-card">
+            <img src={withBase(area.image)} alt="" />
+            <div>
+              <h3>{area.title}</h3>
+              <p>{area.text}</p>
+              <a class="cta secondary" href={withBase(area.href)}>More</a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

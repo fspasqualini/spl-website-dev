@@ -1,0 +1,49 @@
+---
+import { brand, nav, withBase } from "../data/site";
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = brand.name,
+  description = "Synthetic Physiology Lab at the University of Pavia.",
+} = Astro.props;
+const path = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href={withBase("/favicon.svg")} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href={withBase("/")} aria-label="Synthetic Physiology Lab home">
+        <img src={withBase(brand.logo)} alt="Synthetic Physiology Lab" />
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        {nav.map((item) => (
+          <a href={withBase(item.href)} class:list={[path === item.href && "active"]}>{item.label}</a>
+        ))}
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div>
+        <strong>{brand.name}</strong>
+        <span>{brand.address}</span>
+      </div>
+      <span>© 2025-2030 Synthetic Physiology Lab</span>
+    </footer>
+  </body>
+</html>

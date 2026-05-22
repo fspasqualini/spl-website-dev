@@ -1,0 +1,233 @@
+{
+  "scrapedAt": "2026-05-22T11:13:33.780Z",
+  "origin": "https://www.syntheticphysiologylab.com",
+  "pages": [
+    {
+      "slug": "home",
+      "url": "https://www.syntheticphysiologylab.com/",
+      "html": "migration/current-site/home.html",
+      "text": "migration/current-site/home.txt",
+      "imageCount": 10,
+      "fileLinks": [
+        "https://www.nature.com/articles/nmat4883.pdf"
+      ]
+    },
+    {
+      "slug": "research",
+      "url": "https://www.syntheticphysiologylab.com/research",
+      "html": "migration/current-site/research.html",
+      "text": "migration/current-site/research.txt",
+      "imageCount": 6,
+      "fileLinks": []
+    },
+    {
+      "slug": "team",
+      "url": "https://www.syntheticphysiologylab.com/team",
+      "html": "migration/current-site/team.html",
+      "text": "migration/current-site/team.txt",
+      "imageCount": 13,
+      "fileLinks": []
+    },
+    {
+      "slug": "publications",
+      "url": "https://www.syntheticphysiologylab.com/publications",
+      "html": "migration/current-site/publications.html",
+      "text": "migration/current-site/publications.txt",
+      "imageCount": 2,
+      "fileLinks": []
+    },
+    {
+      "slug": "creed",
+      "url": "https://www.syntheticphysiologylab.com/copia-di-publications",
+      "html": "migration/current-site/creed.html",
+      "text": "migration/current-site/creed.txt",
+      "imageCount": 2,
+      "fileLinks": []
+    },
+    {
+      "slug": "contact",
+      "url": "https://www.syntheticphysiologylab.com/contact",
+      "html": "migration/current-site/contact.html",
+      "text": "migration/current-site/contact.txt",
+      "imageCount": 1,
+      "fileLinks": []
+    }
+  ],
+  "assets": [
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_54de03621f6e45a0b9358589aa46eb0b~mv2.png/v1/fill/w_81,h_34,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo%20no%20full%20nam%20e.png",
+      "path": "/assets/scraped/001-logo-no-full-nam-e.png",
+      "bytes": 3578,
+      "contentType": "image/png"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_22,h_22,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c7d035ba85f6486680c2facedecdcf4d.png",
+      "path": "/assets/scraped/002-c7d035ba85f6486680c2facedecdcf4d.png",
+      "bytes": 814,
+      "contentType": "image/png"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_22,h_22,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6ea5b4a88f0b4f91945b40499aa0af00.png",
+      "path": "/assets/scraped/003-6ea5b4a88f0b4f91945b40499aa0af00.png",
+      "bytes": 806,
+      "contentType": "image/png"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_ea1073ae166a47e58791e1f807e6f338f000.jpg/v1/fill/w_110,h_107,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/1a9389_ea1073ae166a47e58791e1f807e6f338f000.jpg",
+      "path": "/assets/scraped/004-1a9389_ea1073ae166a47e58791e1f807e6f338f000.jpg",
+      "bytes": 1437,
+      "contentType": "image/jpeg"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_0c27649240c647859f7c4a0f80a3070b~mv2.png/v1/fill/w_600,h_252,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/LOGO_SPL.png",
+      "path": "/assets/scraped/005-LOGO_SPL.png",
+      "bytes": 91223,
+      "contentType": "image/png"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_44dbcff476ea4b1593f28195d2648034~mv2.jpg/v1/fill/w_158,h_139,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1a9389_44dbcff476ea4b1593f28195d2648034~mv2.jpg",
+      "path": "/assets/scraped/006-1a9389_44dbcff476ea4b1593f28195d2648034-mv2.jpg",
+      "bytes": 5034,
+      "contentType": "image/jpeg"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_8c00eb03b26a4ab39d9890dc881c9a60~mv2.png/v1/fill/w_158,h_53,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/1a9389_8c00eb03b26a4ab39d9890dc881c9a60~mv2.png",
+      "path": "/assets/scraped/007-1a9389_8c00eb03b26a4ab39d9890dc881c9a60-mv2.png",
+      "bytes": 7316,
+      "contentType": "image/png"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_a62b1090d86b4de6aa4eea5196ed6194~mv2.png/v1/fill/w_139,h_139,al_c,q_85,enc_avif,quality_auto/1a9389_a62b1090d86b4de6aa4eea5196ed6194~mv2.png",
+      "path": "/assets/scraped/008-1a9389_a62b1090d86b4de6aa4eea5196ed6194-mv2.png",
+      "bytes": 3207,
+      "contentType": "image/png"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_408f24ab923e45058ecdbd380b8905ee~mv2.png/v1/fill/w_163,h_111,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/1a9389_408f24ab923e45058ecdbd380b8905ee~mv2.png",
+      "path": "/assets/scraped/009-1a9389_408f24ab923e45058ecdbd380b8905ee-mv2.png",
+      "bytes": 13003,
+      "contentType": "image/png"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_d4a12ce346fd474abb6dec71b79b131d~mv2.jpg/v1/fill/w_151,h_71,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1a9389_d4a12ce346fd474abb6dec71b79b131d~mv2.jpg",
+      "path": "/assets/scraped/010-1a9389_d4a12ce346fd474abb6dec71b79b131d-mv2.jpg",
+      "bytes": 5481,
+      "contentType": "image/jpeg"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_e98493f2028042f2b79aae8988f8944b~mv2.jpg/v1/fill/w_1888,h_217,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/_edited.jpg",
+      "path": "/assets/scraped/011-_edited.jpg",
+      "bytes": 29601,
+      "contentType": "image/jpeg"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_9ccbe326c5f042b18cb763d8fa09a114~mv2.png/v1/fill/w_310,h_322,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/_edited_edited_edited.png",
+      "path": "/assets/scraped/012-_edited_edited_edited.png",
+      "bytes": 91112,
+      "contentType": "image/png"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_bb520ffa7e524c81a58867f346fe73dc~mv2.jpg/v1/fill/w_310,h_322,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/all%20optical_edited.jpg",
+      "path": "/assets/scraped/013-all-optical_edited.jpg",
+      "bytes": 15518,
+      "contentType": "image/jpeg"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_28bc1b94192f421787741a663712299f~mv2.jpg/v1/crop/x_1024,y_0,w_951,h_988/fill/w_310,h_322,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cardioid_3d_nuclei%20(1)_edited.jpg",
+      "path": "/assets/scraped/014-cardioid_3d_nuclei-1-_edited.jpg",
+      "bytes": 26766,
+      "contentType": "image/jpeg"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_ba171fee08de43ed9d5b14ceec9ee37f~mv2.png/v1/crop/x_0,y_399,w_2440,h_2534/fill/w_310,h_322,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/1000165473.png",
+      "path": "/assets/scraped/015-1000165473.png",
+      "bytes": 70798,
+      "contentType": "image/png"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_8ed2376a320b48788e8f27b8d5999f0d~mv2.jpg/v1/crop/x_4,y_0,w_492,h_500/fill/w_235,h_239,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Melissa_Pezzotti.jpg",
+      "path": "/assets/scraped/016-Melissa_Pezzotti.jpg",
+      "bytes": 27108,
+      "contentType": "image/jpeg"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_cda58112bde047758c2851182a2c15c7~mv2.jpg/v1/fill/w_220,h_239,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1a9389_cda58112bde047758c2851182a2c15c7~mv2.jpg",
+      "path": "/assets/scraped/017-1a9389_cda58112bde047758c2851182a2c15c7-mv2.jpg",
+      "bytes": 8974,
+      "contentType": "image/jpeg"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_96905f954d05416489aecc0f3bbcead0~mv2.jpg/v1/crop/x_24,y_0,w_752,h_800/fill/w_220,h_234,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Tehreem.jpg",
+      "path": "/assets/scraped/018-Tehreem.jpg",
+      "bytes": 19898,
+      "contentType": "image/jpeg"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_0e3756370227406eb28b662ce05c35b2~mv2.jpeg/v1/crop/x_24,y_0,w_752,h_800/fill/w_220,h_234,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1751303894720.jpeg",
+      "path": "/assets/scraped/019-1751303894720.jpeg",
+      "bytes": 15723,
+      "contentType": "image/jpeg"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/040471_43405de9712b45c18a2ed665acb5a2a0~mv2.png/v1/crop/x_8,y_0,w_616,h_577/fill/w_207,h_234,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Francesco_Pasqualini.png",
+      "path": "/assets/scraped/020-Francesco_Pasqualini.png",
+      "bytes": 110332,
+      "contentType": "image/png"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_807cbabe447042648f07db336abbb77c~mv2.jpg/v1/crop/x_0,y_330,w_2448,h_2604/fill/w_220,h_234,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20231130_115727.jpg",
+      "path": "/assets/scraped/021-20231130_115727.jpg",
+      "bytes": 19708,
+      "contentType": "image/jpeg"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_e20193345f8d419995293182b8c82bc6~mv2.jpeg/v1/crop/x_0,y_37,w_1404,h_1525/fill/w_220,h_239,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/WhatsApp%20Image%202026-01-22%20at%2012_30_31.jpeg",
+      "path": "/assets/scraped/022-WhatsApp-Image-2026-01-22-at-12_30_31.jpeg",
+      "bytes": 12044,
+      "contentType": "image/jpeg"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_8756898e42b349809a1c186204bd66f8~mv2.jpg/v1/crop/x_137,y_0,w_789,h_840/fill/w_220,h_239,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Moises_Di_Sante.jpg",
+      "path": "/assets/scraped/023-Moises_Di_Sante.jpg",
+      "bytes": 12951,
+      "contentType": "image/jpeg"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_6e039a5bc9304a82971d4cb2df870a24~mv2.jpg/v1/crop/x_300,y_695,w_2418,h_2624/fill/w_220,h_239,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_2543.jpg",
+      "path": "/assets/scraped/024-IMG_2543.jpg",
+      "bytes": 15525,
+      "contentType": "image/jpeg"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_0cfb4d282dae4d7d8b5e46fe5b60a84c~mv2.jpg/v1/crop/x_151,y_0,w_464,h_494/fill/w_220,h_234,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Alessandro_Enrico.jpg",
+      "path": "/assets/scraped/025-Alessandro_Enrico.jpg",
+      "bytes": 16588,
+      "contentType": "image/jpeg"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_c4274237e05742eeae0cee12ab1db4bd~mv2.png/v1/crop/x_1248,y_0,w_1120,h_1191/fill/w_220,h_234,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/cardioid_3d_nuclei%20(1).png",
+      "path": "/assets/scraped/026-cardioid_3d_nuclei-1-.png",
+      "bytes": 84361,
+      "contentType": "image/png"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_28bc1b94192f421787741a663712299f~mv2.jpg/v1/crop/x_1036,y_0,w_929,h_988/fill/w_220,h_234,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cardioid_3d_nuclei%20(1)_edited.jpg",
+      "path": "/assets/scraped/027-cardioid_3d_nuclei-1-_edited.jpg",
+      "bytes": 17017,
+      "contentType": "image/jpeg"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_28bc1b94192f421787741a663712299f~mv2.jpg/v1/crop/x_59,y_263,w_2929,h_483/fill/w_2048,h_338,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/cardioid_3d_nuclei%20(1)_edited.jpg",
+      "path": "/assets/scraped/028-cardioid_3d_nuclei-1-_edited.jpg",
+      "bytes": 318863,
+      "contentType": "image/jpeg"
+    },
+    {
+      "source": "https://static.wixstatic.com/media/1a9389_b4bb588d94fa45afa94584d3e5619777~mv2.png/v1/crop/x_0,y_1363,w_1524,h_339/fill/w_1521,h_338,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/0bd382bd-8e82-4d7f-a029-b29596439445.png",
+      "path": "/assets/scraped/029-0bd382bd-8e82-4d7f-a029-b29596439445.png",
+      "bytes": 888599,
+      "contentType": "image/png"
+    }
+  ],
+  "gaps": []
+}

@@ -1,0 +1,96 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { fundedProjects, news, researchAreas, withBase } from "../data/site";
+---
+
+<BaseLayout
+  title="Synthetic Physiology Lab"
+  description="The Synthetic Physiology Lab builds in-vitro and in-silico models of complex physiological systems."
+>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">University of Pavia</p>
+      <h1>
+        <span class="hero-initial">S</span>ynthetic
+        <span class="hero-initial">P</span>hysiology
+        <span class="hero-initial">L</span>ab
+      </h1>
+      <p class="lead">
+        We build in-vitro and in-silico models of complex physiological systems at bio-technology and techno-biology scale.
+      </p>
+      <div class="stats" aria-label="Lab highlights">
+        <div class="stat"><strong>6</strong><span>Funded programs</span></div>
+        <div class="stat"><strong>4</strong><span>Research efforts</span></div>
+        <div class="stat"><strong>38+</strong><span>Publications</span></div>
+      </div>
+    </div>
+    <div class="hero-panel">
+      <img src={withBase("/assets/scraped/028-cardioid_3d_nuclei-1-_edited.jpg")} alt="Cardioid microscopy image from SPL research" />
+      <div class="hero-meta">
+        <strong>In-vitro systems, in-silico models, and imaging-first discovery.</strong>
+        <span>Rebuilt from the current public SPL website as a local Astro MVP.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band-dark">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">Funded work</p>
+        <h2>Programs with a bias toward buildable biology.</h2>
+      </div>
+      <div class="grid two">
+        {fundedProjects.map((project) => (
+          <article class="item dark">
+            <h3>{project.title}</h3>
+            <p>{project.subtitle}</p>
+            <div class="meta">
+              <span>{project.funder}</span>
+              <span>{project.period}</span>
+              <span>{project.amount}</span>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Research</p>
+      <h2>Four connected laboratory efforts.</h2>
+      <div class="grid two">
+        {researchAreas.map((area) => (
+          <article class="research-card">
+            <img src={withBase(area.image)} alt="" />
+            <div>
+              <h3>{area.title}</h3>
+              <p>{area.text}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">News</p>
+        <h2>Recent SPL updates.</h2>
+        <a class="cta secondary" href={withBase("/publications/")}>View publications</a>
+      </div>
+      <div class="news-list">
+        {news.map((item) => (
+          <article class="news-item">
+            <span class="tag">{item.label}</span>
+            <div>
+              <h3><a href={item.href}>{item.title}</a></h3>
+              <p>{item.text}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

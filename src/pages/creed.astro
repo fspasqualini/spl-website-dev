@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { creed, creedSources } from "../data/site";
+---
+
+<BaseLayout title="Creed | Synthetic Physiology Lab">
+  <section class="section band-dark">
+    <div class="container">
+      <p class="eyebrow">Creed</p>
+      <h1>The way we roll. Take it or leave it.</h1>
+      <div class="grid two">
+        {creed.map((principle, index) => (
+          <article class="item dark creed-card">
+            <p class="eyebrow">{String(index + 1).padStart(2, "0")}</p>
+            <h3>{principle.title}</h3>
+            <p class="creed-subtitle">{principle.subtitle}</p>
+            <p>{principle.text}</p>
+            <dl>
+              <div>
+                <dt>Behaviors</dt>
+                <dd>{principle.behaviors}</dd>
+              </div>
+              <div>
+                <dt>Anti-patterns</dt>
+                <dd>{principle.antiPatterns}</dd>
+              </div>
+            </dl>
+          </article>
+        ))}
+      </div>
+      <div class="source-note dark">
+        <p class="eyebrow">Inspired by</p>
+        <p>{creedSources.join("; ")}.</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

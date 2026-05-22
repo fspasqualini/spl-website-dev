@@ -1,0 +1,8 @@
+---
+import ResearchAreaLayout from "../layouts/ResearchAreaLayout.astro";
+import { researchAreas } from "../data/site";
+
+const area = researchAreas.find((item) => item.slug === "computational-modeling-data-analysis");
+---
+
+<ResearchAreaLayout area={area} />
