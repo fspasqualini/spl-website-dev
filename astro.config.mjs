@@ -1,12 +1,18 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 
-const isProductionPages = process.env.DEPLOY_TARGET === 'github-pages';
+const deployTarget = process.env.DEPLOY_TARGET;
+const isGitHubProjectPages = deployTarget === 'github-project-pages';
+const isGitHubCustomDomain = deployTarget === 'github-custom-domain';
 
 // https://astro.build/config
 export default defineConfig({
-  site: isProductionPages ? 'https://syntheticphysiologylab.com' : undefined,
-  base: isProductionPages ? '/' : '/spl-website',
+  site: isGitHubCustomDomain
+    ? 'https://syntheticphysiologylab.com'
+    : isGitHubProjectPages
+      ? 'https://fspasqualini.github.io'
+      : undefined,
+  base: isGitHubCustomDomain ? '/' : isGitHubProjectPages ? '/spl-website-dev' : '/spl-website',
   vite: {
     preview: {
       allowedHosts: [
