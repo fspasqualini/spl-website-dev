@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 72" role="img" aria-labelledby="title">
+  <title id="title">Chips Joint Undertaking</title>
+  <rect x="22" y="19" width="34" height="34" rx="4" fill="#111318"/>
+  <path d="M30 27h18v18H30z" fill="#a82038"/>
+  <path d="M15 27h7M15 36h7M15 45h7M56 27h7M56 36h7M56 45h7" stroke="#111318" stroke-width="2"/>
+  <text x="76" y="34" fill="#121318" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="850">Chips JU</text>
+  <text x="76" y="51" fill="#55585f" font-family="Inter,Arial,sans-serif" font-size="8.6" font-weight="800" letter-spacing=".3">JOINT UNDERTAKING</text>
+</svg>

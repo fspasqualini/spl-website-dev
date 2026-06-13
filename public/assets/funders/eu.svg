@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 72" role="img" aria-labelledby="title">
+  <title id="title">European Union</title>
+  <rect x="22" y="18" width="46" height="32" fill="#123f8c"/>
+  <g fill="#ffcc00">
+    <circle cx="45" cy="24" r="1.6"/><circle cx="51" cy="26" r="1.6"/><circle cx="56" cy="31" r="1.6"/><circle cx="58" cy="36" r="1.6"/><circle cx="56" cy="41" r="1.6"/><circle cx="51" cy="46" r="1.6"/><circle cx="45" cy="48" r="1.6"/><circle cx="39" cy="46" r="1.6"/><circle cx="34" cy="41" r="1.6"/><circle cx="32" cy="36" r="1.6"/><circle cx="34" cy="31" r="1.6"/><circle cx="39" cy="26" r="1.6"/>
+  </g>
+  <text x="84" y="34" fill="#121318" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="850">European</text>
+  <text x="84" y="51" fill="#121318" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="850">Union</text>
+</svg>

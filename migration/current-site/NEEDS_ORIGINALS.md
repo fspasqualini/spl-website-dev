@@ -19,6 +19,14 @@ Likely manual follow-up:
 - Brand red was sampled from the current logo at approximately `#a82038`.
 - Giulia Ballio's placeholder image has been replaced with the user-provided portrait at `public/assets/team/giulia-balio.jpg`.
 
+## Slack Asset Candidates
+
+Slack message search found stronger public-facing asset candidates, but `slack_read_file` currently requires connector reauthentication before file bytes can be downloaded. Import these when Slack file access is restored:
+
+- HYDRA journal feature image: `FeaturedImage.tiff`, Slack file `F09S6LEA5NJ`, shared in `#data-feed` thread `1762882047.949329`. Candidate replacement for compressed HYDRA / engineered hydrogel imagery.
+- LiGHTS PEGDA patterning panels: `260522_PEGDA.png` (`F0B5F6RCU83`) and `260522_GelMAvsPEGDAcomparison.png` (`F0B5F94KXAP`), shared in `#data-feed` thread `1779466151.001479`. Candidate replacement for all-optical biomaterials / hydrogel patterning visuals after public-release review.
+- Art and science biological pattern studies: `2.png` (`F0B5R4FFH8C`) and `3.png` (`F0B5F54DKCK`), shared in `#data-feed` thread `1779463077.036699`. Candidate replacement for Wix-resized art-and-science gallery images after Martina/Francesco approval.
+
 ## Screenshot Checks
 
 - Desktop MVP screenshot: `migration/current-site/mvp-desktop-2.png`

@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 import { publications, withBase } from "../data/site";
+import { getPublicationLabels } from "../data/labels";
 
 const { area } = Astro.props;
 const featuredPapers = area.featuredPapers ?? [];
@@ -25,6 +26,8 @@ const carouselItems =
     })
     .filter(Boolean);
 const resources = area.resources ?? [];
+const carouselEyebrow = area.carouselEyebrow ?? "Platforms and capabilities";
+const carouselTitle = area.carouselTitle ?? "In focus";
 ---
 
 <BaseLayout title={area.title + " | Synthetic Physiology Lab"}>
@@ -32,7 +35,7 @@ const resources = area.resources ?? [];
     <img src={withBase(area.image)} alt="" />
     <div>
       <a class="back-link" href={withBase("/research/")}>Research</a>
-      <p class="eyebrow">Research area</p>
+      <p class="eyebrow">Research area · {area.label}</p>
       <h1>{area.title}</h1>
       <p class="lead">{area.deepDive}</p>
     </div>
@@ -54,13 +57,13 @@ const resources = area.resources ?? [];
   <section class="section band-soft carousel-section">
     <div class="container">
       <div class="section-heading">
-        <p class="eyebrow">Examples</p>
-        <h2>In focus</h2>
+        <p class="eyebrow">{carouselEyebrow}</p>
+        <h2>{carouselTitle}</h2>
       </div>
       <div class="feature-carousel" data-carousel aria-label={area.title + " featured examples"}>
         {carouselItems.map((item: { title: string; text: string; type: string; src: string; href?: string }, index: number) => (
           <article class:list={["feature-card", index === 0 && "active"]} data-carousel-card>
-            <a href={item.href ?? item.src}>
+            <a href={withBase(item.href ?? item.src)}>
               {item.type === "video" ? (
                 <video src={withBase(item.src)} muted playsinline controls preload="metadata" />
               ) : (
@@ -99,18 +102,20 @@ const resources = area.resources ?? [];
     <div class="container split">
       <div>
         <p class="eyebrow">Related publications</p>
-        <h2>All papers in this area</h2>
+        <h2>Articles and preprints in this area</h2>
         <p>Including collaborations; listed newest to oldest.</p>
       </div>
       <div class="research-paper-list">
-        {allPapers.map((paper) => (
+        {allPapers.map((paper) => {
+          const labels = getPublicationLabels(paper);
+          return (
           <a class="research-paper" href={paper.href}>
-            <span class="tag">{paper.tag}</span>
+            <span class="tag" data-category={labels.primary.category}>{labels.primary.text}</span>
             <strong>{paper.title}</strong>
             <span>{paper.authors}</span>
             <span>{paper.venue} · {paper.year}{paper.doi ? " · DOI " + paper.doi : ""}</span>
           </a>
-        ))}
+        )})}
       </div>
     </div>
   </section>
@@ -124,7 +129,7 @@ const resources = area.resources ?? [];
       </div>
       <div class="resource-list">
         {resources.map((resource: { label: string; href: string; text: string }) => (
-          <a class="resource-item" href={resource.href}>
+          <a class="resource-item" href={withBase(resource.href)}>
             <strong>{resource.label}</strong>
             <span>{resource.text}</span>
           </a>

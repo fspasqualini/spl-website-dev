@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { fundedProjects, news, researchAreas, withBase } from "../data/site";
+import { fundedProjects, heroStats, labVisionSections, withBase } from "../data/site";
+import { homepageNews } from "../data/news";
 ---
 
 <BaseLayout
@@ -11,24 +12,70 @@ import { fundedProjects, news, researchAreas, withBase } from "../data/site";
     <div class="hero-copy">
       <p class="eyebrow">University of Pavia</p>
       <h1>
-        <span class="hero-initial">S</span>ynthetic
-        <span class="hero-initial">P</span>hysiology
-        <span class="hero-initial">L</span>ab
+        <span><span class="hero-initial">S</span>ynthetic</span>
+        <span><span class="hero-initial">P</span>hysiology</span>
+        <span><span class="hero-initial">L</span>ab</span>
       </h1>
       <p class="lead">
-        We build in-vitro and in-silico models of complex physiological systems at bio-technology and techno-biology scale.
+        We build physiology through instrumented cells, tissue systems, CompBio, and the visual culture that helps make complex biology thinkable.
       </p>
       <div class="stats" aria-label="Lab highlights">
-        <div class="stat"><strong>6</strong><span>Funded programs</span></div>
-        <div class="stat"><strong>4</strong><span>Research efforts</span></div>
-        <div class="stat"><strong>38+</strong><span>Publications</span></div>
+        {heroStats.map((stat) => (
+          <div class="stat">
+            <strong>{stat.value}</strong>
+            <span>{stat.label}</span>
+          </div>
+        ))}
       </div>
     </div>
-    <div class="hero-panel">
-      <img src={withBase("/assets/scraped/028-cardioid_3d_nuclei-1-_edited.jpg")} alt="Cardioid microscopy image from SPL research" />
-      <div class="hero-meta">
-        <strong>In-vitro systems, in-silico models, and imaging-first discovery.</strong>
-        <span>Rebuilt from the current public SPL website as a local Astro MVP.</span>
+    <aside class="news-rail hero-news" aria-label="Latest SPL news">
+      <div class="news-rail-header">
+        <div>
+          <p class="eyebrow">Latest from SPL</p>
+          <h2>Lab pulse.</h2>
+        </div>
+        <a href={withBase("/news/")}>All news</a>
+      </div>
+      <div class="news-rail-list">
+        {homepageNews.map((item) => (
+          <article class="news-rail-item">
+            <div class="news-rail-meta">
+              <span class="tag" data-category={item.label.category}>{item.label.text}</span>
+              <p class="news-date">{item.date}</p>
+            </div>
+            <h3>
+              {item.href ? <a href={item.href}>{item.title}</a> : item.title}
+            </h3>
+            <p>{item.text}</p>
+          </article>
+        ))}
+      </div>
+    </aside>
+  </section>
+
+  <section class="section">
+    <div class="container thesis-grid">
+      <div class="thesis-heading">
+        <p class="eyebrow">Lab vision</p>
+        <h2>
+          <span>Understanding</span>
+          <span>Physiology</span>
+          <span>by building it.</span>
+        </h2>
+        <p class="vision-intro">
+          SPL treats engineering, computation, and visual culture as one experimental loop. We construct cells, tissues, models, and images that make physiology observable, testable, and open to revision.
+        </p>
+        <div class="cta-row">
+          <a class="cta" href={withBase("/research/")}>More about our research</a>
+        </div>
+      </div>
+      <div class="copy-stack">
+        {labVisionSections.map((message) => (
+          <article class="copy-message">
+            <h3>{message.title}</h3>
+            <p>{message.text}</p>
+          </article>
+        ))}
       </div>
     </div>
   </section>
@@ -39,14 +86,20 @@ import { fundedProjects, news, researchAreas, withBase } from "../data/site";
         <p class="eyebrow">Funded work</p>
         <h2>Programs with a bias toward buildable biology.</h2>
       </div>
-      <div class="grid two">
+      <div class="funded-programs">
         {fundedProjects.map((project) => (
-          <article class="item dark">
+          <article class="funded-program-card">
+            <div class="funded-card-header">
+              <div class="funder-logos" aria-label="Funding bodies">
+                {project.logos.map((logo) => (
+                  <img src={withBase(logo.src)} alt={logo.alt} />
+                ))}
+              </div>
+            </div>
             <h3>{project.title}</h3>
             <p>{project.subtitle}</p>
             <div class="meta">
               <span>{project.funder}</span>
-              <span>{project.period}</span>
               <span>{project.amount}</span>
             </div>
           </article>
@@ -55,42 +108,4 @@ import { fundedProjects, news, researchAreas, withBase } from "../data/site";
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <p class="eyebrow">Research</p>
-      <h2>Four connected laboratory efforts.</h2>
-      <div class="grid two">
-        {researchAreas.map((area) => (
-          <article class="research-card">
-            <img src={withBase(area.image)} alt="" />
-            <div>
-              <h3>{area.title}</h3>
-              <p>{area.text}</p>
-            </div>
-          </article>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="section tight">
-    <div class="container split">
-      <div>
-        <p class="eyebrow">News</p>
-        <h2>Recent SPL updates.</h2>
-        <a class="cta secondary" href={withBase("/publications/")}>View publications</a>
-      </div>
-      <div class="news-list">
-        {news.map((item) => (
-          <article class="news-item">
-            <span class="tag">{item.label}</span>
-            <div>
-              <h3><a href={item.href}>{item.title}</a></h3>
-              <p>{item.text}</p>
-            </div>
-          </article>
-        ))}
-      </div>
-    </div>
-  </section>
 </BaseLayout>

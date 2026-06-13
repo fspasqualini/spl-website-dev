@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { publications } from "../data/site";
+import { getPublicationLabels } from "../data/labels";
 ---
 
 <BaseLayout title="Publications | Synthetic Physiology Lab">
@@ -8,8 +9,8 @@ import { publications } from "../data/site";
     <div class="container">
       <div>
         <p class="eyebrow">Publications</p>
-        <h1>All SPL papers and preprints.</h1>
-        <p class="lead">A chronological list from the most recent work to the earliest publications. Short highlight selections belong on the home page.</p>
+        <h1>All SPL publications.</h1>
+        <p class="lead">A chronological list from the most recent work to the earliest publications. Research-theme metadata stays in the database for routing papers into lab areas.</p>
       </div>
     </div>
   </section>
@@ -18,19 +19,25 @@ import { publications } from "../data/site";
     <div class="container">
       <div class="section-heading">
         <p class="eyebrow">Chronological inventory</p>
-        <h2>{publications.length} papers and preprints</h2>
+        <h2>{publications.length} publications</h2>
       </div>
       <div class="inventory-list">
-        {publications.map((paper) => (
+        {publications.map((paper) => {
+          const labels = getPublicationLabels(paper);
+          const detailLabels = labels.primary.id === labels.status.id ? [] : [labels.status.text];
+          return (
           <article class="inventory-paper">
-            <span class="tag">{paper.tag}</span>
+            <div class="label-stack">
+              <span class="tag" data-category={labels.primary.category} data-label-id={labels.primary.id}>{labels.primary.text}</span>
+              {detailLabels.length > 0 && <span class="label-detail">{detailLabels.join(" · ")}</span>}
+            </div>
             <div>
               <h3><a href={paper.href}>{paper.title}</a></h3>
               <p>{paper.authors}</p>
               <p><strong>{paper.venue}</strong> · {paper.year}{paper.doi ? " · DOI " + paper.doi : ""}</p>
             </div>
           </article>
-        ))}
+        )})}
       </div>
     </div>
   </section>

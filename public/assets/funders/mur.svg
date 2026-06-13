@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 72" role="img" aria-labelledby="title">
+  <title id="title">Italian Ministry of University and Research</title>
+  <path d="M23 48h42L44 21z" fill="#111318"/>
+  <path d="M34 45h20M39 38h10M44 21v24" stroke="#f7f7f4" stroke-width="3"/>
+  <text x="80" y="34" fill="#121318" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="850">MUR</text>
+  <text x="80" y="51" fill="#55585f" font-family="Inter,Arial,sans-serif" font-size="8.4" font-weight="800" letter-spacing=".25">UNIVERSITY AND RESEARCH</text>
+</svg>

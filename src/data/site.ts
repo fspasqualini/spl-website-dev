@@ -1,8 +1,12 @@
+import { fundedLabEvents } from "./labEvents";
+import type { FunderLogoKey } from "./labEvents";
+
 export const nav = [
   { label: "Home", href: "/" },
   { label: "Creed", href: "/creed/" },
   { label: "Team", href: "/team/" },
   { label: "Research", href: "/research/" },
+  { label: "News", href: "/news/" },
   { label: "Publications", href: "/publications/" },
   { label: "Contact", href: "/contact/" },
 ];
@@ -23,73 +27,106 @@ export const brand = {
   logo: "/assets/scraped/005-LOGO_SPL.png",
 };
 
-export const fundedProjects = [
+const funderLogos: Record<FunderLogoKey, { src: string; alt: string }> = {
+  erc: { src: "/assets/funders/erc-logo.jpg", alt: "European Research Council" },
+  chipsJu: { src: "/assets/funders/chips-ju.svg", alt: "Chips Joint Undertaking" },
+  mimit: {
+    src: "/assets/funders/mimit.svg",
+    alt: "Italian Ministry of Enterprises and Made in Italy",
+  },
+  mur: { src: "/assets/funders/mur.svg", alt: "Italian Ministry of University and Research" },
+  regioneLombardia: { src: "/assets/funders/regione-lombardia.svg", alt: "Regione Lombardia" },
+  eu: { src: "/assets/funders/eu.svg", alt: "European Union" },
+  pnrr: { src: "/assets/funders/pnrr.svg", alt: "Italia Domani PNRR" },
+};
+
+export const fundedProjects = fundedLabEvents.map((event) => ({
+  title: event.title,
+  subtitle: event.funding!.subtitle,
+  funder: event.funding!.funder,
+  startDate: event.funding!.startDate,
+  startDateEvidence: event.funding!.startDateEvidence,
+  amount: event.funding!.amount,
+  logos: event.funding!.logoKeys.map((logoKey) => funderLogos[logoKey]),
+}));
+
+export const labVisionSections = [
   {
-    title: "Synthetic Matrix Biology",
-    subtitle: "Designer matrices to program healthy and diseased myocardial morphogenesis",
-    funder: "ERC Starting Grant",
-    period: "2020-2025",
-    amount: "2M EUR",
+    title: "Instrumented cell work",
+    text:
+      "We build cells that report on themselves. Fluorescent sensors, genetic reporters, lineage markers, and cell-cycle tools turn living human cells into readable systems, so state, function, and history can be measured while biology unfolds.",
   },
   {
-    title: "UNLOOC",
-    subtitle: "Unlocking the data content of Organ-on-Chips",
-    funder: "EC Chips Joint Undertaking and Italian Ministry of Enterprises",
-    period: "2024-2027",
-    amount: "1M EUR",
+    title: "Tissue models at scale",
+    text:
+      "Physiology is not a single-cell property. We engineer matrices, confinement, geometry, organoid systems, and high-throughput tissue platforms to test how cells coordinate across space, mechanics, and time.",
   },
   {
-    title: "LigHTS",
-    subtitle: "All-Optical Engineering of Human Tissue Models for Ultra High-Throughput Drug Screening",
-    funder: "MUR FARE",
-    period: "2022-2027",
-    amount: "400k EUR",
+    title: "Computational data fusion",
+    text:
+      "Complex experiments only become useful when their signals can be integrated. We combine bioimage analysis, mechanistic modeling, and computational inference to connect morphology, dynamics, reporters, and physical context into coherent biological readouts.",
   },
   {
-    title: "highLight",
-    subtitle: "A competence center for bio/nano-sustainability",
-    funder: "Regione Lombardia",
-    period: "2021-2023",
-    amount: "250k EUR",
-  },
-  {
-    title: "Engineered in-vitro models of cardiometabolic diseases",
-    subtitle: "Screening RNA-based therapeutics",
-    funder: "EU/MUR PNRR",
-    period: "2022-2025",
-    amount: "250k EUR",
-  },
-  {
-    title: "RESET",
-    subtitle: "REsolving infections by modulating SEnescenT macrophages",
-    funder: "MUR PRIN 2022",
-    period: "2023-2025",
-    amount: "125k EUR",
+    title: "Art and science",
+    text:
+      "Scientific imagination is visual, material, and human. We use illustration, design, and visual culture as part of the research process: to make hypotheses concrete, expose hidden structure, and communicate complex systems without flattening them.",
   },
 ];
 
 export const researchAreas = [
   {
-    title: "Stem cells and genome editing",
+    title: "Instrumented cells",
+    label: "Stem cells and reporters",
     slug: "stem-cells-genome-editing",
     href: "/stem-cells-and-genome-editing/",
-    text: "Reference human induced pluripotent stem cell lines, cell-cycle reporters, and live-imaging assays built around controlled genetic backgrounds.",
+    text: "Human stem-cell systems, genome editing, engineered reporters, and CALIPERS-style live phenotyping workflows that make cell state measurable over time.",
     image: "/assets/scraped/012-_edited_edited_edited.png",
     vision:
-      "We build the cell lines, reporters, and live-imaging logic that make human stem-cell biology experimentally controllable. The goal is not just prettier movies: it is a reusable chassis for reading cell-cycle state, morphogenesis, regeneration, and engineered phenotypes in real time.",
+      "This theme contains the work we previously described as stem cells and genome editing: human stem-cell systems, engineered reporter lines, fluorescent sensors, and live assays such as CALIPERS. The point is to make the cell itself an instrumented biological object, so state and function can be read while experiments unfold.",
     deepDive:
-      "This effort builds the cellular chassis for SPL: engineered hiPSCs, fluorescence sensors, and live-cell assays that make cell state, proliferation, and regeneration measurable over time.",
+      "Instrumented cells build the inside-out measurement layer for SPL: engineered hiPSCs, genetic reporters, lineage and cell-cycle sensors, and live-cell assays that make morphogenesis, cell state, and function measurable over time.",
     showcase: {
       type: "image",
       src: "/assets/scraped/012-_edited_edited_edited.png",
       label: "Engineered reporter cells as experimental infrastructure",
       text: "Cell-cycle-aware imaging makes stem-cell phenotypes readable over time, so genome editing and live-cell assays become quantitative tools rather than isolated images.",
     },
+    carouselEyebrow: "Platforms and capabilities",
+    carouselTitle: "Cells built to report state",
+    featureCards: [
+      {
+        title: "Reporter cell lines",
+        text:
+          "Genome-edited and lentiviral reporter systems make cell cycle, lineage state, and functional activity visible during experiments instead of only at endpoint.",
+        type: "image",
+        src: "/assets/scraped/012-_edited_edited_edited.png",
+        href: "/stem-cells-and-genome-editing/",
+      },
+      {
+        title: "Cardiac and developmental models",
+        text:
+          "Human cardiac and early-developmental systems let the lab watch structure, function, and cell state emerge together under controlled conditions.",
+        type: "image",
+        src: "/assets/scraped/028-cardioid_3d_nuclei-1-_edited.jpg",
+        href: "/stem-cells-and-genome-editing/",
+      },
+      {
+        title: "Live phenotyping workflows",
+        text:
+          "Longitudinal imaging connects perturbations to cell behavior over time, allowing the lab to ask how engineered cells build, repair, or reorganize tissue-like systems.",
+        type: "image",
+        src: "https://media.springernature.com/lw1200/springer-static/image/art%3A10.1038%2Fs44303-026-00159-6/MediaObjects/44303_2026_159_Fig3_HTML.png",
+        href: "https://www.nature.com/articles/s44303-026-00159-6/figures/3",
+      },
+    ],
     paperTitles: [
       "MicroSplit: semantic unmixing of fluorescent microscopy data",
-      "A vertically integrated system for tracking and assessing cell-cycle-aware phenotypes under confinement",
       "CALIPERS: Cell cycle-aware live imaging for phenotyping experiments and regeneration studies",
       "muSplit: image decomposition for fluorescence microscopy",
+      "A tissue-engineered scale model of the heart ventricle",
+      "Laminar ventricular myocardium on a microelectrode array-based chip",
+      "Angiotensin II Induced Cardiac Dysfunction on a Chip",
+      "Matrix elasticity regulates the optimal cardiac myocyte shape for contractility",
       "Translational cardiac stem cell therapy: advancing from first-generation to next-generation cell types",
       "Coupling primary and stem cell-derived cardiomyocytes in an in vitro model of cardiac cell therapy",
       "Structural phenotyping of stem cell-derived cardiomyocytes",
@@ -108,20 +145,6 @@ export const researchAreas = [
             label: "Cell-cycle-aware imaging",
             text: "Live-cell phenotyping built around interpretable cell-cycle state.",
             href: "https://www.biorxiv.org/content/10.1101/2024.12.19.629259v1",
-          },
-        ],
-      },
-      {
-        title: "A vertically integrated system for tracking and assessing cell-cycle-aware phenotypes under confinement",
-        blurb:
-          "VISTA connects engineered reporters, confinement, imaging, and analysis into one workflow for asking how physical context changes cell-cycle-aware phenotypes.",
-        media: [
-          {
-            type: "image",
-            src: "/assets/scraped/012-_edited_edited_edited.png",
-            label: "VISTA workflow",
-            text: "Integrated confinement, tracking, and phenotype readout.",
-            href: "https://pubmed.ncbi.nlm.nih.gov/41799556/",
           },
         ],
       },
@@ -150,21 +173,50 @@ export const researchAreas = [
     ],
   },
   {
-    title: "All-optical biomaterials engineering",
+    title: "Tissue systems",
+    label: "Biofab and biomaterials",
     slug: "all-optical-biomaterials",
     href: "/all/",
-    text: "Engineered culture substrates and photo-patterned matrices directly inside microplates for imaging-based high-throughput phenotyping.",
+    text: "HYDRA, VISTA, LigHTS, biomaterials, engineered matrices, confinement, and biofabrication workflows for building controllable tissue systems.",
     image: "/assets/scraped/013-all-optical_edited.jpg",
     vision:
-      "We want biomaterials to behave like programmable experimental hardware. This effort builds optical and robotic workflows that put physiologically relevant substrates directly inside screening formats, so mechanics, matrix patterning, and drug response can be measured without giving up throughput.",
+      "This theme contains what the site previously called biomaterials or biofab. HYDRA, VISTA, LigHTS, engineered matrices, hydrogels, confinement, and optical fabrication all belong here because they are ways of building tissue systems whose structure, mechanics, and context can be controlled.",
     deepDive:
-      "This area turns biomaterials into programmable experimental surfaces: hydrogels, patterned matrices, and optical fabrication workflows that scale from mechanobiology to screening.",
+      "Tissue systems turn materials, geometry, matrix chemistry, confinement, and light into practical engineering tools for biology. The goal is not fabrication as an isolated method; it is building controllable physiological systems that stay compatible with imaging, perturbation, and scale.",
     showcase: {
       type: "video",
       src: "https://static-content.springer.com/esm/art%3A10.1038%2Fs44172-025-00575-3/MediaObjects/44172_2025_575_MOESM4_ESM.mp4",
-      label: "Soft substrates inside screening plates",
+      label: "HYDRA tissue-system fabrication",
       text: "HYDRA shows why all-optical and robotic biomaterials matter: physiological substrates can live inside high-throughput imaging workflows instead of forcing a choice between relevance and scale.",
     },
+    carouselEyebrow: "Platforms and capabilities",
+    carouselTitle: "Biofabricated systems for physiology",
+    featureCards: [
+      {
+        title: "Plate-scale hydrogel fabrication",
+        text:
+          "Robotic workflows fabricate compliant culture substrates directly in screening plates, keeping soft-material biology compatible with automated imaging.",
+        type: "image",
+        src: "https://media.springernature.com/lw1200/springer-static/image/art%3A10.1038%2Fs44172-025-00575-3/MediaObjects/44172_2025_575_Fig1_HTML.png",
+        href: "https://www.nature.com/articles/s44172-025-00575-3/figures/1",
+      },
+      {
+        title: "Light-defined matrix patterning",
+        text:
+          "Optical fabrication lets the lab tune surface cues, material geometry, and matrix presentation without leaving standard high-throughput formats.",
+        type: "image",
+        src: "/assets/scraped/013-all-optical_edited.jpg",
+        href: "https://www.biorxiv.org/content/10.1101/2025.10.23.683892v1",
+      },
+      {
+        title: "Material validation workflows",
+        text:
+          "Mechanical, optical, and cell-compatibility readouts turn each new substrate into an engineered experimental environment rather than a decorative surface.",
+        type: "video",
+        src: "https://static-content.springer.com/esm/art%3A10.1038%2Fs44172-025-00575-3/MediaObjects/44172_2025_575_MOESM4_ESM.mp4",
+        href: "https://www.nature.com/articles/s44172-025-00575-3#Sec38",
+      },
+    ],
     paperTitles: [
       "Micro-comb 3D printing: rapid fabrication of tissue-guiding substrates using micro-embossed nozzles",
       "A vertically integrated system for tracking and assessing cell-cycle-aware phenotypes under confinement",
@@ -200,6 +252,20 @@ export const researchAreas = [
             label: "All-optical matrix patterning",
             text: "Photo-functionalized biomaterials for high-throughput imaging.",
             href: "https://www.biorxiv.org/content/10.1101/2025.10.23.683892v1",
+          },
+        ],
+      },
+      {
+        title: "A vertically integrated system for tracking and assessing cell-cycle-aware phenotypes under confinement",
+        blurb:
+          "VISTA belongs with the tissue-systems theme because it links confinement, engineered context, imaging, and analysis into one platform for asking how physical context shapes cell behavior.",
+        media: [
+          {
+            type: "image",
+            src: "/assets/scraped/012-_edited_edited_edited.png",
+            label: "VISTA workflow",
+            text: "Integrated confinement, tracking, and phenotype readout.",
+            href: "https://pubmed.ncbi.nlm.nih.gov/41799556/",
           },
         ],
       },
@@ -246,21 +312,50 @@ export const researchAreas = [
     ],
   },
   {
-    title: "Computational modeling and data analysis",
+    title: "CompBio",
+    label: "Modeling and bioimage analysis",
     slug: "computational-modeling-data-analysis",
     href: "/computational-modeling-and-data-analysis/",
-    text: "Discrete particle dynamics, image analysis, and model fitting workflows for cell mechanics and tissue organization.",
+    text: "Computational modeling and bioimage analysis, including BIO-POINT, SEM2, DeepFUCCI, and image-analysis work with Michele Torre and collaborators.",
     image: "/assets/scraped/014-cardioid_3d_nuclei-1-_edited.jpg",
     vision:
-      "This area turns images, mechanics, and simulations into one explanatory loop. We use particle models, image-analysis pipelines, and continuum simulations to connect what cells do in experiments with the physical rules that might explain why.",
+      "CompBio joins the lab's computational modeling and bioimage analysis work instead of splitting them into separate cultures. BIO-POINT, SEM2, DeepFUCCI, and the imaging-analysis work with Michele Torre all belong here because they turn experiments into quantitative objects that can be compared, modeled, and explained.",
     deepDive:
-      "This work connects measurement and mechanism: particle models for cell and nuclear mechanics, image-analysis pipelines for multiplexed microscopy, and continuum models for cardiac electromechanics.",
+      "This work connects measurement and mechanism: particle models for cell and nuclear mechanics, image-analysis pipelines for multiplexed microscopy, deep-learning tools for fluorescent reporters, and continuum models for cardiac electromechanics.",
     showcase: {
       type: "image",
       src: "https://media.springernature.com/lw1200/springer-static/image/art%3A10.1038%2Fs44303-026-00159-6/MediaObjects/44303_2026_159_Fig3_HTML.png",
       label: "From microscopy to quantitative state trajectories",
       text: "Computational analysis turns rich live-imaging data into tracks, classifications, and models that can be compared across cells, perturbations, and physical environments.",
     },
+    carouselEyebrow: "Platforms and capabilities",
+    carouselTitle: "Images, models, and mechanism",
+    featureCards: [
+      {
+        title: "Bioimage analysis pipelines",
+        text:
+          "Segmentation, tracking, denoising, classification, and quality control convert microscopy into quantitative biological state variables.",
+        type: "image",
+        src: "https://media.springernature.com/lw1200/springer-static/image/art%3A10.1038%2Fs44303-026-00159-6/MediaObjects/44303_2026_159_Fig3_HTML.png",
+        href: "https://www.nature.com/articles/s44303-026-00159-6/figures/3",
+      },
+      {
+        title: "Particle and tissue mechanics",
+        text:
+          "Coarse-grained models connect cellular mechanics, nuclear deformation, and tissue-level organization with experimentally measurable parameters.",
+        type: "image",
+        src: "https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1014113.g001",
+        href: "https://journals.plos.org/ploscompbiol/article/figure?id=10.1371/journal.pcbi.1014113.g001",
+      },
+      {
+        title: "Multiscale physiological modeling",
+        text:
+          "From molecular dynamics to continuum and isogeometric analysis, the lab picks the model scale that can actually explain the experiment.",
+        type: "image",
+        src: "/assets/scraped/014-cardioid_3d_nuclei-1-_edited.jpg",
+        href: "/computational-modeling-and-data-analysis/",
+      },
+    ],
     paperTitles: [
       "MicroSplit: semantic unmixing of fluorescent microscopy data",
       "Bioimage analysis for multiplexed FUCCI acquisitions powered by deep learning",
@@ -345,29 +440,32 @@ export const researchAreas = [
     ],
   },
   {
-    title: "Art and science",
+    title: "Art & science",
+    label: "Art/Science",
     slug: "art-and-science",
     href: "/art-and-science/",
-    text: "A shared language for visualization, communication, and research imagination across scientific and artistic practice.",
+    text: "A home for the visual, material, and imaginative side of scientific work, treated as part of method rather than decoration.",
     image: "/assets/scraped/015-1000165473.png",
     vision:
-      "We treat visual culture as part of scientific method. Art helps the lab see systems, build shared intuition, and communicate engineering ideas before they harden into jargon.",
+      "Science does not exist apart from scientists. Scientists are human: analytical, visual, emotional, playful, and creative. If the culture of science tells people to amputate the artistic side of themselves, it loses good scientists and weaker hypotheses are the result.",
     deepDive:
-      "The lab treats visualization and communication as research infrastructure: a way to see mechanisms, align collaborators, and make technical work legible.",
+      "For SPL, art and science are two ways of fighting with reality. Artistic work can live in imagination alone; scientific work must bring imagination into contact with nature, then test whether the world agrees. That loop of visualization, hypothesis, experiment, and revision is not separate from creativity. It is one of its most disciplined forms.",
     showcase: {
       type: "image",
       src: "/assets/scraped/015-1000165473.png",
-      label: "Scientific visual culture",
-      text: "The point is not decoration. Visual work helps the lab build shared intuition, expose assumptions, and communicate complex engineered physiology without flattening it.",
+      label: "Visualization as scientific method",
+      text: "Visual work helps the lab imagine mechanisms, expose assumptions, and communicate engineered physiology without flattening it into jargon.",
     },
     paperTitles: [
       "When art and science collide",
     ],
+    carouselEyebrow: "Fresh from the lab",
+    carouselTitle: "Visual experiments",
     featureCards: [
       {
         title: "Gallery",
         text:
-          "Placeholder: a curated entry point for lab visuals, sketches, installations, and visual experiments that make SPL's scientific imagination visible.",
+          "A curated entry point for lab visuals, sketches, installations, and visual experiments that make SPL's scientific imagination visible.",
         type: "image",
         src: "https://static.wixstatic.com/media/1a9389_e0538ee1aef74238a58219cf45eb5904~mv2.png/v1/fill/w_273,h_278,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/F_B2_draw2.png",
         href: "https://www.syntheticphysiologylab.com/projects-7",
@@ -375,7 +473,7 @@ export const researchAreas = [
       {
         title: "Artistic installation: Proliferation, 2025",
         text:
-          "Placeholder: an installation translating proliferation and growth into a public-facing visual experience. Francesco can replace this with the final curatorial text.",
+          "An installation translating proliferation and growth into a public-facing visual experience, connecting biological pattern formation with human perception.",
         type: "image",
         src: "https://static.wixstatic.com/media/1a9389_2ef6bc301822411b8b32581314e3b4e3~mv2.jpg/v1/fill/w_273,h_278,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_20250810_203129%20(1)_edited.jpg",
         href: "https://www.syntheticphysiologylab.com/copia-di-vista-1",
@@ -383,7 +481,7 @@ export const researchAreas = [
       {
         title: "New SPL logo",
         text:
-          "Placeholder: visual identity as lab infrastructure, not decoration. The logo system should carry the lab's mix of engineering, biology, and culture.",
+          "Visual identity as lab infrastructure, not decoration. The logo system carries SPL's mix of engineering, biology, and culture.",
         type: "image",
         src: "https://static.wixstatic.com/media/1a9389_6cf7e30899b44eb8b9c6b7388d99c39e~mv2.png/v1/fill/w_273,h_278,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202025-08-28%20111823.png",
         href: "https://www.syntheticphysiologylab.com/art-and-science/logo-spl",
@@ -409,7 +507,25 @@ export const researchAreas = [
   },
 ];
 
-export const team = [
+export type TeamMember = {
+  name: string;
+  role: string;
+  focus: string;
+  email: string;
+  image: string;
+};
+
+export type FormerTeamMember = {
+  name: string;
+  role: string;
+  focus: string;
+  emails: string[];
+  status: "former";
+  period?: string;
+  note?: string;
+};
+
+export const team: TeamMember[] = [
   {
     name: "Francesco S. Pasqualini",
     role: "Lab Director",
@@ -479,6 +595,81 @@ export const team = [
     focus: "Molecular biology",
     email: "giulia.ballio@unipv.it",
     image: "/assets/team/giulia-balio.jpg",
+  },
+];
+
+export const formerTeam: FormerTeamMember[] = [
+  {
+    name: "Ahmed S. Khalil",
+    role: "Post-doctoral researcher",
+    focus: "Former SPL post-doc",
+    emails: ["salehastro@gmail.com", "ahmed.khalil@unipv.it"],
+    status: "former",
+    period: "Approx. December 2020 - November 2021",
+    note: "Email evidence: late-2020 borsa di ricerca start, Jan 2021 remote activity, Nov 2021 last update. No current-employment information recorded; avoid public-source name matches until identity is confirmed.",
+  },
+  {
+    name: "Dr. Chimwemwe Msosa",
+    role: "CICOPS Fellow",
+    focus: "Biomedical engineering",
+    emails: ["cmsosa@mubas.ac.mw"],
+    status: "former",
+    period: "June 2024 - December 2024",
+    note: "Now Lecturer in Biomedical Engineering at the Malawi University of Business and Applied Sciences.",
+  },
+  {
+    name: "Sandipan Chattaraj",
+    role: "Former SPL member",
+    focus: "Computational modeling of cell mechanics",
+    emails: [],
+    status: "former",
+    period: "Approx. 2021 - 2026",
+    note: "Email evidence includes SPL group activity in 2021, a Dec 2023 final borsa report followed by an assegno, and 2026 research/tooling correspondence.",
+  },
+  {
+    name: "Julius Zimmermann",
+    role: "Former SPL member",
+    focus: "Bioimage analysis and computational modeling",
+    emails: [],
+    status: "former",
+    period: "Approx. December 2023 - April 2026",
+    note: "Email evidence includes Dec 2023 SPL computational-science work, Dec 2024 DICAr non-structured researcher lists, and Apr 2026 paper-proof correspondence.",
+  },
+  {
+    name: "Emanuele Carnevale Baraglia",
+    role: "Former SPL member",
+    focus: "Organelle acidification and computational modeling",
+    emails: ["emanuele.carnevalebaraglia@unipv.it"],
+    status: "former",
+    period: "Approx. December 2023 - 2025",
+    note: "Email evidence includes Dec 2023 thesis/SPL interactions, 2024-2025 SPL group activity, and a PRIN 2022 project assignment running 2023-11-30 to 2025-11-29.",
+  },
+  {
+    name: "Bohdana Horda",
+    role: "Former SPL member",
+    focus: "Hydrogel fabrication and engineered cell culture systems",
+    emails: ["bohdana.horda@unipv.it"],
+    status: "former",
+    period: "Approx. November 2023 - April 2025",
+    note: "Email evidence includes Nov 2023 SPL/DICAr group correspondence and 2025 HYDRA manuscript correspondence.",
+  },
+  {
+    name: "Alice Albini",
+    role: "Administrative support",
+    focus: "Project management and laboratory operations",
+    emails: ["alice.albini@unipv.it"],
+    status: "former",
+    period: "Approx. January 2021 - June 2022",
+    note: "Later University of Pavia administrative support in the wider engineering area; March 2023 email refers to her new incarico.",
+  },
+  {
+    name: "Daniela Canevari",
+    role: "Administrative support",
+    focus: "Project management and laboratory operations",
+    emails: ["daniela.canevari@unipv.it"],
+    status: "former",
+    period: "Approx. December 2023 - 2025",
+    note: "Currently working within the wider University of Pavia administration, with DICAr/DII-adjacent support visible in later emails.",
   },
 ];
 
@@ -914,24 +1105,48 @@ export const publicationHighlights = {
   cited: publications.filter((paper) => paper.tag === "Highly cited").slice(0, 4),
 };
 
-export const news = [
+export const nonArticleOutputs = [
+  { type: "Plasmid", label: "pLV-EF1A-FUCCIplex", href: "https://www.addgene.org/240160/" },
+  { type: "Plasmid", label: "pLV-CMV-FUCCIplex", href: "https://www.addgene.org/240221/" },
+  { type: "Plasmid", label: "pLV-cTnT-FUCCIplex", href: "https://www.addgene.org/240216/" },
+  { type: "Plasmid", label: "R26-CAG-BST-FUCCIplex", href: "https://www.addgene.org/240241/" },
+  { type: "Cell line", label: "FUCCIplex reporter cell systems", href: "/stem-cells-and-genome-editing/" },
+  { type: "Repository", label: "DeepFUCCI", href: "https://github.com/Synthetic-Physiology-Lab/DeepFUCCI" },
+  { type: "Repository", label: "HYDRA HTS hydrogel analysis", href: "https://github.com/Synthetic-Physiology-Lab/hydra-hts-hydrogel-analysis" },
+  { type: "Repository", label: "BIOPOINT", href: "https://github.com/Synthetic-Physiology-Lab/biopoint" },
+  { type: "Repository", label: "SEM2", href: "https://github.com/Synthetic-Physiology-Lab/sem2" },
+  { type: "Repository", label: "Organelle acidification ODE model", href: "https://github.com/Synthetic-Physiology-Lab/Organelle-acidification-ODE-model" },
+  { type: "Art", label: "SPL art and science gallery", href: "https://www.syntheticphysiologylab.com/projects-7" },
+  { type: "Art", label: "Proliferation, 2025", href: "https://www.syntheticphysiologylab.com/copia-di-vista-1" },
+];
+
+const formatCount = (count: number, suffix = "") => `${count}${suffix}`;
+
+export const heroStats = [
   {
-    label: "Paper",
-    title: "MicroSplit published in Nature Methods",
-    text: "Semantic unmixing of fluorescent microscopy data with SPL co-authors.",
-    href: "https://pubmed.ncbi.nlm.nih.gov/42086917/",
+    value: formatCount(fundedLabEvents.length),
+    label: "Funded programs",
+    detail: "Auto-counted from the lab events database",
   },
   {
-    label: "Preprint",
-    title: "LiGHTS preprint online",
-    text: "Massively parallel photo-functionalization for imaging-based ultra-high-throughput screening.",
-    href: "https://www.biorxiv.org/content/10.1101/2025.10.23.683892v1",
+    value: formatCount(researchAreas.length),
+    label: "Integrated research areas",
+    detail: "Auto-counted from the research area database",
   },
   {
-    label: "Paper",
-    title: "BIOPOINT published in PLOS Computational Biology",
-    text: "A particle-based model for nuclear mechanics and cell-ECM interactions.",
-    href: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014113",
+    value: formatCount(team.length, "+"),
+    label: "Trainees to date",
+    detail: "Temporary count from the current team list until alumni history is added",
+  },
+  {
+    value: formatCount(publications.length),
+    label: "Publications",
+    detail: "Auto-counted from the publications database",
+  },
+  {
+    value: formatCount(nonArticleOutputs.length, "+"),
+    label: "Other outputs",
+    detail: "Plasmids, cell systems, repositories, and art-science outcomes",
   },
 ];
 

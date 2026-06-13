@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 72" role="img" aria-labelledby="title">
+  <title id="title">Italian Ministry of Enterprises and Made in Italy</title>
+  <path d="M24 20h30v5H24zm3 8h24v5H27zm-3 8h30v5H24zm3 8h24v5H27z" fill="#111318"/>
+  <path d="M58 20h5v29h-5z" fill="#a82038"/>
+  <text x="78" y="34" fill="#121318" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="850">MIMIT</text>
+  <text x="78" y="51" fill="#55585f" font-family="Inter,Arial,sans-serif" font-size="8.5" font-weight="800" letter-spacing=".25">MINISTRY OF ENTERPRISES</text>
+</svg>
