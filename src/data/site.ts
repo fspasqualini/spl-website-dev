@@ -79,12 +79,12 @@ export const researchAreas = [
     label: "Stem cells and reporters",
     slug: "stem-cells-genome-editing",
     href: "/stem-cells-and-genome-editing/",
-    text: "Human stem-cell systems, genome editing, engineered reporters, and CALIPERS-style live phenotyping workflows that make cell state measurable over time.",
+    text: "Genome-edited human iPSC systems with fluorescent reporters, live-cell phenotyping, and 2D/3D differentiation methods for watching cell state, lineage, and function emerge over time.",
     image: "/assets/scraped/012-_edited_edited_edited.png",
     vision:
-      "This theme contains the work we previously described as stem cells and genome editing: human stem-cell systems, engineered reporter lines, fluorescent sensors, and live assays such as CALIPERS. The point is to make the cell itself an instrumented biological object, so state and function can be read while experiments unfold.",
+      "This theme builds human stem-cell systems that report their own biology while experiments unfold. Engineered hiPSC lines, fluorescent cell-state sensors, cardiac and developmental differentiation protocols, and live imaging make it possible to follow how cells choose fates, organize tissues, and respond to perturbation in 2D and 3D contexts.",
     deepDive:
-      "Instrumented cells build the inside-out measurement layer for SPL: engineered hiPSCs, genetic reporters, lineage and cell-cycle sensors, and live-cell assays that make morphogenesis, cell state, and function measurable over time.",
+      "Instrumented cells build the inside-out measurement layer for SPL: engineered hiPSCs, genetic reporters, lineage and cell-cycle sensors, and 2D/3D differentiation systems that make morphogenesis, cell state, and function measurable over time.",
     showcase: {
       type: "image",
       src: "/assets/scraped/012-_edited_edited_edited.png",
@@ -177,17 +177,17 @@ export const researchAreas = [
     label: "Biofab and biomaterials",
     slug: "all-optical-biomaterials",
     href: "/all/",
-    text: "HYDRA, VISTA, LigHTS, biomaterials, engineered matrices, confinement, and biofabrication workflows for building controllable tissue systems.",
+    text: "Soft hydrogels, engineered matrices, confinement systems, and optical or robotic fabrication methods for building tissue environments whose mechanics, geometry, and molecular cues can be controlled.",
     image: "/assets/scraped/013-all-optical_edited.jpg",
     vision:
-      "This theme contains what the site previously called biomaterials or biofab. HYDRA, VISTA, LigHTS, engineered matrices, hydrogels, confinement, and optical fabrication all belong here because they are ways of building tissue systems whose structure, mechanics, and context can be controlled.",
+      "This theme develops materials and fabrication methods that make the physical context of cells experimentally programmable. Soft hydrogels, matrix chemistry, confinement, micropatterned cues, and light-based or robotic fabrication let the lab build tissue systems with defined mechanics, geometry, and scale.",
     deepDive:
       "Tissue systems turn materials, geometry, matrix chemistry, confinement, and light into practical engineering tools for biology. The goal is not fabrication as an isolated method; it is building controllable physiological systems that stay compatible with imaging, perturbation, and scale.",
     showcase: {
       type: "video",
       src: "https://static-content.springer.com/esm/art%3A10.1038%2Fs44172-025-00575-3/MediaObjects/44172_2025_575_MOESM4_ESM.mp4",
       label: "HYDRA tissue-system fabrication",
-      text: "HYDRA shows why all-optical and robotic biomaterials matter: physiological substrates can live inside high-throughput imaging workflows instead of forcing a choice between relevance and scale.",
+      text: "Robotic hydrogel fabrication shows why biomaterials have to meet experimental logistics: physiologically relevant soft substrates can live inside high-throughput imaging workflows instead of forcing a choice between relevance and scale.",
     },
     carouselEyebrow: "Platforms and capabilities",
     carouselTitle: "Biofabricated systems for physiology",
@@ -316,10 +316,10 @@ export const researchAreas = [
     label: "Modeling and bioimage analysis",
     slug: "computational-modeling-data-analysis",
     href: "/computational-modeling-and-data-analysis/",
-    text: "Computational modeling and bioimage analysis, including BIO-POINT, SEM2, DeepFUCCI, and image-analysis work with Michele Torre and collaborators.",
+    text: "Discrete particle models, continuum and isogeometric analysis, and bioimage-analysis pipelines that connect microscopy, mechanics, and experimentally derived parameters.",
     image: "/assets/scraped/014-cardioid_3d_nuclei-1-_edited.jpg",
     vision:
-      "CompBio joins the lab's computational modeling and bioimage analysis work instead of splitting them into separate cultures. BIO-POINT, SEM2, DeepFUCCI, and the imaging-analysis work with Michele Torre all belong here because they turn experiments into quantitative objects that can be compared, modeled, and explained.",
+      "CompBio joins modeling and bioimage analysis because both turn complex experiments into quantitative objects. Discrete particle models probe cell-ECM and nuclear mechanics, continuum and isogeometric models capture tissue-scale physiology, and deep-learning image workflows extract trajectories from reporter-rich microscopy.",
     deepDive:
       "This work connects measurement and mechanism: particle models for cell and nuclear mechanics, image-analysis pipelines for multiplexed microscopy, deep-learning tools for fluorescent reporters, and continuum models for cardiac electromechanics.",
     showcase: {
