@@ -29,6 +29,7 @@ import { getPublicationLabels } from "../data/labels";
           <article class="inventory-paper">
             <div class="label-stack">
               <span class="tag" data-category={labels.primary.category} data-label-id={labels.primary.id}>{labels.primary.text}</span>
+              <span class="provenance-tag" data-provenance={labels.provenance.id}>{labels.provenance.text}</span>
               {detailLabels.length > 0 && <span class="label-detail">{detailLabels.join(" · ")}</span>}
             </div>
             <div>

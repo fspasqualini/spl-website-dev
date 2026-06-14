@@ -5,6 +5,7 @@ export type LabelCategory =
   | "news-kind"
   | "publication-status"
   | "publication-output"
+  | "publication-provenance"
   | "research-theme"
   | "visibility";
 
@@ -17,6 +18,7 @@ export type Label = {
 export type PublicationLabelSet = {
   status: Label;
   output: Label;
+  provenance: Label;
   themes: Label[];
   visibility: Label[];
   primary: Label;
@@ -45,6 +47,11 @@ const publicationKinds = {
 
 const publicationOutputs = {
   article: { id: "article", category: "publication-output", text: "Peer-reviewed article" },
+} satisfies Record<string, Label>;
+
+const publicationProvenance = {
+  spl: { id: "spl", category: "publication-provenance", text: "SPL" },
+  preSpl: { id: "pre-spl", category: "publication-provenance", text: "pre-SPL" },
 } satisfies Record<string, Label>;
 
 const researchThemes = {
@@ -92,6 +99,7 @@ export const getPublicationLabels = (paper: Publication): PublicationLabelSet =>
   })();
 
   const output = publicationOutputs.article;
+  const provenance = paper.provenance === "pre-spl" ? publicationProvenance.preSpl : publicationProvenance.spl;
   const isQuantImaging = paper.tag === "Bioimage analysis"
     || paper.tag === "Modeling"
     || includesAny(search, [
@@ -160,7 +168,7 @@ export const getPublicationLabels = (paper: Publication): PublicationLabelSet =>
     ...visibility,
   ]).filter((label) => label.id !== primary.id);
 
-  return { status, output, themes: normalizedThemes, visibility, primary, secondary };
+  return { status, output, provenance, themes: normalizedThemes, visibility, primary, secondary };
 };
 
 export const getLabEventLabel = (event: LabEvent) => newsKindLabels[event.kind];

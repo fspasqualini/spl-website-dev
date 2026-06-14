@@ -110,7 +110,10 @@ const carouselTitle = area.carouselTitle ?? "In focus";
           const labels = getPublicationLabels(paper);
           return (
           <a class="research-paper" href={paper.href}>
-            <span class="tag" data-category={labels.primary.category}>{labels.primary.text}</span>
+            <span class="publication-tags">
+              <span class="tag" data-category={labels.primary.category} data-label-id={labels.primary.id}>{labels.primary.text}</span>
+              <span class="provenance-tag" data-provenance={labels.provenance.id}>{labels.provenance.text}</span>
+            </span>
             <strong>{paper.title}</strong>
             <span>{paper.authors}</span>
             <span>{paper.venue} · {paper.year}{paper.doi ? " · DOI " + paper.doi : ""}</span>

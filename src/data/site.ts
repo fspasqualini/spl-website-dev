@@ -122,6 +122,7 @@ export const researchAreas = [
     paperTitles: [
       "MicroSplit: semantic unmixing of fluorescent microscopy data",
       "CALIPERS: Cell cycle-aware live imaging for phenotyping experiments and regeneration studies",
+      "A vertically integrated system for tracking and assessing cell-cycle-aware phenotypes under confinement",
       "muSplit: image decomposition for fluorescence microscopy",
       "A tissue-engineered scale model of the heart ventricle",
       "Laminar ventricular myocardium on a microelectrode array-based chip",
@@ -681,6 +682,7 @@ export type Publication = {
   doi?: string;
   href: string;
   tag: string;
+  provenance: "spl" | "pre-spl";
   citations?: string;
 };
 
@@ -693,6 +695,7 @@ export const publications: Publication[] = [
     doi: "10.1038/s41592-026-03082-1",
     href: "https://pubmed.ncbi.nlm.nih.gov/42086917/",
     tag: "Recent",
+    provenance: "spl",
   },
   {
     title: "Micro-comb 3D printing: rapid fabrication of tissue-guiding substrates using micro-embossed nozzles",
@@ -702,6 +705,7 @@ export const publications: Publication[] = [
     doi: "10.1088/1758-5090/ae5fd9",
     href: "https://pubmed.ncbi.nlm.nih.gov/41985513/",
     tag: "Recent",
+    provenance: "spl",
   },
   {
     title: "Bioimage analysis for multiplexed FUCCI acquisitions powered by deep learning",
@@ -711,6 +715,7 @@ export const publications: Publication[] = [
     doi: "10.1038/s44303-026-00159-6",
     href: "https://www.nature.com/articles/s44303-026-00159-6",
     tag: "Bioimage analysis",
+    provenance: "spl",
   },
   {
     title: "A vertically integrated system for tracking and assessing cell-cycle-aware phenotypes under confinement",
@@ -720,6 +725,7 @@ export const publications: Publication[] = [
     doi: "10.1063/5.0306480",
     href: "https://pubmed.ncbi.nlm.nih.gov/41799556/",
     tag: "Recent",
+    provenance: "spl",
   },
   {
     title: "Fabrication of cell culture hydrogels by robotic liquid handling automation for high-throughput drug testing",
@@ -729,6 +735,7 @@ export const publications: Publication[] = [
     doi: "10.1038/s44172-025-00575-3",
     href: "https://pubmed.ncbi.nlm.nih.gov/41430373/",
     tag: "Recent",
+    provenance: "spl",
   },
   {
     title: "LiGHTS: Massively Parallel Biomimetic Photo-Functionalization for Imaging-Based Ultra-High-Throughput Screening",
@@ -738,6 +745,7 @@ export const publications: Publication[] = [
     doi: "10.1101/2025.10.23.683892",
     href: "https://www.biorxiv.org/content/10.1101/2025.10.23.683892v1",
     tag: "Preprint",
+    provenance: "spl",
   },
   {
     title: "BIOPOINT: A particle-based model for probing nuclear mechanics and cell-ECM interactions via experimentally derived parameters",
@@ -747,6 +755,7 @@ export const publications: Publication[] = [
     doi: "10.1371/journal.pcbi.1014113",
     href: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014113",
     tag: "Modeling",
+    provenance: "spl",
   },
   {
     title: "An Open-Science Computational Model of Organelle Acidification to Integrate Putative Mechanisms of Synaptic Vesicle Acidification and Filling",
@@ -756,6 +765,7 @@ export const publications: Publication[] = [
     doi: "10.1007/s11064-025-04432-9",
     href: "https://pubmed.ncbi.nlm.nih.gov/40471464/",
     tag: "Modeling",
+    provenance: "spl",
   },
   {
     title: "Molecular Dynamics Simulation of Structural Assembly and Hydration of Hyaluronic Acid in Salt Aqueous Buffer",
@@ -765,6 +775,7 @@ export const publications: Publication[] = [
     doi: "10.1021/acs.langmuir.4c03966",
     href: "https://pubmed.ncbi.nlm.nih.gov/39913243/",
     tag: "Modeling",
+    provenance: "spl",
   },
   {
     title: "CALIPERS: Cell cycle-aware live imaging for phenotyping experiments and regeneration studies",
@@ -774,6 +785,7 @@ export const publications: Publication[] = [
     doi: "10.1101/2024.12.19.629259",
     href: "https://www.biorxiv.org/content/10.1101/2024.12.19.629259v1",
     tag: "Preprint",
+    provenance: "spl",
   },
   {
     title: "An efficient active-stress electromechanical isogeometric shell model for muscular thin-film simulations",
@@ -782,6 +794,7 @@ export const publications: Publication[] = [
     year: "2024",
     href: "https://doi.org/10.1016/j.mechmat.2024.105046",
     tag: "Modeling",
+    provenance: "spl",
   },
   {
     title: "When art and science collide",
@@ -791,6 +804,7 @@ export const publications: Publication[] = [
     doi: "10.1063/5.0203543",
     href: "https://pubmed.ncbi.nlm.nih.gov/38505297/",
     tag: "Essay",
+    provenance: "spl",
   },
   {
     title: "SEM2: Introducing mechanics in cell and tissue modeling using coarse-grained homogeneous particle dynamics",
@@ -800,6 +814,7 @@ export const publications: Publication[] = [
     doi: "10.1063/5.0166829",
     href: "https://pubmed.ncbi.nlm.nih.gov/38075209/",
     tag: "Modeling",
+    provenance: "spl",
   },
   {
     title: "muSplit: image decomposition for fluorescence microscopy",
@@ -809,6 +824,7 @@ export const publications: Publication[] = [
     doi: "10.1109/iccv51070.2023.01940",
     href: "https://doi.org/10.1109/iccv51070.2023.01940",
     tag: "Bioimage analysis",
+    provenance: "spl",
   },
   {
     title: "Current progress toward isogeometric modeling of the heart biophysics",
@@ -818,6 +834,7 @@ export const publications: Publication[] = [
     doi: "10.1063/5.0152690",
     href: "https://pubmed.ncbi.nlm.nih.gov/38510845/",
     tag: "Review",
+    provenance: "spl",
   },
   {
     title: "Isogeometric mixed collocation of nearly-incompressible electromechanics in finite deformations for cardiac muscle simulations",
@@ -827,6 +844,7 @@ export const publications: Publication[] = [
     doi: "10.1016/j.cma.2023.116055",
     href: "https://doi.org/10.1016/j.cma.2023.116055",
     tag: "Modeling",
+    provenance: "spl",
   },
   {
     title: "Immersed isogeometric analysis based on a hybrid collocation/finite cell method",
@@ -835,6 +853,7 @@ export const publications: Publication[] = [
     year: "2023",
     href: "https://doi.org/10.1016/j.cma.2022.115856",
     tag: "Modeling",
+    provenance: "spl",
   },
   {
     title: "Organotypic and Microphysiological Human Tissue Models for Drug Discovery and Development: Current State-of-the-Art and Future Perspectives",
@@ -844,6 +863,7 @@ export const publications: Publication[] = [
     doi: "10.1124/pharmrev.120.000238",
     href: "https://doi.org/10.1124/pharmrev.120.000238",
     tag: "Review",
+    provenance: "spl",
   },
   {
     title: "Emerging strategies in 3D printed tissue models for in vitro biomedical research",
@@ -853,6 +873,7 @@ export const publications: Publication[] = [
     doi: "10.1016/b978-0-323-85430-6.00007-8",
     href: "https://doi.org/10.1016/b978-0-323-85430-6.00007-8",
     tag: "Book chapter",
+    provenance: "spl",
   },
   {
     title: "An efficient isogeometric collocation approach to cardiac electrophysiology",
@@ -861,6 +882,7 @@ export const publications: Publication[] = [
     year: "2022",
     href: "https://doi.org/10.1016/j.cma.2021.114782",
     tag: "Modeling",
+    provenance: "spl",
   },
   {
     title: "Tackling the ERC paradox / Come affrontare il paradosso ERC",
@@ -870,6 +892,7 @@ export const publications: Publication[] = [
     doi: "10.1038/d43978-021-00140-4 / 10.1038/d43978-021-00141-3",
     href: "https://doi.org/10.1038/d43978-021-00140-4",
     tag: "Commentary",
+    provenance: "spl",
   },
   {
     title: "A Pulsatile Flow System to Engineer Aneurysm and Atherosclerosis Mimetic Extracellular Matrix",
@@ -879,6 +902,7 @@ export const publications: Publication[] = [
     doi: "10.1002/advs.202000173",
     href: "https://pubmed.ncbi.nlm.nih.gov/32596117/",
     tag: "Paper",
+    provenance: "pre-spl",
   },
   {
     title: "Insights Into the Pathogenesis of Catecholaminergic Polymorphic Ventricular Tachycardia From Engineered Human Heart Tissue",
@@ -888,6 +912,7 @@ export const publications: Publication[] = [
     doi: "10.1161/CIRCULATIONAHA.119.039711",
     href: "https://pubmed.ncbi.nlm.nih.gov/31311300/",
     tag: "Paper",
+    provenance: "pre-spl",
   },
   {
     title: "A tissue-engineered scale model of the heart ventricle",
@@ -897,6 +922,7 @@ export const publications: Publication[] = [
     doi: "10.1038/s41551-018-0271-5",
     href: "https://pubmed.ncbi.nlm.nih.gov/31015723/",
     tag: "Highly cited",
+    provenance: "pre-spl",
   },
   {
     title: "Traction force microscopy of engineered cardiac tissues",
@@ -906,6 +932,7 @@ export const publications: Publication[] = [
     doi: "10.1371/journal.pone.0194706",
     href: "https://pubmed.ncbi.nlm.nih.gov/29590169/",
     tag: "Methods",
+    provenance: "pre-spl",
   },
   {
     title: "JetValve: Rapid manufacturing of biohybrid scaffolds for biomimetic heart valve replacement",
@@ -915,6 +942,7 @@ export const publications: Publication[] = [
     doi: "10.1016/j.biomaterials.2017.04.033",
     href: "https://pubmed.ncbi.nlm.nih.gov/28445803/",
     tag: "Paper",
+    provenance: "pre-spl",
   },
   {
     title: "Translational cardiac stem cell therapy: advancing from first-generation to next-generation cell types",
@@ -924,6 +952,7 @@ export const publications: Publication[] = [
     doi: "10.1038/s41536-017-0024-1",
     href: "https://pubmed.ncbi.nlm.nih.gov/29302353/",
     tag: "Review",
+    provenance: "pre-spl",
   },
   {
     title: "Safety and efficacy of cardiopoietic stem cells in the treatment of post-infarction left-ventricular dysfunction - From cardioprotection to functional repair in a translational pig infarction model",
@@ -933,6 +962,7 @@ export const publications: Publication[] = [
     doi: "10.1016/j.biomaterials.2016.11.029",
     href: "https://pubmed.ncbi.nlm.nih.gov/28107664/",
     tag: "Paper",
+    provenance: "pre-spl",
   },
   {
     title: "Instrumented cardiac microphysiological devices via multimaterial three-dimensional printing",
@@ -942,6 +972,7 @@ export const publications: Publication[] = [
     doi: "10.1038/nmat4782",
     href: "https://pubmed.ncbi.nlm.nih.gov/27775708/",
     tag: "Highly cited",
+    provenance: "pre-spl",
     citations: "900+ citations",
   },
   {
@@ -952,6 +983,7 @@ export const publications: Publication[] = [
     doi: "10.1002/cpt.527",
     href: "https://doi.org/10.1002/cpt.527",
     tag: "Review",
+    provenance: "pre-spl",
   },
   {
     title: "Mechanotransduction and Metabolism in Cardiomyocyte Microdomains",
@@ -961,6 +993,7 @@ export const publications: Publication[] = [
     doi: "10.1155/2016/4081638",
     href: "https://pubmed.ncbi.nlm.nih.gov/28044126/",
     tag: "Review",
+    provenance: "pre-spl",
   },
   {
     title: "A human in vitro model of Duchenne muscular dystrophy muscle formation and contractility",
@@ -970,6 +1003,7 @@ export const publications: Publication[] = [
     doi: "10.1083/jcb.201603111",
     href: "https://pubmed.ncbi.nlm.nih.gov/27697929/",
     tag: "Paper",
+    provenance: "pre-spl",
   },
   {
     title: "Heart Valve Replacements with Regenerative Capacity",
@@ -979,6 +1013,7 @@ export const publications: Publication[] = [
     doi: "10.1159/000448181",
     href: "https://pubmed.ncbi.nlm.nih.gov/27721704/",
     tag: "Review",
+    provenance: "pre-spl",
   },
   {
     title: "Phototactic guidance of a tissue-engineered soft-robotic ray",
@@ -988,6 +1023,7 @@ export const publications: Publication[] = [
     doi: "10.1126/science.aaf4292",
     href: "https://pubmed.ncbi.nlm.nih.gov/27387948/",
     tag: "Highly cited",
+    provenance: "pre-spl",
     citations: "500+ citations",
   },
   {
@@ -998,6 +1034,7 @@ export const publications: Publication[] = [
     doi: "10.1039/c6tb00324a",
     href: "https://pubmed.ncbi.nlm.nih.gov/32263387/",
     tag: "Paper",
+    provenance: "pre-spl",
   },
   {
     title: "Coupling primary and stem cell-derived cardiomyocytes in an in vitro model of cardiac cell therapy",
@@ -1007,6 +1044,7 @@ export const publications: Publication[] = [
     doi: "10.1083/jcb.201508026",
     href: "https://pubmed.ncbi.nlm.nih.gov/26858266/",
     tag: "Paper",
+    provenance: "pre-spl",
   },
   {
     title: "Angiotensin II Induced Cardiac Dysfunction on a Chip",
@@ -1016,6 +1054,7 @@ export const publications: Publication[] = [
     doi: "10.1371/journal.pone.0146415",
     href: "https://pubmed.ncbi.nlm.nih.gov/26808388/",
     tag: "Paper",
+    provenance: "pre-spl",
   },
   {
     title: "Late Na(+) current and protracted electrical recovery are critical determinants of the aging myopathy",
@@ -1025,6 +1064,7 @@ export const publications: Publication[] = [
     doi: "10.1038/ncomms9803",
     href: "https://pubmed.ncbi.nlm.nih.gov/26541940/",
     tag: "Paper",
+    provenance: "pre-spl",
   },
   {
     title: "Structural phenotyping of stem cell-derived cardiomyocytes",
@@ -1034,6 +1074,7 @@ export const publications: Publication[] = [
     doi: "10.1016/j.stemcr.2015.01.020",
     href: "https://pubmed.ncbi.nlm.nih.gov/25733020/",
     tag: "Paper",
+    provenance: "pre-spl",
   },
   {
     title: "Origin of cardiomyocytes in the adult heart",
@@ -1043,6 +1084,7 @@ export const publications: Publication[] = [
     doi: "10.1161/CIRCRESAHA.116.303595",
     href: "https://pubmed.ncbi.nlm.nih.gov/25552694/",
     tag: "Review",
+    provenance: "pre-spl",
   },
   {
     title: "Modeling the mitochondrial cardiomyopathy of Barth syndrome with induced pluripotent stem cell and heart-on-chip technologies",
@@ -1052,6 +1094,7 @@ export const publications: Publication[] = [
     doi: "10.1038/nm.3545",
     href: "https://pubmed.ncbi.nlm.nih.gov/24813252/",
     tag: "Paper",
+    provenance: "pre-spl",
   },
   {
     title: "Matrix elasticity regulates the optimal cardiac myocyte shape for contractility",
@@ -1061,6 +1104,7 @@ export const publications: Publication[] = [
     doi: "10.1152/ajpheart.00799.2013",
     href: "https://pubmed.ncbi.nlm.nih.gov/24682394/",
     tag: "Paper",
+    provenance: "pre-spl",
   },
   {
     title: "Quality metrics for stem cell-derived cardiac myocytes",
@@ -1070,6 +1114,7 @@ export const publications: Publication[] = [
     doi: "10.1016/j.stemcr.2014.01.015",
     href: "https://pubmed.ncbi.nlm.nih.gov/24672752/",
     tag: "Paper",
+    provenance: "pre-spl",
   },
   {
     title: "The contractile strength of vascular smooth muscle myocytes is shape dependent",
@@ -1079,6 +1124,7 @@ export const publications: Publication[] = [
     doi: "10.1039/c3ib40230d",
     href: "https://pubmed.ncbi.nlm.nih.gov/24406783/",
     tag: "Paper",
+    provenance: "pre-spl",
   },
   {
     title: "A novel computational model of the human ventricular action potential and Ca transient",
@@ -1088,6 +1134,7 @@ export const publications: Publication[] = [
     doi: "10.1016/j.yjmcc.2009.09.019",
     href: "https://pubmed.ncbi.nlm.nih.gov/19835882/",
     tag: "Modeling",
+    provenance: "pre-spl",
   },
   {
     title: "Theoretical investigation of action potential duration dependence on extracellular Ca2+ in human cardiomyocytes",
@@ -1097,6 +1144,7 @@ export const publications: Publication[] = [
     doi: "10.1016/j.yjmcc.2008.12.002",
     href: "https://pubmed.ncbi.nlm.nih.gov/19121322/",
     tag: "Modeling",
+    provenance: "pre-spl",
   },
 ];
 

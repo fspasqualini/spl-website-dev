@@ -1142,6 +1142,15 @@ p {
   transition: border-color 180ms ease;
 }
 
+.publication-tags {
+  display: flex;
+  width: fit-content;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+
 .research-paper:hover,
 .resource-item:hover,
 .news-item:hover,
@@ -1350,6 +1359,28 @@ p {
 
 .tag[data-category="news-kind"] {
   background: var(--spl-red);
+}
+
+.provenance-tag {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  min-height: 24px;
+  align-items: center;
+  padding: 4px 8px;
+  border: 1px solid rgba(168, 32, 56, 0.35);
+  background: rgba(168, 32, 56, 0.08);
+  color: var(--spl-red-dark);
+  font-size: 0.68rem;
+  font-weight: 800;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.provenance-tag[data-provenance="pre-spl"] {
+  border-color: rgba(30, 30, 32, 0.22);
+  background: var(--soft-grey);
+  color: var(--graphite);
 }
 
 .label-stack {
