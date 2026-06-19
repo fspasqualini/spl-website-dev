@@ -12,6 +12,17 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# local agent/runtime state
+.openclaw/
+memory/
+skills/
+SOUL.md
+USER.md
+IDENTITY.md
+TOOLS.md
+HEARTBEAT.md
+ACCESS_POLICY.md
+
 
 # environment variables
 .env
