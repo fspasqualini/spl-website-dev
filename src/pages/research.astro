@@ -3,12 +3,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { researchAreas, withBase } from "../data/site";
 ---
 
-<BaseLayout title="Research | Synthetic Physiology Lab">
+<BaseLayout
+  title="Research | Synthetic Physiology Lab"
+  description="Research at Synthetic Physiology Lab spans instrumented cells, engineered tissue systems, computational modeling and analysis, and art-science methods for frontier bioengineering."
+>
   <section class="section">
     <div class="container">
       <p class="eyebrow">Research</p>
       <h1>Laboratories built around engineered physiology.</h1>
-      <p class="lead">Four themes: instrumented cells, tissue systems, CompBio, and Art & science. Each theme groups the lab's platforms, papers, tools, and visual work by how they contribute to synthetic physiology.</p>
+      <p class="lead">Four themes: instrumented cells, tissue systems, computational modeling and analysis, and Art & science. Each theme groups the lab's platforms, papers, tools, and visual work by how they contribute to synthetic physiology.</p>
       <div class="grid two">
         {researchAreas.map((area) => (
           <article class="research-card">

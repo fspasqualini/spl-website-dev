@@ -30,7 +30,11 @@ const carouselEyebrow = area.carouselEyebrow ?? "Platforms and capabilities";
 const carouselTitle = area.carouselTitle ?? "In focus";
 ---
 
-<BaseLayout title={area.title + " | Synthetic Physiology Lab"}>
+<BaseLayout
+  title={area.title + " | Synthetic Physiology Lab"}
+  description={area.deepDive}
+  image={area.image}
+>
   <section class="research-area-hero">
     <img src={withBase(area.image)} alt="" />
     <div>

@@ -5,13 +5,51 @@ import "../styles/global.css";
 interface Props {
   title?: string;
   description?: string;
+  image?: string;
+  jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
 
 const {
   title = brand.name,
-  description = "Synthetic Physiology Lab at the University of Pavia.",
+  description = "Synthetic Physiology Lab is a frontier bioengineering research group building instrumented cells, engineered tissue systems, computational models, and visual culture for life sciences.",
+  image = brand.logo,
+  jsonLd,
 } = Astro.props;
 const path = Astro.url.pathname;
+const siteUrl = "https://syntheticphysiologylab.com";
+const canonicalUrl = new URL(path, siteUrl).toString();
+const imageUrl = new URL(withBase(image), siteUrl).toString();
+const pageTitle = title === brand.name ? brand.name + " | Frontier Bioengineering" : title;
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ResearchOrganization",
+  name: brand.name,
+  alternateName: brand.shortName,
+  url: siteUrl,
+  logo: new URL(withBase(brand.logo), siteUrl).toString(),
+  description:
+    "Synthetic Physiology Lab is a frontier bioengineering research group connecting instrumented cells, tissue systems, computational modeling and analysis, and art-science visual culture.",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Via Ferrata 9",
+    postalCode: "27100",
+    addressLocality: "Pavia",
+    addressRegion: "PV",
+    addressCountry: "IT",
+  },
+  parentOrganization: {
+    "@type": "CollegeOrUniversity",
+    name: "University of Pavia",
+    url: "https://web-en.unipv.it/",
+  },
+  sameAs: [
+    "https://dicar.dip.unipv.it/it/ricerca/linee-gruppi-e-laboratori-di-ricerca/laboratori-di-ricerca/spl",
+    "https://github.com/Synthetic-Physiology-Lab",
+  ],
+};
+const jsonLdItems = jsonLd
+  ? [organizationJsonLd, ...(Array.isArray(jsonLd) ? jsonLd : [jsonLd])]
+  : [organizationJsonLd];
 ---
 
 <!doctype html>
@@ -21,8 +59,22 @@ const path = Astro.url.pathname;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href={canonicalUrl} />
     <link rel="icon" type="image/svg+xml" href={withBase("/favicon.svg")} />
-    <title>{title}</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={brand.name} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={imageUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
+    {jsonLdItems.map((item) => (
+      <script type="application/ld+json" set:html={JSON.stringify(item)} />
+    ))}
+    <title>{pageTitle}</title>
   </head>
   <body>
     <header class="site-header">
