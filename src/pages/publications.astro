@@ -8,19 +8,15 @@ import { getPublicationLabels } from "../data/labels";
   <section class="section">
     <div class="container">
       <div>
-        <p class="eyebrow">Publications</p>
-        <h1>All SPL publications.</h1>
-        <p class="lead">A chronological list from the most recent work to the earliest publications. Research-theme metadata stays in the database for routing papers into lab areas.</p>
+        <p class="eyebrow">Research</p>
+        <h1>Publications.</h1>
+        <p class="lead">A chronological record of peer-reviewed articles, preprints, and selected earlier work from the PI's postdoctoral training at Harvard's Wyss Institute and the Wyss Zurich Translational Center.</p>
       </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <div class="section-heading">
-        <p class="eyebrow">Chronological inventory</p>
-        <h2>{publications.length} publications</h2>
-      </div>
       <div class="inventory-list">
         {publications.map((paper) => {
           const labels = getPublicationLabels(paper);
