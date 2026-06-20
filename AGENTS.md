@@ -22,9 +22,9 @@ Build a modern static Astro site for SPL while preserving the lab's recognizable
 ## WebDesigner Governance
 
 This repository is the website working directory for Dross wearing the
-WebDesigner hat. The Telegram route and runtime tool policy remain separate from
-the main Dross chat so the web-design lane is narrower and easier to audit. This
-is not a separate privacy boundary from Dross-owned runtime auth or host context,
+WebDesigner hat. The `webdesign` Telegram account routes into main Dross as a
+dedicated WebDesigner session, not as a separate OpenClaw agent runtime. This is
+not a separate privacy boundary from Dross-owned runtime auth or host context,
 so do not claim that it is isolated from Dross.
 
 Durable WebDesigner behavior is owned by `/Users/dross/Super Dross`, not by
@@ -34,8 +34,8 @@ and website-specific instructions.
 
 Do not load or depend on deleted legacy pre-migration workspace files. Do not use
 Gmail, Google Drive, Calendar, Slack, Linear, GBrain/GStack maintenance, or Dross
-private memory from this lane unless Francesco explicitly moves the work to main
-Dross or provides curated context for this website task.
+private memory for website work unless Francesco explicitly asks for non-website
+Dross context or provides curated context for this website task.
 
 For generated illustrations or raster assets, use the image-generation workflow
 and keep prompts anchored to SPL identity rather than generic AI imagery.
