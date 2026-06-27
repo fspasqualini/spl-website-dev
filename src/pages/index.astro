@@ -38,15 +38,29 @@ import { homepageNews } from "../data/news";
       </div>
       <div class="news-rail-list">
         {homepageNews.map((item) => (
-          <article class="news-rail-item">
-            <div class="news-rail-meta">
-              <span class="tag" data-category={item.label.category}>{item.label.text}</span>
-              <p class="news-date">{item.date}</p>
+          <article class:list={["news-rail-item", item.image && "news-rail-item-with-image"]}>
+            {item.image && (
+              <figure class="news-rail-figure">
+                {item.image.src ? (
+                  <img src={withBase(item.image.src)} alt={item.image.alt} />
+                ) : (
+                  <div class="news-image-placeholder" aria-label={item.image.alt}>
+                    <span>Photo pending</span>
+                  </div>
+                )}
+                {item.image.caption && <figcaption>{item.image.caption}</figcaption>}
+              </figure>
+            )}
+            <div class="news-rail-copy">
+              <div class="news-rail-meta">
+                <span class="tag" data-category={item.label.category}>{item.label.text}</span>
+                <p class="news-date">{item.date}</p>
+              </div>
+              <h3>
+                {item.href ? <a href={item.href}>{item.title}</a> : item.title}
+              </h3>
+              <p>{item.text}</p>
             </div>
-            <h3>
-              {item.href ? <a href={item.href}>{item.title}</a> : item.title}
-            </h3>
-            <p>{item.text}</p>
           </article>
         ))}
       </div>

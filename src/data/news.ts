@@ -7,6 +7,11 @@ export type NewsItem = {
   title: string;
   text: string;
   href?: string;
+  image?: {
+    src?: string;
+    alt: string;
+    caption?: string;
+  };
 };
 
 const toNewsItem = (event: (typeof sortedLabEvents)[number]): NewsItem => ({
@@ -15,6 +20,7 @@ const toNewsItem = (event: (typeof sortedLabEvents)[number]): NewsItem => ({
   title: event.title,
   text: event.text,
   href: event.href,
+  image: event.image,
 });
 
 export const newsItems = sortedLabEvents.map(toNewsItem);

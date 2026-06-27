@@ -550,10 +550,17 @@ export const team: TeamMember[] = [
   },
   {
     name: "Melissa Pezzotti",
-    role: "PhD student",
+    role: "Post-doctoral researcher",
     focus: "Advanced optical methods in tissue engineering",
     email: "melissa.pezzotti@unipv.it",
     image: "/assets/scraped/016-Melissa_Pezzotti.jpg",
+  },
+  {
+    name: "Eloisa Torchia",
+    role: "Post-doctoral researcher",
+    focus: "Mechanobiology in engineered cell culture platforms",
+    email: "eloisa.torchia@unipv.it",
+    image: "/assets/scraped/024-IMG_2543.jpg",
   },
   {
     name: "Sara Rigolli",
@@ -571,7 +578,7 @@ export const team: TeamMember[] = [
   },
   {
     name: "Martina Petrelli",
-    role: "Visual Artist",
+    role: "Artist in Residence",
     focus: "Scientific illustration",
     email: "martina.petrelli@unipv.it",
     image: "/assets/scraped/019-1751303894720.jpeg",
@@ -582,13 +589,6 @@ export const team: TeamMember[] = [
     focus: "Laboratory operations",
     email: "maddalena.rocca@unipv.it",
     image: "/assets/scraped/021-20231130_115727.jpg",
-  },
-  {
-    name: "Eloisa Torchia",
-    role: "PhD student",
-    focus: "Mechanobiology in engineered cell culture platforms",
-    email: "eloisa.torchia@unipv.it",
-    image: "/assets/scraped/024-IMG_2543.jpg",
   },
   {
     name: "Giulia Ballio",

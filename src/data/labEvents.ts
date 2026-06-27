@@ -26,6 +26,11 @@ export type LabEvent = {
   text: string;
   href?: string;
   homepage?: boolean;
+  image?: {
+    src?: string;
+    alt: string;
+    caption?: string;
+  };
   funding?: {
     subtitle: string;
     funder: string;
@@ -49,6 +54,19 @@ export const labEventKindLabels: Record<LabEventKind, string> = {
 };
 
 export const labEvents: LabEvent[] = [
+  {
+    date: "26 June 2026",
+    sortDate: "2026-12-31",
+    kind: "personnel",
+    title: "Eloisa Torchia and Melissa Pezzotti defend their PhDs",
+    text:
+      "A proud SPL milestone for the mechanobiology, imaging, and engineered tissue platforms they helped shape, celebrated with committee members Prof. Simone Morganti, Prof. Manuela Raimondi, Prof. Carmen Giordano, and Prof. Elisa Cimetta.",
+    homepage: true,
+    image: {
+      src: "/assets/news/eloisa-melissa-phd-defense-2026.jpg",
+      alt: "Eloisa Torchia and Melissa Pezzotti at their PhD defense celebration",
+    },
+  },
   {
     date: "2026",
     sortDate: "2026-12-31",

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { withBase } from "../data/site";
 import { newsItems } from "../data/news";
 ---
 
@@ -18,14 +19,28 @@ import { newsItems } from "../data/news";
       </div>
       <div class="news-list">
         {newsItems.map((item) => (
-          <article class="news-item">
+          <article class:list={["news-item", item.image && "news-item-with-image"]}>
             <span class="tag" data-category={item.label.category}>{item.label.text}</span>
             <div>
-              <p class="news-date">{item.date}</p>
-              <h3>
-                {item.href ? <a href={item.href}>{item.title}</a> : item.title}
-              </h3>
-              <p>{item.text}</p>
+              {item.image && (
+                <figure class="news-item-figure">
+                  {item.image.src ? (
+                    <img src={withBase(item.image.src)} alt={item.image.alt} />
+                  ) : (
+                    <div class="news-image-placeholder" aria-label={item.image.alt}>
+                      <span>Photo pending</span>
+                    </div>
+                  )}
+                  {item.image.caption && <figcaption>{item.image.caption}</figcaption>}
+                </figure>
+              )}
+              <div class="news-item-copy">
+                <p class="news-date">{item.date}</p>
+                <h3>
+                  {item.href ? <a href={item.href}>{item.title}</a> : item.title}
+                </h3>
+                <p>{item.text}</p>
+              </div>
             </div>
           </article>
         ))}
