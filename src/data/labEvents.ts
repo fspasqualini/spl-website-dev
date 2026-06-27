@@ -60,7 +60,7 @@ export const labEvents: LabEvent[] = [
     kind: "personnel",
     title: "Eloisa Torchia and Melissa Pezzotti defend their PhDs",
     text:
-      "A proud SPL milestone for the mechanobiology, imaging, and engineered tissue platforms they helped shape, celebrated with committee members Prof. Simone Morganti, Prof. Manuela Raimondi, Prof. Carmen Giordano, and Prof. Elisa Cimetta.",
+      "A proud SPL milestone for the mechanobiology, imaging, and engineered tissue platforms they helped shape.",
     homepage: true,
     image: {
       src: "/assets/news/eloisa-melissa-phd-defense-2026.jpg",
