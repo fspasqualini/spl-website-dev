@@ -33,3 +33,4 @@ ACCESS_POLICY.md
 
 # jetbrains setting folder
 .idea/
+.gstack/
