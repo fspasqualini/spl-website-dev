@@ -58,7 +58,7 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Status/category:** `READY` · Events
 - **Details found:** Francesco participated in ERC Days at Università Politecnica delle Marche on 1–2 July 2026. The institutional event page is public.
 - **Public link:** [ERC Days @ UNIVPM](https://www.univpm.it/Entra/Universita_Politecnica_delle_Marche_-_Ancona_-_Servizi_on-_line_Ricerca_Strutture_Eventi_In_evidenza_-_Home_Page/Tutti_gli_avvisi_di_UnivPM/ERC_Days_UNIVPM)
-- **Draft website blurb:** “SPL joined ERC Days at UNIVPM to share lessons from building an ERC-funded research programme and to exchange ideas with the next generation of European research leaders.”
+- **Draft website blurb:** “FSP joined ERC Days at UNIVPM to share lessons from building an ERC-funded research programme and to exchange ideas with the next generation of European research leaders.”
 
 ### June 2026 — Eloisa and Melissa defend their PhDs
 

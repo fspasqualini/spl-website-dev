@@ -1,6 +1,6 @@
 # SPL news archive visualization design
 
-**Status:** Interactive mockups ready for Francesco's review; no frontend implementation yet.
+**Status:** Approved by Francesco on 13 July 2026; no frontend implementation yet.
 
 **Scope:** Make a growing news archive pleasant on the homepage and current-news page while keeping older entries searchable from June 2020 onward.
 
@@ -129,4 +129,4 @@ The current image-card grid is the fragile part on narrow screens. Making normal
 - No external search service.
 - No requirement to source historical photographs.
 - No automatic publication of connector-derived facts.
-- No frontend code until the archive and this design are reviewed.
+- No frontend code until the archive candidate entries are reviewed and approved.
