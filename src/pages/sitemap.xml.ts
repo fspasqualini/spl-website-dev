@@ -1,3 +1,4 @@
+import { archiveYears } from "../data/news";
 import { researchAreas } from "../data/site";
 
 const siteUrl = "https://syntheticphysiologylab.com";
@@ -8,12 +9,14 @@ const staticPaths = [
   "/team/",
   "/research/",
   "/news/",
+  "/news/archive/",
   "/publications/",
   "/contact/",
 ];
 
 const researchPaths = researchAreas.map((area) => area.href);
-const urls = [...new Set([...staticPaths, ...researchPaths])];
+const newsArchivePaths = archiveYears.map((year) => `/news/${year}/`);
+const urls = [...new Set([...staticPaths, ...researchPaths, ...newsArchivePaths])];
 
 export function GET() {
   const now = new Date().toISOString();

@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { fundedProjects, heroStats, labVisionSections, withBase } from "../data/site";
-import { homepageNews } from "../data/news";
+import { categoryLabels, formatNewsDate, homepageNews } from "../data/news";
 ---
 
 <BaseLayout
@@ -37,29 +37,22 @@ import { homepageNews } from "../data/news";
         <a href={withBase("/news/")}>All news</a>
       </div>
       <div class="news-rail-list">
-        {homepageNews.map((item) => (
-          <article class:list={["news-rail-item", item.image && "news-rail-item-with-image"]}>
-            {item.image && (
+        {homepageNews.map((entry) => (
+          <article class:list={["news-rail-item", entry.image && "news-rail-item-with-image"]}>
+            {entry.image && (
               <figure class="news-rail-figure">
-                {item.image.src ? (
-                  <img src={withBase(item.image.src)} alt={item.image.alt} />
-                ) : (
-                  <div class="news-image-placeholder" aria-label={item.image.alt}>
-                    <span>Photo pending</span>
-                  </div>
-                )}
-                {item.image.caption && <figcaption>{item.image.caption}</figcaption>}
+                <img src={withBase(entry.image.src)} alt={entry.image.alt} />
               </figure>
             )}
             <div class="news-rail-copy">
               <div class="news-rail-meta">
-                <span class="tag" data-category={item.label.category}>{item.label.text}</span>
-                <p class="news-date">{item.date}</p>
+                <span class="news-category">{categoryLabels[entry.category]}</span>
+                <time class="news-date" datetime={entry.date}>{formatNewsDate(entry)}</time>
               </div>
               <h3>
-                {item.href ? <a href={item.href}>{item.title}</a> : item.title}
+                <a href={withBase(`/news/${entry.date.slice(0, 4)}/#${entry.id}`)}>{entry.title}</a>
               </h3>
-              <p>{item.text}</p>
+              <p>{entry.blurb}</p>
             </div>
           </article>
         ))}

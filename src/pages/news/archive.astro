@@ -1,0 +1,199 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  archiveYears,
+  categoryLabels,
+  entriesByYear,
+  formatNewsDate,
+  sortedNewsArchive,
+} from "../../data/news";
+import { withBase } from "../../data/site";
+
+const searchIndex = sortedNewsArchive.map((entry) => ({
+  id: entry.id,
+  title: entry.title,
+  blurb: entry.blurb,
+  category: categoryLabels[entry.category],
+  year: entry.date.slice(0, 4),
+  date: formatNewsDate(entry),
+  people: entry.people ?? [],
+  topics: entry.topics ?? [],
+  href: withBase(`/news/${entry.date.slice(0, 4)}/#${entry.id}`),
+  searchText: [
+    entry.title,
+    entry.blurb,
+    categoryLabels[entry.category],
+    entry.date.slice(0, 4),
+    ...(entry.people ?? []),
+    ...(entry.topics ?? []),
+  ].join(" ").toLocaleLowerCase("en"),
+}));
+---
+
+<BaseLayout
+  title="Search the news archive | Synthetic Physiology Lab"
+  description="Search every provisional Synthetic Physiology Lab archive story from June 2020 onward, or browse complete static year pages."
+>
+  <section class="archive-search-hero">
+    <div>
+      <p class="eyebrow">News archive</p>
+      <h1>Seven years of SPL.</h1>
+      <p class="lead">Search research, people, events, resources, and milestones from June 2020 onward.</p>
+    </div>
+    <div class="archive-summary" aria-label="Archive coverage">
+      <strong>{sortedNewsArchive.length}</strong>
+      <span>Provisional stories represented</span>
+      <span>Seven stable year pages</span>
+    </div>
+  </section>
+
+  <section class="archive-search-tools" aria-labelledby="archive-search-label">
+    <form class="archive-search-form" role="search" onsubmit="return false">
+      <label class="archive-search-box" for="archive-search">
+        <span id="archive-search-label">Search all SPL news</span>
+        <input
+          id="archive-search"
+          type="search"
+          name="q"
+          placeholder="Search by topic, project, person, category, or year"
+          autocomplete="off"
+          spellcheck="false"
+        />
+      </label>
+      <button class="clear-search" id="clear-archive-search" type="button" hidden>Clear search</button>
+    </form>
+  </section>
+
+  <section class="archive-search-layout">
+    <aside class="archive-year-rail" aria-label="Archive year index">
+      <h2>Browse by year</h2>
+      <nav>
+        {archiveYears.map((year) => (
+          <a href={withBase(`/news/${year}/`)} aria-label={`${year}: ${entriesByYear[year].length} stories`}>
+            <span>{year}</span><small>{entriesByYear[year].length}</small>
+          </a>
+        ))}
+      </nav>
+    </aside>
+
+    <div class="archive-search-content">
+      <div id="archive-idle" class="archive-idle">
+        <p class="eyebrow">Complete without JavaScript</p>
+        <h2>Choose a year or search all stories.</h2>
+        <p>Each year page contains every corresponding archive entry and its stable internal anchor.</p>
+      </div>
+
+      <section id="archive-results" class="archive-results" aria-labelledby="archive-results-heading" hidden>
+        <div class="archive-results-head">
+          <h2 id="archive-results-heading">Search results</h2>
+          <p id="archive-result-count" role="status" aria-live="polite"></p>
+        </div>
+        <div id="archive-result-list" class="archive-result-list"></div>
+        <div class="archive-empty" id="archive-empty" hidden>
+          <h3>No stories found.</h3>
+          <p>Try another person, project, event, category, or year, or clear the search to browse by year.</p>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <script type="application/json" id="news-search-index" set:html={JSON.stringify(searchIndex)} />
+  <script>
+    type SearchEntry = {
+      title: string;
+      blurb: string;
+      category: string;
+      year: string;
+      date: string;
+      href: string;
+      searchText: string;
+    };
+
+    const input = document.querySelector<HTMLInputElement>("#archive-search");
+    const clear = document.querySelector<HTMLButtonElement>("#clear-archive-search");
+    const idle = document.querySelector<HTMLElement>("#archive-idle");
+    const results = document.querySelector<HTMLElement>("#archive-results");
+    const heading = document.querySelector<HTMLElement>("#archive-results-heading");
+    const count = document.querySelector<HTMLElement>("#archive-result-count");
+    const list = document.querySelector<HTMLElement>("#archive-result-list");
+    const empty = document.querySelector<HTMLElement>("#archive-empty");
+    const indexNode = document.querySelector<HTMLScriptElement>("#news-search-index");
+    const index = JSON.parse(indexNode?.textContent ?? "[]") as SearchEntry[];
+
+    const createResult = (entry: SearchEntry) => {
+      const article = document.createElement("article");
+      article.className = "archive-search-result";
+
+      const meta = document.createElement("div");
+      meta.className = "archive-search-result-meta";
+      const category = document.createElement("span");
+      category.className = "news-category";
+      category.textContent = entry.category;
+      const date = document.createElement("span");
+      date.className = "archive-result-date";
+      date.textContent = entry.date;
+      meta.append(category, date);
+
+      const copy = document.createElement("div");
+      const title = document.createElement("h3");
+      const link = document.createElement("a");
+      link.href = entry.href;
+      link.textContent = entry.title;
+      title.append(link);
+      const blurb = document.createElement("p");
+      blurb.textContent = entry.blurb;
+      copy.append(title, blurb);
+
+      const anchor = document.createElement("a");
+      anchor.className = "archive-result-anchor";
+      anchor.href = entry.href;
+      anchor.textContent = `${entry.year} story →`;
+      anchor.setAttribute("aria-label", `Open ${entry.title} in the ${entry.year} archive`);
+      article.append(meta, copy, anchor);
+      return article;
+    };
+
+    const updateResults = () => {
+      if (!input || !clear || !idle || !results || !heading || !count || !list || !empty) return;
+      const rawQuery = input.value.trim();
+      const query = rawQuery.toLocaleLowerCase("en");
+      clear.hidden = query.length === 0;
+      idle.hidden = query.length > 0;
+      results.hidden = query.length === 0;
+      list.replaceChildren();
+
+      if (!query) {
+        empty.hidden = true;
+        history.replaceState(null, "", location.pathname);
+        return;
+      }
+
+      const matches = index.filter((entry) => entry.searchText.includes(query));
+      for (const entry of matches) list.append(createResult(entry));
+      heading.textContent = `${matches.length} ${matches.length === 1 ? "result" : "results"} for “${rawQuery}”`;
+      count.textContent = matches.length ? "Across the full archive" : "No matching stories";
+      empty.hidden = matches.length !== 0;
+      const url = new URL(location.href);
+      url.searchParams.set("q", rawQuery);
+      history.replaceState(null, "", `${url.pathname}${url.search}`);
+    };
+
+    input?.addEventListener("input", updateResults);
+    input?.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && input.value) {
+        input.value = "";
+        updateResults();
+      }
+    });
+    clear?.addEventListener("click", () => {
+      if (!input) return;
+      input.value = "";
+      updateResults();
+      input.focus();
+    });
+
+    const initialQuery = new URLSearchParams(location.search).get("q");
+    if (input && initialQuery) input.value = initialQuery;
+    updateResults();
+  </script>
+</BaseLayout>

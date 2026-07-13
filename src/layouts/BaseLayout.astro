@@ -16,6 +16,8 @@ const {
   jsonLd,
 } = Astro.props;
 const path = Astro.url.pathname;
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
+const normalizedPath = path.startsWith(basePath) ? path.slice(basePath.length) || "/" : path;
 const siteUrl = "https://syntheticphysiologylab.com";
 const canonicalUrl = new URL(path, siteUrl).toString();
 const imageUrl = new URL(withBase(image), siteUrl).toString();
@@ -87,7 +89,12 @@ const jsonLdItems = jsonLd
       </a>
       <nav class="nav" aria-label="Primary navigation">
         {nav.map((item) => (
-          <a href={withBase(item.href)} class:list={[path === item.href && "active"]}>{item.label}</a>
+          <a
+            href={withBase(item.href)}
+            class:list={[
+              (item.href === "/" ? normalizedPath === "/" : normalizedPath.startsWith(item.href)) && "active",
+            ]}
+          >{item.label}</a>
         ))}
       </nav>
     </header>

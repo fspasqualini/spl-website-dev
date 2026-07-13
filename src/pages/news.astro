@@ -1,50 +1,131 @@
 ---
+import NewsEntryRow from "../components/NewsEntryRow.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import {
+  archiveYears,
+  categoryLabels,
+  entriesByYear,
+  featuredNews,
+  formatNewsDate,
+  newsArchive,
+  newsCategories,
+  recentNews,
+} from "../data/news";
 import { withBase } from "../data/site";
-import { newsItems } from "../data/news";
+
+const chronologicalRecent = recentNews.filter((entry) => entry.id !== featuredNews.id);
 ---
 
 <BaseLayout
   title="News | Synthetic Physiology Lab"
-  description="News from Synthetic Physiology Lab: publications, preprints, grants, awards, software, datasets, and frontier bioengineering updates from the University of Pavia."
+  description="Research, people, funding, events, awards, and open resources from Synthetic Physiology Lab, from June 2020 onward."
 >
-  <section class="section">
-    <div class="container">
-      <div class="section-heading">
-        <p class="eyebrow">Lab feed</p>
-        <h1>Recent SPL updates.</h1>
-        <p class="lead">
-          Peer-reviewed articles, preprints, grants, personnel changes, awards, software, datasets, and resources in one structured feed.
-        </p>
-      </div>
-      <div class="news-list">
-        {newsItems.map((item) => (
-          <article class:list={["news-item", item.image && "news-item-with-image"]}>
-            <span class="tag" data-category={item.label.category}>{item.label.text}</span>
-            <div>
-              {item.image && (
-                <figure class="news-item-figure">
-                  {item.image.src ? (
-                    <img src={withBase(item.image.src)} alt={item.image.alt} />
-                  ) : (
-                    <div class="news-image-placeholder" aria-label={item.image.alt}>
-                      <span>Photo pending</span>
-                    </div>
-                  )}
-                  {item.image.caption && <figcaption>{item.image.caption}</figcaption>}
-                </figure>
-              )}
-              <div class="news-item-copy">
-                <p class="news-date">{item.date}</p>
-                <h3>
-                  {item.href ? <a href={item.href}>{item.title}</a> : item.title}
-                </h3>
-                <p>{item.text}</p>
-              </div>
-            </div>
-          </article>
-        ))}
-      </div>
+  <section class="news-archive-hero">
+    <div>
+      <p class="eyebrow">Lab archive</p>
+      <h1>News from SPL.</h1>
+      <p class="lead">
+        Research, people, funding, events, awards, and open resources from the Synthetic Physiology Lab, from June 2020 onward.
+      </p>
+    </div>
+    <div class="archive-summary" aria-label="Archive coverage">
+      <strong>2020—26</strong>
+      <span>{newsArchive.length} provisional stories</span>
+      <span>One searchable static archive</span>
     </div>
   </section>
+
+  <section class="archive-tools" aria-labelledby="recent-filter-heading">
+    <div class="archive-tools-head">
+      <h2 id="recent-filter-heading">Filter recent news.</h2>
+      <p id="recent-result-count" role="status" aria-live="polite">18 recent stories</p>
+    </div>
+    <div class="filter-row" aria-label="Filter recent news by category">
+      <button class="filter-button" type="button" data-news-filter="all" aria-pressed="true">All</button>
+      {newsCategories.map((category) => (
+        <button class="filter-button" type="button" data-news-filter={category} aria-pressed="false">
+          {categoryLabels[category]}
+        </button>
+      ))}
+    </div>
+  </section>
+
+  <div class="news-recent" id="recent-news">
+    <article class="featured-news" data-news-entry data-category={featuredNews.category}>
+      <figure>
+        <img src={withBase(featuredNews.image!.src)} alt={featuredNews.image!.alt} />
+      </figure>
+      <div class="featured-news-copy">
+        <div class="featured-news-meta">
+          <span class="news-category">{categoryLabels[featuredNews.category]}</span>
+          <time datetime={featuredNews.date}>{formatNewsDate(featuredNews)}</time>
+        </div>
+        <h2><a href={withBase(`/news/2026/#${featuredNews.id}`)}>{featuredNews.title}</a></h2>
+        <p>{featuredNews.blurb}</p>
+        <div class="archive-story-actions">
+          {featuredNews.links?.map((link) => (
+            <a href={link.href} aria-label={`${link.label} (external site)`}>
+              {link.label}<span aria-hidden="true"> ↗</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </article>
+
+    <section class="latest-news-section" aria-labelledby="latest-news-heading">
+      <div class="latest-news-heading">
+        <h2 id="latest-news-heading">Latest updates.</h2>
+        <p>Featured story plus 17 recent updates</p>
+      </div>
+      <div class="archive-story-list">
+        {chronologicalRecent.map((entry) => <NewsEntryRow entry={entry} />)}
+      </div>
+      <p class="filter-empty" id="recent-filter-empty" hidden>No recent stories match this category.</p>
+    </section>
+  </div>
+
+  <section class="archive-directory" aria-labelledby="archive-years-heading">
+    <div>
+      <p class="eyebrow">Full archive</p>
+      <h2 id="archive-years-heading">Browse the lab’s history.</h2>
+      <p>Every provisional story remains reachable on a stable year page without JavaScript. Search adds speed, not dependency.</p>
+      <a class="cta" href={withBase("/news/archive/")}>Search the full archive</a>
+    </div>
+    <nav class="year-grid" aria-label="Browse news by year">
+      {archiveYears.map((year) => (
+        <a
+          class="year-link"
+          href={withBase(`/news/${year}/`)}
+          aria-label={`${year}: ${entriesByYear[year].length} ${entriesByYear[year].length === 1 ? "story" : "stories"}`}
+        >
+          <strong>{year}</strong>
+          <span>{entriesByYear[year].length} {entriesByYear[year].length === 1 ? "story" : "stories"}</span>
+        </a>
+      ))}
+    </nav>
+  </section>
+
+  <script>
+    const buttons = [...document.querySelectorAll<HTMLButtonElement>("[data-news-filter]")];
+    const stories = [...document.querySelectorAll<HTMLElement>("#recent-news [data-news-entry]")];
+    const count = document.querySelector<HTMLElement>("#recent-result-count");
+    const empty = document.querySelector<HTMLElement>("#recent-filter-empty");
+
+    for (const button of buttons) {
+      button.addEventListener("click", () => {
+        const category = button.dataset.newsFilter ?? "all";
+        let visible = 0;
+        for (const candidate of buttons) candidate.setAttribute("aria-pressed", String(candidate === button));
+        for (const story of stories) {
+          const matches = category === "all" || story.dataset.category === category;
+          story.hidden = !matches;
+          if (matches) visible += 1;
+        }
+        if (count) count.textContent = category === "all"
+          ? `${visible} recent stories`
+          : `${visible} matching ${visible === 1 ? "story" : "stories"}`;
+        if (empty) empty.hidden = visible !== 0;
+      });
+    }
+  </script>
 </BaseLayout>
