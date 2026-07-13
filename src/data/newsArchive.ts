@@ -502,10 +502,10 @@ export const newsArchive: NewsEntry[] = [
   {
     "id": "2025-julius-zimmermann-concludes-his-spl-appointment",
     "date": "2025-08-01",
-    "datePrecision": "month",
+    "datePrecision": "year",
     "category": "people",
-    "title": "Julius Zimmermann concludes his SPL appointment",
-    "blurb": "After two years of bioimage-analysis and computational work with SPL, Julius Zimmermann is moving on to his next adventure. We thank him for everything he brought to the group and wish him the very best.",
+    "title": "Julius Zimmermann moves on from SPL",
+    "blurb": "We thank Julius Zimmermann for two years of bioimage-analysis and computational work with SPL, and wish him every success in his next chapter.",
     "links": [
       {
         "label": "ORCID",
@@ -559,11 +559,10 @@ export const newsArchive: NewsEntry[] = [
   {
     "id": "2025-sara-rigolli-visits-stockholm-university",
     "date": "2025-10-01",
-    "datePrecision": "month",
-    "dateLabel": "May–October 2025",
+    "datePrecision": "year",
     "category": "people",
-    "title": "Sara Rigolli visits Stockholm University",
-    "blurb": "Sara Rigolli joined the Zeglio Lab at Stockholm University for a six-month PhD research visit, expanding SPL's materials-science collaborations across Europe.",
+    "title": "Sara Rigolli spends six months at Stockholm University",
+    "blurb": "Sara Rigolli joined the Zeglio Lab at Stockholm University in Sweden for a six-month PhD research visit, expanding SPL's materials-science collaborations across Europe.",
     "links": [
       {
         "label": "Zeglio Lab alumni",
@@ -585,10 +584,10 @@ export const newsArchive: NewsEntry[] = [
   {
     "id": "2025-emanuele-concludes-his-spl-phd-period",
     "date": "2025-05-01",
-    "datePrecision": "month",
+    "datePrecision": "year",
     "category": "people",
-    "title": "Emanuele concludes his SPL PhD period",
-    "blurb": "Emanuele Carnevale Baraglia is moving on after contributing to SPL's computational modeling of organelle physiology. We thank him for his work and wish him every success in his next adventure.",
+    "title": "Emanuele Carnevale Baraglia moves on from SPL",
+    "blurb": "We thank Emanuele Carnevale Baraglia for his contributions to computational modeling of organelle physiology during his time with SPL, and wish him every success in his next chapter.",
     "links": [
       {
         "label": "Associated open-science paper",
@@ -713,7 +712,7 @@ export const newsArchive: NewsEntry[] = [
     "date": "2025-01-01",
     "datePrecision": "year",
     "category": "people",
-    "title": "Sandipan's formal UniPV appointment concludes",
+    "title": "Sandipan Chattaraj begins a new chapter",
     "blurb": "After helping build SPL's computational-mechanics programme, Sandipan Chattaraj is beginning a new chapter while continuing to collaborate with the group. We thank him for his lasting contribution and wish him every success.",
     "links": [
       {
@@ -725,6 +724,45 @@ export const newsArchive: NewsEntry[] = [
       "Sandipan Chattaraj"
     ],
     "order": 964
+  },
+  {
+    "id": "2025-moises-di-sante-becomes-tenure-track-assistant-professor",
+    "date": "2025-01-01",
+    "datePrecision": "year",
+    "category": "people",
+    "title": "Moises Di Sante becomes a tenure-track assistant professor",
+    "blurb": "Congratulations to Moises Di Sante on his appointment as a tenure-track assistant professor (RTT) at the University of Pavia, recognizing his growing leadership in stem-cell biology, genome editing, and engineered human models at SPL.",
+    "links": [
+      {
+        "label": "UniPV researcher profile",
+        "href": "https://iris.unipv.it/cris/rp/rp374521"
+      }
+    ],
+    "people": [
+      "Moises Di Sante"
+    ],
+    "order": 964.2
+  },
+  {
+    "id": "2025-daniela-canevari-transitions-to-a-wider-university-role",
+    "date": "2025-01-01",
+    "datePrecision": "year",
+    "category": "people",
+    "title": "Daniela Canevari transitions to a wider University role",
+    "blurb": "After supporting SPL's project administration and reporting, Daniela Canevari transitions to a wider University of Pavia role while continuing to help with selected lab projects. We thank her warmly for her work with the group.",
+    "links": [
+      {
+        "label": "DICAr administration",
+        "href": "https://dicar.dip.unipv.it/en/department/organization/administrative-divisions"
+      }
+    ],
+    "people": [
+      "Daniela Canevari"
+    ],
+    "topics": [
+      "Lab operations"
+    ],
+    "order": 964.1
   },
   {
     "id": "2024-hydra-preprint",
@@ -816,7 +854,7 @@ export const newsArchive: NewsEntry[] = [
     "datePrecision": "month",
     "category": "people",
     "title": "Tehreem begins her One Health PhD",
-    "blurb": "Welcome to Tehreem Ali, who joins SPL's One Health PhD programme to bring bioinformatics and computational biology into our work on extracellular-matrix atlases and human tissue models.",
+    "blurb": "Welcome to Tehreem Ali, who joins SPL through the One Health PhD programme, focusing on bioinformatics, single-cell transcriptomics, and spatial transcriptomics.",
     "links": [
       {
         "label": "Official One Health PhD page",
@@ -831,10 +869,10 @@ export const newsArchive: NewsEntry[] = [
   {
     "id": "2024-saranya-concludes-her-spl-fellowship",
     "date": "2024-10-01",
-    "datePrecision": "month",
+    "datePrecision": "year",
     "category": "people",
-    "title": "Saranya concludes her SPL fellowship",
-    "blurb": "Saranya Vasudevan is moving on after contributing to SPL's computational modeling of biomaterials and engineered culture platforms. We thank her warmly and wish her the very best in her next adventure.",
+    "title": "Saranya Vasudevan moves on from SPL",
+    "blurb": "We thank Saranya Vasudevan for her contributions to computational modeling of biomaterials and engineered culture platforms during her time with SPL, and wish her every success in her next chapter.",
     "links": [
       {
         "label": "IIT profile",
@@ -842,8 +880,7 @@ export const newsArchive: NewsEntry[] = [
       }
     ],
     "people": [
-      "Saranya Vasudevan",
-      "Sara Rigolli"
+      "Saranya Vasudevan"
     ],
     "order": 957
   },
@@ -994,10 +1031,10 @@ export const newsArchive: NewsEntry[] = [
   {
     "id": "2024-bohdana-concludes-her-spl-phd-period",
     "date": "2024-06-01",
-    "datePrecision": "month",
+    "datePrecision": "year",
     "category": "people",
-    "title": "Bohdana concludes her SPL PhD period",
-    "blurb": "Bohdana Horda is moving on after helping develop SPL's hydrogel-fabrication and engineered cell-culture platforms. We thank her for her contribution and wish her the very best in her next adventure.",
+    "title": "Bohdana Horda moves on from SPL",
+    "blurb": "We thank Bohdana Horda for her work on hydrogel fabrication and engineered cell-culture platforms during her time with SPL, and wish her every success in her next chapter.",
     "people": [
       "Bohdana Horda"
     ],
@@ -1477,7 +1514,7 @@ export const newsArchive: NewsEntry[] = [
     "datePrecision": "month",
     "category": "people",
     "title": "Alessandro Enrico joins SPL",
-    "blurb": "Welcome to Alessandro Enrico, who joins SPL from KTH Royal Institute of Technology to lead materials science, laser fabrication, and high-throughput tissue-engineering research.",
+    "blurb": "Welcome to Alessandro Enrico, who joins SPL from KTH Royal Institute of Technology to work across materials science, laser fabrication, and high-throughput tissue-engineering research.",
     "links": [
       {
         "label": "UniPV profile",
@@ -1624,10 +1661,10 @@ export const newsArchive: NewsEntry[] = [
   {
     "id": "2022-alice-albini-concludes-her-spl-support-role",
     "date": "2022-06-01",
-    "datePrecision": "month",
+    "datePrecision": "year",
     "category": "people",
-    "title": "Alice Albini concludes her SPL support role",
-    "blurb": "Alice Albini is moving into a new University of Pavia role after helping SPL establish its grant and reporting operations. We thank her warmly and wish her every success in the next adventure.",
+    "title": "Alice Albini moves into a new University role",
+    "blurb": "Alice Albini moves into a new University of Pavia role after helping SPL establish its grant and reporting operations. We thank her warmly and wish her every success in her next chapter.",
     "links": [
       {
         "label": "UniPV IEIE page",
@@ -1641,6 +1678,24 @@ export const newsArchive: NewsEntry[] = [
       "Lab operations"
     ],
     "order": 913
+  },
+  {
+    "id": "2022-moises-di-sante-becomes-non-tenure-track-assistant-professor",
+    "date": "2022-01-01",
+    "datePrecision": "year",
+    "category": "people",
+    "title": "Moises Di Sante becomes a non-tenure-track assistant professor",
+    "blurb": "Congratulations to Moises Di Sante on his appointment as a non-tenure-track assistant professor (RTDa) at the University of Pavia, strengthening his role in SPL's stem-cell, genome-editing, and molecular-biology research.",
+    "links": [
+      {
+        "label": "Official UniPV CV",
+        "href": "https://unipv.unifind.cineca.it/v1/dataservice/files/ugovcv/DI%20SANTE_MOISES_en_93404.pdf"
+      }
+    ],
+    "people": [
+      "Moises Di Sante"
+    ],
+    "order": 912.5
   },
   {
     "id": "2022-emerging-strategies-in-3d-printed-tissue-models",
@@ -1781,10 +1836,10 @@ export const newsArchive: NewsEntry[] = [
   {
     "id": "2021-ahmed-concludes-his-spl-fellowship",
     "date": "2021-10-01",
-    "datePrecision": "month",
+    "datePrecision": "year",
     "category": "people",
-    "title": "Ahmed concludes his SPL fellowship",
-    "blurb": "Ahmed S. Khalil is moving on after contributing computational and high-performance-computing expertise during SPL's first year. We thank him and wish him the very best in his next adventure.",
+    "title": "Ahmed S. Khalil moves on from SPL",
+    "blurb": "We thank Ahmed S. Khalil for contributing computational and high-performance-computing expertise during SPL's first year, and wish him every success in his next chapter.",
     "people": [
       "Ahmed S. Khalil"
     ],

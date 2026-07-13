@@ -29,7 +29,7 @@ This table covers every person on the current and former website rosters, plus S
 | Person | SPL history to use | Joined from | Current editorial decision | Confidence / public link |
 |---|---|---|---|---|
 | Francesco S. Pasqualini | Founder/PI from June 2020 | Returned to UniPV after Harvard/Wyss work and the Wyss Translational Center in Zurich | Founding story is `READY`; say the lab was established in June 2020 and SYNBIO.ECM began in December 2020 | High. [UniPV profile](https://unipv.unifind.cineca.it/resource/person/951912?language=it-IT); [SYNBIO.ECM](https://cordis.europa.eu/project/id/852560) |
-| Moises Di Sante | Joined February 2021 as a research fellow; now senior researcher/RTT | University of Padua, after CNR Padua and a Harvard-affiliated postdoc | Join story is `READY` | High. [Official UniPV CV](https://unipv.unifind.cineca.it/v1/dataservice/files/ugovcv/DI%20SANTE_MOISES_en_93404.pdf) |
+| Moises Di Sante | Joined February 2021 as a research fellow; appointed RTDa in 2022 and RTT in 2025 | University of Padua, after CNR Padua and a Harvard-affiliated postdoc | Join, RTDa appointment, and RTT appointment stories are `READY`; display both appointments as year-only | High internally. [Official UniPV CV](https://unipv.unifind.cineca.it/v1/dataservice/files/ugovcv/DI%20SANTE_MOISES_en_93404.pdf); [UniPV researcher profile](https://iris.unipv.it/cris/rp/rp374521) |
 | Sandipan Chattaraj | Joined January 2021 as a computational research fellow/postdoc; formal UniPV CV history ends December 2024, while SPL collaborations continued through 2026 | IIT Kanpur postdoc, after a PhD at IIT Bombay | Join is `READY`; departure is `READY`, with the story limited to the formal UniPV appointment ending while collaborations continued | High for start/origin. [IESL-FORTH profile](https://www.iesl.forth.gr/en/people/chattaraj-sandipan); [CV](https://www.iesl.forth.gr/sites/default/files/cv-en/short-CV-Sandipan.pdf) |
 | Ahmed S. Khalil | Remote computational/HPC research fellow, January–October 2021 | Prior institution/location not reliably established | Join and warm departure are `READY`; do not add a destination or external profile | High for dates, unknown origin; same-name public results are unsafe |
 | Alice Albini | Grant/accounting and ERC-reporting support, January 2021–June 2022 | Already supporting projects at UniPV DIII | Join is optional; warm transition story is `READY` | High internally. [UniPV IEIE page](https://phdieie.unipv.it/academic-board/) confirms her wider UniPV role, not the SPL dates |
@@ -40,7 +40,7 @@ This table covers every person on the current and former website rosters, plus S
 | Saranya Vasudevan | Research fellow May 2023–October 2024 | A research position in Poland; institution not recovered | Join and warm departure are `READY`; current IIT link may be used | High for dates, medium for origin. [UniPV fellowship result](https://detac.unipv.it/archivi/dicar.unipv.it/wp-content/uploads/2023/02/22-277approvazioneGraduatoria.pdf); [IIT profile](https://www.iit.it/people-details/-/people/saranya-vasudevan) |
 | Emanuele Carnevale Baraglia | SPL MSc/research trainee from July 2023; formal PRIN-linked PhD from March 2024 to May 2025 | UniPV Bioengineering MSc | Formal PhD join and warm departure are `READY`; do not publish a separate MSc thesis-start story or name a destination | High internally. [UniPV thesis listing](https://unitesi.unipv.it/browse?authority=do7833&type=contributorSupervisor) |
 | Julius Zimmermann | Research fellow/postdoc September 2023–August 2025 | University of Rostock, electrical engineering research | Join and warm departure are `READY`; do not publish a next job without confirmation | High internally. [University of Rostock profile](https://www.iae.uni-rostock.de/zimmermann/); [ORCID](https://orcid.org/0000-0003-1486-0426) |
-| Daniela Canevari | SPL project/administrative support from September 2023; remains in the wider DICAr administration | Private-sector administration and reporting, followed by accounting training; exact employer omitted from public copy | Join is `READY`; do not describe her as having left UniPV | High internally. [DICAr administration](https://dicar.dip.unipv.it/en/department/organization/administrative-divisions) |
+| Daniela Canevari | SPL project/administrative support from September 2023; later transitioned into a wider DICAr role while continuing to help selected SPL projects | Private-sector administration and reporting, followed by accounting training; exact employer omitted from public copy | Join and warm transition stories are `READY`; do not imply that she left UniPV or ended all SPL collaboration | High internally. [DICAr administration](https://dicar.dip.unipv.it/en/department/organization/administrative-divisions) |
 | Sara Rigolli | Joined for an SPL MSc thesis by December 2023; began her PhD in October 2024 | UniPV Bioengineering MSc | PhD transition is `READY`; do not publish a separate MSc thesis-start story | High. [ORCID](https://orcid.org/0009-0007-4910-2939); [master's thesis](https://unitesi.unipv.it/handle/20.500.14239/33222); [Zeglio Lab visit](https://zegliolab.org/alumni/) |
 | Tehreem Ali | Began the One Health XL-cycle PhD in October 2024 and joined the lab in Pavia in March 2025 after initial remote onboarding | Government College University Faisalabad, Pakistan | PhD-entry story is `READY`; do not publish a separate pre-PhD collaboration story | High for PhD/start sequence. [Official PhD page](https://spmsf.dip.unipv.it/it/didattica/post-laurea/dottorati-di-ricerca/one-health-approaches-infectious-diseases-and-life-107) |
 | Chimwemwe Msosa | Visiting CICOPS/Coimbra fellow, September–December 2024 | Malawi University of Business and Applied Sciences, where he teaches Biomedical Engineering | Arrival and warm departure can be one `READY` visit story | High. [MUBAS profile](https://rsu.mubas.ac.mw/team-members/assoc-prof-save-kumwenda/) (the institution's URL slug is misleading, but the page content is his profile) |
@@ -235,12 +235,12 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Public link:** [SPL Art and Science](https://syntheticphysiologylab.com/art-and-science/)
 - **Draft website blurb:** “Martina Petrelli presented PROLIFERATION, an SPL art–science installation exploring how biological growth can be imagined, visualized, and made material.”
 
-### August 2025 — Julius Zimmermann concludes his SPL appointment
+### 2025 — Julius Zimmermann moves on from SPL
 
 - **Status/category:** `READY` · People
 - **Details found:** Julius's SPL research-fellow appointment ended on 31 August 2025; research and manuscript collaboration continued afterward. Avoid naming a next destination without confirmation.
 - **Public link:** [ORCID](https://orcid.org/0000-0003-1486-0426)
-- **Draft website blurb:** “After two years of bioimage-analysis and computational work with SPL, Julius Zimmermann is moving on to his next adventure. We thank him for everything he brought to the group and wish him the very best.”
+- **Draft website blurb:** “We thank Julius Zimmermann for two years of bioimage-analysis and computational work with SPL, and wish him every success in his next chapter.”
 
 ### June 2025 — Francesco, Eloisa, and Melissa at GNB and ESB-ITA in Palermo
 
@@ -256,19 +256,19 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Public link:** [Neurochemical Research](https://link.springer.com/article/10.1007/s11064-025-04432-9)
 - **Draft website blurb:** “Our open-science computational model of organelle acidification is published in Neurochemical Research, integrating candidate mechanisms for synaptic-vesicle acidification and filling.”
 
-### May–October 2025 — Sara Rigolli visits Stockholm University
+### 2025 — Sara Rigolli spends six months at Stockholm University
 
 - **Status/category:** `READY` · People / Research visits
 - **Details found:** Sara was a visiting PhD researcher in Erica Zeglio's group at Stockholm University from May to October 2025. Linköping was Erica's PhD institution, not the location of her lab during Sara's visit.
 - **Public links:** [Zeglio Lab alumni](https://zegliolab.org/alumni/); [Erica Zeglio at Stockholm University](https://www.su.se/english/profiles/e/erze3680)
-- **Draft website blurb:** “Sara Rigolli joined the Zeglio Lab at Stockholm University for a six-month PhD research visit, expanding SPL's materials-science collaborations across Europe.”
+- **Draft website blurb:** “Sara Rigolli joined the Zeglio Lab at Stockholm University in Sweden for a six-month PhD research visit, expanding SPL's materials-science collaborations across Europe.”
 
-### May 2025 — Emanuele concludes his SPL PhD period
+### 2025 — Emanuele Carnevale Baraglia moves on from SPL
 
 - **Status/category:** `READY` · People
 - **Details found:** Emanuele Carnevale Baraglia's formal SPL-linked PhD period ended on 31 May 2025 after earlier MSc and research work with the group. Do not name his destination without confirmation.
 - **Public link:** [Associated open-science paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC12141144/)
-- **Draft website blurb:** “Emanuele Carnevale Baraglia is moving on after contributing to SPL's computational modeling of organelle physiology. We thank him for his work and wish him every success in his next adventure.”
+- **Draft website blurb:** “We thank Emanuele Carnevale Baraglia for his contributions to computational modeling of organelle physiology during his time with SPL, and wish him every success in his next chapter.”
 
 ### May 2025 — ERC Days at Federico II
 
@@ -312,12 +312,26 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Public link:** [Langmuir](https://pubs.acs.org/doi/10.1021/acs.langmuir.4c03966)
 - **Draft website blurb:** “Our molecular-dynamics study of hyaluronic-acid assembly and hydration is published in Langmuir, connecting molecular structure with the behavior of a central extracellular-matrix polymer.”
 
-### 2025 — Sandipan's formal UniPV appointment concludes
+### 2025 — Sandipan Chattaraj begins a new chapter
 
 - **Status/category:** `READY` · People
 - **Details found:** Sandipan's public CV records UniPV through December 2024 and his current IESL-FORTH role from November 2025, while internal evidence shows ongoing SPL collaboration and BIOPOINT activity in 2026. The year-only transition story is approved as written and should not imply that collaboration ended.
 - **Public link:** [IESL-FORTH profile](https://www.iesl.forth.gr/en/people/chattaraj-sandipan)
 - **Draft website blurb:** “After helping build SPL's computational-mechanics programme, Sandipan Chattaraj is beginning a new chapter while continuing to collaborate with the group. We thank him for his lasting contribution and wish him every success.”
+
+### 2025 — Moises Di Sante becomes a tenure-track assistant professor
+
+- **Status/category:** `READY` · People
+- **Details found:** Authorized email and Slack review documents the RTT competition during 2024–2025 and identifies Moises as RTT by October 2025. The exact service date was not recovered reliably enough for public copy, so display the milestone as year-only.
+- **Public link:** [UniPV researcher profile](https://iris.unipv.it/cris/rp/rp374521)
+- **Draft website blurb:** “Congratulations to Moises Di Sante on his appointment as a tenure-track assistant professor (RTT) at the University of Pavia, recognizing his growing leadership in stem-cell biology, genome editing, and engineered human models at SPL.”
+
+### 2025 — Daniela Canevari transitions to a wider University role
+
+- **Status/category:** `READY` · People / Lab operations
+- **Details found:** Daniela moved from day-to-day SPL project support into a wider University of Pavia administrative role while continuing to help with selected SPL projects. Recent correspondence confirms ongoing project-administration collaboration, so the public copy must not imply a complete departure.
+- **Public link:** [DICAr administration](https://dicar.dip.unipv.it/en/department/organization/administrative-divisions)
+- **Draft website blurb:** “After supporting SPL's project administration and reporting, Daniela Canevari transitions to a wider University of Pavia role while continuing to help with selected lab projects. We thank her warmly for her work with the group.”
 
 ## 2024
 
@@ -361,14 +375,14 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Status/category:** `READY` · People
 - **Details found:** Tehreem began remote collaboration with SPL in April and formally entered the One Health XL-cycle PhD on 1 October 2024; she joined the group in Pavia in March 2025. The public story should avoid personal or logistical details.
 - **Public link:** [Official One Health PhD page](https://spmsf.dip.unipv.it/it/didattica/post-laurea/dottorati-di-ricerca/one-health-approaches-infectious-diseases-and-life-107)
-- **Draft website blurb:** “Welcome to Tehreem Ali, who joins SPL's One Health PhD programme to bring bioinformatics and computational biology into our work on extracellular-matrix atlases and human tissue models.”
+- **Draft website blurb:** “Welcome to Tehreem Ali, who joins SPL through the One Health PhD programme, focusing on bioinformatics, single-cell transcriptomics, and spatial transcriptomics.”
 
-### October 2024 — Saranya concludes her SPL fellowship
+### 2024 — Saranya Vasudevan moves on from SPL
 
 - **Status/category:** `READY` · People
 - **Details found:** Saranya's SPL research fellowship ended on 31 October 2024. Her current public profile is at the Italian Institute of Technology; the departure copy need not specify a destination.
 - **Public link:** [IIT profile](https://www.iit.it/people-details/-/people/saranya-vasudevan)
-- **Draft website blurb:** “Saranya Vasudevan is moving on after contributing to SPL's computational modeling of biomaterials and engineered culture platforms. We thank her warmly and wish her the very best in her next adventure.”
+- **Draft website blurb:** “We thank Saranya Vasudevan for her contributions to computational modeling of biomaterials and engineered culture platforms during her time with SPL, and wish her every success in her next chapter.”
 
 ### September–October 2024 — Human Cell Atlas and ECM Atlas meeting
 
@@ -426,12 +440,12 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Public link:** [ESB 2024 programme](https://biomechanik-kongress.de/wp-content/uploads/sites/26/2024/06/ESB_2024_conference_brochure.pdf)
 - **Draft website blurb:** “Francesco presented SPL's work at the European Society of Biomechanics Congress in Edinburgh, connecting subcellular-element models with multiscale cell and tissue mechanics in morphogenesis.”
 
-### June 2024 — Bohdana concludes her SPL PhD period
+### 2024 — Bohdana Horda moves on from SPL
 
 - **Status/category:** `READY` · People
 - **Details found:** Bohdana Horda's doctoral period with SPL concluded on 30 June 2024. Do not publish an inferred next destination.
 - **Public link:** None
-- **Draft website blurb:** “Bohdana Horda is moving on after helping develop SPL's hydrogel-fabrication and engineered cell-culture platforms. We thank her for her contribution and wish her the very best in her next adventure.”
+- **Draft website blurb:** “We thank Bohdana Horda for her work on hydrogel fabrication and engineered cell-culture platforms during her time with SPL, and wish her every success in her next chapter.”
 
 ### June 2024 — CIMTEC invited presentation
 
@@ -622,7 +636,7 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Status/category:** `READY` · People
 - **Details found:** Alessandro's welcome meeting was on 4 April 2023. He joined from KTH in Stockholm after completing a PhD in materials and microfabrication-related research.
 - **Public link:** [UniPV profile](https://unipv.unifind.cineca.it/get/person/061387)
-- **Draft website blurb:** “Welcome to Alessandro Enrico, who joins SPL from KTH Royal Institute of Technology to lead materials science, laser fabrication, and high-throughput tissue-engineering research.”
+- **Draft website blurb:** “Welcome to Alessandro Enrico, who joins SPL from KTH Royal Institute of Technology to work across materials science, laser fabrication, and high-throughput tissue-engineering research.”
 
 ### February 2023 — immersed isogeometric analysis paper
 
@@ -675,12 +689,19 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Public link:** [TERMIS conference book](https://eu2022.termis.org/wp-content/uploads/2022/06/termis2022-krakow-conference-book.pdf)
 - **Draft website blurb:** “Francesco gave the invited presentation ‘Lessons learned on how (not) to build a heart’ at TERMIS-EU 2022, reflecting on the opportunities and productive failures of cardiac tissue engineering.”
 
-### June 2022 — Alice Albini concludes her SPL support role
+### 2022 — Alice Albini moves into a new University role
 
 - **Status/category:** `READY` · People / Lab operations
 - **Details found:** Alice's SPL grant and ERC-reporting support appointment ended on 30 June 2022, after which she continued in a wider UniPV role. Decide whether this operational milestone belongs in the public feed.
 - **Public link:** [UniPV IEIE page](https://phdieie.unipv.it/academic-board/)
-- **Draft website blurb:** “Alice Albini is moving into a new University of Pavia role after helping SPL establish its grant and reporting operations. We thank her warmly and wish her every success in the next adventure.”
+- **Draft website blurb:** “Alice Albini moves into a new University of Pavia role after helping SPL establish its grant and reporting operations. We thank her warmly and wish her every success in her next chapter.”
+
+### 2022 — Moises Di Sante becomes a non-tenure-track assistant professor
+
+- **Status/category:** `READY` · People
+- **Details found:** Authorized email review shows the RTDa recruitment process beginning in 2021, final commission documents in January 2022, and Moises identifying himself publicly as an RTDa by June 2022. The exact service date is not sufficiently clear, so display the milestone as year-only.
+- **Public link:** [Official UniPV CV](https://unipv.unifind.cineca.it/v1/dataservice/files/ugovcv/DI%20SANTE_MOISES_en_93404.pdf)
+- **Draft website blurb:** “Congratulations to Moises Di Sante on his appointment as a non-tenure-track assistant professor (RTDa) at the University of Pavia, strengthening his role in SPL's stem-cell, genome-editing, and molecular-biology research.”
 
 ### 2022 — emerging strategies in 3D-printed tissue models
 
@@ -742,12 +763,12 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Public link:** [Tailored Materials and Tissues group at DTU](https://www.healthtech.dtu.dk/research/research-sections/section-cell-and-drug-technologies/group-tailored-materials-and-tissues)
 - **Draft website blurb:** “Johan U. Lind opened SPL's Through the Looking Glass seminar series by presenting his work on bioprinting, microphysiological tissue models, and functional materials that integrate living cells with engineered systems.”
 
-### October 2021 — Ahmed concludes his SPL fellowship
+### 2021 — Ahmed S. Khalil moves on from SPL
 
 - **Status/category:** `READY` · People
 - **Details found:** Ahmed's remote computational research fellowship ended effective 1 October 2021. His prior and next institutions are unresolved, and same-name public searches are unsafe.
 - **Public link:** None
-- **Draft website blurb:** “Ahmed S. Khalil is moving on after contributing computational and high-performance-computing expertise during SPL's first year. We thank him and wish him the very best in his next adventure.”
+- **Draft website blurb:** “We thank Ahmed S. Khalil for contributing computational and high-performance-computing expertise during SPL's first year, and wish him every success in his next chapter.”
 
 ### October 2021 — Eloisa and Melissa begin their PhDs
 
