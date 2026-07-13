@@ -4,7 +4,7 @@
 
 This branch-local file includes internal `REVIEW` and `HOLD` leads. Do not merge or publish the ledger itself; after editorial review, transfer only approved, public-safe records into the structured news dataset.
 
-Last researched: 12 July 2026. Coverage begins with SPL's establishment in June 2020. Francesco can edit this file directly; only entries later marked `APPROVED` should be copied into the website's structured news data.
+Last researched: 13 July 2026. Coverage begins with SPL's establishment in June 2020. Francesco can edit this file directly; only entries later marked `APPROVED` should be copied into the website's structured news data.
 
 ## How to use this file
 
@@ -13,7 +13,10 @@ Last researched: 12 July 2026. Coverage begins with SPL's establishment in June 
 - `HOLD` means the lead is potentially newsworthy but should not be published without more evidence.
 - Month/year is intentional where a day is unavailable. Do not invent a day for sorting or display.
 - “Internal evidence” means Gmail, Google Calendar, Slack, or existing GBrain material reviewed with Francesco's authorization. Private message links, IDs, email addresses, contract details, and personal circumstances are deliberately omitted here.
-- For ordinary conference participation, use variants of “presented SPL's work at …” without distinguishing talks from posters. Say `invited`, `keynote`, or `plenary` only where the evidence explicitly supports it.
+- For conference participation, name the person who presented SPL's work. Do not distinguish talks from posters; say `invited` or `plenary` only where the evidence explicitly supports it. Describe chairing or co-chairing as service, not as a presentation.
+- For research outputs, keep the first public preprint and the subsequent peer-reviewed publication as separate news entries, each using its actual public month/year. Acceptance alone is not a news event.
+- Frame ERC in Italy activities as dissemination and advocacy for frontier research, not as presentations of SPL's research.
+- Publish one-off external visits only when the visitor gives a talk, and identify those talks as part of the `Through the Looking Glass seminar series`.
 - For departures, use a warm general message and avoid private reasons or an unverified next job.
 - Prefer one useful public link: the article, project, conference, institutional profile, or program page.
 
@@ -39,7 +42,7 @@ This table covers every person on the current and former website rosters, plus S
 | Sara Rigolli | Joined for an SPL MSc thesis by December 2023; began her PhD in October 2024 | UniPV Bioengineering MSc | Thesis join and PhD transition can be one `READY` story | High. [ORCID](https://orcid.org/0009-0007-4910-2939); [master's thesis](https://unitesi.unipv.it/handle/20.500.14239/33222); [Zeglio Lab visit](https://zegliolab.org/alumni/) |
 | Tehreem Ali | Began the One Health XL-cycle PhD in October 2024 and joined the lab in Pavia in March 2025 after initial remote onboarding | Government College University Faisalabad, Pakistan | Join is `READY`; keep the public account to academic origin and bioinformatics focus | High for PhD/start sequence. [Official PhD page](https://spmsf.dip.unipv.it/it/didattica/post-laurea/dottorati-di-ricerca/one-health-approaches-infectious-diseases-and-life-107) |
 | Chimwemwe Msosa | Visiting CICOPS/Coimbra fellow, September–December 2024 | Malawi University of Business and Applied Sciences, where he teaches Biomedical Engineering | Arrival and warm departure can be one `READY` visit story | High. [MUBAS profile](https://rsu.mubas.ac.mw/team-members/assoc-prof-save-kumwenda/) (the institution's URL slug is misleading, but the page content is his profile) |
-| Martina Petrelli | Scientific-illustration collaborator from November 2024; formal SPL research fellowship February 2025–June 2026; continuing artist-in-residence relationship | Fine-arts training at Accademia di Belle Arti di Bari, after a period in Amsterdam | Join is `READY`; June 2026 should be framed as a role transition, not a goodbye | High. [Public profile](https://it.linkedin.com/in/martina-petrelli-0b1837293) |
+| Martina Petrelli | Scientific-illustration collaborator from November 2024; joined the SPL team in February 2025; current team title is Artist in Residence | Fine-arts training at Accademia di Belle Arti di Bari, after a period in Amsterdam | Join is `READY`; the later team-title change is not a separate news item | High. [Public profile](https://it.linkedin.com/in/martina-petrelli-0b1837293) |
 | Maddalena Rocca | Joined February 2025 in project-management/administrative support | EDISU Pavia, supporting scholarships and international students | Join is `READY`; external biography not strong enough for a link | High internally; current [SPL team page](https://syntheticphysiologylab.com/team/) confirms the public role |
 | Giulia Ballio | Joined 1 October 2025 as a research assistant/lab technician in molecular biology | UniPV Experimental and Applied Biology; thesis work involved Fondazione Maugeri IRCCS | Join is `READY` | High. [UniPV thesis](https://unitesi.unipv.it/handle/20.500.14239/28677) |
 
@@ -55,10 +58,10 @@ The blocks below are arranged newest first so they can later map directly to the
 
 ### July 2026 — ERC Days at UNIVPM
 
-- **Status/category:** `READY` · Events
-- **Details found:** Francesco participated in ERC Days at Università Politecnica delle Marche on 1–2 July 2026. The institutional event page is public.
+- **Status/category:** `READY` · Events / Research advocacy
+- **Details found:** Francesco participated in ERC Days at Università Politecnica delle Marche on 1–2 July 2026 through his ERC in Italy work. This was frontier-research dissemination and advocacy, not a presentation of SPL research. The institutional event page is public.
 - **Public link:** [ERC Days @ UNIVPM](https://www.univpm.it/Entra/Universita_Politecnica_delle_Marche_-_Ancona_-_Servizi_on-_line_Ricerca_Strutture_Eventi_In_evidenza_-_Home_Page/Tutti_gli_avvisi_di_UnivPM/ERC_Days_UNIVPM)
-- **Draft website blurb:** “FSP joined ERC Days at UNIVPM to share lessons from building an ERC-funded research programme and to exchange ideas with the next generation of European research leaders.”
+- **Draft website blurb:** “Francesco joined ERC Days at UNIVPM to discuss frontier-research funding, share experience of the ERC programme, and advocate for conditions that help ambitious research thrive in Italy.”
 
 ### June 2026 — Eloisa and Melissa defend their PhDs
 
@@ -67,31 +70,38 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Public links:** [Eloisa's thesis](https://iris.unipv.it/handle/11571/1553615); [Melissa's thesis](https://iris.unipv.it/handle/11571/1553616)
 - **Draft website blurb:** “Congratulations to Dr Eloisa Torchia and Dr Melissa Pezzotti, who defended their PhDs after four years of advancing SPL's engineered culture, mechanobiology, and live-imaging platforms. We are delighted that both are continuing the adventure with SPL.”
 
-### June 2026 — Martina transitions to Artist in Residence
-
-- **Status/category:** `READY` · People
-- **Details found:** Martina Petrelli's formal research fellowship concluded at the end of June 2026, while the art-and-science collaboration continued under the public Artist in Residence framing. This is a role transition, not a departure story.
-- **Public link:** [SPL Art and Science](https://syntheticphysiologylab.com/art-and-science/)
-- **Draft website blurb:** “Martina Petrelli continues her collaboration with SPL as our Artist in Residence, bringing scientific illustration and visual experimentation into the way we imagine, test, and communicate research.”
-
-### June 2026 — Engineering Toolkits paper accepted
-
-- **Status/category:** `HOLD` · Research
-- **Details found:** Internal correspondence in June records acceptance of an Engineering Toolkits paper, but no public publisher page was located. Publish only when the article has a stable public link and final title.
-- **Public link:** Pending
-- **Draft website blurb:** “A new SPL Engineering Toolkits paper has been accepted, bringing a practical experimental and computational workflow to the wider bioengineering community.”
-
 ### May–June 2026 — Janelia conference
 
 - **Status/category:** `READY` · Events
-- **Details found:** SPL participated in the Janelia conference “Intersection of Mechanics and Metabolism Across Biological Scales,” 31 May–3 June 2026. Use the general presentation wording; do not label it a poster in public copy.
+- **Details found:** Francesco participated in the Janelia conference “Intersection of Mechanics and Metabolism Across Biological Scales,” 31 May–3 June 2026, and presented SPL's work. Do not distinguish the presentation format in public copy.
 - **Public link:** [Janelia conference page](https://www.janelia.org/you-janelia/conferences/intersection-of-mechanics-and-metabolism-across-biological-scales)
-- **Draft website blurb:** “SPL presented its work at Janelia's meeting on the intersection of mechanics and metabolism across biological scales, connecting engineered tissues with a broad community studying how physical context shapes cell state.”
+- **Draft website blurb:** “Francesco presented SPL's work at Janelia's meeting on the intersection of mechanics and metabolism across biological scales, connecting engineered tissues with a broad community studying how physical context shapes cell state.”
+
+### May 2026 — MicroSplit published in Nature Methods
+
+- **Status/category:** `READY` · Research · already live
+- **Details found:** The Nature Methods article on semantic unmixing of fluorescence microscopy data was published on 5 May 2026.
+- **Public link:** [Nature Methods](https://www.nature.com/articles/s41592-026-03082-1)
+- **Draft website blurb:** “MicroSplit is published in Nature Methods, using semantic unmixing to recover richer biological information from multiplexed fluorescence images.”
+
+### April 2026 — Micro-comb 3D printing published
+
+- **Status/category:** `READY` · Research · already live
+- **Details found:** The Biofabrication article on rapid fabrication of tissue-guiding substrates with micro-embossed nozzles was published on 27 April 2026.
+- **Public link:** [Biofabrication](https://doi.org/10.1088/1758-5090/ae5fd9)
+- **Draft website blurb:** “Micro-comb 3D printing is published in Biofabrication, introducing a rapid route to tissue-guiding substrates through micro-embossed printing nozzles.”
+
+### April 2026 — Deep-learning FUCCI analysis published
+
+- **Status/category:** `READY` · Research · already live
+- **Details found:** The npj Imaging paper connecting multiplexed FUCCI acquisitions with deep-learning bioimage analysis was published on 14 April 2026. Keep this peer-reviewed publication separate from the October 2025 preprint.
+- **Public link:** [npj Imaging](https://www.nature.com/articles/s44303-026-00159-6)
+- **Draft website blurb:** “Our deep-learning workflow for multiplexed FUCCI imaging is published in npj Imaging, turning live-cell reporters into quantitative trajectories of cell state.”
 
 ### March 2026 — BIOPOINT published
 
 - **Status/category:** `READY` · Research
-- **Details found:** The formal PLOS Computational Biology article was published 31 March 2026. The current website gives 2025 and should be corrected. This should replace or evolve any earlier preprint story rather than appear as an unrelated duplicate.
+- **Details found:** The formal PLOS Computational Biology article was published 31 March 2026. The current website gives 2025 and should be corrected. Keep this peer-reviewed publication as a separate entry from the April 2025 preprint, with each entry using its own public date.
 - **Public link:** [PLOS Computational Biology](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014113)
 - **Draft website blurb:** “BIOPOINT is now published in PLOS Computational Biology, offering a particle-based framework for probing nuclear mechanics and cell–matrix interactions with experimentally grounded parameters.”
 
@@ -123,27 +133,6 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Public link:** [BPS Bioengineering Subgroup leadership](https://www.biophysics.org/subgroups/bioengineering-1)
 - **Draft website blurb:** “Francesco has been elected Chair-Elect of the Biophysical Society Bioengineering Subgroup, supporting a community that connects physical principles, engineering, and living systems.”
 
-### 2026 — MicroSplit published in Nature Methods
-
-- **Status/category:** `READY` · Research · already live
-- **Details found:** Semantic unmixing of fluorescence microscopy data, published in Nature Methods. Retain as a major homepage candidate, but use the actual publication month once confirmed from the publisher metadata.
-- **Public link:** [PubMed](https://pubmed.ncbi.nlm.nih.gov/42086917/)
-- **Draft website blurb:** “MicroSplit is published in Nature Methods, using semantic unmixing to recover richer biological information from multiplexed fluorescence images.”
-
-### 2026 — Micro-comb 3D printing published
-
-- **Status/category:** `READY` · Research · already live
-- **Details found:** Rapid fabrication of tissue-guiding substrates with micro-embossed nozzles, published in Biofabrication. Use the publication month when verified.
-- **Public link:** [PubMed](https://pubmed.ncbi.nlm.nih.gov/41985513/)
-- **Draft website blurb:** “Micro-comb 3D printing is published in Biofabrication, introducing a rapid route to tissue-guiding substrates through micro-embossed printing nozzles.”
-
-### 2026 — Deep-learning FUCCI analysis published
-
-- **Status/category:** `READY` · Research · already live
-- **Details found:** The npj Imaging paper connects multiplexed FUCCI acquisitions with deep-learning bioimage analysis. Use the publication month when verified.
-- **Public link:** [npj Imaging](https://www.nature.com/articles/s44303-026-00159-6)
-- **Draft website blurb:** “Our deep-learning workflow for multiplexed FUCCI imaging is published in npj Imaging, turning live-cell reporters into quantitative trajectories of cell state.”
-
 ## 2025
 
 ### December 2025 — HYDRA published
@@ -153,19 +142,12 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Public link:** [Communications Engineering](https://www.nature.com/articles/s44172-025-00575-3)
 - **Draft website blurb:** “HYDRA is published in Communications Engineering, showing how robotic liquid handling can fabricate physiologically soft cell-culture hydrogels directly in high-throughput screening plates.”
 
-### November 2025 — UNLOOC and BEONCHIP meeting in Zaragoza
+### November 2025 — Alessandro and Sara at UNLOOC and BEONCHIP in Zaragoza
 
 - **Status/category:** `REVIEW` · Events
-- **Details found:** SPL participated in a UNLOOC/BEONCHIP meeting in Zaragoza around 28 November 2025. Confirm the official event title and dates before publishing.
+- **Details found:** Alessandro Enrico and Sara Rigolli represented SPL at the KDT UNLOOC consortium meeting and BEONCHIP workshop in Zaragoza around 28 November 2025. Confirm the official event title and dates before publishing.
 - **Public link:** [UNLOOC project](https://cordis.europa.eu/project/id/101140192)
-- **Draft website blurb:** “SPL presented its work at the UNLOOC and BEONCHIP meeting in Zaragoza, exchanging tools and standards for extracting more useful data from organ-on-chip systems.”
-
-### October 2025 — SPL at the Italian Senate
-
-- **Status/category:** `READY` · Events
-- **Details found:** Francesco presented at an Italian Senate event on 16 October 2025. A stable public programme link should be added if recovered.
-- **Public link:** Pending
-- **Draft website blurb:** “Francesco presented SPL's work at the Italian Senate, contributing a bioengineering perspective to the conversation on research, innovation, and Italy's scientific future.”
+- **Draft website blurb:** “Alessandro Enrico and Sara Rigolli represented SPL at the UNLOOC and BEONCHIP meeting in Zaragoza, exchanging tools and standards for extracting more useful data from organ-on-chip systems.”
 
 ### October 2025 — LigHTS preprint
 
@@ -174,6 +156,20 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Public link:** [bioRxiv](https://doi.org/10.1101/2025.10.23.683892)
 - **Draft website blurb:** “The LigHTS preprint introduces massively parallel biomimetic photo-functionalization for imaging-based ultra-high-throughput screening.”
 
+### October 2025 — Francesco speaks about frontier research at the Italian Senate
+
+- **Status/category:** `READY` · Events / Research advocacy
+- **Details found:** Francesco spoke at an Italian Senate event on 16 October 2025 through his ERC in Italy work. This was frontier-research dissemination and advocacy, not a presentation of SPL research. Add a stable public programme link if recovered.
+- **Public link:** Pending
+- **Draft website blurb:** “Francesco spoke at the Italian Senate about the value of frontier research and the conditions needed for ambitious science and innovation to thrive in Italy.”
+
+### October 2025 — DeepFUCCI preprint
+
+- **Status/category:** `READY` · Research
+- **Details found:** The DeepFUCCI preprint became public on 2 October 2025. Keep the preprint and the April 2026 npj Imaging publication as separate news entries.
+- **Public link:** [bioRxiv](https://doi.org/10.1101/2025.09.30.677886)
+- **Draft website blurb:** “The DeepFUCCI preprint introduces a deep-learning workflow for segmentation, classification, and tracking in multiplexed FUCCI live imaging.”
+
 ### October 2025 — Giulia Ballio joins SPL
 
 - **Status/category:** `READY` · People
@@ -181,19 +177,26 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Public link:** [UniPV thesis](https://unitesi.unipv.it/handle/20.500.14239/28677)
 - **Draft website blurb:** “Welcome to Giulia Ballio, who joins SPL as a research assistant supporting our stem-cell, genome-editing, and molecular-biology platforms after training at the University of Pavia.”
 
-### September 2025 — European Society for Biomaterials conference
+### September 2025 — VISTA preprint
 
-- **Status/category:** `READY` · Events
-- **Details found:** SPL participated in ESB 2025 on 9 September, with Francesco serving in a co-chair role. The event is the European Society for Biomaterials, not the European Society of Biomechanics.
+- **Status/category:** `READY` · Research
+- **Details found:** The VISTA preprint became public in September 2025. Keep the preprint and the March 2026 APL Bioengineering publication as separate news entries.
+- **Public link:** [bioRxiv](https://doi.org/10.1101/2025.09.25.678497)
+- **Draft website blurb:** “The VISTA preprint introduces a vertically integrated platform for tracking cell-cycle-aware phenotypes under engineered confinement.”
+
+### September 2025 — Francesco co-chairs at ESB 2025
+
+- **Status/category:** `READY` · Events / Service
+- **Details found:** Francesco served as a co-chair at the European Society for Biomaterials 2025 meeting on 9 September. He did not present SPL research at this event.
 - **Public link:** [ESB 2025 scientific programme](https://esb2025.org/wp-content/uploads/2025/09/SCIENTIFIC-PROGRAM_GENERAL-ORAL-PRESENTATIONS.pdf)
-- **Draft website blurb:** “SPL presented its work at the European Society for Biomaterials 2025 meeting, where Francesco also helped chair the scientific programme.”
+- **Draft website blurb:** “Francesco served as a co-chair at the European Society for Biomaterials 2025 meeting.”
 
 ### September 2025 — PROLIFERATION art–science installation
 
 - **Status/category:** `READY` · Events / Art and science
 - **Details found:** The PROLIFERATION installation was presented on 2 September 2025. Confirm the preferred capitalization and attach the exhibition page or SPL art page.
 - **Public link:** [SPL Art and Science](https://syntheticphysiologylab.com/art-and-science/)
-- **Draft website blurb:** “SPL and Martina Petrelli presented PROLIFERATION, an art–science installation exploring how biological growth can be imagined, visualized, and made material.”
+- **Draft website blurb:** “Martina Petrelli presented PROLIFERATION, an SPL art–science installation exploring how biological growth can be imagined, visualized, and made material.”
 
 ### August 2025 — Julius Zimmermann concludes his SPL appointment
 
@@ -201,27 +204,6 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Details found:** Julius's SPL research-fellow appointment ended on 31 August 2025; research and manuscript collaboration continued afterward. Avoid naming a next destination without confirmation.
 - **Public link:** [ORCID](https://orcid.org/0000-0003-1486-0426)
 - **Draft website blurb:** “After two years of bioimage-analysis and computational work with SPL, Julius Zimmermann is moving on to his next adventure. We thank him for everything he brought to the group and wish him the very best.”
-
-### July 2025 — redesigned SPL website launches
-
-- **Status/category:** `READY` · Lab life / Resources
-- **Details found:** Version 1 of the redesigned SPL website launched on 10 July 2025. Confirm whether this was a public launch or an internal milestone before publishing a historical entry.
-- **Public link:** [SPL website](https://syntheticphysiologylab.com/)
-- **Draft website blurb:** “SPL's redesigned website is live, bringing our research, people, publications, and art–science work into one clearer home.”
-
-### July 2025 — Ivano Lignini visits SPL
-
-- **Status/category:** `HOLD` · Visitors
-- **Details found:** Internal evidence suggests a July 2025 visit, but the visitor's affiliation, purpose, and exact date need confirmation.
-- **Public link:** Pending
-- **Draft website blurb:** “SPL welcomed Ivano Lignini to Pavia for discussions spanning engineered tissues, imaging, and new opportunities for collaboration.”
-
-### June 2025 — Giuseppe Testa visits SPL
-
-- **Status/category:** `READY` · Visitors
-- **Details found:** Giuseppe Testa visited on 5 June 2025. Add an institutional profile link and the seminar topic if confirmed.
-- **Public link:** Pending
-- **Draft website blurb:** “SPL welcomed Giuseppe Testa to Pavia for a lively exchange on human cellular models, disease biology, and the future of experimentally grounded precision medicine.”
 
 ### June 2025 — open-science organelle acidification model published
 
@@ -243,6 +225,13 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Details found:** Emanuele Carnevale Baraglia's formal SPL-linked PhD period ended on 31 May 2025 after earlier MSc and research work with the group. Do not name his destination without confirmation.
 - **Public link:** [Associated open-science paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC12141144/)
 - **Draft website blurb:** “Emanuele Carnevale Baraglia is moving on after contributing to SPL's computational modeling of organelle physiology. We thank him for his work and wish him every success in his next adventure.”
+
+### April 2025 — BIOPOINT preprint
+
+- **Status/category:** `READY` · Research
+- **Details found:** The BIOPOINT preprint became public on 26 April 2025. Keep the preprint and the March 2026 PLOS Computational Biology publication as separate news entries.
+- **Public link:** [bioRxiv](https://doi.org/10.1101/2025.04.22.650069)
+- **Draft website blurb:** “The BIOPOINT preprint introduces a particle-based framework connecting experimentally calibrated nuclear mechanics with cell–matrix interactions.”
 
 ### April 2025 — invited Oxford Bioelectricity Cluster presentation
 
@@ -281,10 +270,17 @@ The blocks below are arranged newest first so they can later map directly to the
 
 ## 2024
 
+### December 2024 — HYDRA preprint
+
+- **Status/category:** `READY` · Research
+- **Details found:** The HYDRA preprint became public on 23 December 2024. Keep the preprint and the December 2025 Communications Engineering publication as separate news entries.
+- **Public link:** [bioRxiv](https://doi.org/10.1101/2024.12.22.629679)
+- **Draft website blurb:** “The HYDRA preprint introduces robotic fabrication of thin, planar hydrogels in standard multiwell plates for physiologically relevant high-throughput drug testing.”
+
 ### December 2024 — CALIPERS preprint
 
 - **Status/category:** `READY` · Research
-- **Details found:** The CALIPERS preprint appeared on 22 December 2024. Treat a later journal publication as the evolution of the same story rather than an unrelated duplicate.
+- **Details found:** The CALIPERS preprint appeared on 22 December 2024. Add a separate news entry when the peer-reviewed article is published, using that publication's own month/year.
 - **Public link:** [bioRxiv](https://doi.org/10.1101/2024.12.19.629259)
 - **Draft website blurb:** “The CALIPERS preprint introduces cell-cycle-aware live imaging for phenotyping and regeneration studies, linking multiplexed FUCCI reporters with reproducible analysis.”
 
@@ -325,10 +321,10 @@ The blocks below are arranged newest first so they can later map directly to the
 
 ### September–October 2024 — Human Cell Atlas and ECM Atlas meeting
 
-- **Status/category:** `READY` · Events
-- **Details found:** SPL participated in a Human Cell Atlas / extracellular-matrix atlas event from 29 September to 1 October 2024. Recover the official event page and title before transfer if possible.
+- **Status/category:** `REVIEW` · Events
+- **Details found:** SPL participated in a Human Cell Atlas / extracellular-matrix atlas event from 29 September to 1 October 2024. The presenter has not yet been identified; recover the official event page, title, and SPL presenter before transfer.
 - **Public link:** Pending
-- **Draft website blurb:** “SPL presented its work at the Human Cell Atlas meeting, contributing an extracellular-matrix perspective to the effort to map human cells in their native physical and molecular context.”
+- **Draft website blurb:** “[Presenter to confirm] presented SPL's work at the Human Cell Atlas meeting, contributing an extracellular-matrix perspective to the effort to map human cells in their native physical and molecular context.”
 
 ### September 2024 — MBE24
 
@@ -346,10 +342,10 @@ The blocks below are arranged newest first so they can later map directly to the
 
 ### September 2024 — NanoInnovation
 
-- **Status/category:** `READY` · Events
-- **Details found:** SPL participated in NanoInnovation on 12 September 2024. Use the general presentation formula unless the public programme establishes an invited or plenary role.
+- **Status/category:** `REVIEW` · Events
+- **Details found:** SPL participated in NanoInnovation on 12 September 2024, but the presenter has not yet been identified. Recover the public programme and name before publishing.
 - **Public link:** Pending
-- **Draft website blurb:** “SPL presented its work at NanoInnovation 2024, connecting engineered biomaterials and high-throughput tissue models with Italy's nanotechnology community.”
+- **Draft website blurb:** “[Presenter to confirm] presented SPL's work at NanoInnovation 2024, connecting engineered biomaterials and high-throughput tissue models with Italy's nanotechnology community.”
 
 ### August 2024 — active-stress cardiac shell model
 
@@ -358,12 +354,12 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Public link:** [Mechanics of Materials](https://www.sciencedirect.com/science/article/pii/S0167663624001388)
 - **Draft website blurb:** “Our active-stress isogeometric shell model is published in Mechanics of Materials, enabling efficient simulations of muscular thin films and cardiac electromechanics.”
 
-### July 2024 — Soft Skills keynote
+### July 2024 — Soft Skills presentation
 
 - **Status/category:** `REVIEW` · Events
-- **Details found:** Internal evidence identifies Francesco's 23 July contribution as a keynote. The current public programme appears to have been replaced or overwritten, so add a stable archived programme before publishing if possible.
+- **Details found:** Francesco presented at Soft Skills on 23 July 2024. The current public programme appears to have been replaced or overwritten, so add a stable archived programme before publishing if possible.
 - **Public link:** Pending
-- **Draft website blurb:** “Francesco delivered a keynote on the human and creative skills behind interdisciplinary research, reflecting on how teams turn scientific imagination into reproducible engineering.”
+- **Draft website blurb:** “Francesco presented on the human and creative skills behind interdisciplinary research, reflecting on how teams turn scientific imagination into reproducible engineering.”
 
 ### June 2024 — Bohdana concludes her SPL PhD period
 
@@ -379,12 +375,12 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Public link:** Pending
 - **Draft website blurb:** “Francesco gave an invited presentation at CIMTEC, sharing SPL's work on engineered matrices and scalable human tissue models.”
 
-### May 2024 — Claudia Marenco visits SPL
+### May 2024 — Claudia Marenco presents in the Through the Looking Glass seminar series
 
-- **Status/category:** `READY` · Visitors / Funding
-- **Details found:** ERC representative Claudia Marenco visited on 22 May 2024. Confirm the public institutional profile and preferred description.
+- **Status/category:** `READY` · Visitors / Seminars
+- **Details found:** ERC scientific officer Claudia Marenco presented “ERC Frontier Research” on 22 May 2024 as part of the Through the Looking Glass seminar series. Add a public institutional profile if available.
 - **Public link:** Pending
-- **Draft website blurb:** “SPL welcomed Claudia Marenco from the European Research Council for a discussion of the lab's progress, open research, and the long-term possibilities created by frontier funding.”
+- **Draft website blurb:** “Claudia Marenco presented ‘ERC Frontier Research’ in SPL's Through the Looking Glass seminar series, opening a discussion about frontier funding and the conditions that help ambitious research thrive.”
 
 ### May 2024 — UNLOOC kickoff
 
@@ -421,12 +417,12 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Public link:** [Biophysical Reviews](https://pubs.aip.org/aip/bpr/article/5/1/010401/3268673/When-art-and-science-collide)
 - **Draft website blurb:** “When art and science collide is published in Biophysical Reviews, reflecting on how visualization, creativity, and experimental discipline belong to one scientific practice.”
 
-### February 2024 — Loris Rizzello seminar
+### February 2024 — Loris Rizzello presents in the Through the Looking Glass seminar series
 
 - **Status/category:** `READY` · Visitors / Seminars
-- **Details found:** Loris Rizzello visited for an SPL seminar on 23 February 2024. Add his institutional profile and confirmed seminar title if available.
+- **Details found:** Loris Rizzello presented on 23 February 2024 as part of the Through the Looking Glass seminar series. Add his institutional profile and confirmed seminar title if available.
 - **Public link:** Pending
-- **Draft website blurb:** “SPL welcomed Loris Rizzello for a seminar and discussion on biomaterials, engineered living systems, and new ways to interact with biology.”
+- **Draft website blurb:** “Loris Rizzello presented in SPL's Through the Looking Glass seminar series, opening a discussion on biomaterials, engineered living systems, and new ways to interact with biology.”
 
 ## 2023
 
@@ -454,16 +450,16 @@ The blocks below are arranged newest first so they can later map directly to the
 ### October 2023 — μSplit at ICCV
 
 - **Status/category:** `READY` · Research
-- **Details found:** μSplit appeared at ICCV 2023. Normalize the title with the Greek `μ`; the website currently uses `muSplit` in some places.
+- **Details found:** The μSplit paper appeared in the ICCV 2023 proceedings. Normalize the title with the Greek `μ`; the website currently uses `muSplit` in some places. Do not imply that an SPL member presented it unless a presenter is confirmed.
 - **Public link:** [Open-access ICCV paper](https://openaccess.thecvf.com/content/ICCV2023/html/Ashesh_uSplit_Image_Decomposition_for_Fluorescence_Microscopy_ICCV_2023_paper.html)
-- **Draft website blurb:** “μSplit is presented at ICCV 2023, introducing image decomposition for fluorescence microscopy and a new route to separating signals computationally.”
+- **Draft website blurb:** “μSplit appears in the ICCV 2023 proceedings, introducing image decomposition for fluorescence microscopy and a new route to separating signals computationally.”
 
 ### October 2023 — Seeing Is Believing
 
 - **Status/category:** `REVIEW` · Events
-- **Details found:** SPL participated in Seeing Is Believing, 3–7 October 2023. Internal evidence calls the contribution a poster, but public copy should use the general presentation formula. Recover the official event page.
+- **Details found:** SPL participated in Seeing Is Believing, 3–7 October 2023. The presenter has not yet been identified; recover the official event page and SPL presenter before publishing.
 - **Public link:** Pending
-- **Draft website blurb:** “SPL presented its work at Seeing Is Believing, joining an international microscopy community focused on making dynamic biology visible.”
+- **Draft website blurb:** “[Presenter to confirm] presented SPL's work at Seeing Is Believing, joining an international microscopy community focused on making dynamic biology visible.”
 
 ### September 2023 — Daniela Canevari begins supporting SPL projects
 
@@ -481,17 +477,17 @@ The blocks below are arranged newest first so they can later map directly to the
 
 ### September 2023 — NanoInnovation
 
-- **Status/category:** `READY` · Events
-- **Details found:** SPL contributed to NanoInnovation on 20 September 2023, including chairing/session responsibilities. Use the general presentation formula unless an invited status is confirmed publicly.
+- **Status/category:** `REVIEW` · Events
+- **Details found:** Francesco contributed to NanoInnovation on 20 September 2023 through chairing and session responsibilities. Chairing does not establish that SPL research was presented, so use service-only copy unless a presenter is later confirmed.
 - **Public link:** Pending
-- **Draft website blurb:** “SPL presented its work at NanoInnovation 2023 and helped convene a session connecting nanotechnology, biomaterials, and human tissue models.”
+- **Draft website blurb:** “Francesco helped convene and chair a session at NanoInnovation 2023 connecting nanotechnology, biomaterials, and human tissue models.”
 
 ### September 2023 — ESB-ITA
 
-- **Status/category:** `READY` · Events
-- **Details found:** SPL participated in ESB-ITA on 18 September 2023.
+- **Status/category:** `REVIEW` · Events
+- **Details found:** SPL participated in ESB-ITA on 18 September 2023, but the presenter has not yet been identified.
 - **Public link:** Pending
-- **Draft website blurb:** “SPL presented its work at the ESB-ITA meeting, sharing engineered biomaterials and tissue-model research with Italy's biomaterials community.”
+- **Draft website blurb:** “[Presenter to confirm] presented SPL's work at the ESB-ITA meeting, sharing engineered biomaterials and tissue-model research with Italy's biomaterials community.”
 
 ### July 2023 — Emanuele begins research with SPL
 
@@ -503,9 +499,9 @@ The blocks below are arranged newest first so they can later map directly to the
 ### June 2023 — Transducers 2023
 
 - **Status/category:** `READY` · Events
-- **Details found:** SPL participated in Transducers 2023, 25–29 June. Do not distinguish presentation format in public copy.
+- **Details found:** Alessandro Enrico represented SPL and presented the group's work at Transducers 2023, 25–29 June. Do not distinguish the presentation format in public copy.
 - **Public link:** Pending
-- **Draft website blurb:** “SPL presented its work at Transducers 2023, connecting engineered physiological systems with the international sensors and microsystems community.”
+- **Draft website blurb:** “Alessandro Enrico presented SPL's work at Transducers 2023, connecting engineered physiological systems with the international sensors and microsystems community.”
 
 ### June 2023 — mixed isogeometric collocation paper
 
@@ -544,12 +540,12 @@ The blocks below are arranged newest first so they can later map directly to the
 
 ## 2022
 
-### November 2022 — Florian Jug visits SPL
+### November 2022 — Florian Jug presents in the Through the Looking Glass seminar series
 
 - **Status/category:** `READY` · Visitors / Seminars
-- **Details found:** Florian Jug visited on 16 November 2022, strengthening the bioimage-analysis collaboration that later contributed to μSplit and MicroSplit.
+- **Details found:** Florian Jug presented on bioimage analysis on 16 November 2022 as part of the Through the Looking Glass seminar series, strengthening a collaboration that later contributed to μSplit and MicroSplit.
 - **Public link:** Pending institutional profile
-- **Draft website blurb:** “SPL welcomed Florian Jug for a seminar and working visit on bioimage analysis, beginning conversations that would grow into a productive long-term collaboration.”
+- **Draft website blurb:** “Florian Jug presented on bioimage analysis in SPL's Through the Looking Glass seminar series, beginning conversations that would grow into a productive long-term collaboration.”
 
 ### October 2022 — Bohdana Horda begins her PhD with SPL
 
@@ -637,12 +633,12 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Public link:** Pending
 - **Draft website blurb:** “Francesco gave an invited presentation at USERN, sharing SPL's vision for engineering human physiology from cells, materials, imaging, and computation.”
 
-### November 2021 — Johan Lind visit and first Through the Looking Glass seminar
+### November 2021 — Johan Lind opens the Through the Looking Glass seminar series
 
 - **Status/category:** `READY` · Visitors / Seminars
-- **Details found:** Johan U. Lind visited on 4–5 November 2021, associated with the first Through the Looking Glass seminar. Confirm whether the series name should be capitalized or quoted.
+- **Details found:** Johan U. Lind presented on 4–5 November 2021 in the first Through the Looking Glass seminar.
 - **Public link:** Pending institutional profile
-- **Draft website blurb:** “SPL welcomed Johan U. Lind for the first Through the Looking Glass seminar, opening a continuing exchange on cardiac tissue engineering, biofabrication, and experimental scale.”
+- **Draft website blurb:** “Johan U. Lind opened SPL's Through the Looking Glass seminar series with a presentation on cardiac tissue engineering, biofabrication, and experimental scale.”
 
 ### October 2021 — Ahmed concludes his SPL fellowship
 
@@ -714,7 +710,7 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Status/category:** `READY` · Events
 - **Details found:** Francesco presented at a 3D-printing workshop on 29 September 2020. The exact public event title and programme link remain to be recovered; use general presentation wording.
 - **Public link:** Pending
-- **Draft website blurb:** “SPL presented its work at a 3D-printing workshop, sharing early ideas for using fabrication to build better experimental models of human tissues.”
+- **Draft website blurb:** “Francesco presented SPL's work at a 3D-printing workshop, sharing early ideas for using fabrication to build better experimental models of human tissues.”
 
 ### June 2020 — Synthetic Physiology Lab established
 
@@ -729,13 +725,13 @@ These are content corrections to make only when the approved archive is transfer
 
 1. Change the Eloisa/Melissa defense `sortDate` from `2026-12-31` to `2026-06-26`.
 2. Change SYNBIO.ECM's start date from the estimated `2020-01-01` to the CORDIS date `2020-12-01`.
-3. Correct BIOPOINT's publication year from 2025 to 2026 and treat any preprint as the same evolving story.
+3. Correct BIOPOINT's publication year from 2025 to 2026, and keep the April 2025 preprint and March 2026 peer-reviewed publication as separate news entries.
 4. Correct the cardiac-electrophysiology isogeometric paper to 2022; its DOI and publisher record are 2022, not 2021.
 5. Normalize names as `LigHTS`, `μSplit`, and `SEM²`.
 6. Verify RESET's amount before publication: internal evidence says €100k while the backend currently says €125k.
 7. Replace estimated grant dates for highLight, LigHTS, CARDIO-SCREEN, and RESET with official award/project dates when source pages are found.
 8. Update Melissa and Eloisa from PhD-student language to postdoctoral/fellow language after their 26 June 2026 defenses.
-9. Keep conference presentation type generic unless the evidence explicitly says invited, keynote, or plenary.
+9. Name the person presenting SPL's work at conferences; do not distinguish talks from posters, and specify `invited` or `plenary` only where the evidence explicitly supports it. Treat chairing and co-chairing as service rather than a presentation.
 10. Keep private personnel notes, connector IDs, contract mechanics, and personal circumstances out of the public dataset.
 
 ## Leads deliberately held back
@@ -744,5 +740,5 @@ These are content corrections to make only when the approved archive is transfer
 - A public next-job statement for Ahmed: multiple same-name matches were false positives.
 - A public destination for Julius, Emanuele, or Bohdana: current hints are not strong enough to publish as fact.
 - The exact Polish institution Saranya joined from.
-- First journal club, first group retreat, Ivano Lignini visit, and the Engineering Toolkits acceptance until dates or public pages are recovered.
+- First journal club and first group retreat until dates or public pages are recovered.
 - “Genesis” speaker participation in May 2026 and Sandipan's “Seal of Excellence” in February 2026 until the precise programme/award and public links are recovered.
