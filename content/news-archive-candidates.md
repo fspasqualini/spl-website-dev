@@ -17,6 +17,7 @@ Last researched: 13 July 2026. Coverage begins with SPL's establishment in June 
 - For research outputs, keep the first public preprint and the subsequent peer-reviewed publication as separate news entries, each using its actual public month/year. Acceptance alone is not a news event.
 - Frame ERC in Italy activities as dissemination and advocacy for frontier research, not as presentations of SPL's research.
 - Publish one-off external visits only when the visitor gives a talk, and identify those talks as part of the `Through the Looking Glass seminar series`.
+- When an exact seminar title is not supported, omit it and describe the speaker's work using a verified public research profile.
 - Do not publish news for master's students beginning thesis projects; start public people stories at a subsequent PhD or research appointment where applicable.
 - For departures, use a warm general message and avoid private reasons or an unverified next job.
 - Prefer one useful public link: the article, project, conference, institutional profile, or program page.
@@ -70,6 +71,13 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Details found:** Eloisa Torchia and Melissa Pezzotti, both from the October 2021 XXXVII-cycle cohort, defended on 26 June 2026 and continued with SPL in follow-on research roles. The existing photograph can remain the archive's single image-led story. The current backend displays the right day but sorts it as 31 December 2026.
 - **Public links:** [Eloisa's thesis](https://iris.unipv.it/handle/11571/1553615); [Melissa's thesis](https://iris.unipv.it/handle/11571/1553616)
 - **Draft website blurb:** “Congratulations to Dr Eloisa Torchia and Dr Melissa Pezzotti, who defended their PhDs after four years of advancing SPL's engineered culture, mechanobiology, and live-imaging platforms. We are delighted that both are continuing the adventure with SPL.”
+
+### June 2026 — Francesco discusses AI in research at the University of Pavia
+
+- **Status/category:** `READY` · Events / Research culture
+- **Details found:** Francesco spoke at the University of Pavia's “L’Intelligenza Artificiale in Ateneo: iniziative e prospettive” event on 10 June 2026, contributing to the session on experiences of AI in university research. His presentation used AI-enabled microscopy as a practical example while emphasizing scientific training, human verification, empirical evidence, and awareness of the technology's limits.
+- **Public links:** [UniPV event page](https://www.unipv.news/notizie/lintelligenza-artificiale-alluniversita-di-pavia-incontro-il-10-giugno-su-iniziative-e); [official programme](https://www.unipv.news/sites/magazine/files/2026-05/2026_06_10_IA%20in%20Ateneo_Programma_v3.pdf)
+- **Draft website blurb:** “Francesco discussed how artificial intelligence can expand experimental possibilities at the University of Pavia's event on AI in research, while keeping scientific judgment, empirical evidence, and the limits of the technology firmly in view.”
 
 ### May–June 2026 — Janelia conference
 
@@ -159,10 +167,10 @@ The blocks below are arranged newest first so they can later map directly to the
 
 ### November 2025 — Donato Giovannelli presents in the Through the Looking Glass seminar series
 
-- **Status/category:** `REVIEW` · Visitors / Seminars
-- **Details found:** Donato Giovannelli from the University of Naples Federico II presented in the Through the Looking Glass seminar series and toured the laboratory on 10 November 2025. Recover the talk title before publication.
-- **Public link:** [Donato Giovannelli](https://www.donatogiovannelli.com/)
-- **Draft website blurb:** “Donato Giovannelli presented in SPL's Through the Looking Glass seminar series, bringing a planetary perspective to the connections between microbial metabolism, evolution, and the environments that sustain life.”
+- **Status/category:** `READY` · Visitors / Seminars
+- **Details found:** Donato Giovannelli from the University of Naples Federico II presented in the Through the Looking Glass seminar series and toured the laboratory on 10 November 2025. The exact talk title was not recovered, so the public copy describes his research area instead.
+- **Public link:** [Donato Giovannelli at the University of Naples Federico II](https://www.dipartimentodibiologia.unina.it/personale/donato-giovannelli/)
+- **Draft website blurb:** “Donato Giovannelli presented his work on microbial life in extreme environments, planetary-scale biogeochemical cycles, and the coevolution of the geosphere and biosphere in SPL's Through the Looking Glass seminar series.”
 
 ### October 2025 — LigHTS preprint
 
@@ -498,9 +506,9 @@ The blocks below are arranged newest first so they can later map directly to the
 ### February 2024 — Loris Rizzello presents in the Through the Looking Glass seminar series
 
 - **Status/category:** `READY` · Visitors / Seminars
-- **Details found:** Loris Rizzello presented on 23 February 2024 as part of the Through the Looking Glass seminar series. Add his institutional profile and confirmed seminar title if available.
-- **Public link:** Pending
-- **Draft website blurb:** “Loris Rizzello presented in SPL's Through the Looking Glass seminar series, opening a discussion on biomaterials, engineered living systems, and new ways to interact with biology.”
+- **Details found:** Loris Rizzello presented on 23 February 2024 as part of the Through the Looking Glass seminar series. The exact talk title was not recovered, so the public copy describes his research area instead.
+- **Public link:** [Loris Rizzello at the University of Milan](https://infectiondynamics.unimi.it/profilo/loris-rizzello/)
+- **Draft website blurb:** “Loris Rizzello presented his work on host–pathogen interactions and nanotechnology-based approaches to infectious and pandemic diseases in SPL's Through the Looking Glass seminar series.”
 
 ## 2023
 
@@ -538,13 +546,6 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Details found:** Manuela Raimondi from Politecnico di Milano presented “Frontier platforms for experimental cell modelling” on 7 November 2023 as part of the Through the Looking Glass seminar series.
 - **Public link:** [Manuela Raimondi at Politecnico di Milano](https://www.cmic.polimi.it/persone/docenti-e-ricercatori/raimondi-manuela-teresa/)
 - **Draft website blurb:** “Manuela Raimondi presented in SPL's Through the Looking Glass seminar series, sharing frontier platforms for experimental cell modelling and more human-relevant biomedical research.”
-
-### October 2023 — Alessandro presents at DICAr Day
-
-- **Status/category:** `REVIEW` · Events
-- **Details found:** Alessandro presented “Engineering human stem cells and culture platforms for drug discovery applications” at DICAr Day on 18 October 2023. Decide whether this departmental research showcase belongs in the public archive.
-- **Public link:** [DICAr Day](https://www.unipv.news/eventi/dicar-day)
-- **Draft website blurb:** “Alessandro presented SPL's work at DICAr Day, showing how engineered human stem cells and culture platforms can support drug-discovery applications.”
 
 ### October 2023 — μSplit at ICCV
 
@@ -623,13 +624,6 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Public link:** [UniPV profile](https://unipv.unifind.cineca.it/get/person/061387)
 - **Draft website blurb:** “Welcome to Alessandro Enrico, who joins SPL from KTH Royal Institute of Technology to lead materials science, laser fabrication, and high-throughput tissue-engineering research.”
 
-### March 2023 — Francesco presents at the DICAr conference
-
-- **Status/category:** `REVIEW` · Events
-- **Details found:** Francesco presented SPL's work at a DICAr departmental conference on 1 March 2023. Recover the exact event title, presentation title, and public programme before deciding whether it belongs in the archive.
-- **Public link:** Pending
-- **Draft website blurb:** “Francesco presented SPL's work at the DICAr conference, introducing the lab's approach to rebuilding human physiology through cells, materials, imaging, and computation.”
-
 ### February 2023 — immersed isogeometric analysis paper
 
 - **Status/category:** `READY` · Research
@@ -648,17 +642,17 @@ The blocks below are arranged newest first so they can later map directly to the
 
 ### November 2022 — Elisa Cimetta presents in the Through the Looking Glass seminar series
 
-- **Status/category:** `REVIEW` · Visitors / Seminars
-- **Details found:** Elisa Cimetta from the University of Padua presented in the Through the Looking Glass seminar series and visited the laboratory on 21 November 2022. Recover the talk title before publication.
-- **Public link:** [Elisa Cimetta at the University of Padua](https://www.unipd.it/contatti/elisa.cimetta)
-- **Draft website blurb:** “Elisa Cimetta presented in SPL's Through the Looking Glass seminar series, sharing microscale technologies and advanced culture platforms for more human-relevant biological models.”
+- **Status/category:** `READY` · Visitors / Seminars
+- **Details found:** Elisa Cimetta from the University of Padua presented in the Through the Looking Glass seminar series and visited the laboratory on 21 November 2022. The exact talk title was not recovered, so the public copy describes her research area instead.
+- **Public link:** [BIAMET research group at the University of Padua](https://research.dii.unipd.it/biamet/?page_id=213)
+- **Draft website blurb:** “Elisa Cimetta presented her work on microscale technologies, microfluidic culture platforms, and advanced biological models for developing and testing new drugs and therapies in SPL's Through the Looking Glass seminar series.”
 
 ### November 2022 — Florian Jug presents in the Through the Looking Glass seminar series
 
 - **Status/category:** `READY` · Visitors / Seminars
-- **Details found:** Florian Jug presented on bioimage analysis on 16 November 2022 as part of the Through the Looking Glass seminar series, strengthening a collaboration that later contributed to μSplit and MicroSplit.
-- **Public link:** Pending institutional profile
-- **Draft website blurb:** “Florian Jug presented on bioimage analysis in SPL's Through the Looking Glass seminar series, beginning conversations that would grow into a productive long-term collaboration.”
+- **Details found:** Florian Jug presented on 16 November 2022 as part of the Through the Looking Glass seminar series, strengthening a collaboration that later contributed to μSplit and MicroSplit. The exact talk title was not recovered, so the public copy describes his research area instead.
+- **Public link:** [Florian Jug at Human Technopole](https://humantechnopole.it/en/people/florian-jug/)
+- **Draft website blurb:** “Florian Jug presented his work on artificial intelligence and machine learning for quantitative bioimage analysis and open microscopy software in SPL's Through the Looking Glass seminar series, beginning conversations that would grow into a productive long-term collaboration.”
 
 ### October 2022 — Bohdana Horda begins her PhD with SPL
 
@@ -749,9 +743,9 @@ The blocks below are arranged newest first so they can later map directly to the
 ### November 2021 — Johan Lind opens the Through the Looking Glass seminar series
 
 - **Status/category:** `READY` · Visitors / Seminars
-- **Details found:** Johan U. Lind presented on 4–5 November 2021 in the first Through the Looking Glass seminar.
-- **Public link:** Pending institutional profile
-- **Draft website blurb:** “Johan U. Lind opened SPL's Through the Looking Glass seminar series with a presentation on cardiac tissue engineering, biofabrication, and experimental scale.”
+- **Details found:** Johan U. Lind presented on 4–5 November 2021 in the first Through the Looking Glass seminar. The exact talk title was not recovered, so the public copy describes his research area instead.
+- **Public link:** [Tailored Materials and Tissues group at DTU](https://www.healthtech.dtu.dk/research/research-sections/section-cell-and-drug-technologies/group-tailored-materials-and-tissues)
+- **Draft website blurb:** “Johan U. Lind opened SPL's Through the Looking Glass seminar series by presenting his work on bioprinting, microphysiological tissue models, and functional materials that integrate living cells with engineered systems.”
 
 ### October 2021 — Ahmed concludes his SPL fellowship
 
