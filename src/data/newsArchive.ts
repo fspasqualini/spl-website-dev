@@ -358,6 +358,12 @@ export const newsArchive: NewsEntry[] = [
     "category": "events",
     "title": "Francesco speaks about frontier research at the Italian Senate",
     "blurb": "Francesco spoke at the Italian Senate about the value of frontier research and the conditions needed for ambitious science and innovation to thrive in Italy.",
+    "links": [
+      {
+        "label": "Senate event page",
+        "href": "https://www.senato.it/attualita/archivio-notizie?nid=117884"
+      }
+    ],
     "people": [
       "Francesco S. Pasqualini"
     ],
@@ -601,6 +607,12 @@ export const newsArchive: NewsEntry[] = [
     "category": "events",
     "title": "ERC Days at Federico II",
     "blurb": "Francesco joined ERC Days at Federico II to mentor prospective applicants, share experience of the ERC programme, and advocate for the conditions that help frontier research thrive in Italy.",
+    "links": [
+      {
+        "label": "ERC Days @Unina 2025",
+        "href": "https://ercinitaly.eu/erc-days-unina-2025/"
+      }
+    ],
     "people": [
       "Francesco S. Pasqualini"
     ],
@@ -837,11 +849,18 @@ export const newsArchive: NewsEntry[] = [
   },
   {
     "id": "2024-human-cell-atlas-and-ecm-atlas-meeting",
-    "date": "2024-09-01",
+    "date": "2024-10-01",
     "datePrecision": "month",
+    "dateLabel": "September–October 2024",
     "category": "events",
     "title": "Human Cell Atlas and ECM Atlas meeting",
     "blurb": "Francesco presented SPL's work at the Human Cell Atlas meeting, contributing an extracellular-matrix perspective to the effort to map human cells in their native physical and molecular context.",
+    "links": [
+      {
+        "label": "Human Cell Atlas meeting agenda",
+        "href": "https://www.humancellatlas.org/wp-content/uploads/2024/12/2024_09_29-30-HCA-General-Meeting-Agenda.pdf"
+      }
+    ],
     "people": [
       "Francesco S. Pasqualini"
     ],
@@ -893,6 +912,12 @@ export const newsArchive: NewsEntry[] = [
     "category": "events",
     "title": "NanoInnovation",
     "blurb": "Francesco presented SPL's work at NanoInnovation 2024, connecting engineered biomaterials and high-throughput tissue models with Italy's nanotechnology community.",
+    "links": [
+      {
+        "label": "NanoInnovation 2024 abstract",
+        "href": "https://www.nanoinnovation2024.eu/home/ABS/New%20Engineering%20Tools%20to%20Study%20Cell-ECM%20Interactions%20in-vitro.pdf"
+      }
+    ],
     "people": [
       "Francesco S. Pasqualini"
     ],
@@ -985,6 +1010,12 @@ export const newsArchive: NewsEntry[] = [
     "category": "events",
     "title": "CIMTEC invited presentation",
     "blurb": "Francesco gave an invited presentation at CIMTEC, sharing SPL's work on engineered matrices and scalable human tissue models.",
+    "links": [
+      {
+        "label": "CIMTEC 2024 invited speakers",
+        "href": "https://2024.cimtec-congress.org/invited-speakers"
+      }
+    ],
     "people": [
       "Francesco S. Pasqualini"
     ],
@@ -1053,24 +1084,6 @@ export const newsArchive: NewsEntry[] = [
       }
     ],
     "order": 943
-  },
-  {
-    "id": "2024-tehreem-begins-collaborating-with-spl",
-    "date": "2024-04-01",
-    "datePrecision": "month",
-    "category": "people",
-    "title": "Tehreem begins collaborating with SPL",
-    "blurb": "Welcome to Tehreem Ali, who begins collaborating with SPL on bioinformatics and computational approaches to extracellular-matrix and tissue-model data.",
-    "links": [
-      {
-        "label": "Official One Health PhD page",
-        "href": "https://spmsf.dip.unipv.it/it/didattica/post-laurea/dottorati-di-ricerca/one-health-approaches-infectious-diseases-and-life-107"
-      }
-    ],
-    "people": [
-      "Tehreem Ali"
-    ],
-    "order": 942
   },
   {
     "id": "2024-francesco-and-melissa-at-focus-on-microscopy",
@@ -1294,6 +1307,12 @@ export const newsArchive: NewsEntry[] = [
     "category": "events",
     "title": "Seeing Is Believing",
     "blurb": "Francesco presented SPL's work at Seeing Is Believing, joining an international microscopy community focused on making dynamic biology visible.",
+    "links": [
+      {
+        "label": "EMBO | EMBL symposium",
+        "href": "https://www.embl.org/about/info/course-and-conference-office/events/EES23-09/"
+      }
+    ],
     "people": [
       "Francesco S. Pasqualini"
     ],
@@ -1345,6 +1364,12 @@ export const newsArchive: NewsEntry[] = [
     "category": "events",
     "title": "NanoInnovation",
     "blurb": "Francesco presented SPL's work at NanoInnovation 2023 and helped convene a session connecting nanotechnology, biomaterials, and human tissue models.",
+    "links": [
+      {
+        "label": "NanoInnovation 2023 programme",
+        "href": "https://www.nanoinnovation2023.eu/home/DOWNLOAD/PROGRAM_BOOK_2023_updated_11-9-2023.pdf"
+      }
+    ],
     "people": [
       "Francesco S. Pasqualini"
     ],
@@ -1357,6 +1382,12 @@ export const newsArchive: NewsEntry[] = [
     "category": "events",
     "title": "ESB-ITA",
     "blurb": "Francesco presented SPL's work at the ESB-ITA meeting, sharing engineered biomaterials and tissue-model research with Italy's biomaterials community.",
+    "links": [
+      {
+        "label": "ESB-ITA 2023 programme",
+        "href": "https://www.esb-ita.it/esb-ita23-home/esb-ita23-programme/"
+      }
+    ],
     "people": [
       "Francesco S. Pasqualini"
     ],
@@ -1369,6 +1400,12 @@ export const newsArchive: NewsEntry[] = [
     "category": "events",
     "title": "Transducers 2023",
     "blurb": "Alessandro Enrico presented SPL's work at Transducers 2023, connecting engineered physiological systems with the international sensors and microsystems community.",
+    "links": [
+      {
+        "label": "Transducers 2023 programme",
+        "href": "https://www.transducersconferences.org/archive/transducers2023/files/Transducers2023_Program.pdf"
+      }
+    ],
     "people": [
       "Alessandro Enrico"
     ],
@@ -1474,6 +1511,12 @@ export const newsArchive: NewsEntry[] = [
     "category": "funding",
     "title": "RESET grant",
     "blurb": "SPL has received PRIN support for RESET, a project investigating whether modulating senescent macrophages can help resolve persistent infection.",
+    "links": [
+      {
+        "label": "RESET project record",
+        "href": "https://expertise.unimi.it/resource/project/PRIN202223LRIZZ_01?language=it-IT"
+      }
+    ],
     "order": 919
   },
   {
@@ -1651,6 +1694,12 @@ export const newsArchive: NewsEntry[] = [
     "category": "funding",
     "title": "LigHTS funding",
     "blurb": "SPL has received MUR FARE support for LigHTS, an all-optical platform for engineering human tissue models at ultra-high-throughput screening scale.",
+    "links": [
+      {
+        "label": "MUR FARE award decree",
+        "href": "https://www.mur.gov.it/sites/default/files/2022-11/Decreto%20Direttoriale%20n.%20398%20del%2024-10-2022.pdf"
+      }
+    ],
     "order": 909
   },
   {
@@ -1696,6 +1745,12 @@ export const newsArchive: NewsEntry[] = [
     "category": "events",
     "title": "USERN invited presentation",
     "blurb": "Francesco gave an invited presentation at USERN, sharing SPL's vision for engineering human physiology from cells, materials, imaging, and computation.",
+    "links": [
+      {
+        "label": "6th International USERN Congress",
+        "href": "https://usern.org/blog/73/the-6th-international-usern-congress-llnc"
+      }
+    ],
     "people": [
       "Francesco S. Pasqualini"
     ],
@@ -1765,6 +1820,12 @@ export const newsArchive: NewsEntry[] = [
     "category": "funding",
     "title": "highLight funding",
     "blurb": "SPL is a founding laboratory for highLight, a Regione Lombardia-supported competence centre connecting bio- and nano-engineering with sustainable research and innovation.",
+    "links": [
+      {
+        "label": "University of Pavia sustainability report",
+        "href": "https://osa.unipv.it/wp-content/uploads/2025/01/Rapporto-di-Sostenibilita_def_singole_compressed.pdf"
+      }
+    ],
     "order": 902
   },
   {
@@ -1852,6 +1913,12 @@ export const newsArchive: NewsEntry[] = [
     "category": "events",
     "title": "3D-printing workshop",
     "blurb": "Francesco presented SPL's work at a 3D-printing workshop, sharing early ideas for using fabrication to build better experimental models of human tissues.",
+    "links": [
+      {
+        "label": "5th Bioprinting Workshop",
+        "href": "https://compmech.unipv.it/5th-bioprinting-workshop/"
+      }
+    ],
     "people": [
       "Francesco S. Pasqualini"
     ],

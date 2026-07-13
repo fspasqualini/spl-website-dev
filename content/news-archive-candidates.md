@@ -30,9 +30,9 @@ This table covers every person on the current and former website rosters, plus S
 |---|---|---|---|---|
 | Francesco S. Pasqualini | Founder/PI from June 2020 | Returned to UniPV after Harvard/Wyss work and the Wyss Translational Center in Zurich | Founding story is `READY`; say the lab was established in June 2020 and SYNBIO.ECM began in December 2020 | High. [UniPV profile](https://unipv.unifind.cineca.it/resource/person/951912?language=it-IT); [SYNBIO.ECM](https://cordis.europa.eu/project/id/852560) |
 | Moises Di Sante | Joined February 2021 as a research fellow; now senior researcher/RTT | University of Padua, after CNR Padua and a Harvard-affiliated postdoc | Join story is `READY` | High. [Official UniPV CV](https://unipv.unifind.cineca.it/v1/dataservice/files/ugovcv/DI%20SANTE_MOISES_en_93404.pdf) |
-| Sandipan Chattaraj | Joined January 2021 as a computational research fellow/postdoc; formal UniPV CV history ends December 2024, while SPL collaborations continued through 2026 | IIT Kanpur postdoc, after a PhD at IIT Bombay | Join is `READY`; departure is `REVIEW` because appointment end and collaboration end are different | High for start/origin. [IESL-FORTH profile](https://www.iesl.forth.gr/en/people/chattaraj-sandipan); [CV](https://www.iesl.forth.gr/sites/default/files/cv-en/short-CV-Sandipan.pdf) |
+| Sandipan Chattaraj | Joined January 2021 as a computational research fellow/postdoc; formal UniPV CV history ends December 2024, while SPL collaborations continued through 2026 | IIT Kanpur postdoc, after a PhD at IIT Bombay | Join is `READY`; departure is `READY`, with the story limited to the formal UniPV appointment ending while collaborations continued | High for start/origin. [IESL-FORTH profile](https://www.iesl.forth.gr/en/people/chattaraj-sandipan); [CV](https://www.iesl.forth.gr/sites/default/files/cv-en/short-CV-Sandipan.pdf) |
 | Ahmed S. Khalil | Remote computational/HPC research fellow, January–October 2021 | Prior institution/location not reliably established | Join and warm departure are `READY`; do not add a destination or external profile | High for dates, unknown origin; same-name public results are unsafe |
-| Alice Albini | Grant/accounting and ERC-reporting support, January 2021–June 2022 | Already supporting projects at UniPV DIII | Join is optional; warm transition story is `REVIEW` because this may be too operational for the public feed | High internally. [UniPV IEIE page](https://phdieie.unipv.it/academic-board/) confirms her wider UniPV role, not the SPL dates |
+| Alice Albini | Grant/accounting and ERC-reporting support, January 2021–June 2022 | Already supporting projects at UniPV DIII | Join is optional; warm transition story is `READY` | High internally. [UniPV IEIE page](https://phdieie.unipv.it/academic-board/) confirms her wider UniPV role, not the SPL dates |
 | Melissa Pezzotti | Joined the XXXVII-cycle PhD cohort in October 2021; defended 26 June 2026; continued as an SPL postdoc | UniPV Biomedical Engineering MSc and an experimental photonics thesis | Join and defense are `READY` | High. [PhD thesis](https://iris.unipv.it/handle/11571/1553616); [UniPV profile](https://unipv.unifind.cineca.it/resource/person/1118368?language=en-US); [Biohub story](https://biohub.org/life-science/calling-all-lego-builders-put-your-skills-to-use-assembling-a-light-sheet-microscope/) |
 | Eloisa Torchia | SPL thesis student by March 2021; joined the XXXVII-cycle PhD cohort in October 2021; defended 26 June 2026; continued in a follow-on research role | UniPV Bioengineering MSc / SPL thesis pipeline | Join and defense are `READY` | High. [PhD thesis](https://iris.unipv.it/handle/11571/1553615); [master's thesis](https://unitesi.unipv.it/handle/20.500.14239/13728) |
 | Bohdana Horda | SPL MSc thesis student by September 2022; XXXVIII-cycle PhD from autumn 2022 to June 2024 | UniPV Bioengineering MSc | Join and warm departure are `READY`; use no next-destination claim | High internally. [UniPV thesis listing](https://unitesi.unipv.it/browse?authority=do7833&type=contributorSupervisor) supports the thesis relationship |
@@ -40,9 +40,9 @@ This table covers every person on the current and former website rosters, plus S
 | Saranya Vasudevan | Research fellow May 2023–October 2024 | A research position in Poland; institution not recovered | Join and warm departure are `READY`; current IIT link may be used | High for dates, medium for origin. [UniPV fellowship result](https://detac.unipv.it/archivi/dicar.unipv.it/wp-content/uploads/2023/02/22-277approvazioneGraduatoria.pdf); [IIT profile](https://www.iit.it/people-details/-/people/saranya-vasudevan) |
 | Emanuele Carnevale Baraglia | SPL MSc/research trainee from July 2023; formal PRIN-linked PhD from March 2024 to May 2025 | UniPV Bioengineering MSc | Formal PhD join and warm departure are `READY`; do not publish a separate MSc thesis-start story or name a destination | High internally. [UniPV thesis listing](https://unitesi.unipv.it/browse?authority=do7833&type=contributorSupervisor) |
 | Julius Zimmermann | Research fellow/postdoc September 2023–August 2025 | University of Rostock, electrical engineering research | Join and warm departure are `READY`; do not publish a next job without confirmation | High internally. [University of Rostock profile](https://www.iae.uni-rostock.de/zimmermann/); [ORCID](https://orcid.org/0000-0003-1486-0426) |
-| Daniela Canevari | SPL project/administrative support from September 2023; remains in the wider DICAr administration | Private-sector administration and reporting, followed by accounting training; exact employer omitted from public copy | Join is `REVIEW`; do not describe her as having left UniPV | High internally. [DICAr administration](https://dicar.dip.unipv.it/en/department/organization/administrative-divisions) |
+| Daniela Canevari | SPL project/administrative support from September 2023; remains in the wider DICAr administration | Private-sector administration and reporting, followed by accounting training; exact employer omitted from public copy | Join is `READY`; do not describe her as having left UniPV | High internally. [DICAr administration](https://dicar.dip.unipv.it/en/department/organization/administrative-divisions) |
 | Sara Rigolli | Joined for an SPL MSc thesis by December 2023; began her PhD in October 2024 | UniPV Bioengineering MSc | PhD transition is `READY`; do not publish a separate MSc thesis-start story | High. [ORCID](https://orcid.org/0009-0007-4910-2939); [master's thesis](https://unitesi.unipv.it/handle/20.500.14239/33222); [Zeglio Lab visit](https://zegliolab.org/alumni/) |
-| Tehreem Ali | Began the One Health XL-cycle PhD in October 2024 and joined the lab in Pavia in March 2025 after initial remote onboarding | Government College University Faisalabad, Pakistan | Join is `READY`; keep the public account to academic origin and bioinformatics focus | High for PhD/start sequence. [Official PhD page](https://spmsf.dip.unipv.it/it/didattica/post-laurea/dottorati-di-ricerca/one-health-approaches-infectious-diseases-and-life-107) |
+| Tehreem Ali | Began the One Health XL-cycle PhD in October 2024 and joined the lab in Pavia in March 2025 after initial remote onboarding | Government College University Faisalabad, Pakistan | PhD-entry story is `READY`; do not publish a separate pre-PhD collaboration story | High for PhD/start sequence. [Official PhD page](https://spmsf.dip.unipv.it/it/didattica/post-laurea/dottorati-di-ricerca/one-health-approaches-infectious-diseases-and-life-107) |
 | Chimwemwe Msosa | Visiting CICOPS/Coimbra fellow, September–December 2024 | Malawi University of Business and Applied Sciences, where he teaches Biomedical Engineering | Arrival and warm departure can be one `READY` visit story | High. [MUBAS profile](https://rsu.mubas.ac.mw/team-members/assoc-prof-save-kumwenda/) (the institution's URL slug is misleading, but the page content is his profile) |
 | Martina Petrelli | Scientific-illustration collaborator from November 2024; joined the SPL team in February 2025; current team title is Artist in Residence | Fine-arts training at Accademia di Belle Arti di Bari, after a period in Amsterdam | Join is `READY`; the later team-title change is not a separate news item | High. [Public profile](https://it.linkedin.com/in/martina-petrelli-0b1837293) |
 | Maddalena Rocca | Joined February 2025 in project-management/administrative support | EDISU Pavia, supporting scholarships and international students | Join is `READY`; external biography not strong enough for a link | High internally; current [SPL team page](https://syntheticphysiologylab.com/team/) confirms the public role |
@@ -161,7 +161,7 @@ The blocks below are arranged newest first so they can later map directly to the
 ### November 2025 — Alessandro and Sara at UNLOOC and BEONCHIP in Zaragoza
 
 - **Status/category:** `READY` · Events
-- **Details found:** Alessandro Enrico and Sara Rigolli represented SPL at the KDT UNLOOC consortium meeting and BEONCHIP workshop in Zaragoza around 28 November 2025. Confirm the official event title and dates before publishing.
+- **Details found:** Alessandro Enrico and Sara Rigolli represented SPL at the KDT UNLOOC consortium meeting and BEONCHIP workshop in Zaragoza around 28 November 2025. Month-level wording as a consortium/grant meeting is approved; no more specific public title or dates are required.
 - **Public link:** [UNLOOC project](https://cordis.europa.eu/project/id/101140192)
 - **Draft website blurb:** “Alessandro Enrico and Sara Rigolli represented SPL at the UNLOOC and BEONCHIP meeting in Zaragoza, exchanging tools and standards for extracting more useful data from organ-on-chip systems.”
 
@@ -182,8 +182,8 @@ The blocks below are arranged newest first so they can later map directly to the
 ### October 2025 — Francesco speaks about frontier research at the Italian Senate
 
 - **Status/category:** `READY` · Events / Research advocacy
-- **Details found:** Francesco spoke at an Italian Senate event on 16 October 2025 through his ERC in Italy work. This was frontier-research dissemination and advocacy, not a presentation of SPL research. Add a stable public programme link if recovered.
-- **Public link:** Pending
+- **Details found:** Francesco spoke at an Italian Senate event on 16 October 2025 through his ERC in Italy work. This was frontier-research dissemination and advocacy, not a presentation of SPL research.
+- **Public link:** [Senate event page](https://www.senato.it/attualita/archivio-notizie?nid=117884)
 - **Draft website blurb:** “Francesco spoke at the Italian Senate about the value of frontier research and the conditions needed for ambitious science and innovation to thrive in Italy.”
 
 ### October 2025 — DeepFUCCI preprint
@@ -274,7 +274,7 @@ The blocks below are arranged newest first so they can later map directly to the
 
 - **Status/category:** `READY` · Events / Research advocacy
 - **Details found:** Francesco helped organise ERC Days at the University of Naples Federico II on 22–23 May 2025 and mentored prospective ERC applicants. This was frontier-research dissemination and advocacy, not a presentation of SPL research.
-- **Public link:** Pending
+- **Public link:** [ERC Days @Unina 2025](https://ercinitaly.eu/erc-days-unina-2025/)
 - **Draft website blurb:** “Francesco joined ERC Days at Federico II to mentor prospective applicants, share experience of the ERC programme, and advocate for the conditions that help frontier research thrive in Italy.”
 
 ### April 2025 — BIOPOINT preprint
@@ -315,7 +315,7 @@ The blocks below are arranged newest first so they can later map directly to the
 ### 2025 — Sandipan's formal UniPV appointment concludes
 
 - **Status/category:** `READY` · People
-- **Details found:** Sandipan's public CV records UniPV through December 2024 and his current IESL-FORTH role from November 2025, while internal evidence shows ongoing SPL collaboration and BIOPOINT activity in 2026. Confirm whether a departure story belongs in December 2024, later in 2025, or not at all.
+- **Details found:** Sandipan's public CV records UniPV through December 2024 and his current IESL-FORTH role from November 2025, while internal evidence shows ongoing SPL collaboration and BIOPOINT activity in 2026. The year-only transition story is approved as written and should not imply that collaboration ended.
 - **Public link:** [IESL-FORTH profile](https://www.iesl.forth.gr/en/people/chattaraj-sandipan)
 - **Draft website blurb:** “After helping build SPL's computational-mechanics programme, Sandipan Chattaraj is beginning a new chapter while continuing to collaborate with the group. We thank him for his lasting contribution and wish him every success.”
 
@@ -370,11 +370,11 @@ The blocks below are arranged newest first so they can later map directly to the
 - **Public link:** [IIT profile](https://www.iit.it/people-details/-/people/saranya-vasudevan)
 - **Draft website blurb:** “Saranya Vasudevan is moving on after contributing to SPL's computational modeling of biomaterials and engineered culture platforms. We thank her warmly and wish her the very best in her next adventure.”
 
-### September 2024 — Human Cell Atlas and ECM Atlas meeting
+### September–October 2024 — Human Cell Atlas and ECM Atlas meeting
 
 - **Status/category:** `READY` · Events
-- **Details found:** Francesco presented SPL's work at the Human Cell Atlas / extracellular-matrix atlas meeting on 29–30 September 2024. Recover the official event page and title if possible.
-- **Public link:** Pending
+- **Details found:** The Human Cell Atlas General Meeting ran on 29–30 September 2024, followed by the Cells in Context symposium on 1 October. The official agenda lists Francesco's presentation on 1 October, so the public archive uses a September–October label.
+- **Public link:** [Human Cell Atlas meeting agenda](https://www.humancellatlas.org/wp-content/uploads/2024/12/2024_09_29-30-HCA-General-Meeting-Agenda.pdf)
 - **Draft website blurb:** “Francesco presented SPL's work at the Human Cell Atlas meeting, contributing an extracellular-matrix perspective to the effort to map human cells in their native physical and molecular context.”
 
 ### September 2024 — MBE24
@@ -394,8 +394,8 @@ The blocks below are arranged newest first so they can later map directly to the
 ### September 2024 — NanoInnovation
 
 - **Status/category:** `READY` · Events
-- **Details found:** Francesco presented SPL's work at NanoInnovation on 12 September 2024. Recover the public programme if possible.
-- **Public link:** Pending
+- **Details found:** Francesco presented SPL's work at NanoInnovation on 12 September 2024; the official abstract records the presentation topic.
+- **Public link:** [NanoInnovation 2024 abstract](https://www.nanoinnovation2024.eu/home/ABS/New%20Engineering%20Tools%20to%20Study%20Cell-ECM%20Interactions%20in-vitro.pdf)
 - **Draft website blurb:** “Francesco presented SPL's work at NanoInnovation 2024, connecting engineered biomaterials and high-throughput tissue models with Italy's nanotechnology community.”
 
 ### August 2024 — active-stress cardiac shell model
@@ -408,8 +408,8 @@ The blocks below are arranged newest first so they can later map directly to the
 ### July 2024 — Soft Skills presentation
 
 - **Status/category:** `READY` · Events
-- **Details found:** Francesco presented at Soft Skills on 23 July 2024. The current public programme appears to have been replaced or overwritten, so add a stable archived programme before publishing if possible.
-- **Public link:** Pending
+- **Details found:** Francesco presented at Soft Skills on 23 July 2024. A July 2026 public-web audit did not recover a stable event-specific programme; keep the story unlinked.
+- **Public link:** None found
 - **Draft website blurb:** “Francesco presented on the human and creative skills behind interdisciplinary research, reflecting on how teams turn scientific imagination into reproducible engineering.”
 
 ### July 2024 — Moises at the ISSCR Annual Meeting
@@ -437,7 +437,7 @@ The blocks below are arranged newest first so they can later map directly to the
 
 - **Status/category:** `READY` · Events
 - **Details found:** Francesco gave an explicitly invited presentation at CIMTEC, 20–24 June 2024.
-- **Public link:** Pending
+- **Public link:** [CIMTEC 2024 invited speakers](https://2024.cimtec-congress.org/invited-speakers)
 - **Draft website blurb:** “Francesco gave an invited presentation at CIMTEC, sharing SPL's work on engineered matrices and scalable human tissue models.”
 
 ### June 2024 — Moises at SIBBM Frontiers in Molecular Biology
@@ -450,8 +450,8 @@ The blocks below are arranged newest first so they can later map directly to the
 ### May 2024 — Claudia Marenco presents in the Through the Looking Glass seminar series
 
 - **Status/category:** `READY` · Visitors / Seminars
-- **Details found:** ERC scientific officer Claudia Marenco presented “ERC Frontier Research” on 22 May 2024 as part of the Through the Looking Glass seminar series. Add a public institutional profile if available.
-- **Public link:** Pending
+- **Details found:** ERC scientific officer Claudia Marenco presented “ERC Frontier Research” on 22 May 2024 as part of the Through the Looking Glass seminar series. A July 2026 public-web audit found no sufficiently specific institutional or event page; keep the story unlinked.
+- **Public link:** None found
 - **Draft website blurb:** “Claudia Marenco presented ‘ERC Frontier Research’ in SPL's Through the Looking Glass seminar series, opening a discussion about frontier funding and the conditions that help ambitious research thrive.”
 
 ### May 2024 — UNLOOC kickoff
@@ -470,8 +470,8 @@ The blocks below are arranged newest first so they can later map directly to the
 
 ### April 2024 — Tehreem begins collaborating with SPL
 
-- **Status/category:** `READY` · People
-- **Details found:** Connector evidence records an April remote welcome as a pre-PhD fellow in bioinformatics, before the formal October PhD start and March 2025 arrival in Pavia. Choose either this early collaboration story or the October PhD story, not both.
+- **Status/category:** `HOLD` · People · duplicate of the approved PhD-entry story
+- **Details found:** Connector evidence records an April remote welcome as a pre-PhD fellow in bioinformatics, before the formal October PhD start and March 2025 arrival in Pavia. The October PhD-entry story is the only public Tehreem news item; do not transfer this earlier collaboration lead.
 - **Public link:** [Official One Health PhD page](https://spmsf.dip.unipv.it/it/didattica/post-laurea/dottorati-di-ricerca/one-health-approaches-infectious-diseases-and-life-107)
 - **Draft website blurb:** “Welcome to Tehreem Ali, who begins collaborating with SPL on bioinformatics and computational approaches to extracellular-matrix and tissue-model data.”
 
@@ -557,8 +557,8 @@ The blocks below are arranged newest first so they can later map directly to the
 ### October 2023 — Seeing Is Believing
 
 - **Status/category:** `READY` · Events
-- **Details found:** Francesco presented SPL's work at Seeing Is Believing, 3–7 October 2023. Recover the official event page if possible.
-- **Public link:** Pending
+- **Details found:** Francesco presented SPL's work at the EMBO | EMBL Seeing Is Believing symposium, held in Heidelberg and online on 4–7 October 2023.
+- **Public link:** [EMBO | EMBL symposium](https://www.embl.org/about/info/course-and-conference-office/events/EES23-09/)
 - **Draft website blurb:** “Francesco presented SPL's work at Seeing Is Believing, joining an international microscopy community focused on making dynamic biology visible.”
 
 ### September 2023 — Daniela Canevari begins supporting SPL projects
@@ -579,21 +579,21 @@ The blocks below are arranged newest first so they can later map directly to the
 
 - **Status/category:** `READY` · Events
 - **Details found:** Francesco presented SPL's work at NanoInnovation on 20 September 2023 and also contributed through chairing and session responsibilities.
-- **Public link:** Pending
+- **Public link:** [NanoInnovation 2023 programme](https://www.nanoinnovation2023.eu/home/DOWNLOAD/PROGRAM_BOOK_2023_updated_11-9-2023.pdf)
 - **Draft website blurb:** “Francesco presented SPL's work at NanoInnovation 2023 and helped convene a session connecting nanotechnology, biomaterials, and human tissue models.”
 
 ### September 2023 — ESB-ITA
 
 - **Status/category:** `READY` · Events
 - **Details found:** Francesco presented SPL's work at ESB-ITA on 18 September 2023.
-- **Public link:** Pending
+- **Public link:** [ESB-ITA 2023 programme](https://www.esb-ita.it/esb-ita23-home/esb-ita23-programme/)
 - **Draft website blurb:** “Francesco presented SPL's work at the ESB-ITA meeting, sharing engineered biomaterials and tissue-model research with Italy's biomaterials community.”
 
 ### June 2023 — Transducers 2023
 
 - **Status/category:** `READY` · Events
 - **Details found:** Alessandro Enrico represented SPL and presented the group's work at Transducers 2023, 25–29 June. Do not distinguish the presentation format in public copy.
-- **Public link:** Pending
+- **Public link:** [Transducers 2023 programme](https://www.transducersconferences.org/archive/transducers2023/files/Transducers2023_Program.pdf)
 - **Draft website blurb:** “Alessandro Enrico presented SPL's work at Transducers 2023, connecting engineered physiological systems with the international sensors and microsystems community.”
 
 ### June 2023 — mixed isogeometric collocation paper
@@ -634,8 +634,8 @@ The blocks below are arranged newest first so they can later map directly to the
 ### 2023 — RESET grant
 
 - **Status/category:** `READY` · Funding · already live
-- **Details found:** RESET is a MUR PRIN 2022 project on resolving infections by modulating senescent macrophages. The website estimates a 2023 start. Internal sources give €100k while the current backend says €125k; verify the official award document before publishing an amount.
-- **Public link:** Pending official PRIN project page
+- **Details found:** RESET is a MUR PRIN 2022 project on resolving infections by modulating senescent macrophages. Keep the historical archive entry year-only and omit the amount.
+- **Public link:** [RESET project record](https://expertise.unimi.it/resource/project/PRIN202223LRIZZ_01?language=it-IT)
 - **Draft website blurb:** “SPL has received PRIN support for RESET, a project investigating whether modulating senescent macrophages can help resolve persistent infection.”
 
 ## 2022
@@ -706,14 +706,14 @@ The blocks below are arranged newest first so they can later map directly to the
 ### 2022 — LigHTS funding
 
 - **Status/category:** `READY` · Funding · already live
-- **Details found:** MUR FARE support for all-optical engineering of human tissue models for ultra-high-throughput screening. The current backend estimates a 1 January 2022 start and €400k; verify the award letter or official project page before retaining the exact date and amount.
-- **Public link:** Pending official MUR page
+- **Details found:** MUR FARE support for all-optical engineering of human tissue models for ultra-high-throughput screening. Keep the historical archive entry year-only and omit the amount.
+- **Public link:** [MUR FARE award decree](https://www.mur.gov.it/sites/default/files/2022-11/Decreto%20Direttoriale%20n.%20398%20del%2024-10-2022.pdf)
 - **Draft website blurb:** “SPL has received MUR FARE support for LigHTS, an all-optical platform for engineering human tissue models at ultra-high-throughput screening scale.”
 
 ### 2022 — CARDIO-SCREEN funding
 
 - **Status/category:** `READY` · Funding · already live
-- **Details found:** EU/MUR PNRR support for engineered in-vitro and in-silico cardiometabolic-disease models. The current backend estimates a 2022 start and €250k; verify the official project record.
+- **Details found:** EU/MUR PNRR support for engineered in-vitro and in-silico cardiometabolic-disease models. Keep the historical archive entry year-only and omit the amount.
 - **Public link:** [National Center for RNA and Gene Therapy — Spoke 4](https://www.rna-genetherapy.eu/spokes/spoke-4/)
 - **Draft website blurb:** “SPL joins CARDIO-SCREEN to combine engineered human tissues and computational models for screening DNA- and RNA-based therapies in cardiometabolic disease.”
 
@@ -731,8 +731,8 @@ The blocks below are arranged newest first so they can later map directly to the
 ### November 2021 — USERN invited presentation
 
 - **Status/category:** `READY` · Events
-- **Details found:** Internal programme evidence identifies the 8 November 2021 USERN contribution as invited. Recover the public programme if possible.
-- **Public link:** Pending
+- **Details found:** Internal programme evidence identifies the 8 November 2021 USERN contribution as invited; the official congress page confirms the wider hybrid event.
+- **Public link:** [6th International USERN Congress](https://usern.org/blog/73/the-6th-international-usern-congress-llnc)
 - **Draft website blurb:** “Francesco gave an invited presentation at USERN, sharing SPL's vision for engineering human physiology from cells, materials, imaging, and computation.”
 
 ### November 2021 — Johan Lind opens the Through the Looking Glass seminar series
@@ -759,8 +759,8 @@ The blocks below are arranged newest first so they can later map directly to the
 ### 2021 — highLight funding
 
 - **Status/category:** `READY` · Funding · already live
-- **Details found:** Regione Lombardia support for a competence centre in bio/nano-sustainability. The current backend estimates a 2021 start and €250k; verify an official award page before retaining exact details.
-- **Public link:** Pending official Regione Lombardia page
+- **Details found:** Regione Lombardia support for a competence centre in bio/nano-sustainability. Keep the historical archive entry year-only and omit the amount.
+- **Public link:** [University of Pavia sustainability report](https://osa.unipv.it/wp-content/uploads/2025/01/Rapporto-di-Sostenibilita_def_singole_compressed.pdf)
 - **Draft website blurb:** “SPL is a founding labotatory for highLight, a Regione Lombardia-supported competence centre connecting bio- and nano-engineering with sustainable research and innovation.”
 
 ### February 2021 — laboratory buildout complete
@@ -803,8 +803,8 @@ The blocks below are arranged newest first so they can later map directly to the
 ### September 2020 — 3D-printing workshop
 
 - **Status/category:** `READY` · Events
-- **Details found:** Francesco presented at a 3D-printing workshop on 29 September 2020. The exact public event title and programme link remain to be recovered; use general presentation wording.
-- **Public link:** Pending
+- **Details found:** Francesco presented at the 5th Bioprinting Workshop on 29 September 2020; the CompMech event page records him among the presenters.
+- **Public link:** [5th Bioprinting Workshop](https://compmech.unipv.it/5th-bioprinting-workshop/)
 - **Draft website blurb:** “Francesco presented SPL's work at a 3D-printing workshop, sharing early ideas for using fabrication to build better experimental models of human tissues.”
 
 ### June 2020 — Synthetic Physiology Lab established
@@ -823,15 +823,14 @@ These are content corrections to make only when the approved archive is transfer
 3. Correct BIOPOINT's publication year from 2025 to 2026, and keep the April 2025 preprint and March 2026 peer-reviewed publication as separate news entries.
 4. Correct the cardiac-electrophysiology isogeometric paper to 2022; its DOI and publisher record are 2022, not 2021.
 5. Normalize names as `LigHTS`, `μSplit`, and `SEM²`.
-6. Verify RESET's amount before publication: internal evidence says €100k while the backend currently says €125k.
-7. Replace estimated grant dates for highLight, LigHTS, CARDIO-SCREEN, and RESET with official award/project dates when source pages are found.
+6. Do not publish exact amounts for the historical RESET, highLight, LigHTS, or CARDIO-SCREEN entries.
+7. Keep the historical RESET, highLight, LigHTS, and CARDIO-SCREEN entries at year precision; exact award dates are not required for the archive.
 8. Update Melissa and Eloisa from PhD-student language to postdoctoral/fellow language after their 26 June 2026 defenses.
 9. Name the person presenting SPL's work at conferences; do not distinguish talks from posters, and specify `invited` or `plenary` only where the evidence explicitly supports it. Treat chairing and co-chairing as service rather than a presentation.
 10. Keep private personnel notes, connector IDs, contract mechanics, and personal circumstances out of the public dataset.
 
 ## Leads deliberately held back
 
-- Exact month and public story for Sandipan's transition away from formal UniPV employment: collaboration continued well beyond the apparent appointment end.
 - A public next-job statement for Ahmed: multiple same-name matches were false positives.
 - A public destination for Julius, Emanuele, or Bohdana: current hints are not strong enough to publish as fact.
 - The exact Polish institution Saranya joined from.
