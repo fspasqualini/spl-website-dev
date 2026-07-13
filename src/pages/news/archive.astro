@@ -16,6 +16,7 @@ const searchIndex = sortedNewsArchive.map((entry) => ({
   category: categoryLabels[entry.category],
   year: entry.date.slice(0, 4),
   date: formatNewsDate(entry),
+  isoDate: entry.date,
   people: entry.people ?? [],
   topics: entry.topics ?? [],
   href: withBase(`/news/${entry.date.slice(0, 4)}/#${entry.id}`),
@@ -105,6 +106,7 @@ const searchIndex = sortedNewsArchive.map((entry) => ({
       category: string;
       year: string;
       date: string;
+      isoDate: string;
       href: string;
       searchText: string;
     };
@@ -129,8 +131,9 @@ const searchIndex = sortedNewsArchive.map((entry) => ({
       const category = document.createElement("span");
       category.className = "news-category";
       category.textContent = entry.category;
-      const date = document.createElement("span");
+      const date = document.createElement("time");
       date.className = "archive-result-date";
+      date.dateTime = entry.isoDate;
       date.textContent = entry.date;
       meta.append(category, date);
 
@@ -168,10 +171,11 @@ const searchIndex = sortedNewsArchive.map((entry) => ({
         return;
       }
 
-      const matches = index.filter((entry) => entry.searchText.includes(query));
+      const terms = query.split(/\s+/).filter(Boolean);
+      const matches = index.filter((entry) => terms.every((term) => entry.searchText.includes(term)));
       for (const entry of matches) list.append(createResult(entry));
       heading.textContent = `${matches.length} ${matches.length === 1 ? "result" : "results"} for “${rawQuery}”`;
-      count.textContent = matches.length ? "Across the full archive" : "No matching stories";
+      count.textContent = `${matches.length} ${matches.length === 1 ? "result" : "results"} across the full archive`;
       empty.hidden = matches.length !== 0;
       const url = new URL(location.href);
       url.searchParams.set("q", rawQuery);

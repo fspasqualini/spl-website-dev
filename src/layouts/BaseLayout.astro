@@ -83,6 +83,7 @@ const jsonLdItems = jsonLd
     <title>{pageTitle}</title>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <a class="brand" href={withBase("/")} aria-label="Synthetic Physiology Lab home">
         <img src={withBase(brand.logo)} alt="Synthetic Physiology Lab" />
@@ -94,11 +95,12 @@ const jsonLdItems = jsonLd
             class:list={[
               (item.href === "/" ? normalizedPath === "/" : normalizedPath.startsWith(item.href)) && "active",
             ]}
+            aria-current={(item.href === "/" ? normalizedPath === "/" : normalizedPath.startsWith(item.href)) ? "page" : undefined}
           >{item.label}</a>
         ))}
       </nav>
     </header>
-    <main>
+    <main id="main-content">
       <slot />
     </main>
     <footer class="site-footer">
