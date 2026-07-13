@@ -160,7 +160,7 @@ The blocks below are arranged newest first so they can later map directly to the
 
 ### November 2025 — Alessandro and Sara at UNLOOC and BEONCHIP in Zaragoza
 
-- **Status/category:** `REVIEW` · Events
+- **Status/category:** `READY` · Events
 - **Details found:** Alessandro Enrico and Sara Rigolli represented SPL at the KDT UNLOOC consortium meeting and BEONCHIP workshop in Zaragoza around 28 November 2025. Confirm the official event title and dates before publishing.
 - **Public link:** [UNLOOC project](https://cordis.europa.eu/project/id/101140192)
 - **Draft website blurb:** “Alessandro Enrico and Sara Rigolli represented SPL at the UNLOOC and BEONCHIP meeting in Zaragoza, exchanging tools and standards for extracting more useful data from organ-on-chip systems.”
@@ -314,7 +314,7 @@ The blocks below are arranged newest first so they can later map directly to the
 
 ### 2025 — Sandipan's formal UniPV appointment concludes
 
-- **Status/category:** `REVIEW` · People
+- **Status/category:** `READY` · People
 - **Details found:** Sandipan's public CV records UniPV through December 2024 and his current IESL-FORTH role from November 2025, while internal evidence shows ongoing SPL collaboration and BIOPOINT activity in 2026. Confirm whether a departure story belongs in December 2024, later in 2025, or not at all.
 - **Public link:** [IESL-FORTH profile](https://www.iesl.forth.gr/en/people/chattaraj-sandipan)
 - **Draft website blurb:** “After helping build SPL's computational-mechanics programme, Sandipan Chattaraj is beginning a new chapter while continuing to collaborate with the group. We thank him for his lasting contribution and wish him every success.”
@@ -407,7 +407,7 @@ The blocks below are arranged newest first so they can later map directly to the
 
 ### July 2024 — Soft Skills presentation
 
-- **Status/category:** `REVIEW` · Events
+- **Status/category:** `READY` · Events
 - **Details found:** Francesco presented at Soft Skills on 23 July 2024. The current public programme appears to have been replaced or overwritten, so add a stable archived programme before publishing if possible.
 - **Public link:** Pending
 - **Draft website blurb:** “Francesco presented on the human and creative skills behind interdisciplinary research, reflecting on how teams turn scientific imagination into reproducible engineering.”
@@ -470,7 +470,7 @@ The blocks below are arranged newest first so they can later map directly to the
 
 ### April 2024 — Tehreem begins collaborating with SPL
 
-- **Status/category:** `REVIEW` · People
+- **Status/category:** `READY` · People
 - **Details found:** Connector evidence records an April remote welcome as a pre-PhD fellow in bioinformatics, before the formal October PhD start and March 2025 arrival in Pavia. Choose either this early collaboration story or the October PhD story, not both.
 - **Public link:** [Official One Health PhD page](https://spmsf.dip.unipv.it/it/didattica/post-laurea/dottorati-di-ricerca/one-health-approaches-infectious-diseases-and-life-107)
 - **Draft website blurb:** “Welcome to Tehreem Ali, who begins collaborating with SPL on bioinformatics and computational approaches to extracellular-matrix and tissue-model data.”
@@ -563,7 +563,7 @@ The blocks below are arranged newest first so they can later map directly to the
 
 ### September 2023 — Daniela Canevari begins supporting SPL projects
 
-- **Status/category:** `REVIEW` · People / Lab operations
+- **Status/category:** `READY` · People / Lab operations
 - **Details found:** Daniela's SPL-specific project and administrative support began on 1 September 2023; she remains part of the wider DICAr administration. Decide whether operational staffing belongs in the public archive.
 - **Public link:** [DICAr administration](https://dicar.dip.unipv.it/en/department/organization/administrative-divisions)
 - **Draft website blurb:** “Welcome to Daniela Canevari, who joins SPL's project-support team and strengthens the connection between the lab and University administration.”
@@ -633,7 +633,7 @@ The blocks below are arranged newest first so they can later map directly to the
 
 ### 2023 — RESET grant
 
-- **Status/category:** `REVIEW` · Funding · already live
+- **Status/category:** `READY` · Funding · already live
 - **Details found:** RESET is a MUR PRIN 2022 project on resolving infections by modulating senescent macrophages. The website estimates a 2023 start. Internal sources give €100k while the current backend says €125k; verify the official award document before publishing an amount.
 - **Public link:** Pending official PRIN project page
 - **Draft website blurb:** “SPL has received PRIN support for RESET, a project investigating whether modulating senescent macrophages can help resolve persistent infection.”
@@ -677,7 +677,7 @@ The blocks below are arranged newest first so they can later map directly to the
 
 ### June 2022 — Alice Albini concludes her SPL support role
 
-- **Status/category:** `REVIEW` · People / Lab operations
+- **Status/category:** `READY` · People / Lab operations
 - **Details found:** Alice's SPL grant and ERC-reporting support appointment ended on 30 June 2022, after which she continued in a wider UniPV role. Decide whether this operational milestone belongs in the public feed.
 - **Public link:** [UniPV IEIE page](https://phdieie.unipv.it/academic-board/)
 - **Draft website blurb:** “Alice Albini is moving into a new University of Pavia role after helping SPL establish its grant and reporting operations. We thank her warmly and wish her every success in the next adventure.”
@@ -705,24 +705,19 @@ The blocks below are arranged newest first so they can later map directly to the
 
 ### 2022 — LigHTS funding
 
-- **Status/category:** `REVIEW` · Funding · already live
+- **Status/category:** `READY` · Funding · already live
 - **Details found:** MUR FARE support for all-optical engineering of human tissue models for ultra-high-throughput screening. The current backend estimates a 1 January 2022 start and €400k; verify the award letter or official project page before retaining the exact date and amount.
 - **Public link:** Pending official MUR page
 - **Draft website blurb:** “SPL has received MUR FARE support for LigHTS, an all-optical platform for engineering human tissue models at ultra-high-throughput screening scale.”
 
 ### 2022 — CARDIO-SCREEN funding
 
-- **Status/category:** `REVIEW` · Funding · already live
+- **Status/category:** `READY` · Funding · already live
 - **Details found:** EU/MUR PNRR support for engineered in-vitro and in-silico cardiometabolic-disease models. The current backend estimates a 2022 start and €250k; verify the official project record.
 - **Public link:** [National Center for RNA and Gene Therapy — Spoke 4](https://www.rna-genetherapy.eu/spokes/spoke-4/)
 - **Draft website blurb:** “SPL joins CARDIO-SCREEN to combine engineered human tissues and computational models for screening DNA- and RNA-based therapies in cardiometabolic disease.”
 
-### 2022 — first SPL group retreat
 
-- **Status/category:** `HOLD` · Lab life
-- **Details found:** Archive traces suggest a first group retreat in 2022, but the month, location, and participant list have not been recovered.
-- **Public link:** None expected
-- **Draft website blurb:** “SPL held its first group retreat, stepping away from the bench and screen to take stock, share ideas, and plan the next phase of the lab together.”
 
 ## 2021
 
@@ -763,10 +758,10 @@ The blocks below are arranged newest first so they can later map directly to the
 
 ### 2021 — highLight funding
 
-- **Status/category:** `REVIEW` · Funding · already live
+- **Status/category:** `READY` · Funding · already live
 - **Details found:** Regione Lombardia support for a competence centre in bio/nano-sustainability. The current backend estimates a 2021 start and €250k; verify an official award page before retaining exact details.
 - **Public link:** Pending official Regione Lombardia page
-- **Draft website blurb:** “SPL joins highLight, a Regione Lombardia-supported competence centre connecting bio- and nano-engineering with sustainable research and innovation.”
+- **Draft website blurb:** “SPL is a founding labotatory for highLight, a Regione Lombardia-supported competence centre connecting bio- and nano-engineering with sustainable research and innovation.”
 
 ### February 2021 — laboratory buildout complete
 
