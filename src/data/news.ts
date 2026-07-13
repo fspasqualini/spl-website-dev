@@ -1,28 +1,14 @@
-import { sortedLabEvents } from "./labEvents";
-import { getLabEventLabel, type Label } from "./labels";
+export {
+  archiveYears,
+  categoryLabels,
+  entriesByYear,
+  featuredNews,
+  formatNewsDate,
+  homepageNews,
+  newsArchive,
+  newsCategories,
+  recentNews,
+  sortedNewsArchive,
+} from "./newsArchive";
 
-export type NewsItem = {
-  date: string;
-  label: Label;
-  title: string;
-  text: string;
-  href?: string;
-  image?: {
-    src?: string;
-    alt: string;
-    caption?: string;
-  };
-};
-
-const toNewsItem = (event: (typeof sortedLabEvents)[number]): NewsItem => ({
-  date: event.date,
-  label: getLabEventLabel(event),
-  title: event.title,
-  text: event.text,
-  href: event.href,
-  image: event.image,
-});
-
-export const newsItems = sortedLabEvents.map(toNewsItem);
-
-export const homepageNews = newsItems.slice(0, 5);
+export type { NewsCategory, NewsDatePrecision, NewsEntry } from "./newsArchive";

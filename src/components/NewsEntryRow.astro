@@ -1,0 +1,37 @@
+---
+import type { NewsEntry } from "../data/news";
+import { categoryLabels, formatNewsDate } from "../data/news";
+import { withBase } from "../data/site";
+
+interface Props {
+  entry: NewsEntry;
+  showAnchor?: boolean;
+}
+
+const { entry, showAnchor = false } = Astro.props;
+const year = entry.date.slice(0, 4);
+const internalHref = withBase(`/news/${year}/#${entry.id}`);
+---
+
+<article
+  class="archive-story"
+  id={showAnchor ? entry.id : undefined}
+  data-news-entry
+  data-category={entry.category}
+>
+  <div class="archive-story-meta">
+    <span class="news-category">{categoryLabels[entry.category]}</span>
+    <time datetime={entry.date}>{formatNewsDate(entry)}</time>
+  </div>
+  <div class="archive-story-copy">
+    <h3><a href={internalHref}>{entry.title}</a></h3>
+    <p>{entry.blurb}</p>
+  </div>
+  <div class="archive-story-actions">
+    {entry.links?.map((link) => (
+      <a href={link.href} aria-label={`${link.label} (external site)`}>
+        {link.label}<span aria-hidden="true"> ↗</span>
+      </a>
+    ))}
+  </div>
+</article>

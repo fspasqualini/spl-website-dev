@@ -1,0 +1,1676 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Interactive mockup for the SPL news archive proposal." />
+    <title>SPL news archive mockup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --spl-red: #a82038;
+        --spl-red-dark: #741426;
+        --ink: #0b0b0d;
+        --ink-soft: #15161a;
+        --graphite: #2a2b2f;
+        --muted: #6f7278;
+        --line: #d7d8dc;
+        --soft: #f1f1f2;
+        --paper: #fbfbfa;
+        --white: #ffffff;
+        --max: 1180px;
+        --edge: clamp(20px, 4vw, 54px);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--ink);
+        background: #d9dadd;
+        color-scheme: light;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        background: #d9dadd;
+      }
+
+      button,
+      input {
+        font: inherit;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      .mockup-board {
+        display: grid;
+        gap: 72px;
+        padding: 48px;
+      }
+
+      .screen {
+        min-width: 0;
+        overflow: hidden;
+        border: 1px solid #bfc1c5;
+        background:
+          linear-gradient(90deg, rgba(11, 11, 13, 0.035) 0 1px, transparent 1px 100%),
+          linear-gradient(180deg, rgba(11, 11, 13, 0.028) 0 1px, transparent 1px 100%),
+          var(--paper);
+        background-size: 72px 72px;
+        box-shadow: 0 26px 64px rgba(11, 11, 13, 0.13);
+      }
+
+      .screen-label {
+        margin: 0;
+        padding: 11px 18px;
+        border-bottom: 1px solid #bfc1c5;
+        background: #e8e8ea;
+        color: #55585f;
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .site-header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 28px;
+        min-height: 76px;
+        padding: 14px var(--edge);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(11, 11, 13, 0.98);
+      }
+
+      .site-header::after {
+        content: "";
+        position: absolute;
+        right: var(--edge);
+        bottom: -1px;
+        left: var(--edge);
+        height: 1px;
+        background: linear-gradient(90deg, var(--spl-red), transparent 58%);
+        opacity: 0.82;
+      }
+
+      .brand {
+        flex: 0 0 auto;
+      }
+
+      .brand img {
+        width: clamp(150px, 17vw, 225px);
+        height: auto;
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+      }
+
+      .nav a {
+        position: relative;
+        padding: 8px 10px;
+        color: rgba(255, 255, 255, 0.86);
+        font-size: 0.79rem;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      .nav a.active,
+      .nav a:hover {
+        color: var(--white);
+      }
+
+      .nav a.active::after {
+        content: "";
+        position: absolute;
+        right: 10px;
+        bottom: 3px;
+        left: 10px;
+        height: 2px;
+        background: var(--spl-red);
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        color: var(--spl-red);
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      .home-hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.15fr) minmax(410px, 0.85fr);
+        gap: clamp(42px, 6vw, 90px);
+        align-items: center;
+        min-height: 700px;
+        padding: clamp(64px, 7vw, 96px) var(--edge);
+      }
+
+      .hero-copy {
+        min-width: 0;
+      }
+
+      .hero-copy h1 {
+        max-width: 8.2ch;
+        margin: 0 0 28px;
+        font-size: clamp(4.3rem, 7vw, 7rem);
+        line-height: 0.86;
+        letter-spacing: -0.055em;
+      }
+
+      .hero-copy h1 span {
+        display: block;
+      }
+
+      .hero-copy h1 strong {
+        color: var(--spl-red);
+        font-weight: 900;
+      }
+
+      .hero-copy .lead {
+        max-width: 58ch;
+        margin-bottom: 36px;
+        color: var(--graphite);
+        font-size: clamp(1.05rem, 1.45vw, 1.28rem);
+        line-height: 1.62;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        max-width: 680px;
+        border-top: 1px solid var(--ink);
+      }
+
+      .stat {
+        padding: 18px 14px 0 0;
+      }
+
+      .stat + .stat {
+        padding-left: 18px;
+        border-left: 1px solid var(--line);
+      }
+
+      .stat strong {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.55rem;
+        line-height: 1;
+      }
+
+      .stat span {
+        color: var(--muted);
+        font-size: 0.75rem;
+        font-weight: 700;
+        line-height: 1.3;
+        text-transform: uppercase;
+      }
+
+      .home-feed {
+        min-width: 0;
+        border: 1px solid var(--line);
+        border-top: 4px solid var(--spl-red);
+        background: var(--white);
+        box-shadow: 0 18px 36px rgba(11, 11, 13, 0.06);
+      }
+
+      .feed-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 18px 19px 16px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .feed-header .eyebrow {
+        margin-bottom: 7px;
+        font-size: 0.65rem;
+      }
+
+      .feed-header h2 {
+        margin: 0;
+        font-size: 1.18rem;
+        line-height: 1.15;
+      }
+
+      .feed-header a,
+      .archive-link {
+        color: var(--spl-red);
+        font-size: 0.7rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 4px;
+        white-space: nowrap;
+      }
+
+      .featured-rail {
+        display: grid;
+        grid-template-columns: 156px minmax(0, 1fr);
+        gap: 16px;
+        padding: 17px 19px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .featured-rail img {
+        width: 100%;
+        height: 117px;
+        border: 1px solid rgba(11, 11, 13, 0.18);
+        object-fit: cover;
+        object-position: 50% 38%;
+      }
+
+      .feed-row {
+        display: grid;
+        grid-template-columns: 96px minmax(0, 1fr);
+        gap: 14px;
+        padding: 14px 19px 15px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .feed-row:last-child {
+        border-bottom: 0;
+      }
+
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        width: max-content;
+        max-width: 100%;
+        padding: 5px 7px;
+        border: 1px solid rgba(11, 11, 13, 0.18);
+        background: var(--white);
+        color: var(--ink);
+        font-size: 0.61rem;
+        font-weight: 850;
+        letter-spacing: 0.055em;
+        line-height: 1;
+        text-transform: uppercase;
+      }
+
+      .tag::before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        flex: 0 0 5px;
+        border-radius: 50%;
+        background: var(--spl-red);
+      }
+
+      .meta-stack {
+        min-width: 0;
+      }
+
+      .date {
+        margin: 7px 0 0;
+        color: var(--muted);
+        font-size: 0.68rem;
+        font-weight: 800;
+        line-height: 1.25;
+        text-transform: uppercase;
+      }
+
+      .featured-rail h3,
+      .feed-row h3 {
+        margin: 0 0 6px;
+        font-size: 0.95rem;
+        line-height: 1.2;
+      }
+
+      .featured-rail p,
+      .feed-row p {
+        margin-bottom: 0;
+        color: var(--graphite);
+        font-size: 0.79rem;
+        line-height: 1.43;
+      }
+
+      .news-hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.25fr) minmax(230px, 0.75fr);
+        gap: clamp(36px, 6vw, 90px);
+        align-items: end;
+        padding: clamp(62px, 7vw, 96px) var(--edge) 44px;
+      }
+
+      .news-hero h1 {
+        max-width: 9ch;
+        margin: 0 0 24px;
+        font-size: clamp(4rem, 7vw, 7.2rem);
+        line-height: 0.87;
+        letter-spacing: -0.055em;
+      }
+
+      .news-hero .lead {
+        max-width: 64ch;
+        margin: 0;
+        color: var(--graphite);
+        font-size: 1.05rem;
+        line-height: 1.6;
+      }
+
+      .archive-summary {
+        padding: 18px 0 4px 24px;
+        border-left: 4px solid var(--spl-red);
+      }
+
+      .archive-summary strong {
+        display: block;
+        margin-bottom: 8px;
+        font-size: clamp(2.35rem, 4vw, 4.3rem);
+        line-height: 0.9;
+        letter-spacing: -0.055em;
+      }
+
+      .archive-summary span {
+        display: block;
+        color: var(--muted);
+        font-size: 0.74rem;
+        font-weight: 800;
+        line-height: 1.5;
+        text-transform: uppercase;
+      }
+
+      .archive-tools {
+        margin: 0 var(--edge);
+        border-top: 1px solid var(--ink);
+        border-bottom: 1px solid var(--line);
+        background: rgba(251, 251, 250, 0.96);
+      }
+
+      .search-row {
+        display: grid;
+        grid-template-columns: minmax(260px, 1fr) auto;
+        gap: 18px;
+        align-items: center;
+        padding: 20px 0 16px;
+      }
+
+      .search-box {
+        position: relative;
+        min-width: 0;
+      }
+
+      .search-box svg {
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        width: 20px;
+        height: 20px;
+        color: var(--muted);
+        transform: translateY(-50%);
+        pointer-events: none;
+      }
+
+      .search-box input {
+        width: 100%;
+        min-height: 52px;
+        padding: 0 18px 0 48px;
+        border: 1px solid var(--ink);
+        border-radius: 0;
+        outline: 0;
+        background: var(--white);
+        color: var(--ink);
+        font-size: 0.95rem;
+      }
+
+      .search-box input:focus-visible {
+        outline: 3px solid rgba(168, 32, 56, 0.22);
+        outline-offset: 2px;
+      }
+
+      .result-count {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.76rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      .filter-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 0 0 18px;
+      }
+
+      .filter-button {
+        min-height: 44px;
+        padding: 0 14px;
+        border: 1px solid var(--line);
+        border-radius: 0;
+        background: var(--white);
+        color: var(--ink);
+        font-size: 0.72rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      .filter-button:hover,
+      .filter-button[aria-pressed="true"] {
+        border-color: var(--ink);
+        background: var(--ink);
+        color: var(--white);
+      }
+
+      .filter-button:focus-visible,
+      .year-link:focus-visible,
+      .archive-action:focus-visible,
+      a:focus-visible {
+        outline: 3px solid rgba(168, 32, 56, 0.32);
+        outline-offset: 3px;
+      }
+
+      .featured-news {
+        display: grid;
+        grid-template-columns: minmax(300px, 0.88fr) minmax(0, 1.12fr);
+        margin: 36px var(--edge) 0;
+        border: 1px solid var(--line);
+        border-top: 4px solid var(--spl-red);
+        background: var(--white);
+      }
+
+      .featured-news figure {
+        min-height: 365px;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      .featured-news img {
+        width: 100%;
+        height: 100%;
+        min-height: 365px;
+        object-fit: cover;
+        object-position: 50% 38%;
+      }
+
+      .featured-copy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 0;
+        padding: clamp(28px, 4vw, 54px);
+      }
+
+      .featured-copy .meta-line {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 20px;
+      }
+
+      .featured-copy .date {
+        margin: 0;
+      }
+
+      .featured-copy h2 {
+        max-width: 13ch;
+        margin: 0 0 18px;
+        font-size: clamp(2.05rem, 3.8vw, 4.35rem);
+        line-height: 0.98;
+        letter-spacing: -0.045em;
+      }
+
+      .featured-copy > p {
+        max-width: 56ch;
+        margin-bottom: 24px;
+        color: var(--graphite);
+        font-size: 0.98rem;
+        line-height: 1.58;
+      }
+
+      .story-link {
+        width: max-content;
+        color: var(--spl-red);
+        font-size: 0.76rem;
+        font-weight: 900;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 4px;
+        text-transform: uppercase;
+      }
+
+      .latest-section {
+        padding: 48px var(--edge) 0;
+      }
+
+      .section-head {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 24px;
+        padding-bottom: 15px;
+        border-bottom: 3px solid var(--ink);
+      }
+
+      .section-head h2 {
+        margin: 0;
+        font-size: clamp(2rem, 3.6vw, 3.8rem);
+        line-height: 0.96;
+        letter-spacing: -0.04em;
+      }
+
+      .section-head p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.76rem;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      .news-index {
+        border-bottom: 1px solid var(--ink);
+      }
+
+      .index-row {
+        display: grid;
+        grid-template-columns: 125px 138px minmax(0, 1fr) 132px;
+        gap: 20px;
+        align-items: start;
+        padding: 23px 0 25px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .index-row:last-child {
+        border-bottom: 0;
+      }
+
+      .index-date {
+        color: var(--muted);
+        font-size: 0.76rem;
+        font-weight: 800;
+        line-height: 1.4;
+        text-transform: uppercase;
+      }
+
+      .index-copy {
+        min-width: 0;
+      }
+
+      .index-copy h3 {
+        margin: 0 0 7px;
+        font-size: clamp(1.05rem, 1.45vw, 1.28rem);
+        line-height: 1.24;
+      }
+
+      .index-copy p {
+        max-width: 72ch;
+        margin: 0;
+        color: var(--graphite);
+        font-size: 0.88rem;
+        line-height: 1.5;
+      }
+
+      .open-link {
+        justify-self: end;
+        color: var(--spl-red);
+        font-size: 0.68rem;
+        font-weight: 900;
+        line-height: 1.35;
+        text-align: right;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 4px;
+        text-transform: uppercase;
+      }
+
+      .index-row[hidden] {
+        display: none;
+      }
+
+      .archive-block {
+        display: grid;
+        grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+        gap: clamp(30px, 6vw, 90px);
+        margin-top: 48px;
+        padding: 48px var(--edge) 58px;
+        background: var(--ink);
+        color: var(--white);
+      }
+
+      .archive-block .eyebrow {
+        color: #e35a72;
+      }
+
+      .archive-block h2 {
+        max-width: 12ch;
+        margin: 0 0 18px;
+        font-size: clamp(2rem, 3.8vw, 4rem);
+        line-height: 0.98;
+        letter-spacing: -0.04em;
+      }
+
+      .archive-block p {
+        max-width: 52ch;
+        margin: 0;
+        color: rgba(255, 255, 255, 0.68);
+        font-size: 0.9rem;
+        line-height: 1.55;
+      }
+
+      .archive-page-hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.15fr) minmax(230px, 0.85fr);
+        gap: clamp(36px, 6vw, 90px);
+        align-items: end;
+        padding: clamp(62px, 7vw, 96px) var(--edge) 44px;
+      }
+
+      .archive-page-hero h1 {
+        max-width: 9ch;
+        margin: 0 0 24px;
+        font-size: clamp(4rem, 7vw, 7.2rem);
+        line-height: 0.87;
+        letter-spacing: -0.055em;
+      }
+
+      .archive-page-hero .lead {
+        max-width: 62ch;
+        margin: 0;
+        color: var(--graphite);
+        font-size: 1.05rem;
+        line-height: 1.6;
+      }
+
+      .archive-search-bar {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 14px;
+        align-items: center;
+        margin: 0 var(--edge);
+        padding: 20px 0;
+        border-top: 1px solid var(--ink);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .clear-search {
+        min-height: 48px;
+        padding: 0 16px;
+        border: 1px solid var(--ink);
+        border-radius: 0;
+        background: var(--ink);
+        color: var(--white);
+        font-size: 0.72rem;
+        font-weight: 850;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      .archive-layout {
+        display: grid;
+        grid-template-columns: 190px minmax(0, 1fr);
+        gap: clamp(30px, 5vw, 70px);
+        padding: 42px var(--edge) 64px;
+      }
+
+      .year-rail {
+        align-self: start;
+        border-top: 4px solid var(--spl-red);
+      }
+
+      .year-rail h2 {
+        margin: 0;
+        padding: 14px 0 12px;
+        border-bottom: 1px solid var(--ink);
+        font-size: 0.76rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .year-rail a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 48px;
+        border-bottom: 1px solid var(--line);
+        color: var(--ink);
+        font-size: 0.82rem;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .year-rail a.active,
+      .year-rail a:hover {
+        color: var(--spl-red);
+      }
+
+      .year-rail small {
+        color: var(--muted);
+        font-size: 0.67rem;
+      }
+
+      .archive-results {
+        min-width: 0;
+      }
+
+      .archive-results-head {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 20px;
+        padding-bottom: 14px;
+        border-bottom: 3px solid var(--ink);
+      }
+
+      .archive-results-head h2 {
+        margin: 0;
+        font-size: clamp(1.8rem, 3vw, 3.2rem);
+        line-height: 1;
+        letter-spacing: -0.04em;
+      }
+
+      .archive-results-head p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.72rem;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      .archive-result {
+        display: grid;
+        grid-template-columns: 122px minmax(0, 1fr) 116px;
+        gap: 20px;
+        align-items: start;
+        padding: 22px 0 24px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .archive-result h3 {
+        margin: 0 0 7px;
+        font-size: 1.08rem;
+        line-height: 1.25;
+      }
+
+      .archive-result p {
+        margin: 0;
+        color: var(--graphite);
+        font-size: 0.86rem;
+        line-height: 1.5;
+      }
+
+      .archive-result[hidden],
+      .archive-empty[hidden] {
+        display: none;
+      }
+
+      .archive-empty {
+        padding: 50px 0 60px;
+        border-bottom: 1px solid var(--ink);
+      }
+
+      .archive-empty h3 {
+        margin: 0 0 10px;
+        font-size: 1.45rem;
+      }
+
+      .archive-empty p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      .year-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        align-self: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.24);
+        border-left: 1px solid rgba(255, 255, 255, 0.24);
+      }
+
+      .year-link {
+        display: flex;
+        min-height: 88px;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 14px;
+        border-right: 1px solid rgba(255, 255, 255, 0.24);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+        color: var(--white);
+        text-decoration: none;
+      }
+
+      .year-link strong {
+        font-size: 1.35rem;
+      }
+
+      .year-link span {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.67rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .year-link:hover {
+        background: var(--spl-red);
+      }
+
+      .site-footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 28px;
+        padding: 30px var(--edge);
+        border-top: 3px solid var(--ink);
+        background: var(--soft);
+        color: var(--muted);
+        font-size: 0.82rem;
+      }
+
+      .site-footer strong,
+      .site-footer span {
+        display: block;
+      }
+
+      [contenteditable="true"]:focus-visible {
+        outline: 2px dashed var(--spl-red);
+        outline-offset: 4px;
+      }
+
+      @media (max-width: 1024px) {
+        .mockup-board {
+          padding: 24px;
+        }
+
+        .home-hero {
+          grid-template-columns: minmax(0, 1fr) minmax(360px, 0.9fr);
+          gap: 36px;
+          min-height: 650px;
+        }
+
+        .hero-copy h1 {
+          font-size: clamp(3.7rem, 7vw, 5.2rem);
+        }
+
+        .index-row {
+          grid-template-columns: 105px 120px minmax(0, 1fr);
+        }
+
+        .open-link {
+          grid-column: 3;
+          justify-self: start;
+          text-align: left;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .mockup-board {
+          gap: 36px;
+          padding: 0;
+        }
+
+        .screen {
+          border-right: 0;
+          border-left: 0;
+          box-shadow: none;
+        }
+
+        .site-header {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 14px;
+        }
+
+        .nav {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          width: 100%;
+          gap: 4px 10px;
+        }
+
+        .nav a {
+          display: flex;
+          min-height: 44px;
+          align-items: center;
+          padding: 6px 0;
+          font-size: 0.7rem;
+        }
+
+        .nav a.active::after {
+          right: 0;
+          left: 0;
+        }
+
+        .home-hero,
+        .news-hero,
+        .archive-page-hero,
+        .featured-news,
+        .archive-block {
+          grid-template-columns: 1fr;
+        }
+
+        .home-hero {
+          min-height: 0;
+          padding-top: 52px;
+        }
+
+        .hero-copy h1,
+        .news-hero h1,
+        .archive-page-hero h1 {
+          font-size: clamp(3rem, 15vw, 4.5rem);
+        }
+
+        .home-feed {
+          width: 100%;
+        }
+
+        .news-hero {
+          align-items: start;
+        }
+
+        .archive-page-hero {
+          align-items: start;
+        }
+
+        .archive-summary {
+          padding-left: 18px;
+        }
+
+        .search-row {
+          grid-template-columns: 1fr;
+          gap: 11px;
+        }
+
+        .result-count {
+          white-space: normal;
+        }
+
+        .featured-news figure,
+        .featured-news img {
+          min-height: 0;
+          height: 300px;
+        }
+
+        .featured-copy h2 {
+          max-width: 15ch;
+        }
+
+        .section-head {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .index-row {
+          grid-template-columns: 1fr;
+          gap: 11px;
+          padding: 22px 0;
+        }
+
+        .index-row .tag {
+          grid-row: 1;
+          justify-self: start;
+          margin-left: 118px;
+        }
+
+        .index-date {
+          grid-row: 1;
+          align-self: center;
+        }
+
+        .index-copy,
+        .open-link {
+          grid-column: 1;
+        }
+
+        .open-link {
+          justify-self: start;
+          text-align: left;
+        }
+
+        .year-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .archive-search-bar {
+          grid-template-columns: 1fr;
+        }
+
+        .clear-search {
+          justify-self: start;
+        }
+
+        .archive-layout {
+          grid-template-columns: 1fr;
+          gap: 34px;
+        }
+
+        .year-rail nav {
+          display: grid;
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          border-left: 1px solid var(--line);
+        }
+
+        .year-rail a {
+          min-height: 52px;
+          justify-content: center;
+          padding: 0 6px;
+          border-right: 1px solid var(--line);
+        }
+
+        .year-rail small {
+          display: none;
+        }
+
+        .archive-result {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+
+        .archive-result .open-link {
+          grid-column: 1;
+        }
+
+        .site-footer {
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 520px) {
+        :root {
+          --edge: 20px;
+        }
+
+        .screen-label {
+          display: none;
+        }
+
+        .brand img {
+          width: 172px;
+        }
+
+        .home-hero {
+          gap: 40px;
+          padding-top: 46px;
+          padding-bottom: 54px;
+        }
+
+        .hero-copy h1,
+        .news-hero h1,
+        .archive-page-hero h1 {
+          font-size: 3.05rem;
+          line-height: 0.91;
+        }
+
+        .stats {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .stat:nth-child(3) {
+          grid-column: 1 / -1;
+          padding-left: 0;
+          border-left: 0;
+        }
+
+        .featured-rail {
+          grid-template-columns: 116px minmax(0, 1fr);
+          gap: 13px;
+          padding: 15px;
+        }
+
+        .featured-rail img {
+          height: 87px;
+        }
+
+        .feed-row {
+          grid-template-columns: 86px minmax(0, 1fr);
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+
+        .news-hero {
+          gap: 28px;
+          padding-top: 48px;
+        }
+
+        .archive-page-hero {
+          gap: 28px;
+          padding-top: 48px;
+        }
+
+        .archive-summary strong {
+          font-size: 2.6rem;
+        }
+
+        .archive-tools {
+          margin-right: 0;
+          margin-left: 0;
+          padding-right: var(--edge);
+          padding-left: var(--edge);
+        }
+
+        .filter-row {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .filter-button {
+          width: 100%;
+          padding: 0 8px;
+        }
+
+        .featured-news {
+          margin-top: 28px;
+          margin-right: var(--edge);
+          margin-left: var(--edge);
+        }
+
+        .featured-news figure,
+        .featured-news img {
+          height: 235px;
+        }
+
+        .featured-copy {
+          padding: 24px 20px 28px;
+        }
+
+        .featured-copy h2 {
+          font-size: 2.05rem;
+        }
+
+        .latest-section {
+          padding-top: 38px;
+        }
+
+        .index-row .tag {
+          margin-left: 100px;
+        }
+
+        .archive-block {
+          margin-top: 40px;
+          padding-top: 40px;
+        }
+
+        .year-link {
+          min-height: 78px;
+        }
+
+        .archive-search-bar {
+          margin-right: 0;
+          margin-left: 0;
+          padding-right: var(--edge);
+          padding-left: var(--edge);
+        }
+
+        .year-rail nav {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .archive-results-head {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 9px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          color-scheme: light;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="mockup-board">
+      <section class="screen" id="home-mockup" aria-labelledby="home-mockup-label">
+        <p class="screen-label" id="home-mockup-label">Homepage mockup · desktop composition</p>
+        <header class="site-header">
+          <a class="brand" href="#home-mockup" aria-label="Synthetic Physiology Lab home">
+            <img src="../../../../../public/assets/scraped/005-LOGO_SPL.png" alt="Synthetic Physiology Lab" />
+          </a>
+          <nav class="nav" aria-label="Primary navigation">
+            <a class="active" href="#home-mockup">Home</a>
+            <a href="#home-mockup">Creed</a>
+            <a href="#home-mockup">Team</a>
+            <a href="#home-mockup">Research</a>
+            <a href="#news-mockup">News</a>
+            <a href="#home-mockup">Publications</a>
+            <a href="#home-mockup">Contact</a>
+          </nav>
+        </header>
+
+        <section class="home-hero">
+          <div class="hero-copy">
+            <p class="eyebrow">University of Pavia</p>
+            <h1 data-editable contenteditable="true">
+              <span><strong>S</strong>ynthetic</span>
+              <span><strong>P</strong>hysiology</span>
+              <span><strong>L</strong>ab</span>
+            </h1>
+            <p class="lead" data-editable contenteditable="true">
+              We build physiology through instrumented cells, tissue systems, computational modeling and analysis, and the visual culture that helps make complex biology thinkable.
+            </p>
+            <div class="stats" aria-label="Lab highlights">
+              <div class="stat"><strong>2020</strong><span>Established in Pavia</span></div>
+              <div class="stat"><strong>4</strong><span>Research platforms</span></div>
+              <div class="stat"><strong>78</strong><span>Stories ready for review</span></div>
+            </div>
+          </div>
+
+          <aside class="home-feed" aria-label="Latest SPL news">
+            <div class="feed-header">
+              <div>
+                <p class="eyebrow">Latest from SPL</p>
+                <h2>Lab pulse.</h2>
+              </div>
+              <a href="#news-mockup">All news</a>
+            </div>
+
+            <article class="featured-rail">
+              <img
+                src="../../../../../public/assets/news/eloisa-melissa-phd-defense-2026.jpg"
+                alt="Eloisa Torchia and Melissa Pezzotti at their PhD defense celebration"
+              />
+              <div>
+                <div class="meta-stack">
+                  <span class="tag">People</span>
+                  <p class="date">26 June 2026</p>
+                </div>
+                <h3>Eloisa and Melissa defend their PhDs</h3>
+                <p>Four years of mechanobiology, imaging, and engineered culture platforms.</p>
+              </div>
+            </article>
+
+            <article class="feed-row">
+              <div class="meta-stack"><span class="tag">Events</span><p class="date">July 2026</p></div>
+              <div><h3>ERC Days at UNIVPM</h3><p>Lessons from building an ERC-funded research programme.</p></div>
+            </article>
+            <article class="feed-row">
+              <div class="meta-stack"><span class="tag">Events</span><p class="date">June 2026</p></div>
+              <div><h3>Mechanics and metabolism at Janelia</h3><p>SPL presented work across biological scales.</p></div>
+            </article>
+            <article class="feed-row">
+              <div class="meta-stack"><span class="tag">Research</span><p class="date">March 2026</p></div>
+              <div><h3>BIOPOINT published in PLOS</h3><p>A particle model for nuclear mechanics and cell–matrix interactions.</p></div>
+            </article>
+            <article class="feed-row">
+              <div class="meta-stack"><span class="tag">Awards</span><p class="date">February 2026</p></div>
+              <div><h3>Bioengineering Chair-Elect</h3><p>Francesco joins the Biophysical Society subgroup leadership.</p></div>
+            </article>
+          </aside>
+        </section>
+      </section>
+
+      <section class="screen" id="news-mockup" aria-labelledby="news-mockup-label">
+        <p class="screen-label" id="news-mockup-label">News landing and archive mockup · responsive</p>
+        <header class="site-header">
+          <a class="brand" href="#home-mockup" aria-label="Synthetic Physiology Lab home">
+            <img src="../../../../../public/assets/scraped/005-LOGO_SPL.png" alt="Synthetic Physiology Lab" />
+          </a>
+          <nav class="nav" aria-label="Primary navigation">
+            <a href="#home-mockup">Home</a>
+            <a href="#news-mockup">Creed</a>
+            <a href="#news-mockup">Team</a>
+            <a href="#news-mockup">Research</a>
+            <a class="active" href="#news-mockup">News</a>
+            <a href="#news-mockup">Publications</a>
+            <a href="#news-mockup">Contact</a>
+          </nav>
+        </header>
+
+        <section class="news-hero">
+          <div>
+            <p class="eyebrow">Lab archive</p>
+            <h1 data-editable contenteditable="true">News from SPL.</h1>
+            <p class="lead" data-editable contenteditable="true">
+              Research, people, funding, events, awards, and open resources from the Synthetic Physiology Lab, from June 2020 to today.
+            </p>
+          </div>
+          <div class="archive-summary" aria-label="Archive coverage">
+            <strong>2020—26</strong>
+            <span>78 stories in this mockup</span>
+            <span>One searchable static archive</span>
+          </div>
+        </section>
+
+        <section class="archive-tools" aria-label="News archive controls">
+          <div class="search-row" role="search">
+            <label class="search-box">
+              <span hidden>Search SPL news</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"></circle>
+                <path d="m16 16 4 4" fill="none" stroke="currentColor" stroke-width="2"></path>
+              </svg>
+              <input id="news-search" type="search" placeholder="Search people, papers, projects, or years" autocomplete="off" />
+            </label>
+            <p class="result-count" id="result-count" aria-live="polite">8 recent stories</p>
+          </div>
+          <div class="filter-row" aria-label="Filter news by category">
+            <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-button" type="button" data-filter="research" aria-pressed="false">Research</button>
+            <button class="filter-button" type="button" data-filter="funding" aria-pressed="false">Funding</button>
+            <button class="filter-button" type="button" data-filter="people" aria-pressed="false">People</button>
+            <button class="filter-button" type="button" data-filter="events" aria-pressed="false">Events</button>
+            <button class="filter-button" type="button" data-filter="awards" aria-pressed="false">Awards</button>
+            <button class="filter-button" type="button" data-filter="resources" aria-pressed="false">Resources</button>
+            <button class="filter-button" type="button" data-filter="lab-life" aria-pressed="false">Lab life</button>
+          </div>
+        </section>
+
+        <article class="featured-news" data-category="people" data-search="eloisa melissa phd defense people 2026 mechanobiology imaging">
+          <figure>
+            <img
+              src="../../../../../public/assets/news/eloisa-melissa-phd-defense-2026.jpg"
+              alt="Eloisa Torchia and Melissa Pezzotti at their PhD defense celebration"
+            />
+          </figure>
+          <div class="featured-copy">
+            <div class="meta-line"><span class="tag">People</span><p class="date">26 June 2026</p></div>
+            <h2 data-editable contenteditable="true">Eloisa and Melissa defend their PhDs</h2>
+            <p data-editable contenteditable="true">
+              Congratulations to Dr Eloisa Torchia and Dr Melissa Pezzotti, who defended their PhDs after four years of advancing SPL's engineered culture, mechanobiology, and live-imaging platforms.
+            </p>
+            <a class="story-link" href="#news-mockup">Read the story →</a>
+          </div>
+        </article>
+
+        <section class="latest-section" aria-labelledby="latest-news-heading">
+          <div class="section-head">
+            <h2 id="latest-news-heading">Latest updates.</h2>
+            <p>First 18 stories, then archive by year</p>
+          </div>
+          <div class="news-index" id="news-index">
+            <article class="index-row" data-category="events" data-search="erc days univpm events july 2026 funding">
+              <time class="index-date" datetime="2026-07">July 2026</time>
+              <span class="tag">Events</span>
+              <div class="index-copy"><h3>ERC Days at UNIVPM</h3><p>SPL shared lessons from building an ERC-funded programme with the next generation of European research leaders.</p></div>
+              <a class="open-link" href="#news-mockup">Event page ↗</a>
+            </article>
+            <article class="index-row" data-category="events" data-search="janelia mechanics metabolism conference event june 2026">
+              <time class="index-date" datetime="2026-06">June 2026</time>
+              <span class="tag">Events</span>
+              <div class="index-copy"><h3>Mechanics and metabolism across scales</h3><p>SPL presented its work at Janelia, connecting engineered tissues with physical and metabolic cell-state research.</p></div>
+              <a class="open-link" href="#news-mockup">Conference ↗</a>
+            </article>
+            <article class="index-row" data-category="research" data-search="biopoint plos computational biology research march 2026 sandipan nuclear mechanics">
+              <time class="index-date" datetime="2026-03-31">31 March 2026</time>
+              <span class="tag">Research</span>
+              <div class="index-copy"><h3>BIOPOINT published in PLOS Computational Biology</h3><p>A particle-based framework for probing nuclear mechanics and cell–matrix interactions with experimentally grounded parameters.</p></div>
+              <a class="open-link" href="#news-mockup">Open article ↗</a>
+            </article>
+            <article class="index-row" data-category="research" data-search="vista apl bioengineering cell cycle confinement fucci research march 2026">
+              <time class="index-date" datetime="2026-03-04">4 March 2026</time>
+              <span class="tag">Research</span>
+              <div class="index-copy"><h3>VISTA published in APL Bioengineering</h3><p>Engineered confinement, live FUCCI imaging, and analysis connect experiments to cell-cycle-aware phenotypes.</p></div>
+              <a class="open-link" href="#news-mockup">Open article ↗</a>
+            </article>
+            <article class="index-row" data-category="events" data-search="biophysical society invited presentation events february 2026 bioengineering">
+              <time class="index-date" datetime="2026-02-21">21 February 2026</time>
+              <span class="tag">Events</span>
+              <div class="index-copy"><h3>Invited presentation at the Biophysical Society</h3><p>Francesco shared SPL's approach to engineering measurable physiology with cells, materials, and imaging.</p></div>
+              <a class="open-link" href="#news-mockup">Programme ↗</a>
+            </article>
+            <article class="index-row" data-category="resources" data-search="calipers fucciplex plasmids addgene resources february 2026">
+              <time class="index-date" datetime="2026-02-13">13 February 2026</time>
+              <span class="tag">Resources</span>
+              <div class="index-copy"><h3>CALIPERS plasmids available from Addgene</h3><p>The FUCCIplex collection makes SPL's cell-cycle-aware live-imaging toolkit easier to adopt and extend.</p></div>
+              <a class="open-link" href="#news-mockup">Addgene ↗</a>
+            </article>
+            <article class="index-row" data-category="awards" data-search="chair elect biophysical society bioengineering award service february 2026 francesco">
+              <time class="index-date" datetime="2026-02-09">9 February 2026</time>
+              <span class="tag">Awards</span>
+              <div class="index-copy"><h3>Bioengineering Subgroup Chair-Elect</h3><p>Francesco joins the Biophysical Society subgroup leadership for the 2026–27 term.</p></div>
+              <a class="open-link" href="#news-mockup">Leadership ↗</a>
+            </article>
+            <article class="index-row" data-category="research" data-search="microsplit nature methods research 2026 fluorescence imaging">
+              <time class="index-date" datetime="2026">2026</time>
+              <span class="tag">Research</span>
+              <div class="index-copy"><h3>MicroSplit published in Nature Methods</h3><p>Semantic unmixing recovers richer biological information from multiplexed fluorescence images.</p></div>
+              <a class="open-link" href="#news-mockup">Open article ↗</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="archive-block" aria-labelledby="archive-years-heading">
+          <div>
+            <p class="eyebrow">Full archive</p>
+            <h2 id="archive-years-heading">Browse the lab's history.</h2>
+            <p>Stable year pages keep every approved story reachable without JavaScript. Search adds speed, not dependency.</p>
+          </div>
+          <nav class="year-grid" aria-label="Browse news by year">
+            <a class="year-link" href="#news-mockup"><strong>2026</strong><span>12 stories</span></a>
+            <a class="year-link" href="#news-mockup"><strong>2025</strong><span>16 stories</span></a>
+            <a class="year-link" href="#news-mockup"><strong>2024</strong><span>19 stories</span></a>
+            <a class="year-link" href="#news-mockup"><strong>2023</strong><span>12 stories</span></a>
+            <a class="year-link" href="#news-mockup"><strong>2022</strong><span>7 stories</span></a>
+            <a class="year-link" href="#news-mockup"><strong>2021</strong><span>9 stories</span></a>
+            <a class="year-link" href="#news-mockup"><strong>2020</strong><span>3 stories</span></a>
+            <a class="year-link" href="#news-mockup"><strong>A—Z</strong><span>People and projects</span></a>
+          </nav>
+        </section>
+
+        <footer class="site-footer">
+          <div><strong>Synthetic Physiology Lab</strong><span>Via Ferrata 9, 27100 Pavia, Italy</span></div>
+          <span>University of Pavia</span>
+        </footer>
+      </section>
+
+      <section class="screen" id="archive-mockup" aria-labelledby="archive-mockup-label">
+        <p class="screen-label" id="archive-mockup-label">Full archive and search mockup · sample “FUCCI” results</p>
+        <header class="site-header">
+          <a class="brand" href="#home-mockup" aria-label="Synthetic Physiology Lab home">
+            <img src="../../../../../public/assets/scraped/005-LOGO_SPL.png" alt="Synthetic Physiology Lab" />
+          </a>
+          <nav class="nav" aria-label="Primary navigation">
+            <a href="#home-mockup">Home</a>
+            <a href="#archive-mockup">Creed</a>
+            <a href="#archive-mockup">Team</a>
+            <a href="#archive-mockup">Research</a>
+            <a class="active" href="#archive-mockup">News</a>
+            <a href="#archive-mockup">Publications</a>
+            <a href="#archive-mockup">Contact</a>
+          </nav>
+        </header>
+
+        <section class="archive-page-hero">
+          <div>
+            <p class="eyebrow">News archive</p>
+            <h1 data-editable contenteditable="true">Seven years of SPL.</h1>
+            <p class="lead" data-editable contenteditable="true">
+              Search the lab's research, people, events, resources, and milestones from June 2020 onward.
+            </p>
+          </div>
+          <div class="archive-summary" aria-label="Archive coverage">
+            <strong>78</strong>
+            <span>Stories represented</span>
+            <span>Seven stable year pages</span>
+          </div>
+        </section>
+
+        <div class="archive-search-bar" role="search">
+          <label class="search-box">
+            <span hidden>Search all SPL news</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"></circle>
+              <path d="m16 16 4 4" fill="none" stroke="currentColor" stroke-width="2"></path>
+            </svg>
+            <input id="archive-search" type="search" value="FUCCI" placeholder="Search by topic, project, person, or year" autocomplete="off" />
+          </label>
+          <button class="clear-search" id="clear-archive-search" type="button">Clear search</button>
+        </div>
+
+        <div class="archive-layout">
+          <aside class="year-rail" aria-label="Archive year index">
+            <h2>Browse by year</h2>
+            <nav>
+              <a class="active" href="#archive-mockup"><span>All years</span><small>78</small></a>
+              <a href="#archive-mockup"><span>2026</span><small>12</small></a>
+              <a href="#archive-mockup"><span>2025</span><small>16</small></a>
+              <a href="#archive-mockup"><span>2024</span><small>19</small></a>
+              <a href="#archive-mockup"><span>2023</span><small>12</small></a>
+              <a href="#archive-mockup"><span>2022</span><small>7</small></a>
+              <a href="#archive-mockup"><span>2021</span><small>9</small></a>
+              <a href="#archive-mockup"><span>2020</span><small>3</small></a>
+            </nav>
+          </aside>
+
+          <section class="archive-results" aria-labelledby="archive-results-heading">
+            <div class="archive-results-head">
+              <h2 id="archive-results-heading">4 results for “FUCCI”</h2>
+              <p id="archive-result-count" aria-live="polite">Across 2024–2026</p>
+            </div>
+
+            <article class="archive-result" data-archive-search="vista fucci cell cycle confinement research march 2026">
+              <div><span class="tag">Research</span><p class="date">4 March 2026</p></div>
+              <div><h3>VISTA published in APL Bioengineering</h3><p>A vertically integrated system for tracking cell-cycle-aware phenotypes under engineered confinement.</p></div>
+              <a class="open-link" href="#archive-mockup">2026 story →</a>
+            </article>
+            <article class="archive-result" data-archive-search="calipers fucciplex addgene plasmids resource february 2026">
+              <div><span class="tag">Resources</span><p class="date">13 February 2026</p></div>
+              <div><h3>CALIPERS plasmids available from Addgene</h3><p>The FUCCIplex collection makes cell-cycle-aware live imaging easier for other laboratories to adopt.</p></div>
+              <a class="open-link" href="#archive-mockup">2026 story →</a>
+            </article>
+            <article class="archive-result" data-archive-search="deep learning fucci analysis npj imaging research 2026">
+              <div><span class="tag">Research</span><p class="date">2026</p></div>
+              <div><h3>Deep-learning FUCCI analysis published in npj Imaging</h3><p>Multiplexed reporter acquisitions become quantitative trajectories of cell state.</p></div>
+              <a class="open-link" href="#archive-mockup">2026 story →</a>
+            </article>
+            <article class="archive-result" data-archive-search="calipers preprint fucci bioRxiv research december 2024">
+              <div><span class="tag">Research</span><p class="date">December 2024</p></div>
+              <div><h3>CALIPERS preprint</h3><p>Cell-cycle-aware live imaging for phenotyping experiments and regeneration studies.</p></div>
+              <a class="open-link" href="#archive-mockup">2024 story →</a>
+            </article>
+            <article class="archive-result" data-archive-search="erc days univpm events july 2026">
+              <div><span class="tag">Events</span><p class="date">July 2026</p></div>
+              <div><h3>ERC Days at UNIVPM</h3><p>Lessons from building a European frontier-research programme.</p></div>
+              <a class="open-link" href="#archive-mockup">2026 story →</a>
+            </article>
+
+            <div class="archive-empty" id="archive-empty" hidden>
+              <h3>No stories found.</h3>
+              <p>Try another person, project, event, or year, or clear the search to browse everything.</p>
+            </div>
+          </section>
+        </div>
+
+        <footer class="site-footer">
+          <div><strong>Synthetic Physiology Lab</strong><span>Via Ferrata 9, 27100 Pavia, Italy</span></div>
+          <span>University of Pavia</span>
+        </footer>
+      </section>
+    </main>
+
+    <script>
+      const searchInput = document.querySelector("#news-search");
+      const filterButtons = [...document.querySelectorAll("[data-filter]")];
+      const rows = [...document.querySelectorAll(".index-row")];
+      const resultCount = document.querySelector("#result-count");
+      let activeFilter = "all";
+
+      const updateResults = () => {
+        const query = searchInput.value.trim().toLowerCase();
+        let visible = 0;
+
+        for (const row of rows) {
+          const categoryMatch = activeFilter === "all" || row.dataset.category === activeFilter;
+          const queryMatch = !query || row.dataset.search.includes(query) || row.textContent.toLowerCase().includes(query);
+          row.hidden = !(categoryMatch && queryMatch);
+          if (!row.hidden) visible += 1;
+        }
+
+        resultCount.textContent = query || activeFilter !== "all"
+          ? `${visible} matching ${visible === 1 ? "story" : "stories"}`
+          : `${visible} recent stories`;
+      };
+
+      for (const button of filterButtons) {
+        button.addEventListener("click", () => {
+          activeFilter = button.dataset.filter;
+          for (const candidate of filterButtons) {
+            candidate.setAttribute("aria-pressed", String(candidate === button));
+          }
+          updateResults();
+        });
+      }
+
+      searchInput.addEventListener("input", updateResults);
+
+      const archiveSearchInput = document.querySelector("#archive-search");
+      const archiveRows = [...document.querySelectorAll(".archive-result")];
+      const archiveHeading = document.querySelector("#archive-results-heading");
+      const archiveCount = document.querySelector("#archive-result-count");
+      const archiveEmpty = document.querySelector("#archive-empty");
+      const clearArchiveSearch = document.querySelector("#clear-archive-search");
+
+      const updateArchiveResults = () => {
+        const query = archiveSearchInput.value.trim().toLowerCase();
+        let visible = 0;
+
+        for (const row of archiveRows) {
+          const match = !query || row.dataset.archiveSearch.includes(query) || row.textContent.toLowerCase().includes(query);
+          row.hidden = !match;
+          if (match) visible += 1;
+        }
+
+        archiveHeading.textContent = query
+          ? `${visible} ${visible === 1 ? "result" : "results"} for “${archiveSearchInput.value.trim()}”`
+          : "All archive stories";
+        archiveCount.textContent = query ? "Across the full archive" : `${visible} sample stories shown`;
+        archiveEmpty.hidden = visible !== 0;
+      };
+
+      archiveSearchInput.addEventListener("input", updateArchiveResults);
+      clearArchiveSearch.addEventListener("click", () => {
+        archiveSearchInput.value = "";
+        updateArchiveResults();
+        archiveSearchInput.focus();
+      });
+
+      const editable = [...document.querySelectorAll("[data-editable]")];
+      for (const node of editable) {
+        new MutationObserver(() => {
+          node.dataset.edited = "true";
+        }).observe(node, { childList: true, characterData: true, subtree: true });
+      }
+
+      document.fonts.ready.then(() => {
+        updateResults();
+        updateArchiveResults();
+      });
+    </script>
+  </body>
+</html>

@@ -56,7 +56,7 @@ export const labEventKindLabels: Record<LabEventKind, string> = {
 export const labEvents: LabEvent[] = [
   {
     date: "26 June 2026",
-    sortDate: "2026-12-31",
+    sortDate: "2026-06-26",
     kind: "personnel",
     title: "Eloisa Torchia and Melissa Pezzotti defend their PhDs",
     text:
@@ -68,8 +68,8 @@ export const labEvents: LabEvent[] = [
     },
   },
   {
-    date: "2026",
-    sortDate: "2026-12-31",
+    date: "5 May 2026",
+    sortDate: "2026-05-05",
     kind: "peerReviewedArticle",
     title: "MicroSplit published in Nature Methods",
     text:
@@ -78,8 +78,8 @@ export const labEvents: LabEvent[] = [
     homepage: true,
   },
   {
-    date: "2026",
-    sortDate: "2026-12-30",
+    date: "27 April 2026",
+    sortDate: "2026-04-27",
     kind: "peerReviewedArticle",
     title: "Micro-comb 3D printing published in Biofabrication",
     text:
@@ -88,8 +88,8 @@ export const labEvents: LabEvent[] = [
     homepage: true,
   },
   {
-    date: "2026",
-    sortDate: "2026-12-29",
+    date: "14 April 2026",
+    sortDate: "2026-04-14",
     kind: "peerReviewedArticle",
     title: "Deep-learning FUCCI analysis published in npj Imaging",
     text:
@@ -190,8 +190,8 @@ export const labEvents: LabEvent[] = [
     },
   },
   {
-    date: "2020",
-    sortDate: "2020-01-01",
+    date: "December 2020",
+    sortDate: "2020-12-01",
     kind: "grant",
     title: "SYNBIO.ECM",
     text:
@@ -201,8 +201,8 @@ export const labEvents: LabEvent[] = [
       funder: "ERC Starting Grant",
       amount: "2M EUR",
       logoKeys: ["erc"],
-      startDate: "2020-01-01",
-      startDateEvidence: "Estimated from SPL source range 2020-2025/2026.",
+      startDate: "2020-12-01",
+      startDateEvidence: "CORDIS project 852560 lists start date 1 December 2020.",
     },
   },
 ];

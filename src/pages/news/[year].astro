@@ -1,0 +1,40 @@
+---
+import NewsEntryRow from "../../components/NewsEntryRow.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { archiveYears, entriesByYear } from "../../data/news";
+import { withBase } from "../../data/site";
+
+export function getStaticPaths() {
+  return archiveYears.map((year) => ({ params: { year } }));
+}
+
+const { year } = Astro.params;
+const entries = entriesByYear[year!];
+---
+
+<BaseLayout
+  title={`${year} news | Synthetic Physiology Lab`}
+  description={`Synthetic Physiology Lab news from ${year}.`}
+>
+  <section class="year-page-hero">
+    <div class="container">
+      <a class="archive-back-link" href={withBase("/news/")}>← News overview</a>
+      <p class="eyebrow">Year archive</p>
+      <h1>{year}</h1>
+      <p class="lead">{entries.length} provisional {entries.length === 1 ? "story" : "stories"} from the SPL archive.</p>
+      <nav class="year-shortcuts" aria-label="Choose archive year">
+        {archiveYears.map((archiveYear) => (
+          <a
+            href={withBase(`/news/${archiveYear}/`)}
+            aria-current={archiveYear === year ? "page" : undefined}
+          >{archiveYear}</a>
+        ))}
+      </nav>
+    </div>
+  </section>
+  <section class="year-page-list">
+    <div class="container archive-story-list">
+      {entries.map((entry) => <NewsEntryRow entry={entry} showAnchor />)}
+    </div>
+  </section>
+</BaseLayout>
