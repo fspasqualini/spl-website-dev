@@ -10,7 +10,7 @@ import {
   newsCategories,
   recentNews,
 } from "../data/news";
-import { withBase } from "../data/site";
+import { getImageDimensions, withBase } from "../data/site";
 
 const chronologicalRecent = recentNews.filter((entry) => entry.id !== featuredNews.id);
 const recentCategories = newsCategories.filter((category) =>
@@ -56,7 +56,13 @@ const featuredYear = featuredNews.date.slice(0, 4);
   <div class="news-recent" id="recent-news">
     <article class="featured-news" data-news-entry data-category={featuredNews.category}>
       <figure>
-        <img src={withBase(featuredNews.image!.src)} alt={featuredNews.image!.alt} />
+        <img
+          src={withBase(featuredNews.image!.src)}
+          alt={featuredNews.image!.alt}
+          width={getImageDimensions(featuredNews.image!.src)?.width}
+          height={getImageDimensions(featuredNews.image!.src)?.height}
+          decoding="async"
+        />
       </figure>
       <div class="featured-news-copy">
         <div class="featured-news-meta">

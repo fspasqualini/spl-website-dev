@@ -1,8 +1,20 @@
 ---
-import ResearchAreaLayout from "../layouts/ResearchAreaLayout.astro";
-import { researchAreas } from "../data/site";
+import { withBase } from "../data/site";
 
-const area = researchAreas.find((item) => item.slug === "all-optical-biomaterials");
+const destination = withBase("/all-optical-biomaterials/");
 ---
 
-<ResearchAreaLayout area={area} />
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="https://syntheticphysiologylab.com/all-optical-biomaterials/" />
+    <meta http-equiv="refresh" content={`0; url=${destination}`} />
+    <title>Page moved | Synthetic Physiology Lab</title>
+  </head>
+  <body>
+    <p>This research page has moved to <a href={destination}>All-optical biomaterials</a>.</p>
+  </body>
+</html>

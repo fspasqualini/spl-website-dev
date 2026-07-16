@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { team, withBase } from "../data/site";
+import { getImageDimensions, team, withBase } from "../data/site";
 ---
 
 <BaseLayout
@@ -15,7 +15,14 @@ import { team, withBase } from "../data/site";
       <div class="people-grid">
         {team.map((person) => (
           <article class="person">
-            <img src={withBase(person.image)} alt={person.name} />
+            <img
+              src={withBase(person.image)}
+              alt={`${person.name}, ${person.role} at Synthetic Physiology Lab`}
+              width={getImageDimensions(person.image)?.width}
+              height={getImageDimensions(person.image)?.height}
+              loading="lazy"
+              decoding="async"
+            />
             <div>
               <h3>{person.name}</h3>
               <p><strong>{person.role}</strong></p>

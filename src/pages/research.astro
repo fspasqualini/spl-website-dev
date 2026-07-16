@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { researchAreas, withBase } from "../data/site";
+import { getImageDimensions, researchAreas, withBase } from "../data/site";
 ---
 
 <BaseLayout
@@ -15,7 +15,14 @@ import { researchAreas, withBase } from "../data/site";
       <div class="grid two">
         {researchAreas.map((area) => (
           <article class="research-card">
-            <img src={withBase(area.image)} alt="" />
+            <img
+              src={withBase(area.image)}
+              alt={area.imageAlt}
+              width={getImageDimensions(area.image)?.width}
+              height={getImageDimensions(area.image)?.height}
+              loading="lazy"
+              decoding="async"
+            />
             <div>
               <span class="research-label">{area.label}</span>
               <h3>{area.title}</h3>

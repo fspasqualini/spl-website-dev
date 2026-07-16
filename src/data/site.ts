@@ -27,6 +27,35 @@ export const brand = {
   logo: "/assets/scraped/005-LOGO_SPL.png",
 };
 
+const imageDimensionMap: Record<string, { width: number; height: number }> = {
+  "/assets/scraped/005-LOGO_SPL.png": { width: 600, height: 252 },
+  "/assets/news/eloisa-melissa-phd-defense-2026.jpg": { width: 1600, height: 1200 },
+  "/assets/scraped/012-_edited_edited_edited.png": { width: 310, height: 322 },
+  "/assets/scraped/013-all-optical_edited.jpg": { width: 310, height: 322 },
+  "/assets/scraped/014-cardioid_3d_nuclei-1-_edited.jpg": { width: 310, height: 322 },
+  "/assets/scraped/015-1000165473.png": { width: 310, height: 322 },
+  "/assets/scraped/028-cardioid_3d_nuclei-1-_edited.jpg": { width: 2048, height: 338 },
+  "/assets/scraped/020-Francesco_Pasqualini.png": { width: 207, height: 234 },
+  "/assets/scraped/023-Moises_Di_Sante.jpg": { width: 220, height: 239 },
+  "/assets/scraped/025-Alessandro_Enrico.jpg": { width: 220, height: 234 },
+  "/assets/scraped/016-Melissa_Pezzotti.jpg": { width: 235, height: 239 },
+  "/assets/scraped/024-IMG_2543.jpg": { width: 220, height: 239 },
+  "/assets/scraped/017-1a9389_cda58112bde047758c2851182a2c15c7-mv2.jpg": { width: 220, height: 239 },
+  "/assets/scraped/018-Tehreem.jpg": { width: 220, height: 234 },
+  "/assets/scraped/019-1751303894720.jpeg": { width: 220, height: 234 },
+  "/assets/scraped/021-20231130_115727.jpg": { width: 220, height: 234 },
+  "/assets/team/giulia-balio.jpg": { width: 220, height: 239 },
+  "/assets/funders/erc-logo.jpg": { width: 229, height: 137 },
+  "/assets/funders/chips-ju.svg": { width: 220, height: 72 },
+  "/assets/funders/mimit.svg": { width: 220, height: 72 },
+  "/assets/funders/mur.svg": { width: 220, height: 72 },
+  "/assets/funders/regione-lombardia.svg": { width: 220, height: 72 },
+  "/assets/funders/eu.svg": { width: 220, height: 72 },
+  "/assets/funders/pnrr.svg": { width: 220, height: 72 },
+};
+
+export const getImageDimensions = (src: string) => imageDimensionMap[src];
+
 const funderLogos: Record<FunderLogoKey, { src: string; alt: string }> = {
   erc: { src: "/assets/funders/erc-logo.jpg", alt: "European Research Council" },
   chipsJu: { src: "/assets/funders/chips-ju.svg", alt: "Chips Joint Undertaking" },
@@ -81,6 +110,7 @@ export const researchAreas = [
     href: "/stem-cells-and-genome-editing/",
     text: "Genome-edited human iPSC systems with fluorescent reporters, live-cell phenotyping, and 2D/3D differentiation methods for watching cell state, lineage, and function emerge over time.",
     image: "/assets/scraped/012-_edited_edited_edited.png",
+    imageAlt: "Monochrome fluorescence microscopy of a dense engineered cell colony",
     vision:
       "This theme builds human stem-cell systems that report their own biology while experiments unfold. Engineered hiPSC lines, fluorescent cell-state sensors, cardiac and developmental differentiation protocols, and live imaging make it possible to follow how cells choose fates, organize tissues, and respond to perturbation in 2D and 3D contexts.",
     deepDive:
@@ -177,9 +207,10 @@ export const researchAreas = [
     title: "Tissue systems",
     label: "Biofab and biomaterials",
     slug: "all-optical-biomaterials",
-    href: "/all/",
+    href: "/all-optical-biomaterials/",
     text: "Soft hydrogels, engineered matrices, confinement systems, and optical or robotic fabrication methods for building tissue environments whose mechanics, geometry, and molecular cues can be controlled.",
     image: "/assets/scraped/013-all-optical_edited.jpg",
+    imageAlt: "Fluorescence microscopy of cells spreading across an engineered biomaterial",
     vision:
       "This theme develops materials and fabrication methods that make the physical context of cells experimentally programmable. Soft hydrogels, matrix chemistry, confinement, micropatterned cues, and light-based or robotic fabrication let the lab build tissue systems with defined mechanics, geometry, and scale.",
     deepDive:
@@ -319,6 +350,7 @@ export const researchAreas = [
     href: "/computational-modeling-and-data-analysis/",
     text: "Discrete particle models, continuum and isogeometric analysis, and bioimage-analysis pipelines that connect microscopy, mechanics, and experimentally derived parameters.",
     image: "/assets/scraped/014-cardioid_3d_nuclei-1-_edited.jpg",
+    imageAlt: "Multicolor fluorescence microscopy of three-dimensional cardiac cell models",
     vision:
       "CompBio joins modeling and bioimage analysis because both turn complex experiments into quantitative objects. Discrete particle models probe cell-ECM and nuclear mechanics, continuum and isogeometric models capture tissue-scale physiology, and deep-learning image workflows extract trajectories from reporter-rich microscopy.",
     deepDive:
@@ -447,6 +479,7 @@ export const researchAreas = [
     href: "/art-and-science/",
     text: "A home for the visual, material, and imaginative side of scientific work, treated as part of method rather than decoration.",
     image: "/assets/scraped/015-1000165473.png",
+    imageAlt: "Black-and-white scientific illustration of an organic tissue-like form",
     vision:
       "Science does not exist apart from scientists. Scientists are human: analytical, visual, emotional, playful, and creative. If the culture of science tells people to amputate the artistic side of themselves, it loses good scientists and weaker hypotheses are the result.",
     deepDive:

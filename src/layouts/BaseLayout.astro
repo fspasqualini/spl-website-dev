@@ -6,6 +6,7 @@ interface Props {
   title?: string;
   description?: string;
   image?: string;
+  imageAlt?: string;
   jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
 
@@ -13,22 +14,32 @@ const {
   title = brand.name,
   description = "Synthetic Physiology Lab is a frontier bioengineering research group building instrumented cells, engineered tissue systems, computational models, and visual culture for life sciences.",
   image = brand.logo,
+  imageAlt = "Synthetic Physiology Lab",
   jsonLd,
 } = Astro.props;
 const path = Astro.url.pathname;
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
 const normalizedPath = path.startsWith(basePath) ? path.slice(basePath.length) || "/" : path;
 const siteUrl = "https://syntheticphysiologylab.com";
-const canonicalUrl = new URL(path, siteUrl).toString();
-const imageUrl = new URL(withBase(image), siteUrl).toString();
+const canonicalUrl = new URL(normalizedPath, siteUrl).toString();
+const imageUrl = new URL(image, siteUrl).toString();
 const pageTitle = title === brand.name ? brand.name + " | Frontier Bioengineering" : title;
+const organizationId = `${siteUrl}/#organization`;
+const websiteId = `${siteUrl}/#website`;
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "ResearchOrganization",
+  "@id": organizationId,
   name: brand.name,
   alternateName: brand.shortName,
-  url: siteUrl,
-  logo: new URL(withBase(brand.logo), siteUrl).toString(),
+  url: `${siteUrl}/`,
+  email: "francesco.pasqualini@unipv.it",
+  logo: {
+    "@type": "ImageObject",
+    url: new URL(brand.logo, siteUrl).toString(),
+    width: 600,
+    height: 252,
+  },
   description:
     "Synthetic Physiology Lab is a frontier bioengineering research group connecting instrumented cells, tissue systems, computational modeling and analysis, and art-science visual culture.",
   address: {
@@ -53,9 +64,31 @@ const organizationJsonLd = {
     "https://orcid.org/0000-0001-7038-3121",
   ],
 };
-const jsonLdItems = jsonLd
-  ? [organizationJsonLd, ...(Array.isArray(jsonLd) ? jsonLd : [jsonLd])]
-  : [organizationJsonLd];
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": websiteId,
+  url: `${siteUrl}/`,
+  name: brand.name,
+  alternateName: brand.shortName,
+  publisher: { "@id": organizationId },
+  inLanguage: "en",
+};
+const webpageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${canonicalUrl}#webpage`,
+  url: canonicalUrl,
+  name: pageTitle,
+  description,
+  isPartOf: { "@id": websiteId },
+  about: { "@id": organizationId },
+  inLanguage: "en",
+};
+const pageJsonLd = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+const jsonLdItems = normalizedPath === "/"
+  ? [organizationJsonLd, websiteJsonLd, webpageJsonLd, ...pageJsonLd]
+  : [webpageJsonLd, ...pageJsonLd];
 ---
 
 <!doctype html>
@@ -64,6 +97,7 @@ const jsonLdItems = jsonLd
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="generator" content={Astro.generator} />
     <link rel="canonical" href={canonicalUrl} />
     <link rel="icon" type="image/svg+xml" href={withBase("/favicon.svg")} />
@@ -73,12 +107,15 @@ const jsonLdItems = jsonLd
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:alt" content={imageAlt} />
+    <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={imageUrl} />
+    <meta name="twitter:image:alt" content={imageAlt} />
     {jsonLdItems.map((item) => (
-      <script type="application/ld+json" set:html={JSON.stringify(item)} />
+      <script is:inline type="application/ld+json" set:html={JSON.stringify(item)} />
     ))}
     <title>{pageTitle}</title>
   </head>
@@ -86,7 +123,13 @@ const jsonLdItems = jsonLd
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <a class="brand" href={withBase("/")} aria-label="Synthetic Physiology Lab home">
-        <img src={withBase(brand.logo)} alt="Synthetic Physiology Lab" />
+        <img
+          src={withBase(brand.logo)}
+          alt="Synthetic Physiology Lab"
+          width="600"
+          height="252"
+          decoding="async"
+        />
       </a>
       <nav class="nav" aria-label="Primary navigation">
         {nav.map((item) => (

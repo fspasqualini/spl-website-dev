@@ -1,13 +1,14 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
-import { publications, withBase } from "../data/site";
+import { getImageDimensions, publications, withBase } from "../data/site";
+import type { Publication } from "../data/site";
 import { getPublicationLabels } from "../data/labels";
 
 const { area } = Astro.props;
 const featuredPapers = area.featuredPapers ?? [];
-const allPapers = area.paperTitles
+const allPapers: Publication[] = area.paperTitles
   .map((title: string) => publications.find((paper) => paper.title === title))
-  .filter(Boolean);
+  .filter((paper: Publication | undefined): paper is Publication => Boolean(paper));
 const carouselItems =
   area.featureCards ??
   featuredPapers
@@ -28,15 +29,49 @@ const carouselItems =
 const resources = area.resources ?? [];
 const carouselEyebrow = area.carouselEyebrow ?? "Platforms and capabilities";
 const carouselTitle = area.carouselTitle ?? "In focus";
+const heroDimensions = getImageDimensions(area.image);
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://syntheticphysiologylab.com/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Research",
+      item: "https://syntheticphysiologylab.com/research/",
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: area.title,
+      item: new URL(area.href, "https://syntheticphysiologylab.com").toString(),
+    },
+  ],
+};
 ---
 
 <BaseLayout
   title={area.title + " | Synthetic Physiology Lab"}
   description={area.deepDive}
   image={area.image}
+  imageAlt={area.imageAlt}
+  jsonLd={breadcrumbJsonLd}
 >
   <section class="research-area-hero">
-    <img src={withBase(area.image)} alt="" />
+    <img
+      src={withBase(area.image)}
+      alt={area.imageAlt}
+      width={heroDimensions?.width}
+      height={heroDimensions?.height}
+      fetchpriority="high"
+      decoding="async"
+    />
     <div>
       <a class="back-link" href={withBase("/research/")}>Research</a>
       <p class="eyebrow">Research area · {area.label}</p>
@@ -69,9 +104,16 @@ const carouselTitle = area.carouselTitle ?? "In focus";
           <article class:list={["feature-card", index === 0 && "active"]} data-carousel-card>
             <a href={withBase(item.href ?? item.src)}>
               {item.type === "video" ? (
-                <video src={withBase(item.src)} muted playsinline controls preload="metadata" />
+                <video src={withBase(item.src)} muted playsinline controls preload="metadata" aria-label={item.title} />
               ) : (
-                <img src={withBase(item.src)} alt="" loading="lazy" />
+                <img
+                  src={withBase(item.src)}
+                  alt={item.title}
+                  width={getImageDimensions(item.src)?.width}
+                  height={getImageDimensions(item.src)?.height}
+                  loading="lazy"
+                  decoding="async"
+                />
               )}
               <span>
                 <strong>{item.title}</strong>

@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { fundedProjects, heroStats, labVisionSections, withBase } from "../data/site";
+import { fundedProjects, getImageDimensions, heroStats, labVisionSections, withBase } from "../data/site";
 import { categoryLabels, formatNewsDate, homepageNews } from "../data/news";
 ---
 
@@ -41,7 +41,13 @@ import { categoryLabels, formatNewsDate, homepageNews } from "../data/news";
           <article class:list={["news-rail-item", entry.image && "news-rail-item-with-image"]}>
             {entry.image && (
               <figure class="news-rail-figure">
-                <img src={withBase(entry.image.src)} alt={entry.image.alt} />
+                <img
+                  src={withBase(entry.image.src)}
+                  alt={entry.image.alt}
+                  width={getImageDimensions(entry.image.src)?.width}
+                  height={getImageDimensions(entry.image.src)?.height}
+                  decoding="async"
+                />
               </figure>
             )}
             <div class="news-rail-copy">
@@ -99,7 +105,14 @@ import { categoryLabels, formatNewsDate, homepageNews } from "../data/news";
             <div class="funded-card-header">
               <div class="funder-logos" aria-label="Funding bodies">
                 {project.logos.map((logo) => (
-                  <img src={withBase(logo.src)} alt={logo.alt} />
+                  <img
+                    src={withBase(logo.src)}
+                    alt={logo.alt}
+                    width={getImageDimensions(logo.src)?.width}
+                    height={getImageDimensions(logo.src)?.height}
+                    loading="lazy"
+                    decoding="async"
+                  />
                 ))}
               </div>
             </div>
