@@ -31,7 +31,7 @@ const organizationJsonLd = {
   "@type": "ResearchOrganization",
   "@id": organizationId,
   name: brand.name,
-  alternateName: brand.shortName,
+  alternateName: [brand.shortName, "SPL Pavia", "SPL UniPV", "Pasqualini Lab"],
   url: `${siteUrl}/`,
   email: "francesco.pasqualini@unipv.it",
   logo: {
@@ -55,6 +55,14 @@ const organizationJsonLd = {
     name: "University of Pavia",
     url: "https://web-en.unipv.it/",
   },
+  founder: {
+    "@type": "Person",
+    name: "Francesco S. Pasqualini",
+    sameAs: [
+      "https://scholar.google.com/citations?user=9qFDVusAAAAJ&hl=en",
+      "https://orcid.org/0000-0001-7038-3121",
+    ],
+  },
   sameAs: [
     "https://dicar.dip.unipv.it/it/ricerca/linee-gruppi-e-laboratori-di-ricerca/laboratori-di-ricerca/spl",
     "https://github.com/Synthetic-Physiology-Lab",
@@ -70,7 +78,7 @@ const websiteJsonLd = {
   "@id": websiteId,
   url: `${siteUrl}/`,
   name: brand.name,
-  alternateName: brand.shortName,
+  alternateName: [brand.shortName, "SPL Pavia", "SPL UniPV", "Pasqualini Lab"],
   description: "Official website of the Synthetic Physiology Lab at the University of Pavia.",
   publisher: { "@id": organizationId },
   about: { "@id": organizationId },

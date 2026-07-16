@@ -6,7 +6,7 @@ import { categoryLabels, formatNewsDate, homepageNews } from "../data/news";
 
 <BaseLayout
   title="Synthetic Physiology Lab | University of Pavia"
-  description="Official website of the Synthetic Physiology Lab at the University of Pavia, a bioengineering research group building instrumented cells, tissue systems, and computational models."
+  description="Official website of Synthetic Physiology Lab (SPL), the Pasqualini Lab at the University of Pavia, building instrumented cells, tissues, and computational models."
 >
   <section class="hero">
     <div class="hero-copy">
@@ -38,18 +38,7 @@ import { categoryLabels, formatNewsDate, homepageNews } from "../data/news";
       </div>
       <div class="news-rail-list">
         {homepageNews.map((entry) => (
-          <article class:list={["news-rail-item", entry.image && "news-rail-item-with-image"]}>
-            {entry.image && (
-              <figure class="news-rail-figure">
-                <img
-                  src={withBase(entry.image.src)}
-                  alt={entry.image.alt}
-                  width={getImageDimensions(entry.image.src)?.width}
-                  height={getImageDimensions(entry.image.src)?.height}
-                  decoding="async"
-                />
-              </figure>
-            )}
+          <article class="news-rail-item">
             <div class="news-rail-copy">
               <div class="news-rail-meta">
                 <span class="news-category">{categoryLabels[entry.category]}</span>
@@ -76,7 +65,7 @@ import { categoryLabels, formatNewsDate, homepageNews } from "../data/news";
           <span>by building it.</span>
         </h2>
         <p class="vision-intro">
-          Synthetic Physiology Lab is a frontier bioengineering research group at the University of Pavia. SPL treats engineering, computation, and visual culture as one experimental loop: cells, tissues, models, and images that make physiology observable, testable, and open to revision.
+          Synthetic Physiology Lab (SPL), led by Francesco S. Pasqualini, is a frontier bioengineering research group at the University of Pavia (UniPV). We treat engineering, computation, and visual culture as one experimental loop: cells, tissues, models, and images that make physiology observable, testable, and open to revision.
         </p>
         <div class="cta-row">
           <a class="cta" href={withBase("/research/")}>More about our research</a>

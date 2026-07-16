@@ -104,12 +104,28 @@ for (const requiredPath of ["/", "/research/", "/publications/"]) {
 if (organizationSchema?.name !== "Synthetic Physiology Lab" || organizationSchema?.url !== `${siteUrl}/`) {
   errors.push("homepage: ResearchOrganization schema does not identify the canonical lab homepage");
 }
+for (const alias of ["SPL", "SPL Pavia", "SPL UniPV", "Pasqualini Lab"]) {
+  if (!organizationSchema?.alternateName?.includes(alias)) {
+    errors.push(`homepage: ResearchOrganization schema is missing alternate name ${alias}`);
+  }
+}
+if (organizationSchema?.founder?.name !== "Francesco S. Pasqualini") {
+  errors.push("homepage: ResearchOrganization schema does not identify Francesco S. Pasqualini as founder");
+}
 if (
   websiteSchema?.name !== "Synthetic Physiology Lab"
   || websiteSchema?.url !== `${siteUrl}/`
   || websiteSchema?.publisher?.["@id"] !== `${siteUrl}/#organization`
 ) {
   errors.push("homepage: WebSite schema does not identify the official lab website and publisher");
+}
+for (const alias of ["SPL", "SPL Pavia", "SPL UniPV", "Pasqualini Lab"]) {
+  if (!websiteSchema?.alternateName?.includes(alias)) {
+    errors.push(`homepage: WebSite schema is missing alternate name ${alias}`);
+  }
+}
+if (!textContent(homepage).includes("Synthetic Physiology Lab (SPL), led by Francesco S. Pasqualini")) {
+  errors.push("homepage: visible lab identity does not connect SPL with Francesco S. Pasqualini");
 }
 
 const sitemap = await readFile(path.join(distDir, "sitemap.xml"), "utf8");
