@@ -1,0 +1,30 @@
+---
+import { withBase } from "../data/site";
+
+interface Props {
+  destination: string;
+  label: string;
+}
+
+const { destination, label } = Astro.props;
+const localDestination = withBase(destination);
+const canonical = new URL(destination.split("#")[0], "https://syntheticphysiologylab.com").toString();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href={canonical} />
+    <meta http-equiv="refresh" content={`0; url=${localDestination}`} />
+    <title>{label} moved | Synthetic Physiology Lab</title>
+    <script is:inline define:vars={{ localDestination }}>
+      window.location.replace(localDestination);
+    </script>
+  </head>
+  <body>
+    <p><a href={localDestination}>{label} is now on the Art &amp; Science page.</a></p>
+  </body>
+</html>

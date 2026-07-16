@@ -32,7 +32,7 @@ import { getPublicationLabels } from "../data/labels";
               {detailLabels.length > 0 && <span class="label-detail">{detailLabels.join(" · ")}</span>}
             </div>
             <div>
-              <h3><a href={paper.href}>{paper.title}</a></h3>
+              <h2><a href={paper.href}>{paper.title}</a></h2>
               <p>{paper.authors}</p>
               <p><strong>{paper.venue}</strong> · {paper.year}{paper.doi ? " · DOI " + paper.doi : ""}</p>
             </div>

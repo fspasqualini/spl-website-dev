@@ -41,7 +41,7 @@ const organizationJsonLd = {
     height: 252,
   },
   description:
-    "Synthetic Physiology Lab is a frontier bioengineering research group connecting instrumented cells, tissue systems, computational modeling and analysis, and art-science visual culture.",
+    "The Synthetic Physiology Lab at the University of Pavia is a bioengineering research group connecting instrumented cells, tissue systems, computational modeling and analysis, and art-science visual culture.",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Via Ferrata 9",
@@ -71,7 +71,9 @@ const websiteJsonLd = {
   url: `${siteUrl}/`,
   name: brand.name,
   alternateName: brand.shortName,
+  description: "Official website of the Synthetic Physiology Lab at the University of Pavia.",
   publisher: { "@id": organizationId },
+  about: { "@id": organizationId },
   inLanguage: "en",
 };
 const webpageJsonLd = {

@@ -25,9 +25,9 @@ import { getImageDimensions, researchAreas, withBase } from "../data/site";
             />
             <div>
               <span class="research-label">{area.label}</span>
-              <h3>{area.title}</h3>
+              <h2>{area.title}</h2>
               <p>{area.text}</p>
-              <a class="cta secondary" href={withBase(area.href)}>More</a>
+              <a class="cta secondary" href={withBase(area.href)}>More about {area.title}</a>
             </div>
           </article>
         ))}

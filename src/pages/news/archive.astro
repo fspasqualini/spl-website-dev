@@ -98,7 +98,7 @@ const searchIndex = sortedNewsArchive.map((entry) => ({
     </div>
   </section>
 
-  <script type="application/json" id="news-search-index" set:html={JSON.stringify(searchIndex)} />
+  <script is:inline type="application/json" id="news-search-index" set:html={JSON.stringify(searchIndex)} />
   <script>
     type SearchEntry = {
       title: string;

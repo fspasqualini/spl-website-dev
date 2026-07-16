@@ -497,45 +497,48 @@ export const researchAreas = [
     carouselTitle: "Visual experiments",
     featureCards: [
       {
+        id: "gallery",
         title: "Gallery",
         text:
           "A curated entry point for lab visuals, sketches, installations, and visual experiments that make SPL's scientific imagination visible.",
         type: "image",
         src: "https://static.wixstatic.com/media/1a9389_e0538ee1aef74238a58219cf45eb5904~mv2.png/v1/fill/w_273,h_278,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/F_B2_draw2.png",
-        href: "https://www.syntheticphysiologylab.com/projects-7",
+        href: "/art-and-science/#gallery",
       },
       {
+        id: "proliferation-2025",
         title: "Artistic installation: Proliferation, 2025",
         text:
           "An installation translating proliferation and growth into a public-facing visual experience, connecting biological pattern formation with human perception.",
         type: "image",
         src: "https://static.wixstatic.com/media/1a9389_2ef6bc301822411b8b32581314e3b4e3~mv2.jpg/v1/fill/w_273,h_278,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_20250810_203129%20(1)_edited.jpg",
-        href: "https://www.syntheticphysiologylab.com/copia-di-vista-1",
+        href: "/art-and-science/#proliferation-2025",
       },
       {
+        id: "spl-logo",
         title: "New SPL logo",
         text:
           "Visual identity as lab infrastructure, not decoration. The logo system carries SPL's mix of engineering, biology, and culture.",
         type: "image",
         src: "https://static.wixstatic.com/media/1a9389_6cf7e30899b44eb8b9c6b7388d99c39e~mv2.png/v1/fill/w_273,h_278,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202025-08-28%20111823.png",
-        href: "https://www.syntheticphysiologylab.com/art-and-science/logo-spl",
+        href: "/art-and-science/#spl-logo",
       },
     ],
     resources: [
       {
         label: "Gallery",
-        href: "https://www.syntheticphysiologylab.com/projects-7",
-        text: "Original SPL art and science gallery from the current site.",
+        href: "/art-and-science/#gallery",
+        text: "SPL art and science gallery.",
       },
       {
         label: "Proliferation, 2025",
-        href: "https://www.syntheticphysiologylab.com/copia-di-vista-1",
-        text: "Original artistic installation page from the current site.",
+        href: "/art-and-science/#proliferation-2025",
+        text: "Artistic installation connecting biological proliferation and visual culture.",
       },
       {
         label: "SPL logo",
-        href: "https://www.syntheticphysiologylab.com/art-and-science/logo-spl",
-        text: "Original visual identity page from the current site.",
+        href: "/art-and-science/#spl-logo",
+        text: "The visual identity of the Synthetic Physiology Lab.",
       },
     ],
   },
@@ -1197,8 +1200,8 @@ export const nonArticleOutputs = [
   { type: "Repository", label: "BIOPOINT", href: "https://github.com/Synthetic-Physiology-Lab/biopoint" },
   { type: "Repository", label: "SEM2", href: "https://github.com/Synthetic-Physiology-Lab/sem2" },
   { type: "Repository", label: "Organelle acidification ODE model", href: "https://github.com/Synthetic-Physiology-Lab/Organelle-acidification-ODE-model" },
-  { type: "Art", label: "SPL art and science gallery", href: "https://www.syntheticphysiologylab.com/projects-7" },
-  { type: "Art", label: "Proliferation, 2025", href: "https://www.syntheticphysiologylab.com/copia-di-vista-1" },
+  { type: "Art", label: "SPL art and science gallery", href: "/art-and-science/#gallery" },
+  { type: "Art", label: "Proliferation, 2025", href: "/art-and-science/#proliferation-2025" },
 ];
 
 const formatCount = (count: number, suffix = "") => `${count}${suffix}`;

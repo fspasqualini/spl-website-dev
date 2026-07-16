@@ -4,7 +4,7 @@
   --ink: #0b0b0d;
   --ink-soft: #15161a;
   --graphite: #2a2b2f;
-  --muted: #6f7278;
+  --muted: #62656b;
   --line: #d7d8dc;
   --line-dark: rgba(255, 255, 255, 0.16);
   --soft: #f1f1f2;
@@ -1000,6 +1000,11 @@ p {
   margin-top: auto;
 }
 
+.research-card h2 {
+  font-size: clamp(1.1rem, 1.4vw, 1.35rem);
+  line-height: 1.18;
+}
+
 .research-area-hero {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
@@ -1567,8 +1572,10 @@ p {
   border-top: 0;
 }
 
-.inventory-paper h3 {
+.inventory-paper h2 {
+  margin-bottom: 10px;
   font-size: 1.05rem;
+  line-height: 1.18;
 }
 
 .inventory-paper a,

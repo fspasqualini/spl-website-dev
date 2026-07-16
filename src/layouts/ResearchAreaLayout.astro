@@ -100,8 +100,8 @@ const breadcrumbJsonLd = {
         <h2>{carouselTitle}</h2>
       </div>
       <div class="feature-carousel" data-carousel aria-label={area.title + " featured examples"}>
-        {carouselItems.map((item: { title: string; text: string; type: string; src: string; href?: string }, index: number) => (
-          <article class:list={["feature-card", index === 0 && "active"]} data-carousel-card>
+        {carouselItems.map((item: { id?: string; title: string; text: string; type: string; src: string; href?: string }, index: number) => (
+          <article id={item.id} class:list={["feature-card", index === 0 && "active"]} data-carousel-card>
             <a href={withBase(item.href ?? item.src)}>
               {item.type === "video" ? (
                 <video src={withBase(item.src)} muted playsinline controls preload="metadata" aria-label={item.title} />
@@ -199,6 +199,8 @@ const breadcrumbJsonLd = {
     let active = 0;
     let timer;
 
+    const indexFromHash = () => cards.findIndex((card) => card.id && `#${card.id}` === window.location.hash);
+
     const setActive = (index) => {
       active = (index + cards.length) % cards.length;
       cards.forEach((card, cardIndex) => {
@@ -241,8 +243,16 @@ const breadcrumbJsonLd = {
 
     carousel.addEventListener("mouseenter", stop);
     carousel.addEventListener("mouseleave", start);
-    setActive(0);
+    setActive(Math.max(0, indexFromHash()));
     start();
+
+    window.addEventListener("hashchange", () => {
+      const hashIndex = indexFromHash();
+      if (hashIndex >= 0) {
+        setActive(hashIndex);
+        start();
+      }
+    });
   });
 </script>
 </BaseLayout>

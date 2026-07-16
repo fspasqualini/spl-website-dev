@@ -7,7 +7,8 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/check-news-archive.mjs && node scripts/check-seo.mjs",
+    "build": "astro build && node scripts/check-news-archive.mjs && node scripts/check-seo.mjs && node scripts/check-links.mjs",
+    "check:links": "node scripts/check-links.mjs",
     "check:seo": "node scripts/check-seo.mjs",
     "check:news": "npm run build",
     "preview": "astro preview",
