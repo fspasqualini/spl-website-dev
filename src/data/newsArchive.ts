@@ -39,6 +39,27 @@ export const categoryLabels: Record<NewsCategory, string> = {
 
 export const newsArchive: NewsEntry[] = [
   {
+    "id": "2026-francesco-at-wcb-2026",
+    "date": "2026-07-12",
+    "datePrecision": "day",
+    "category": "events",
+    "title": "Francesco at WCB 2026",
+    "blurb": "Francesco gave an invited presentation at the 10th World Congress of Biomechanics in Vancouver, sharing SPL's cell-cycle-aware phenotyping platforms for tracking structural and functional changes in engineered tissues.",
+    "links": [
+      {
+        "label": "WCB 2026",
+        "href": "https://wcb2026.com/"
+      }
+    ],
+    "people": [
+      "Francesco S. Pasqualini"
+    ],
+    "topics": [
+      "Cell-cycle-aware phenotyping"
+    ],
+    "order": 1001
+  },
+  {
     "id": "2026-erc-days-at-univpm",
     "date": "2026-07-01",
     "datePrecision": "month",
