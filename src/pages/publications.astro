@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { publications } from "../data/site";
+import { publicationHighlights, publications } from "../data/site";
 import { getPublicationLabels } from "../data/labels";
 ---
 
@@ -18,8 +18,37 @@ import { getPublicationLabels } from "../data/labels";
     </div>
   </section>
 
+  <section class="section band-soft" aria-labelledby="highlighted-publications-heading">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">Highlighted papers</p>
+        <h2 id="highlighted-publications-heading">A short route into our recent work.</h2>
+        <p>Six recent papers spanning instrumented cells, live imaging, engineered tissues, and computational analysis.</p>
+      </div>
+      <div class="research-paper-list">
+        {publicationHighlights.recent.map((paper) => {
+          const labels = getPublicationLabels(paper);
+          return (
+            <a class="research-paper" href={paper.href}>
+              <span class="publication-tags">
+                <span class="tag" data-category={labels.primary.category} data-label-id={labels.primary.id}>{labels.primary.text}</span>
+                <span class="provenance-tag" data-provenance={labels.provenance.id}>{labels.provenance.text}</span>
+              </span>
+              <strong>{paper.title}</strong>
+              <span>{paper.venue} · {paper.year}{paper.doi ? " · DOI " + paper.doi : ""}</span>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
   <section class="section">
     <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Complete record</p>
+        <h2>All publications.</h2>
+      </div>
       <div class="inventory-list">
         {publications.map((paper) => {
           const labels = getPublicationLabels(paper);

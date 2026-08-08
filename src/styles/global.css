@@ -1235,10 +1235,12 @@ p {
 .research-paper-list {
   display: grid;
   gap: 12px;
+  min-width: 0;
 }
 
 .research-paper {
   display: grid;
+  min-width: 0;
   grid-template-columns: 132px minmax(0, 1fr);
   gap: 10px 18px;
   padding: 16px;
@@ -1268,6 +1270,8 @@ p {
 .research-paper strong,
 .research-paper span:nth-child(n + 3) {
   grid-column: 2;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .research-paper strong {

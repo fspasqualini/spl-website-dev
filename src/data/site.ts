@@ -175,7 +175,7 @@ export const researchAreas = [
             src: "/assets/scraped/012-_edited_edited_edited.png",
             label: "Cell-cycle-aware imaging",
             text: "Live-cell phenotyping built around interpretable cell-cycle state.",
-            href: "https://www.biorxiv.org/content/10.1101/2024.12.19.629259v1",
+            href: "https://www.nature.com/articles/s41467-026-76144-9",
           },
         ],
       },
@@ -724,6 +724,16 @@ export type Publication = {
 
 export const publications: Publication[] = [
   {
+    title: "CALIPERS: Cell cycle-aware live imaging for phenotyping experiments and regeneration studies",
+    authors: "Moises Di Sante, Melissa Pezzotti, Julius Zimmermann, Alessandro Enrico, Joran Deschamps, Elisa Balmas, Silvia Becca, Eloisa Torchia, Giulia Ballio, Samantha Solito, Martina Sarchi, Alessandro Reali, Alessandro Bertero, Florian Jug, Francesco S. Pasqualini",
+    venue: "Nature Communications",
+    year: "2026",
+    doi: "10.1038/s41467-026-76144-9",
+    href: "https://www.nature.com/articles/s41467-026-76144-9",
+    tag: "Recent",
+    provenance: "spl",
+  },
+  {
     title: "MicroSplit: semantic unmixing of fluorescent microscopy data",
     authors: "Ashesh Ashesh, Federico Carrara, Igor Zubarev, Vera Galinova, Melisande Croft, Melissa Pezzotti, Daozheng Gong, Francesca Casagrande, Elisa Colombo, Stefania Giussani, Elena Restelli, Eugenia Cammarota, Juan Manuel Battagliotti, Nikolai Klena, Moises Di Sante, Raghabendra Adhikari, Daniel Feliciano, Gaia Pigino, Elena Taverna, Oliver Harschnitz, Nicola Maghelli, Norbert Scherer, Damian Edward Dalle Nogare, Joran Deschamps, Francesco Pasqualini, Florian Jug",
     venue: "Nature Methods",
@@ -811,16 +821,6 @@ export const publications: Publication[] = [
     doi: "10.1021/acs.langmuir.4c03966",
     href: "https://pubmed.ncbi.nlm.nih.gov/39913243/",
     tag: "Modeling",
-    provenance: "spl",
-  },
-  {
-    title: "CALIPERS: Cell cycle-aware live imaging for phenotyping experiments and regeneration studies",
-    authors: "Moises Di Sante, Melissa Pezzotti, Julius Zimmermann, Alessandro Enrico, Joran Deschamps, Elisa Balmas, Silvia Becca, Alessandro Reali, Alessandro Bertero, Florian Jug, Francesco S. Pasqualini",
-    venue: "bioRxiv",
-    year: "2024",
-    doi: "10.1101/2024.12.19.629259",
-    href: "https://www.biorxiv.org/content/10.1101/2024.12.19.629259v1",
-    tag: "Preprint",
     provenance: "spl",
   },
   {
@@ -1185,7 +1185,10 @@ export const publications: Publication[] = [
 ];
 
 export const publicationHighlights = {
-  recent: publications.filter((paper) => ["Recent", "Preprint", "Bioimage analysis", "Modeling"].includes(paper.tag)).slice(0, 6),
+  recent: publications
+    .filter((paper) => ["Recent", "Preprint", "Bioimage analysis", "Modeling"].includes(paper.tag))
+    .filter((paper) => paper.doi !== "10.1088/1758-5090/ae5fd9")
+    .slice(0, 6),
   cited: publications.filter((paper) => paper.tag === "Highly cited").slice(0, 4),
 };
 

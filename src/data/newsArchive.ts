@@ -39,6 +39,37 @@ export const categoryLabels: Record<NewsCategory, string> = {
 
 export const newsArchive: NewsEntry[] = [
   {
+    "id": "2026-calipers-published-in-nature-communications",
+    "date": "2026-08-01",
+    "datePrecision": "day",
+    "category": "research",
+    "title": "CALIPERS published in Nature Communications",
+    "blurb": "CALIPERS is now published in Nature Communications. From epithelial cells to human induced pluripotent stem cells and cardiac organoids, the framework makes cell-cycle state an explicit, measurable variable alongside structural and functional live-imaging readouts.",
+    "links": [
+      {
+        "label": "Nature Communications",
+        "href": "https://www.nature.com/articles/s41467-026-76144-9"
+      }
+    ],
+    "people": [
+      "Moises Di Sante",
+      "Melissa Pezzotti",
+      "Julius Zimmermann",
+      "Alessandro Enrico",
+      "Eloisa Torchia",
+      "Giulia Ballio",
+      "Alessandro Reali",
+      "Francesco S. Pasqualini"
+    ],
+    "topics": [
+      "CALIPERS",
+      "Cell-cycle-aware phenotyping",
+      "Live-cell imaging",
+      "Cardiac organoids"
+    ],
+    "order": 1002
+  },
+  {
     "id": "2026-francesco-at-wcb-2026",
     "date": "2026-07-12",
     "datePrecision": "day",
