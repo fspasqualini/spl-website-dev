@@ -572,7 +572,7 @@ export const team: TeamMember[] = [
   },
   {
     name: "Moises Di Sante",
-    role: "Senior Researcher",
+    role: "Tenure-track Assistant Professor (RTT)",
     focus: "Stem cells and genome editing",
     email: "moises.disante@unipv.it",
     image: "/assets/scraped/023-Moises_Di_Sante.jpg",
@@ -797,7 +797,7 @@ export const publications: Publication[] = [
     title: "BIOPOINT: A particle-based model for probing nuclear mechanics and cell-ECM interactions via experimentally derived parameters",
     authors: "Sandipan Chattaraj, Julius Zimmermann, Francesco Silvio Pasqualini",
     venue: "PLOS Computational Biology",
-    year: "2025",
+    year: "2026",
     doi: "10.1371/journal.pcbi.1014113",
     href: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014113",
     tag: "Modeling",
