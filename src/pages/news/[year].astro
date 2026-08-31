@@ -18,15 +18,15 @@ const entries = entriesByYear[year!];
 >
   <section class="year-page-hero">
     <div class="container">
-      <a class="archive-back-link" href={withBase("/news/")}>← News overview</a>
-      <p class="eyebrow">Year archive</p>
-      <h1>{year}</h1>
-      <p class="lead">{entries.length} provisional {entries.length === 1 ? "story" : "stories"} from the SPL archive.</p>
-      <nav class="year-shortcuts" aria-label="Choose archive year">
-        {archiveYears.map((archiveYear) => (
+      <a class="archive-back-link" href={withBase("/news/")}>← All news</a>
+      <p class="eyebrow">News archive</p>
+      <h1>{year} at SPL</h1>
+      <p class="lead">{entries.length} {entries.length === 1 ? "story" : "stories"} documenting our research, people, events, and milestones.</p>
+      <p class="year-shortcuts-label">Explore another year</p>
+      <nav class="year-shortcuts" aria-label="Explore another archive year">
+        {archiveYears.filter((archiveYear) => archiveYear !== year).map((archiveYear) => (
           <a
             href={withBase(`/news/${archiveYear}/`)}
-            aria-current={archiveYear === year ? "page" : undefined}
           >{archiveYear}</a>
         ))}
       </nav>

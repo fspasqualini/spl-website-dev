@@ -39,6 +39,52 @@ export const categoryLabels: Record<NewsCategory, string> = {
 
 export const newsArchive: NewsEntry[] = [
   {
+    "id": "2026-spl-at-esb-ita-2026",
+    "date": "2026-08-31",
+    "datePrecision": "day",
+    "category": "events",
+    "title": "SPL at ESB-ITA 2026",
+    "blurb": "SPL is taking part in ESB-ITA 2026 at Politecnico di Milano. Melissa Pezzotti, Eloisa Torchia, and Alessandro Enrico are presenting our work on cell-cycle-aware phenotyping, multiscale rheology, and microgrooved hydrogels for high-throughput mechanophenotyping. Francesco S. Pasqualini is also speaking for ERC in Italy about \u201cHow to ERC.\u201d We look forward to exchanging ideas with Italy\u2019s biomechanics community.",
+    "links": [
+      {
+        "label": "ESB-ITA 2026",
+        "href": "https://www.esb-ita.it/esb-ita26-home/"
+      }
+    ],
+    "people": [
+      "Melissa Pezzotti",
+      "Eloisa Torchia",
+      "Alessandro Enrico",
+      "Francesco S. Pasqualini"
+    ],
+    "topics": [
+      "Cell-cycle-aware phenotyping",
+      "Multiscale rheology",
+      "High-throughput mechanophenotyping",
+      "ERC in Italy"
+    ],
+    "order": 1004
+  },
+  {
+    "id": "2026-calipers-final-typeset-version",
+    "date": "2026-08-31",
+    "datePrecision": "day",
+    "category": "research",
+    "title": "One more CALIPERS update",
+    "blurb": "The final, fully typeset version of our Nature Communications paper is now online and open access. We are grateful to the editor, reviewers, and the Nature Communications team. Their thoughtful feedback and careful work helped us make the manuscript clearer and stronger for the community.",
+    "links": [
+      {
+        "label": "Read and share the paper",
+        "href": "https://rdcu.be/xPEVd631C4ma"
+      }
+    ],
+    "topics": [
+      "CALIPERS",
+      "Open access"
+    ],
+    "order": 1003
+  },
+  {
     "id": "2026-calipers-published-in-nature-communications",
     "date": "2026-08-01",
     "datePrecision": "day",
