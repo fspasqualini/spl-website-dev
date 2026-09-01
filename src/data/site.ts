@@ -633,8 +633,7 @@ export const alumni: AlumniMember[] = [
   {
     name: "Julius Zimmermann",
     contribution: "Bioimage analysis and computational modeling",
-    currentAffiliation: "University of Rostock",
-    currentHref: "https://www.iae.uni-rostock.de/zimmermann/",
+    currentAffiliation: "Industry (undisclosed)",
   },
   {
     name: "Sandipan Chattaraj",
@@ -673,6 +672,7 @@ export const alumni: AlumniMember[] = [
   {
     name: "Ahmed S. Khalil",
     contribution: "Post-doctoral research",
+    currentAffiliation: "Industry (undisclosed)",
   },
 ];
 
