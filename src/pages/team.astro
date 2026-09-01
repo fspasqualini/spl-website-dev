@@ -1,15 +1,15 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { getImageDimensions, team, withBase } from "../data/site";
+import { alumni, getImageDimensions, team, withBase } from "../data/site";
 ---
 
 <BaseLayout
   title="Team | Synthetic Physiology Lab"
   description="Meet the scientists, engineers, artists, and builders behind Synthetic Physiology Lab, a frontier bioengineering group at the University of Pavia."
 >
-  <section class="section">
+  <section class="section team-current-section">
     <div class="container">
-      <p class="eyebrow">Team</p>
+      <p class="eyebrow">Current team</p>
       <h1>Scientists, engineers, artists: come build with us.</h1>
       <p class="lead">Like building for the life sciences, not just studying them? Read our <a href={withBase("/creed/")}>creed</a> and see if this is your kind of work.</p>
       <div class="people-grid">
@@ -29,6 +29,50 @@ import { getImageDimensions, team, withBase } from "../data/site";
               <p>{person.focus}</p>
               <a href={`mailto:${person.email}`}>{person.email}</a>
             </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section alumni-section" aria-labelledby="alumni-heading">
+    <div class="container">
+      <div class="alumni-intro">
+        <div>
+          <p class="eyebrow">Alumni</p>
+          <h2 id="alumni-heading">Built here, carried forward.</h2>
+        </div>
+        <div>
+          <p class="lead">Former members whose work helped shape SPL, and where their paths have led next.</p>
+          <p class="alumni-note">Current affiliations are listed where publicly available.</p>
+        </div>
+      </div>
+
+      <div class="alumni-list">
+        <div class="alumni-list-header" aria-hidden="true">
+          <span>Name</span>
+          <span>Work at SPL</span>
+          <span>Current affiliation</span>
+        </div>
+        {alumni.map((person) => (
+          <article class="alumni-person">
+            <h3>{person.name}</h3>
+            <p class="alumni-contribution">
+              <span class="alumni-field-label">Work at SPL</span>
+              {person.contribution}
+            </p>
+            <p class="alumni-affiliation">
+              <span class="alumni-field-label">Current affiliation</span>
+              {person.currentAffiliation ? (
+                person.currentHref ? (
+                  <a href={person.currentHref} target="_blank" rel="noreferrer">{person.currentAffiliation} ↗</a>
+                ) : (
+                  <span>{person.currentAffiliation}</span>
+                )
+              ) : (
+                <span class="alumni-affiliation-unlisted">Not listed</span>
+              )}
+            </p>
           </article>
         ))}
       </div>

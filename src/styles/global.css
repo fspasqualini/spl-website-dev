@@ -1428,6 +1428,94 @@ p {
   text-decoration: none;
 }
 
+.team-current-section {
+  padding-bottom: clamp(64px, 9vw, 116px);
+}
+
+.alumni-section {
+  border-top: 3px solid var(--ink);
+  background: var(--soft);
+}
+
+.alumni-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.75fr);
+  gap: clamp(36px, 7vw, 96px);
+  align-items: end;
+}
+
+.alumni-intro h2 {
+  max-width: 12ch;
+  margin-bottom: 0;
+}
+
+.alumni-intro .lead {
+  margin-bottom: 10px;
+  font-size: clamp(1rem, 1.5vw, 1.18rem);
+}
+
+.alumni-note {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.alumni-list {
+  margin-top: clamp(42px, 6vw, 72px);
+  border-top: 2px solid var(--ink);
+}
+
+.alumni-list-header,
+.alumni-person {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.85fr) minmax(260px, 1.35fr) minmax(220px, 1fr);
+  gap: clamp(18px, 3vw, 42px);
+}
+
+.alumni-list-header {
+  padding: 12px 0 10px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.alumni-person {
+  align-items: start;
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+}
+
+.alumni-person h3,
+.alumni-person p {
+  margin-bottom: 0;
+}
+
+.alumni-person h3 {
+  font-size: clamp(1rem, 1.45vw, 1.22rem);
+}
+
+.alumni-person p {
+  font-size: 0.94rem;
+  line-height: 1.5;
+}
+
+.alumni-affiliation a {
+  color: var(--spl-red);
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.alumni-affiliation-unlisted {
+  color: var(--muted);
+}
+
+.alumni-field-label {
+  display: none;
+}
+
 .publication-list {
   display: grid;
   gap: 14px;
@@ -2301,6 +2389,38 @@ p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .alumni-intro {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .alumni-intro .lead {
+    max-width: 48ch;
+  }
+
+  .alumni-list-header {
+    display: none;
+  }
+
+  .alumni-person {
+    grid-template-columns: minmax(190px, 0.8fr) minmax(0, 1.2fr);
+  }
+
+  .alumni-person h3 {
+    grid-row: 1 / span 2;
+  }
+
+  .alumni-field-label {
+    display: block;
+    margin-bottom: 3px;
+    color: var(--muted);
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
   .thesis-heading,
   .news-rail {
     position: static;
@@ -2509,6 +2629,17 @@ p {
   .research-paper,
   .media-grid {
     grid-template-columns: 1fr;
+  }
+
+  .alumni-person {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 20px 0;
+  }
+
+  .alumni-person h3 {
+    grid-row: auto;
+    font-size: 1.2rem;
   }
 
   .news-rail-item-with-image,

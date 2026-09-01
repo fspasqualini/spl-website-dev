@@ -552,14 +552,11 @@ export type TeamMember = {
   image: string;
 };
 
-export type FormerTeamMember = {
+export type AlumniMember = {
   name: string;
-  role: string;
-  focus: string;
-  emails: string[];
-  status: "former";
-  period?: string;
-  note?: string;
+  contribution: string;
+  currentAffiliation?: string;
+  currentHref?: string;
 };
 
 export const team: TeamMember[] = [
@@ -626,87 +623,55 @@ export const team: TeamMember[] = [
     email: "maddalena.rocca@unipv.it",
     image: "/assets/scraped/021-20231130_115727.jpg",
   },
-  {
-    name: "Giulia Ballio",
-    role: "Research Assistant",
-    focus: "Molecular biology",
-    email: "giulia.ballio@unipv.it",
-    image: "/assets/team/giulia-balio.jpg",
-  },
 ];
 
-export const formerTeam: FormerTeamMember[] = [
+export const alumni: AlumniMember[] = [
   {
-    name: "Ahmed S. Khalil",
-    role: "Post-doctoral researcher",
-    focus: "Former SPL post-doc",
-    emails: ["salehastro@gmail.com", "ahmed.khalil@unipv.it"],
-    status: "former",
-    period: "Approx. December 2020 - November 2021",
-    note: "Email evidence: late-2020 borsa di ricerca start, Jan 2021 remote activity, Nov 2021 last update. No current-employment information recorded; avoid public-source name matches until identity is confirmed.",
-  },
-  {
-    name: "Dr. Chimwemwe Msosa",
-    role: "CICOPS Fellow",
-    focus: "Biomedical engineering",
-    emails: ["cmsosa@mubas.ac.mw"],
-    status: "former",
-    period: "June 2024 - December 2024",
-    note: "Now Lecturer in Biomedical Engineering at the Malawi University of Business and Applied Sciences.",
-  },
-  {
-    name: "Sandipan Chattaraj",
-    role: "Former SPL member",
-    focus: "Computational modeling of cell mechanics",
-    emails: [],
-    status: "former",
-    period: "Approx. 2021 - 2026",
-    note: "Email evidence includes SPL group activity in 2021, a Dec 2023 final borsa report followed by an assegno, and 2026 research/tooling correspondence.",
+    name: "Giulia Ballio",
+    contribution: "Research assistant · Molecular biology",
   },
   {
     name: "Julius Zimmermann",
-    role: "Former SPL member",
-    focus: "Bioimage analysis and computational modeling",
-    emails: [],
-    status: "former",
-    period: "Approx. December 2023 - April 2026",
-    note: "Email evidence includes Dec 2023 SPL computational-science work, Dec 2024 DICAr non-structured researcher lists, and Apr 2026 paper-proof correspondence.",
+    contribution: "Bioimage analysis and computational modeling",
+    currentAffiliation: "University of Rostock",
+    currentHref: "https://www.iae.uni-rostock.de/zimmermann/",
+  },
+  {
+    name: "Sandipan Chattaraj",
+    contribution: "Computational modeling of cell mechanics",
+    currentAffiliation: "IESL-FORTH",
+    currentHref: "https://www.iesl.forth.gr/en/people/chattaraj-sandipan",
   },
   {
     name: "Emanuele Carnevale Baraglia",
-    role: "Former SPL member",
-    focus: "Organelle acidification and computational modeling",
-    emails: ["emanuele.carnevalebaraglia@unipv.it"],
-    status: "former",
-    period: "Approx. December 2023 - 2025",
-    note: "Email evidence includes Dec 2023 thesis/SPL interactions, 2024-2025 SPL group activity, and a PRIN 2022 project assignment running 2023-11-30 to 2025-11-29.",
+    contribution: "Organelle acidification and computational modeling",
+    currentAffiliation: "SEA Vision",
   },
   {
     name: "Bohdana Horda",
-    role: "Former SPL member",
-    focus: "Hydrogel fabrication and engineered cell culture systems",
-    emails: ["bohdana.horda@unipv.it"],
-    status: "former",
-    period: "Approx. November 2023 - April 2025",
-    note: "Email evidence includes Nov 2023 SPL/DICAr group correspondence and 2025 HYDRA manuscript correspondence.",
-  },
-  {
-    name: "Alice Albini",
-    role: "Administrative support",
-    focus: "Project management and laboratory operations",
-    emails: ["alice.albini@unipv.it"],
-    status: "former",
-    period: "Approx. January 2021 - June 2022",
-    note: "Later University of Pavia administrative support in the wider engineering area; March 2023 email refers to her new incarico.",
+    contribution: "Hydrogel fabrication and engineered cell culture systems",
   },
   {
     name: "Daniela Canevari",
-    role: "Administrative support",
-    focus: "Project management and laboratory operations",
-    emails: ["daniela.canevari@unipv.it"],
-    status: "former",
-    period: "Approx. December 2023 - 2025",
-    note: "Currently working within the wider University of Pavia administration, with DICAr/DII-adjacent support visible in later emails.",
+    contribution: "Project administration and reporting",
+    currentAffiliation: "University of Pavia · DICAr administration",
+    currentHref: "https://dicar.dip.unipv.it/en/department/organization/administrative-divisions",
+  },
+  {
+    name: "Dr. Chimwemwe Msosa",
+    contribution: "CICOPS fellow · Biomedical engineering",
+    currentAffiliation: "Malawi University of Business and Applied Sciences",
+    currentHref: "https://rsu.mubas.ac.mw/team-members/assoc-prof-save-kumwenda/",
+  },
+  {
+    name: "Alice Albini",
+    contribution: "Project management and laboratory operations",
+    currentAffiliation: "University of Pavia · DIII administration",
+    currentHref: "https://iii.dip.unipv.it/it/dipartimento/personale",
+  },
+  {
+    name: "Ahmed S. Khalil",
+    contribution: "Post-doctoral research",
   },
 ];
 
