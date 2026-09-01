@@ -650,6 +650,7 @@ export const alumni: AlumniMember[] = [
   {
     name: "Bohdana Horda",
     contribution: "Hydrogel fabrication and engineered cell culture systems",
+    currentAffiliation: "Medival S.r.l. · Product Specialist",
   },
   {
     name: "Daniela Canevari",
