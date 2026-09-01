@@ -724,6 +724,16 @@ export type Publication = {
 
 export const publications: Publication[] = [
   {
+    title: "Engineering Toolkits for High-Throughput and High-Content Phenotyping",
+    authors: "Melissa Pezzotti, Francesco S. Pasqualini",
+    venue: "Biophysics Reviews",
+    year: "2026",
+    doi: "10.1063/5.0341991",
+    href: "https://doi.org/10.1063/5.0341991",
+    tag: "Review",
+    provenance: "spl",
+  },
+  {
     title: "CALIPERS: Cell cycle-aware live imaging for phenotyping experiments and regeneration studies",
     authors: "Moises Di Sante, Melissa Pezzotti, Julius Zimmermann, Alessandro Enrico, Joran Deschamps, Elisa Balmas, Silvia Becca, Eloisa Torchia, Giulia Ballio, Samantha Solito, Martina Sarchi, Alessandro Reali, Alessandro Bertero, Florian Jug, Francesco S. Pasqualini",
     venue: "Nature Communications",
@@ -1186,7 +1196,7 @@ export const publications: Publication[] = [
 
 export const publicationHighlights = {
   recent: publications
-    .filter((paper) => ["Recent", "Preprint", "Bioimage analysis", "Modeling"].includes(paper.tag))
+    .filter((paper) => ["Recent", "Review", "Preprint", "Bioimage analysis", "Modeling"].includes(paper.tag))
     .filter((paper) => paper.doi !== "10.1088/1758-5090/ae5fd9")
     .slice(0, 6),
   cited: publications.filter((paper) => paper.tag === "Highly cited").slice(0, 4),

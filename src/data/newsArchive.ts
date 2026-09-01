@@ -39,6 +39,31 @@ export const categoryLabels: Record<NewsCategory, string> = {
 
 export const newsArchive: NewsEntry[] = [
   {
+    "id": "2026-engineering-toolkits-high-content-phenotyping-review",
+    "date": "2026-09-01",
+    "datePrecision": "day",
+    "category": "research",
+    "title": "Engineering toolkits for high-content phenotyping",
+    "blurb": "Melissa Pezzotti and Francesco S. Pasqualini's new review in Biophysics Reviews distills lessons from Melissa's PhD work at the interface of imaging and bioengineering. It connects live-cell reporters, fluorescence imaging, engineered microenvironments, and 2D-to-4D analysis into a practical framework for high-throughput and high-content phenotyping, including a \"dataset passport\" for more reproducible and interpretable workflows.",
+    "links": [
+      {
+        "label": "Read the review",
+        "href": "https://doi.org/10.1063/5.0341991"
+      }
+    ],
+    "people": [
+      "Melissa Pezzotti",
+      "Francesco S. Pasqualini"
+    ],
+    "topics": [
+      "High-content phenotyping",
+      "Live-cell imaging",
+      "Bioengineering",
+      "Reproducible workflows"
+    ],
+    "order": 1005
+  },
+  {
     "id": "2026-spl-at-esb-ita-2026",
     "date": "2026-08-31",
     "datePrecision": "day",
