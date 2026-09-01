@@ -633,7 +633,7 @@ export const alumni: AlumniMember[] = [
   {
     name: "Julius Zimmermann",
     contribution: "Bioimage analysis and computational modeling",
-    currentAffiliation: "Industry (undisclosed)",
+    currentAffiliation: "Brainlab · Software Engineer in Medical Technology",
   },
   {
     name: "Sandipan Chattaraj",
