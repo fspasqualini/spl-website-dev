@@ -22,11 +22,11 @@ import { getPublicationLabels } from "../data/labels";
     <div class="container split">
       <div>
         <p class="eyebrow">Highlighted papers</p>
-        <h2 id="highlighted-publications-heading">A short route into our recent work.</h2>
-        <p>Six recent papers spanning instrumented cells, live imaging, engineered tissues, and computational analysis.</p>
+        <h2 id="highlighted-publications-heading">A short route into our work.</h2>
+        <p>Five selected SPL-led papers spanning instrumented cells, live imaging, engineered tissues, and computational analysis.</p>
       </div>
       <div class="research-paper-list">
-        {publicationHighlights.recent.map((paper) => {
+        {publicationHighlights.selected.map((paper) => {
           const labels = getPublicationLabels(paper);
           return (
             <a class="research-paper" href={paper.href}>

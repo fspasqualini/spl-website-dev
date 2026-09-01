@@ -720,6 +720,7 @@ export type Publication = {
   tag: string;
   provenance: "spl" | "pre-spl";
   citations?: string;
+  highlightOrder?: number;
 };
 
 export const publications: Publication[] = [
@@ -732,6 +733,7 @@ export const publications: Publication[] = [
     href: "https://doi.org/10.1063/5.0341991",
     tag: "Review",
     provenance: "spl",
+    highlightOrder: 1,
   },
   {
     title: "CALIPERS: Cell cycle-aware live imaging for phenotyping experiments and regeneration studies",
@@ -742,6 +744,7 @@ export const publications: Publication[] = [
     href: "https://www.nature.com/articles/s41467-026-76144-9",
     tag: "Recent",
     provenance: "spl",
+    highlightOrder: 2,
   },
   {
     title: "MicroSplit: semantic unmixing of fluorescent microscopy data",
@@ -772,6 +775,7 @@ export const publications: Publication[] = [
     href: "https://www.nature.com/articles/s44303-026-00159-6",
     tag: "Bioimage analysis",
     provenance: "spl",
+    highlightOrder: 3,
   },
   {
     title: "A vertically integrated system for tracking and assessing cell-cycle-aware phenotypes under confinement",
@@ -782,6 +786,7 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/41799556/",
     tag: "Recent",
     provenance: "spl",
+    highlightOrder: 4,
   },
   {
     title: "Fabrication of cell culture hydrogels by robotic liquid handling automation for high-throughput drug testing",
@@ -792,6 +797,7 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/41430373/",
     tag: "Recent",
     provenance: "spl",
+    highlightOrder: 5,
   },
   {
     title: "LiGHTS: Massively Parallel Biomimetic Photo-Functionalization for Imaging-Based Ultra-High-Throughput Screening",
@@ -1195,10 +1201,9 @@ export const publications: Publication[] = [
 ];
 
 export const publicationHighlights = {
-  recent: publications
-    .filter((paper) => ["Recent", "Review", "Preprint", "Bioimage analysis", "Modeling"].includes(paper.tag))
-    .filter((paper) => paper.doi !== "10.1088/1758-5090/ae5fd9")
-    .slice(0, 6),
+  selected: publications
+    .filter((paper) => paper.highlightOrder !== undefined)
+    .sort((a, b) => a.highlightOrder! - b.highlightOrder!),
   cited: publications.filter((paper) => paper.tag === "Highly cited").slice(0, 4),
 };
 
