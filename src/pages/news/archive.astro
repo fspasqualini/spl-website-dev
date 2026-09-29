@@ -14,6 +14,7 @@ const searchIndex = sortedNewsArchive.map((entry) => ({
   title: entry.title,
   blurb: entry.blurb,
   category: categoryLabels[entry.category],
+  categoryId: entry.category,
   year: entry.date.slice(0, 4),
   date: formatNewsDate(entry),
   isoDate: entry.date,
@@ -39,7 +40,7 @@ const searchIndex = sortedNewsArchive.map((entry) => ({
     <div>
       <p class="eyebrow">News archive</p>
       <h1>Seven years of SPL.</h1>
-      <p class="lead">Search research, people, events, resources, and milestones from June 2020 onward.</p>
+      <p class="lead">Search research, people, events, funding, and milestones from June 2020 onward.</p>
     </div>
     <div class="archive-summary" aria-label="Archive coverage">
       <strong>{sortedNewsArchive.length}</strong>
@@ -104,6 +105,7 @@ const searchIndex = sortedNewsArchive.map((entry) => ({
       title: string;
       blurb: string;
       category: string;
+      categoryId: string;
       year: string;
       date: string;
       isoDate: string;
@@ -125,6 +127,7 @@ const searchIndex = sortedNewsArchive.map((entry) => ({
     const createResult = (entry: SearchEntry) => {
       const article = document.createElement("article");
       article.className = "archive-search-result";
+      article.dataset.category = entry.categoryId;
 
       const meta = document.createElement("div");
       meta.className = "archive-search-result-meta";

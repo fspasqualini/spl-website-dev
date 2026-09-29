@@ -1645,6 +1645,30 @@ p {
   text-transform: uppercase;
 }
 
+/* News category colors via parent data-category (article/row).
+   Priority: Research crimson, People black, Events darker graphite.
+   Funding/Lab life get distinct greys so they are not stuck on crimson. */
+[data-category="research"] .news-category {
+  background: var(--spl-red); /* crimson #a82038 */
+}
+
+[data-category="people"] .news-category {
+  background: var(--ink); /* black #0b0b0d */
+}
+
+[data-category="events"] .news-category {
+  /* Darker/more graphite than pubs "Others" #8a8d94; also darker than --muted #62656b */
+  background: #4a4d54;
+}
+
+[data-category="funding"] .news-category {
+  background: var(--muted); /* medium grey #62656b */
+}
+
+[data-category="labLife"] .news-category {
+  background: #8a8d94; /* light grey (same family as pubs Others) */
+}
+
 .news-archive-hero,
 .archive-search-hero {
   display: grid;

@@ -3,8 +3,6 @@ export const newsCategories = [
   "funding",
   "people",
   "events",
-  "awards",
-  "resources",
   "labLife",
 ] as const;
 
@@ -32,8 +30,6 @@ export const categoryLabels: Record<NewsCategory, string> = {
   funding: "Funding",
   people: "People",
   events: "Events",
-  awards: "Awards",
-  resources: "Resources",
   labLife: "Lab life",
 };
 
@@ -371,7 +367,7 @@ export const newsArchive: NewsEntry[] = [
     "id": "2026-calipers-plasmids-available-from-addgene",
     "date": "2026-02-01",
     "datePrecision": "month",
-    "category": "resources",
+    "category": "research",
     "title": "CALIPERS plasmids available from Addgene",
     "blurb": "The CALIPERS FUCCIplex plasmids are now available through Addgene, making SPL's cell-cycle-aware live-imaging toolkit easier for other laboratories to adopt and extend.",
     "links": [
@@ -386,7 +382,7 @@ export const newsArchive: NewsEntry[] = [
     "id": "2026-bioengineering-subgroup-chair-elect",
     "date": "2026-02-01",
     "datePrecision": "month",
-    "category": "awards",
+    "category": "events",
     "title": "Bioengineering Subgroup Chair-Elect",
     "blurb": "Francesco has been elected Chair-Elect of the Biophysical Society Bioengineering Subgroup, supporting a community that connects physical principles, engineering, and living systems.",
     "links": [
