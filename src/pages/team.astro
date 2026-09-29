@@ -1,6 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { alumni, getImageDimensions, team, withBase } from "../data/site";
+import { alumni, formerThesisStudents, getImageDimensions, team, withBase } from "../data/site";
+
+const formerThesisParagraph =
+  "Former thesis students: " +
+  formerThesisStudents
+    .map((student) => `${student.name} (${student.degree}, ${student.year})`)
+    .join(", ") +
+  ".";
 ---
 
 <BaseLayout
@@ -59,6 +66,13 @@ import { alumni, getImageDimensions, team, withBase } from "../data/site";
           </li>
         ))}
       </ul>
+    </div>
+  </section>
+
+  <section class="section former-thesis-section" aria-label="Former thesis students">
+    <div class="container">
+      <p class="eyebrow">Former thesis students</p>
+      <p class="former-thesis-prose">{formerThesisParagraph}</p>
     </div>
   </section>
 </BaseLayout>

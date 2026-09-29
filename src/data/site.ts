@@ -672,6 +672,231 @@ export const alumni: AlumniMember[] = [
   },
 ];
 
+export type FormerThesisStudent = {
+  name: string;
+  degree: "BS" | "MS";
+  year: string;
+};
+
+/** Chronological by year, alphabetical by name within each year. */
+export const formerThesisStudents: FormerThesisStudent[] = [
+  {
+    name: "Arianna Mauro",
+    degree: "BS",
+    year: "2021",
+  },
+  {
+    name: "Eloisa Torchia",
+    degree: "MS",
+    year: "2021",
+  },
+  {
+    name: "Giulia Sbaruffati",
+    degree: "BS",
+    year: "2021",
+  },
+  {
+    name: "Ingrid Tombini",
+    degree: "BS",
+    year: "2021",
+  },
+  {
+    name: "Maria Sofia Iacopinelli",
+    degree: "BS",
+    year: "2021",
+  },
+  {
+    name: "Mariagrazia Zaccara",
+    degree: "BS",
+    year: "2021",
+  },
+  {
+    name: "Adele Chiavetta",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Alberto Passolunghi",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Alessia Ciciriello",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Armando Oscar Rossi",
+    degree: "MS",
+    year: "2022",
+  },
+  {
+    name: "Asja Maggiore",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Bohdana Horda",
+    degree: "MS",
+    year: "2022",
+  },
+  {
+    name: "Chiara Leoncavallo",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Davide Prati",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Elisa Cevoli",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Emanuele Pozzato",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Federica Pallavicini",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Francesca Mastrosimone",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Giorgia Francabandiera",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Kirolles Farid",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Libera Chielli",
+    degree: "MS",
+    year: "2022",
+  },
+  {
+    name: "Lorenzo Legovini",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Margherita Asia Fumagalli",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Michele Papa",
+    degree: "MS",
+    year: "2022",
+  },
+  {
+    name: "Miriam Di Pumpo",
+    degree: "MS",
+    year: "2022",
+  },
+  {
+    name: "Muhammad Mohsin",
+    degree: "MS",
+    year: "2022",
+  },
+  {
+    name: "Vittoria Bartoli",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Alessia Gallo",
+    degree: "MS",
+    year: "2023",
+  },
+  {
+    name: "Chiara Gregorelli",
+    degree: "BS",
+    year: "2023",
+  },
+  {
+    name: "Emanuele Carnevale Baraglia",
+    degree: "MS",
+    year: "2023",
+  },
+  {
+    name: "Hamza Saqrane",
+    degree: "BS",
+    year: "2023",
+  },
+  {
+    name: "Domnica Gabriela Gurau",
+    degree: "MS",
+    year: "2024",
+  },
+  {
+    name: "Francesca Ceriani",
+    degree: "BS",
+    year: "2024",
+  },
+  {
+    name: "Irene Berlinghieri",
+    degree: "BS",
+    year: "2024",
+  },
+  {
+    name: "Martina Onetti",
+    degree: "BS",
+    year: "2024",
+  },
+  {
+    name: "Matilde Randi",
+    degree: "BS",
+    year: "2024",
+  },
+  {
+    name: "Sara Rigolli",
+    degree: "MS",
+    year: "2024",
+  },
+  {
+    name: "Camilla Chiariello",
+    degree: "MS",
+    year: "2025",
+  },
+  {
+    name: "Chiara Pucci",
+    degree: "BS",
+    year: "2025",
+  },
+  {
+    name: "Francesca Delú",
+    degree: "BS",
+    year: "2025",
+  },
+  {
+    name: "Margherita Gualerzi",
+    degree: "BS",
+    year: "2025",
+  },
+  {
+    name: "Francesca Ceriani",
+    degree: "MS",
+    year: "2026",
+  },
+  {
+    name: "Gaia Consolo",
+    degree: "BS",
+    year: "2026",
+  },
+];
+
 export type Publication = {
   title: string;
   authors: string;
