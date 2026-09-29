@@ -1560,15 +1560,20 @@ p {
   text-wrap: balance;
 }
 
-.inventory-paper .tag[data-label-id="peer-reviewed-article"] {
+/* Publication status colors: shared by highlight cards and inventory */
+.tag[data-label-id="peer-reviewed-article"] {
   background: var(--spl-red);
 }
 
-.inventory-paper .tag[data-label-id="preprint"] {
+.tag[data-label-id="review"] {
+  background: var(--muted);
+}
+
+.tag[data-label-id="preprint"] {
   background: var(--ink);
 }
 
-.inventory-paper .tag[data-label-id="editorial-commentary"] {
+.tag[data-label-id="editorial-commentary"] {
   background: var(--graphite);
 }
 

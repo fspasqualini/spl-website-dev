@@ -38,15 +38,15 @@ export const newsKindLabels: Record<LabEventKind, Label> = {
 };
 
 const publicationKinds = {
-  peerReviewedArticle: { id: "peer-reviewed-article", category: "publication-status", text: "Peer-reviewed article" },
-  preprint: { id: "preprint", category: "publication-status", text: "Pre-print article" },
+  peerReviewedArticle: { id: "peer-reviewed-article", category: "publication-status", text: "Research article" },
+  preprint: { id: "preprint", category: "publication-status", text: "Preprint" },
   review: { id: "review", category: "publication-status", text: "Review" },
   bookChapter: { id: "book-chapter", category: "publication-status", text: "Book chapter" },
   editorialCommentary: { id: "editorial-commentary", category: "publication-status", text: "Editorials or commentary" },
 } satisfies Record<string, Label>;
 
 const publicationOutputs = {
-  article: { id: "article", category: "publication-output", text: "Peer-reviewed article" },
+  article: { id: "article", category: "publication-output", text: "Research article" },
 } satisfies Record<string, Label>;
 
 const publicationProvenance = {
