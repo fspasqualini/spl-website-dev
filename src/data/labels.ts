@@ -42,7 +42,7 @@ const publicationKinds = {
   preprint: { id: "preprint", category: "publication-status", text: "Preprint" },
   review: { id: "review", category: "publication-status", text: "Review" },
   bookChapter: { id: "book-chapter", category: "publication-status", text: "Book chapter" },
-  editorialCommentary: { id: "editorial-commentary", category: "publication-status", text: "Editorials or commentary" },
+  editorialCommentary: { id: "editorial-commentary", category: "publication-status", text: "Others" },
 } satisfies Record<string, Label>;
 
 const publicationOutputs = {

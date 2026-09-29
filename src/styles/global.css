@@ -1574,7 +1574,8 @@ p {
 }
 
 .tag[data-label-id="editorial-commentary"] {
-  background: var(--graphite);
+  /* Lighter grey than Review (--muted #62656b); still distinct from Preprint/ink and Research article/spl-red */
+  background: #8a8d94;
 }
 
 .inventory-paper:first-child {
