@@ -35,6 +35,29 @@ export const categoryLabels: Record<NewsCategory, string> = {
 
 export const newsArchive: NewsEntry[] = [
   {
+    "id": "2026-francesco-camera-deputati-frontier-research",
+    "date": "2026-09-15",
+    "datePrecision": "day",
+    "category": "events",
+    "title": "Francesco at the Camera dei Deputati on investing in frontier research",
+    "blurb": "Francesco took part in the ERC in Italy event at the Camera dei Deputati as Vice President of ERC in Italy APS, in collaboration with Radio Parlamentare and the Intergruppo. He spoke about investing in frontier research — not merely spending on it — and moderated a roundtable on \u201cricerca di frontiera, investimenti strategici e competitività del Paese.\u201d",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://lnkd.in/p/ew5rVCCw"
+      }
+    ],
+    "people": [
+      "Francesco S. Pasqualini"
+    ],
+    "topics": [
+      "Research advocacy",
+      "ERC in Italy",
+      "Frontier research"
+    ],
+    "order": 1006
+  },
+  {
     "id": "2026-engineering-toolkits-high-content-phenotyping-review",
     "date": "2026-09-01",
     "datePrecision": "day",
