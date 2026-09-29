@@ -43,39 +43,22 @@ import { alumni, getImageDimensions, team, withBase } from "../data/site";
           <h2 id="alumni-heading">Built here, carried forward.</h2>
         </div>
         <div>
-          <p class="lead">Former members whose work helped shape SPL, and where their paths have led next.</p>
-          <p class="alumni-note">Current affiliations are listed where publicly available.</p>
+          <p class="lead">Former members whose work helped shape SPL.</p>
         </div>
       </div>
 
-      <div class="alumni-list">
-        <div class="alumni-list-header" aria-hidden="true">
-          <span>Name</span>
-          <span>Work at SPL</span>
-          <span>Current affiliation</span>
-        </div>
+      <ul class="alumni-prose">
         {alumni.map((person) => (
-          <article class="alumni-person">
-            <h3>{person.name}</h3>
-            <p class="alumni-contribution">
-              <span class="alumni-field-label">Work at SPL</span>
-              {person.contribution}
-            </p>
-            <p class="alumni-affiliation">
-              <span class="alumni-field-label">Current affiliation</span>
-              {person.currentAffiliation ? (
-                person.currentHref ? (
-                  <a href={person.currentHref} target="_blank" rel="noreferrer">{person.currentAffiliation} ↗</a>
-                ) : (
-                  <span>{person.currentAffiliation}</span>
-                )
-              ) : (
-                <span class="alumni-affiliation-unlisted">Not listed</span>
-              )}
-            </p>
-          </article>
+          <li>
+            <span class="alumni-name">{person.name}</span>
+            {person.leftYear ? (
+              <span class="alumni-year">, {person.leftYear}</span>
+            ) : null}
+            <span class="alumni-sep"> — </span>
+            <span class="alumni-contribution">{person.contribution}</span>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   </section>
 </BaseLayout>

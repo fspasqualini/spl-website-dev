@@ -555,8 +555,8 @@ export type TeamMember = {
 export type AlumniMember = {
   name: string;
   contribution: string;
-  currentAffiliation?: string;
-  currentHref?: string;
+  /** Calendar year they left SPL, when recorded in existing lab content. */
+  leftYear?: string;
 };
 
 export const team: TeamMember[] = [
@@ -632,47 +632,43 @@ export const alumni: AlumniMember[] = [
   },
   {
     name: "Julius Zimmermann",
+    leftYear: "2025",
     contribution: "Bioimage analysis and computational modeling",
-    currentAffiliation: "Brainlab · Software Engineer in Medical Technology",
   },
   {
     name: "Sandipan Chattaraj",
+    leftYear: "2025",
     contribution: "Computational modeling of cell mechanics",
-    currentAffiliation: "IESL-FORTH",
-    currentHref: "https://www.iesl.forth.gr/en/people/chattaraj-sandipan",
   },
   {
     name: "Emanuele Carnevale Baraglia",
+    leftYear: "2025",
     contribution: "Organelle acidification and computational modeling",
-    currentAffiliation: "SEA Vision",
   },
   {
     name: "Bohdana Horda",
+    leftYear: "2024",
     contribution: "Hydrogel fabrication and engineered cell culture systems",
-    currentAffiliation: "Medival S.r.l. · Product Specialist",
   },
   {
     name: "Daniela Canevari",
+    leftYear: "2025",
     contribution: "Project administration and reporting",
-    currentAffiliation: "University of Pavia · DICAr administration",
-    currentHref: "https://dicar.dip.unipv.it/en/department/organization/administrative-divisions",
   },
   {
     name: "Dr. Chimwemwe Msosa",
+    leftYear: "2024",
     contribution: "CICOPS fellow · Biomedical engineering",
-    currentAffiliation: "Malawi University of Business and Applied Sciences",
-    currentHref: "https://rsu.mubas.ac.mw/team-members/assoc-prof-save-kumwenda/",
   },
   {
     name: "Alice Albini",
+    leftYear: "2022",
     contribution: "Project management and laboratory operations",
-    currentAffiliation: "University of Pavia · DIII administration",
-    currentHref: "https://iii.dip.unipv.it/it/dipartimento/personale",
   },
   {
     name: "Ahmed S. Khalil",
+    leftYear: "2021",
     contribution: "Post-doctoral research",
-    currentAffiliation: "Industry (undisclosed)",
   },
 ];
 
