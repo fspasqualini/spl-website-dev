@@ -11,7 +11,7 @@ import { getImageDimensions, team, withBase } from "../data/site";
     <div class="container">
       <p class="eyebrow">Team</p>
       <h1>Scientists, engineers, artists: come build with us.</h1>
-      <p class="lead">Like building for the life sciences, not just studying them? Read our creed and see if this is your kind of work.</p>
+      <p class="lead">Like building for the life sciences, not just studying them? Read our <a href={withBase("/creed/")}>creed</a> and see if this is your kind of work.</p>
       <div class="people-grid">
         {team.map((person) => (
           <article class="person">
