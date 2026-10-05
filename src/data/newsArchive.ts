@@ -35,6 +35,30 @@ export const categoryLabels: Record<NewsCategory, string> = {
 
 export const newsArchive: NewsEntry[] = [
   {
+    "id": "2026-bruker-online-organoid-summit",
+    "date": "2026-10-01",
+    "datePrecision": "month",
+    "category": "events",
+    "title": "Invited talk at the Bruker Organoid Summit",
+    "blurb": "Francesco Pasqualini gives an invited talk at the Bruker Online Organoid Summit on 7 October, presenting \u201cPutting the Cell-Cycle Clock into Organoid Phenotyping: From CALIPERS Cardiac Organoids to Lumenoids and Gastruloids.\u201d",
+    "links": [
+      {
+        "label": "See the full program and register",
+        "href": "https://www.bruker.com/en/news-and-events/events/bruker-online-organoid-summit.html"
+      }
+    ],
+    "people": [
+      "Francesco S. Pasqualini"
+    ],
+    "topics": [
+      "Organoids",
+      "CALIPERS",
+      "Live-cell phenotyping",
+      "Bruker Online Organoid Summit"
+    ],
+    "order": 1007
+  },
+  {
     "id": "2026-francesco-camera-deputati-frontier-research",
     "date": "2026-09-15",
     "datePrecision": "day",
