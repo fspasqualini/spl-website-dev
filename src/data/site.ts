@@ -920,7 +920,7 @@ export const publications: Publication[] = [
     href: "https://doi.org/10.1002/advs.78192",
     tag: "Recent",
     provenance: "spl",
-    highlightOrder: 5,
+    highlightOrder: 1,
   },
   {
     title: "Engineering Toolkits for High-Throughput and High-Content Phenotyping",
@@ -941,7 +941,7 @@ export const publications: Publication[] = [
     href: "https://www.nature.com/articles/s41467-026-76144-9",
     tag: "Recent",
     provenance: "spl",
-    highlightOrder: 1,
+    highlightOrder: 2,
   },
   {
     title: "MicroSplit: semantic unmixing of fluorescent microscopy data",
@@ -952,7 +952,7 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/42086917/",
     tag: "Recent",
     provenance: "spl",
-    highlightOrder: 2,
+    highlightOrder: 3,
   },
   {
     title: "Micro-comb 3D printing: rapid fabrication of tissue-guiding substrates using micro-embossed nozzles",
@@ -973,7 +973,7 @@ export const publications: Publication[] = [
     href: "https://www.nature.com/articles/s44303-026-00159-6",
     tag: "Bioimage analysis",
     provenance: "spl",
-    highlightOrder: 3,
+    highlightOrder: 4,
   },
   {
     title: "A vertically integrated system for tracking and assessing cell-cycle-aware phenotypes under confinement",
@@ -984,7 +984,6 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/41799556/",
     tag: "Recent",
     provenance: "spl",
-    highlightOrder: 4,
   },
   {
     title: "Fabrication of cell culture hydrogels by robotic liquid handling automation for high-throughput drug testing",
@@ -1005,6 +1004,7 @@ export const publications: Publication[] = [
     href: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014113",
     tag: "Modeling",
     provenance: "spl",
+    highlightOrder: 5,
   },
   {
     title: "An Open-Science Computational Model of Organelle Acidification to Integrate Putative Mechanisms of Synaptic Vesicle Acidification and Filling",
