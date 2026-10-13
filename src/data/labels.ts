@@ -58,7 +58,7 @@ const researchThemes = {
   instrumentedCells: { id: "instrumented-cells", category: "research-theme", text: "Instrumented cells" },
   tissueSystems: { id: "tissue-systems", category: "research-theme", text: "Tissue systems" },
   compBio: { id: "comp-bio", category: "research-theme", text: "CompBio" },
-  artScience: { id: "art-science", category: "research-theme", text: "Art & science" },
+  artScience: { id: "art-science", category: "research-theme", text: "Art and Science" },
 } satisfies Record<string, Label>;
 
 const visibilityLabels = {

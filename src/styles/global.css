@@ -1428,6 +1428,101 @@ p {
   text-decoration: none;
 }
 
+.team-current-section {
+  padding-bottom: clamp(64px, 9vw, 116px);
+}
+
+.alumni-section {
+  border-top: 3px solid var(--ink);
+  background: var(--soft);
+}
+
+.alumni-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.75fr);
+  gap: clamp(36px, 7vw, 96px);
+  align-items: end;
+}
+
+.alumni-intro h2 {
+  max-width: 12ch;
+  margin-bottom: 0;
+}
+
+.alumni-intro .lead {
+  margin-bottom: 0;
+  font-size: clamp(1rem, 1.5vw, 1.18rem);
+}
+
+.alumni-prose {
+  margin: clamp(36px, 5vw, 56px) 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 2px solid var(--ink);
+}
+
+.alumni-prose li {
+  margin: 0;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: var(--graphite);
+}
+
+.alumni-prose li:first-child {
+  border-top: 0;
+}
+
+.alumni-name {
+  color: var(--ink);
+  font-weight: 750;
+}
+
+.alumni-year {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.alumni-sep {
+  color: var(--muted);
+}
+
+.alumni-contribution {
+  color: var(--graphite);
+}
+
+.alumni-prose a {
+  color: var(--spl-red);
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.former-thesis-section {
+  border-top: 1px solid var(--line);
+  background: var(--soft);
+  padding-top: clamp(28px, 4vw, 40px);
+}
+
+.former-thesis-section .eyebrow {
+  margin-bottom: 12px;
+}
+
+.former-thesis-prose {
+  margin: 0;
+  max-width: 72ch;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: var(--graphite);
+}
+
+.former-thesis-name {
+  color: var(--ink);
+  font-weight: 650;
+}
+
+
 .publication-list {
   display: grid;
   gap: 14px;
@@ -2301,6 +2396,16 @@ p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .alumni-intro {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .alumni-intro .lead {
+    max-width: 48ch;
+  }
+
   .thesis-heading,
   .news-rail {
     position: static;
@@ -2509,6 +2614,11 @@ p {
   .research-paper,
   .media-grid {
     grid-template-columns: 1fr;
+  }
+
+  .alumni-prose li {
+    padding: 12px 0;
+    font-size: 0.95rem;
   }
 
   .news-rail-item-with-image,

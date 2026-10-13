@@ -96,7 +96,7 @@ export const labVisionSections = [
       "Complex experiments only become useful when their signals can be integrated. We combine bioimage analysis, mechanistic modeling, and computational inference to connect morphology, dynamics, reporters, and physical context into coherent biological readouts.",
   },
   {
-    title: "Art and science",
+    title: "Art and Science",
     text:
       "Scientific imagination is visual, material, and human. We use illustration, design, and visual culture as part of the research process: to make hypotheses concrete, expose hidden structure, and communicate complex systems without flattening them.",
   },
@@ -147,37 +147,6 @@ export const researchAreas = [
         type: "image",
         src: "https://media.springernature.com/lw1200/springer-static/image/art%3A10.1038%2Fs44303-026-00159-6/MediaObjects/44303_2026_159_Fig3_HTML.png",
         href: "https://www.nature.com/articles/s44303-026-00159-6/figures/3",
-      },
-    ],
-    paperTitles: [
-      "MicroSplit: semantic unmixing of fluorescent microscopy data",
-      "CALIPERS: Cell cycle-aware live imaging for phenotyping experiments and regeneration studies",
-      "A vertically integrated system for tracking and assessing cell-cycle-aware phenotypes under confinement",
-      "muSplit: image decomposition for fluorescence microscopy",
-      "A tissue-engineered scale model of the heart ventricle",
-      "Laminar ventricular myocardium on a microelectrode array-based chip",
-      "Angiotensin II Induced Cardiac Dysfunction on a Chip",
-      "Matrix elasticity regulates the optimal cardiac myocyte shape for contractility",
-      "Translational cardiac stem cell therapy: advancing from first-generation to next-generation cell types",
-      "Coupling primary and stem cell-derived cardiomyocytes in an in vitro model of cardiac cell therapy",
-      "Structural phenotyping of stem cell-derived cardiomyocytes",
-      "Modeling the mitochondrial cardiomyopathy of Barth syndrome with induced pluripotent stem cell and heart-on-chip technologies",
-      "Quality metrics for stem cell-derived cardiac myocytes",
-    ],
-    featuredPapers: [
-      {
-        title: "CALIPERS: Cell cycle-aware live imaging for phenotyping experiments and regeneration studies",
-        blurb:
-          "CALIPERS links live imaging with cell-cycle-aware phenotyping, so regeneration and perturbation experiments can be interpreted through where cells are in time, not only where they are in space.",
-        media: [
-          {
-            type: "image",
-            src: "/assets/scraped/012-_edited_edited_edited.png",
-            label: "Cell-cycle-aware imaging",
-            text: "Live-cell phenotyping built around interpretable cell-cycle state.",
-            href: "https://www.nature.com/articles/s41467-026-76144-9",
-          },
-        ],
       },
     ],
     resources: [
@@ -233,12 +202,12 @@ export const researchAreas = [
         href: "https://www.nature.com/articles/s44172-025-00575-3/figures/1",
       },
       {
-        title: "Light-defined matrix patterning",
+        title: "LigHTS: light-defined matrix patterning",
         text:
           "Optical fabrication lets the lab tune surface cues, material geometry, and matrix presentation without leaving standard high-throughput formats.",
         type: "image",
         src: "/assets/scraped/013-all-optical_edited.jpg",
-        href: "https://www.biorxiv.org/content/10.1101/2025.10.23.683892v1",
+        href: "https://doi.org/10.1002/advs.78192",
       },
       {
         title: "Material validation workflows",
@@ -247,87 +216,6 @@ export const researchAreas = [
         type: "video",
         src: "https://static-content.springer.com/esm/art%3A10.1038%2Fs44172-025-00575-3/MediaObjects/44172_2025_575_MOESM4_ESM.mp4",
         href: "https://www.nature.com/articles/s44172-025-00575-3#Sec38",
-      },
-    ],
-    paperTitles: [
-      "Micro-comb 3D printing: rapid fabrication of tissue-guiding substrates using micro-embossed nozzles",
-      "A vertically integrated system for tracking and assessing cell-cycle-aware phenotypes under confinement",
-      "LiGHTS: Massively Parallel Biomimetic Photo-Functionalization for Imaging-Based Ultra-High-Throughput Screening",
-      "Fabrication of cell culture hydrogels by robotic liquid handling automation for high-throughput drug testing",
-      "Molecular Dynamics Simulation of Structural Assembly and Hydration of Hyaluronic Acid in Salt Aqueous Buffer",
-      "Organotypic and Microphysiological Human Tissue Models for Drug Discovery and Development: Current State-of-the-Art and Future Perspectives",
-      "Emerging strategies in 3D printed tissue models for in vitro biomedical research",
-      "A Pulsatile Flow System to Engineer Aneurysm and Atherosclerosis Mimetic Extracellular Matrix",
-      "A tissue-engineered scale model of the heart ventricle",
-      "Traction force microscopy of engineered cardiac tissues",
-      "JetValve: Rapid manufacturing of biohybrid scaffolds for biomimetic heart valve replacement",
-      "Instrumented cardiac microphysiological devices via multimaterial three-dimensional printing",
-      "Organ Chips: Quality Assurance Systems in Regenerative Medicine",
-      "Mechanotransduction and Metabolism in Cardiomyocyte Microdomains",
-      "A human in vitro model of Duchenne muscular dystrophy muscle formation and contractility",
-      "Heart Valve Replacements with Regenerative Capacity",
-      "Phototactic guidance of a tissue-engineered soft-robotic ray",
-      "Laminar ventricular myocardium on a microelectrode array-based chip",
-      "Angiotensin II Induced Cardiac Dysfunction on a Chip",
-      "Matrix elasticity regulates the optimal cardiac myocyte shape for contractility",
-      "The contractile strength of vascular smooth muscle myocytes is shape dependent",
-    ],
-    featuredPapers: [
-      {
-        title: "LiGHTS: Massively Parallel Biomimetic Photo-Functionalization for Imaging-Based Ultra-High-Throughput Screening",
-        blurb:
-          "LiGHTS uses light to pattern biomimetic cues across standard screening formats, turning matrix design into something that can scale with imaging-based discovery.",
-        media: [
-          {
-            type: "image",
-            src: "/assets/scraped/013-all-optical_edited.jpg",
-            label: "All-optical matrix patterning",
-            text: "Photo-functionalized biomaterials for high-throughput imaging.",
-            href: "https://www.biorxiv.org/content/10.1101/2025.10.23.683892v1",
-          },
-        ],
-      },
-      {
-        title: "A vertically integrated system for tracking and assessing cell-cycle-aware phenotypes under confinement",
-        blurb:
-          "VISTA belongs with the tissue-systems theme because it links confinement, engineered context, imaging, and analysis into one platform for asking how physical context shapes cell behavior.",
-        media: [
-          {
-            type: "image",
-            src: "/assets/scraped/012-_edited_edited_edited.png",
-            label: "VISTA workflow",
-            text: "Integrated confinement, tracking, and phenotype readout.",
-            href: "https://pubmed.ncbi.nlm.nih.gov/41799556/",
-          },
-        ],
-      },
-      {
-        title: "Fabrication of cell culture hydrogels by robotic liquid handling automation for high-throughput drug testing",
-        blurb:
-          "HYDRA fabricates thin planar hydrogels inside standard multiwell plates, preserving soft-substrate biology while staying compatible with automated imaging and drug testing.",
-        media: [
-          {
-            type: "image",
-            src: "https://media.springernature.com/lw1200/springer-static/image/art%3A10.1038%2Fs44172-025-00575-3/MediaObjects/44172_2025_575_Fig1_HTML.png",
-            label: "HYDRA method",
-            text: "Robotic fabrication of planar hydrogel films for HTS-compatible culture.",
-            href: "https://www.nature.com/articles/s44172-025-00575-3/figures/1",
-          },
-          {
-            type: "image",
-            src: "https://media.springernature.com/lw1200/springer-static/image/art%3A10.1038%2Fs44172-025-00575-3/MediaObjects/44172_2025_575_Fig4_HTML.png",
-            label: "HYDRA drug testing",
-            text: "Long-term imaging drug response on compliant hydrogel substrates.",
-            href: "https://www.nature.com/articles/s44172-025-00575-3/figures/4",
-          },
-          {
-            type: "video",
-            src: "https://static-content.springer.com/esm/art%3A10.1038%2Fs44172-025-00575-3/MediaObjects/44172_2025_575_MOESM4_ESM.mp4",
-            label: "HYDRA supplementary movie",
-            text: "Article supplementary video from Communications Engineering.",
-            href: "https://www.nature.com/articles/s44172-025-00575-3#Sec38",
-          },
-        ],
       },
     ],
     resources: [
@@ -389,66 +277,6 @@ export const researchAreas = [
         href: "/computational-modeling-and-data-analysis/",
       },
     ],
-    paperTitles: [
-      "MicroSplit: semantic unmixing of fluorescent microscopy data",
-      "Bioimage analysis for multiplexed FUCCI acquisitions powered by deep learning",
-      "BIOPOINT: A particle-based model for probing nuclear mechanics and cell-ECM interactions via experimentally derived parameters",
-      "An Open-Science Computational Model of Organelle Acidification to Integrate Putative Mechanisms of Synaptic Vesicle Acidification and Filling",
-      "Molecular Dynamics Simulation of Structural Assembly and Hydration of Hyaluronic Acid in Salt Aqueous Buffer",
-      "An efficient active-stress electromechanical isogeometric shell model for muscular thin-film simulations",
-      "SEM2: Introducing mechanics in cell and tissue modeling using coarse-grained homogeneous particle dynamics",
-      "muSplit: image decomposition for fluorescence microscopy",
-      "Current progress toward isogeometric modeling of the heart biophysics",
-      "Isogeometric mixed collocation of nearly-incompressible electromechanics in finite deformations for cardiac muscle simulations",
-      "Immersed isogeometric analysis based on a hybrid collocation/finite cell method",
-      "An efficient isogeometric collocation approach to cardiac electrophysiology",
-      "A novel computational model of the human ventricular action potential and Ca transient",
-      "Theoretical investigation of action potential duration dependence on extracellular Ca2+ in human cardiomyocytes",
-    ],
-    featuredPapers: [
-      {
-        title: "BIOPOINT: A particle-based model for probing nuclear mechanics and cell-ECM interactions via experimentally derived parameters",
-        blurb:
-          "BIOPOINT builds a particle-based bridge between measured nuclear/cell behavior and mechanical hypotheses, letting experiments parameterize simulations rather than sit next to them.",
-        media: [
-          {
-            type: "image",
-            src: "https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1014113.g001",
-            label: "BIOPOINT model overview",
-            text: "Particle-based modeling framework for cell-ECM and nuclear mechanics.",
-            href: "https://journals.plos.org/ploscompbiol/article/figure?id=10.1371/journal.pcbi.1014113.g001",
-          },
-        ],
-      },
-      {
-        title: "SEM2: Introducing mechanics in cell and tissue modeling using coarse-grained homogeneous particle dynamics",
-        blurb:
-          "SEM2 extends subcellular-element modeling with mechanics, making it easier to represent tissue-scale behavior through coarse-grained particle dynamics.",
-        media: [
-          {
-            type: "image",
-            src: "/assets/scraped/014-cardioid_3d_nuclei-1-_edited.jpg",
-            label: "Particle mechanics",
-            text: "Coarse-grained mechanics for cell and tissue modeling.",
-            href: "https://pubmed.ncbi.nlm.nih.gov/38075209/",
-          },
-        ],
-      },
-      {
-        title: "Bioimage analysis for multiplexed FUCCI acquisitions powered by deep learning",
-        blurb:
-          "The DeepFUCCI analysis stack is also a computational project: segmentation, classification, tracking, and temporal alignment for reporter-rich microscopy.",
-        media: [
-          {
-            type: "image",
-            src: "https://media.springernature.com/lw1200/springer-static/image/art%3A10.1038%2Fs44303-026-00159-6/MediaObjects/44303_2026_159_Fig3_HTML.png",
-            label: "Tracking analysis",
-            text: "Tracking workflow and temporal FUCCI analysis.",
-            href: "https://www.nature.com/articles/s44303-026-00159-6/figures/3",
-          },
-        ],
-      },
-    ],
     resources: [
       {
         label: "BIOPOINT GitHub",
@@ -473,7 +301,7 @@ export const researchAreas = [
     ],
   },
   {
-    title: "Art & science",
+    title: "Art and Science",
     label: "Art/Science",
     slug: "art-and-science",
     href: "/art-and-science/",
@@ -490,9 +318,6 @@ export const researchAreas = [
       label: "Visualization as scientific method",
       text: "Visual work helps the lab imagine mechanisms, expose assumptions, and communicate engineered physiology without flattening it into jargon.",
     },
-    paperTitles: [
-      "When art and science collide",
-    ],
     carouselEyebrow: "Fresh from the lab",
     carouselTitle: "Visual experiments",
     featureCards: [
@@ -528,7 +353,7 @@ export const researchAreas = [
       {
         label: "Gallery",
         href: "/art-and-science/#gallery",
-        text: "SPL art and science gallery.",
+        text: "SPL Art and Science gallery.",
       },
       {
         label: "Proliferation, 2025",
@@ -552,14 +377,11 @@ export type TeamMember = {
   image: string;
 };
 
-export type FormerTeamMember = {
+export type AlumniMember = {
   name: string;
-  role: string;
-  focus: string;
-  emails: string[];
-  status: "former";
-  period?: string;
-  note?: string;
+  contribution: string;
+  /** Calendar year they left SPL, when recorded in existing lab content. */
+  leftYear?: string;
 };
 
 export const team: TeamMember[] = [
@@ -626,87 +448,277 @@ export const team: TeamMember[] = [
     email: "maddalena.rocca@unipv.it",
     image: "/assets/scraped/021-20231130_115727.jpg",
   },
-  {
-    name: "Giulia Ballio",
-    role: "Research Assistant",
-    focus: "Molecular biology",
-    email: "giulia.ballio@unipv.it",
-    image: "/assets/team/giulia-balio.jpg",
-  },
 ];
 
-export const formerTeam: FormerTeamMember[] = [
+export const alumni: AlumniMember[] = [
   {
-    name: "Ahmed S. Khalil",
-    role: "Post-doctoral researcher",
-    focus: "Former SPL post-doc",
-    emails: ["salehastro@gmail.com", "ahmed.khalil@unipv.it"],
-    status: "former",
-    period: "Approx. December 2020 - November 2021",
-    note: "Email evidence: late-2020 borsa di ricerca start, Jan 2021 remote activity, Nov 2021 last update. No current-employment information recorded; avoid public-source name matches until identity is confirmed.",
-  },
-  {
-    name: "Dr. Chimwemwe Msosa",
-    role: "CICOPS Fellow",
-    focus: "Biomedical engineering",
-    emails: ["cmsosa@mubas.ac.mw"],
-    status: "former",
-    period: "June 2024 - December 2024",
-    note: "Now Lecturer in Biomedical Engineering at the Malawi University of Business and Applied Sciences.",
-  },
-  {
-    name: "Sandipan Chattaraj",
-    role: "Former SPL member",
-    focus: "Computational modeling of cell mechanics",
-    emails: [],
-    status: "former",
-    period: "Approx. 2021 - 2026",
-    note: "Email evidence includes SPL group activity in 2021, a Dec 2023 final borsa report followed by an assegno, and 2026 research/tooling correspondence.",
+    name: "Giulia Ballio",
+    contribution: "Research assistant · Molecular biology",
   },
   {
     name: "Julius Zimmermann",
-    role: "Former SPL member",
-    focus: "Bioimage analysis and computational modeling",
-    emails: [],
-    status: "former",
-    period: "Approx. December 2023 - April 2026",
-    note: "Email evidence includes Dec 2023 SPL computational-science work, Dec 2024 DICAr non-structured researcher lists, and Apr 2026 paper-proof correspondence.",
+    leftYear: "2025",
+    contribution: "Bioimage analysis and computational modeling",
+  },
+  {
+    name: "Sandipan Chattaraj",
+    leftYear: "2025",
+    contribution: "Computational modeling of cell mechanics",
   },
   {
     name: "Emanuele Carnevale Baraglia",
-    role: "Former SPL member",
-    focus: "Organelle acidification and computational modeling",
-    emails: ["emanuele.carnevalebaraglia@unipv.it"],
-    status: "former",
-    period: "Approx. December 2023 - 2025",
-    note: "Email evidence includes Dec 2023 thesis/SPL interactions, 2024-2025 SPL group activity, and a PRIN 2022 project assignment running 2023-11-30 to 2025-11-29.",
+    leftYear: "2025",
+    contribution: "Organelle acidification and computational modeling",
   },
   {
     name: "Bohdana Horda",
-    role: "Former SPL member",
-    focus: "Hydrogel fabrication and engineered cell culture systems",
-    emails: ["bohdana.horda@unipv.it"],
-    status: "former",
-    period: "Approx. November 2023 - April 2025",
-    note: "Email evidence includes Nov 2023 SPL/DICAr group correspondence and 2025 HYDRA manuscript correspondence.",
-  },
-  {
-    name: "Alice Albini",
-    role: "Administrative support",
-    focus: "Project management and laboratory operations",
-    emails: ["alice.albini@unipv.it"],
-    status: "former",
-    period: "Approx. January 2021 - June 2022",
-    note: "Later University of Pavia administrative support in the wider engineering area; March 2023 email refers to her new incarico.",
+    leftYear: "2024",
+    contribution: "Hydrogel fabrication and engineered cell culture systems",
   },
   {
     name: "Daniela Canevari",
-    role: "Administrative support",
-    focus: "Project management and laboratory operations",
-    emails: ["daniela.canevari@unipv.it"],
-    status: "former",
-    period: "Approx. December 2023 - 2025",
-    note: "Currently working within the wider University of Pavia administration, with DICAr/DII-adjacent support visible in later emails.",
+    leftYear: "2025",
+    contribution: "Project administration and reporting",
+  },
+  {
+    name: "Dr. Chimwemwe Msosa",
+    leftYear: "2024",
+    contribution: "CICOPS fellow · Biomedical engineering",
+  },
+  {
+    name: "Alice Albini",
+    leftYear: "2022",
+    contribution: "Project management and laboratory operations",
+  },
+  {
+    name: "Ahmed S. Khalil",
+    leftYear: "2021",
+    contribution: "Post-doctoral research",
+  },
+];
+
+export type FormerThesisStudent = {
+  name: string;
+  degree: "BS" | "MS";
+  year: string;
+};
+
+/** Chronological by year, alphabetical by name within each year. */
+export const formerThesisStudents: FormerThesisStudent[] = [
+  {
+    name: "Arianna Mauro",
+    degree: "BS",
+    year: "2021",
+  },
+  {
+    name: "Eloisa Torchia",
+    degree: "MS",
+    year: "2021",
+  },
+  {
+    name: "Giulia Sbaruffati",
+    degree: "BS",
+    year: "2021",
+  },
+  {
+    name: "Ingrid Tombini",
+    degree: "BS",
+    year: "2021",
+  },
+  {
+    name: "Maria Sofia Iacopinelli",
+    degree: "BS",
+    year: "2021",
+  },
+  {
+    name: "Mariagrazia Zaccara",
+    degree: "BS",
+    year: "2021",
+  },
+  {
+    name: "Adele Chiavetta",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Alberto Passolunghi",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Alessia Ciciriello",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Armando Oscar Rossi",
+    degree: "MS",
+    year: "2022",
+  },
+  {
+    name: "Asja Maggiore",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Bohdana Horda",
+    degree: "MS",
+    year: "2022",
+  },
+  {
+    name: "Chiara Leoncavallo",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Davide Prati",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Elisa Cevoli",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Emanuele Pozzato",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Federica Pallavicini",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Francesca Mastrosimone",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Giorgia Francabandiera",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Kirolles Farid",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Libera Chielli",
+    degree: "MS",
+    year: "2022",
+  },
+  {
+    name: "Lorenzo Legovini",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Margherita Asia Fumagalli",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Michele Papa",
+    degree: "MS",
+    year: "2022",
+  },
+  {
+    name: "Miriam Di Pumpo",
+    degree: "MS",
+    year: "2022",
+  },
+  {
+    name: "Muhammad Mohsin",
+    degree: "MS",
+    year: "2022",
+  },
+  {
+    name: "Vittoria Bartoli",
+    degree: "BS",
+    year: "2022",
+  },
+  {
+    name: "Alessia Gallo",
+    degree: "MS",
+    year: "2023",
+  },
+  {
+    name: "Chiara Gregorelli",
+    degree: "BS",
+    year: "2023",
+  },
+  {
+    name: "Emanuele Carnevale Baraglia",
+    degree: "MS",
+    year: "2023",
+  },
+  {
+    name: "Hamza Saqrane",
+    degree: "BS",
+    year: "2023",
+  },
+  {
+    name: "Domnica Gabriela Gurau",
+    degree: "MS",
+    year: "2024",
+  },
+  {
+    name: "Francesca Ceriani",
+    degree: "BS",
+    year: "2024",
+  },
+  {
+    name: "Irene Berlinghieri",
+    degree: "BS",
+    year: "2024",
+  },
+  {
+    name: "Martina Onetti",
+    degree: "BS",
+    year: "2024",
+  },
+  {
+    name: "Matilde Randi",
+    degree: "BS",
+    year: "2024",
+  },
+  {
+    name: "Sara Rigolli",
+    degree: "MS",
+    year: "2024",
+  },
+  {
+    name: "Camilla Chiariello",
+    degree: "MS",
+    year: "2025",
+  },
+  {
+    name: "Chiara Pucci",
+    degree: "BS",
+    year: "2025",
+  },
+  {
+    name: "Francesca Delú",
+    degree: "BS",
+    year: "2025",
+  },
+  {
+    name: "Margherita Gualerzi",
+    degree: "BS",
+    year: "2025",
+  },
+  {
+    name: "Francesca Ceriani",
+    degree: "MS",
+    year: "2026",
+  },
+  {
+    name: "Gaia Consolo",
+    degree: "BS",
+    year: "2026",
   },
 ];
 
@@ -721,9 +733,26 @@ export type Publication = {
   provenance: "spl" | "pre-spl";
   citations?: string;
   highlightOrder?: number;
+  /** Online publication date (Crossref published-online, else issue date), YYYY-MM-DD. */
+  date: string;
+  /** Research-area slugs this paper is listed under on the research pages. */
+  areas?: string[];
 };
 
 export const publications: Publication[] = [
+  {
+    title: "LigHTS: Biomimetic Hydrogel Photo-Fabrication for Imaging-Based Ultra-High-Throughput Screening",
+    authors: "Alessandro Enrico, Sara Rigolli, Julius Zimmermann, Melissa Pezzotti, Eloisa Torchia, Moises Di Sante, Ferdinando Auricchio, Francesco S. Pasqualini",
+    venue: "Advanced Science",
+    year: "2026",
+    doi: "10.1002/advs.78192",
+    href: "https://doi.org/10.1002/advs.78192",
+    tag: "Recent",
+    provenance: "spl",
+    highlightOrder: 1,
+    date: "2026-10-12",
+    areas: ["all-optical-biomaterials"],
+  },
   {
     title: "Engineering Toolkits for High-Throughput and High-Content Phenotyping",
     authors: "Melissa Pezzotti, Francesco S. Pasqualini",
@@ -733,6 +762,8 @@ export const publications: Publication[] = [
     href: "https://doi.org/10.1063/5.0341991",
     tag: "Review",
     provenance: "spl",
+    date: "2026-09-01",
+    areas: ["stem-cells-genome-editing"],
   },
   {
     title: "CALIPERS: Cell cycle-aware live imaging for phenotyping experiments and regeneration studies",
@@ -743,7 +774,9 @@ export const publications: Publication[] = [
     href: "https://www.nature.com/articles/s41467-026-76144-9",
     tag: "Recent",
     provenance: "spl",
-    highlightOrder: 1,
+    highlightOrder: 2,
+    date: "2026-08-01",
+    areas: ["stem-cells-genome-editing"],
   },
   {
     title: "MicroSplit: semantic unmixing of fluorescent microscopy data",
@@ -754,7 +787,9 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/42086917/",
     tag: "Recent",
     provenance: "spl",
-    highlightOrder: 2,
+    highlightOrder: 3,
+    date: "2026-05-05",
+    areas: ["computational-modeling-data-analysis"],
   },
   {
     title: "Micro-comb 3D printing: rapid fabrication of tissue-guiding substrates using micro-embossed nozzles",
@@ -765,50 +800,21 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/41985513/",
     tag: "Recent",
     provenance: "spl",
+    date: "2026-04-27",
+    areas: ["all-optical-biomaterials"],
   },
   {
     title: "Bioimage analysis for multiplexed FUCCI acquisitions powered by deep learning",
     authors: "J. Zimmermann, M. Pezzotti, E. Torchia, A. Enrico, M. Di Sante, F.S. Pasqualini",
-    venue: "npj Imaging",
+    venue: "NPJ Imaging",
     year: "2026",
     doi: "10.1038/s44303-026-00159-6",
     href: "https://www.nature.com/articles/s44303-026-00159-6",
     tag: "Bioimage analysis",
     provenance: "spl",
-    highlightOrder: 3,
-  },
-  {
-    title: "A vertically integrated system for tracking and assessing cell-cycle-aware phenotypes under confinement",
-    authors: "Melissa Pezzotti, Eloisa Torchia, Julius Zimmermann, Sara Rigolli, Alessandro Enrico, Moises Di Sante, Francesco S. Pasqualini",
-    venue: "APL Bioengineering",
-    year: "2026",
-    doi: "10.1063/5.0306480",
-    href: "https://pubmed.ncbi.nlm.nih.gov/41799556/",
-    tag: "Recent",
-    provenance: "spl",
     highlightOrder: 4,
-  },
-  {
-    title: "Fabrication of cell culture hydrogels by robotic liquid handling automation for high-throughput drug testing",
-    authors: "Eloisa Torchia, Moises Di Sante, Bohdana Horda, Marko Mihajlovic, Julius Zimmermann, Melissa Pezzotti, Elisa Cimetta, Sylvain Gabriele, Ferdinando Auricchio, Johan Ulrik Lind, Alessandro Enrico, Francesco Silvio Pasqualini",
-    venue: "Communications Engineering",
-    year: "2025",
-    doi: "10.1038/s44172-025-00575-3",
-    href: "https://pubmed.ncbi.nlm.nih.gov/41430373/",
-    tag: "Recent",
-    provenance: "spl",
-    highlightOrder: 5,
-  },
-  {
-    title: "LiGHTS: Massively Parallel Biomimetic Photo-Functionalization for Imaging-Based Ultra-High-Throughput Screening",
-    authors: "Alessandro Enrico, Sara Rigolli, Julius Zimmermann, Melissa Pezzotti, Eloisa Torchia, Moises Di Sante, Ferdinando Auricchio, Francesco S. Pasqualini",
-    venue: "bioRxiv",
-    year: "2025",
-    doi: "10.1101/2025.10.23.683892",
-    href: "https://www.biorxiv.org/content/10.1101/2025.10.23.683892v1",
-    tag: "Preprint",
-    provenance: "spl",
-    highlightOrder: 6,
+    date: "2026-04-14",
+    areas: ["stem-cells-genome-editing", "computational-modeling-data-analysis"],
   },
   {
     title: "BIOPOINT: A particle-based model for probing nuclear mechanics and cell-ECM interactions via experimentally derived parameters",
@@ -819,6 +825,33 @@ export const publications: Publication[] = [
     href: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014113",
     tag: "Modeling",
     provenance: "spl",
+    highlightOrder: 5,
+    date: "2026-03-31",
+    areas: ["computational-modeling-data-analysis"],
+  },
+  {
+    title: "A vertically integrated system for tracking and assessing cell-cycle-aware phenotypes under confinement",
+    authors: "Melissa Pezzotti, Eloisa Torchia, Julius Zimmermann, Sara Rigolli, Alessandro Enrico, Moises Di Sante, Francesco S. Pasqualini",
+    venue: "APL Bioengineering",
+    year: "2026",
+    doi: "10.1063/5.0306480",
+    href: "https://pubmed.ncbi.nlm.nih.gov/41799556/",
+    tag: "Recent",
+    provenance: "spl",
+    date: "2026-03-04",
+    areas: ["stem-cells-genome-editing", "all-optical-biomaterials"],
+  },
+  {
+    title: "Fabrication of cell culture hydrogels by robotic liquid handling automation for high-throughput drug testing",
+    authors: "Eloisa Torchia, Moises Di Sante, Bohdana Horda, Marko Mihajlovic, Julius Zimmermann, Melissa Pezzotti, Elisa Cimetta, Sylvain Gabriele, Ferdinando Auricchio, Johan Ulrik Lind, Alessandro Enrico, Francesco Silvio Pasqualini",
+    venue: "NPJ Communications Engineering",
+    year: "2025",
+    doi: "10.1038/s44172-025-00575-3",
+    href: "https://pubmed.ncbi.nlm.nih.gov/41430373/",
+    tag: "Recent",
+    provenance: "spl",
+    date: "2025-12-22",
+    areas: ["all-optical-biomaterials"],
   },
   {
     title: "An Open-Science Computational Model of Organelle Acidification to Integrate Putative Mechanisms of Synaptic Vesicle Acidification and Filling",
@@ -829,6 +862,8 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/40471464/",
     tag: "Modeling",
     provenance: "spl",
+    date: "2025-06-05",
+    areas: ["computational-modeling-data-analysis"],
   },
   {
     title: "Molecular Dynamics Simulation of Structural Assembly and Hydration of Hyaluronic Acid in Salt Aqueous Buffer",
@@ -839,6 +874,8 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/39913243/",
     tag: "Modeling",
     provenance: "spl",
+    date: "2025-02-06",
+    areas: ["computational-modeling-data-analysis"],
   },
   {
     title: "An efficient active-stress electromechanical isogeometric shell model for muscular thin-film simulations",
@@ -848,6 +885,8 @@ export const publications: Publication[] = [
     href: "https://doi.org/10.1016/j.mechmat.2024.105046",
     tag: "Modeling",
     provenance: "spl",
+    date: "2024-08-01",
+    areas: ["computational-modeling-data-analysis"],
   },
   {
     title: "When art and science collide",
@@ -858,6 +897,8 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/38505297/",
     tag: "Essay",
     provenance: "spl",
+    date: "2024-03-06",
+    areas: ["art-and-science"],
   },
   {
     title: "SEM2: Introducing mechanics in cell and tissue modeling using coarse-grained homogeneous particle dynamics",
@@ -868,16 +909,8 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/38075209/",
     tag: "Modeling",
     provenance: "spl",
-  },
-  {
-    title: "muSplit: image decomposition for fluorescence microscopy",
-    authors: "Ashesh, Alexander Krull, Moises Di Sante, Francesco Silvio Pasqualini, Florian Jug",
-    venue: "IEEE/CVF International Conference on Computer Vision",
-    year: "2023",
-    doi: "10.1109/iccv51070.2023.01940",
-    href: "https://doi.org/10.1109/iccv51070.2023.01940",
-    tag: "Bioimage analysis",
-    provenance: "spl",
+    date: "2023-12-05",
+    areas: ["computational-modeling-data-analysis"],
   },
   {
     title: "Current progress toward isogeometric modeling of the heart biophysics",
@@ -888,6 +921,20 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/38510845/",
     tag: "Review",
     provenance: "spl",
+    date: "2023-11-13",
+    areas: ["computational-modeling-data-analysis"],
+  },
+  {
+    title: "muSplit: image decomposition for fluorescence microscopy",
+    authors: "Ashesh, Alexander Krull, Moises Di Sante, Francesco Silvio Pasqualini, Florian Jug",
+    venue: "IEEE/CVF International Conference on Computer Vision",
+    year: "2023",
+    doi: "10.1109/iccv51070.2023.01940",
+    href: "https://doi.org/10.1109/iccv51070.2023.01940",
+    tag: "Bioimage analysis",
+    provenance: "spl",
+    date: "2023-10-01",
+    areas: ["computational-modeling-data-analysis"],
   },
   {
     title: "Isogeometric mixed collocation of nearly-incompressible electromechanics in finite deformations for cardiac muscle simulations",
@@ -898,6 +945,8 @@ export const publications: Publication[] = [
     href: "https://doi.org/10.1016/j.cma.2023.116055",
     tag: "Modeling",
     provenance: "spl",
+    date: "2023-06-01",
+    areas: ["computational-modeling-data-analysis"],
   },
   {
     title: "Immersed isogeometric analysis based on a hybrid collocation/finite cell method",
@@ -907,6 +956,19 @@ export const publications: Publication[] = [
     href: "https://doi.org/10.1016/j.cma.2022.115856",
     tag: "Modeling",
     provenance: "spl",
+    date: "2023-02-01",
+    areas: ["computational-modeling-data-analysis"],
+  },
+  {
+    title: "An efficient isogeometric collocation approach to cardiac electrophysiology",
+    authors: "Torre M, Morganti S, Nitti A, de Tullio M D, Pasqualini F S, Reali A",
+    venue: "Computer Methods in Applied Mechanics and Engineering",
+    year: "2022",
+    href: "https://doi.org/10.1016/j.cma.2021.114782",
+    tag: "Modeling",
+    provenance: "spl",
+    date: "2022-04-01",
+    areas: ["computational-modeling-data-analysis"],
   },
   {
     title: "Organotypic and Microphysiological Human Tissue Models for Drug Discovery and Development: Current State-of-the-Art and Future Perspectives",
@@ -917,6 +979,8 @@ export const publications: Publication[] = [
     href: "https://doi.org/10.1124/pharmrev.120.000238",
     tag: "Review",
     provenance: "spl",
+    date: "2022-01-01",
+    areas: ["all-optical-biomaterials"],
   },
   {
     title: "Emerging strategies in 3D printed tissue models for in vitro biomedical research",
@@ -927,15 +991,8 @@ export const publications: Publication[] = [
     href: "https://doi.org/10.1016/b978-0-323-85430-6.00007-8",
     tag: "Book chapter",
     provenance: "spl",
-  },
-  {
-    title: "An efficient isogeometric collocation approach to cardiac electrophysiology",
-    authors: "Torre M, Morganti S, Nitti A, de Tullio M D, Pasqualini F S, Reali A",
-    venue: "Computer Methods in Applied Mechanics and Engineering",
-    year: "2022",
-    href: "https://doi.org/10.1016/j.cma.2021.114782",
-    tag: "Modeling",
-    provenance: "spl",
+    date: "2022-01-01",
+    areas: ["all-optical-biomaterials"],
   },
   {
     title: "Tackling the ERC paradox / Come affrontare il paradosso ERC",
@@ -946,6 +1003,7 @@ export const publications: Publication[] = [
     href: "https://doi.org/10.1038/d43978-021-00140-4",
     tag: "Commentary",
     provenance: "spl",
+    date: "2021-11-12",
   },
   {
     title: "A Pulsatile Flow System to Engineer Aneurysm and Atherosclerosis Mimetic Extracellular Matrix",
@@ -956,6 +1014,8 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/32596117/",
     tag: "Paper",
     provenance: "pre-spl",
+    date: "2020-04-30",
+    areas: ["all-optical-biomaterials"],
   },
   {
     title: "Insights Into the Pathogenesis of Catecholaminergic Polymorphic Ventricular Tachycardia From Engineered Human Heart Tissue",
@@ -966,6 +1026,8 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/31311300/",
     tag: "Paper",
     provenance: "pre-spl",
+    date: "2019-07-30",
+    areas: ["all-optical-biomaterials"],
   },
   {
     title: "A tissue-engineered scale model of the heart ventricle",
@@ -976,6 +1038,8 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/31015723/",
     tag: "Highly cited",
     provenance: "pre-spl",
+    date: "2018-07-23",
+    areas: ["all-optical-biomaterials"],
   },
   {
     title: "Traction force microscopy of engineered cardiac tissues",
@@ -986,6 +1050,8 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/29590169/",
     tag: "Methods",
     provenance: "pre-spl",
+    date: "2018-03-28",
+    areas: ["all-optical-biomaterials"],
   },
   {
     title: "JetValve: Rapid manufacturing of biohybrid scaffolds for biomimetic heart valve replacement",
@@ -996,6 +1062,8 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/28445803/",
     tag: "Paper",
     provenance: "pre-spl",
+    date: "2017-07-01",
+    areas: ["all-optical-biomaterials"],
   },
   {
     title: "Translational cardiac stem cell therapy: advancing from first-generation to next-generation cell types",
@@ -1006,6 +1074,8 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/29302353/",
     tag: "Review",
     provenance: "pre-spl",
+    date: "2017-06-13",
+    areas: ["stem-cells-genome-editing"],
   },
   {
     title: "Safety and efficacy of cardiopoietic stem cells in the treatment of post-infarction left-ventricular dysfunction - From cardioprotection to functional repair in a translational pig infarction model",
@@ -1016,6 +1086,19 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/28107664/",
     tag: "Paper",
     provenance: "pre-spl",
+    date: "2017-04-01",
+  },
+  {
+    title: "Organ Chips: Quality Assurance Systems in Regenerative Medicine",
+    authors: "Francesco S. Pasqualini, Maximilian Y. Emmert, Kevin K. Parker, Simon P. Hoerstrup",
+    venue: "Clinical Pharmacology & Therapeutics",
+    year: "2016",
+    doi: "10.1002/cpt.527",
+    href: "https://doi.org/10.1002/cpt.527",
+    tag: "Review",
+    provenance: "pre-spl",
+    date: "2016-11-21",
+    areas: ["all-optical-biomaterials"],
   },
   {
     title: "Instrumented cardiac microphysiological devices via multimaterial three-dimensional printing",
@@ -1027,26 +1110,8 @@ export const publications: Publication[] = [
     tag: "Highly cited",
     provenance: "pre-spl",
     citations: "900+ citations",
-  },
-  {
-    title: "Organ Chips: Quality Assurance Systems in Regenerative Medicine",
-    authors: "Francesco S. Pasqualini, Maximilian Y. Emmert, Kevin K. Parker, Simon P. Hoerstrup",
-    venue: "Clinical Pharmacology & Therapeutics",
-    year: "2016",
-    doi: "10.1002/cpt.527",
-    href: "https://doi.org/10.1002/cpt.527",
-    tag: "Review",
-    provenance: "pre-spl",
-  },
-  {
-    title: "Mechanotransduction and Metabolism in Cardiomyocyte Microdomains",
-    authors: "Pasqualini FS, Nesmith AP, Horton RE, Sheehy SP, Parker KK",
-    venue: "BioMed Research International",
-    year: "2016",
-    doi: "10.1155/2016/4081638",
-    href: "https://pubmed.ncbi.nlm.nih.gov/28044126/",
-    tag: "Review",
-    provenance: "pre-spl",
+    date: "2016-10-24",
+    areas: ["all-optical-biomaterials"],
   },
   {
     title: "A human in vitro model of Duchenne muscular dystrophy muscle formation and contractility",
@@ -1057,6 +1122,8 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/27697929/",
     tag: "Paper",
     provenance: "pre-spl",
+    date: "2016-10-03",
+    areas: ["all-optical-biomaterials"],
   },
   {
     title: "Heart Valve Replacements with Regenerative Capacity",
@@ -1067,6 +1134,8 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/27721704/",
     tag: "Review",
     provenance: "pre-spl",
+    date: "2016-07-26",
+    areas: ["all-optical-biomaterials"],
   },
   {
     title: "Phototactic guidance of a tissue-engineered soft-robotic ray",
@@ -1078,16 +1147,8 @@ export const publications: Publication[] = [
     tag: "Highly cited",
     provenance: "pre-spl",
     citations: "500+ citations",
-  },
-  {
-    title: "Laminar ventricular myocardium on a microelectrode array-based chip",
-    authors: "Kujala VJ, Pasqualini FS, Goss JA, Nawroth JC, Parker KK",
-    venue: "Journal of Materials Chemistry B",
-    year: "2016",
-    doi: "10.1039/c6tb00324a",
-    href: "https://pubmed.ncbi.nlm.nih.gov/32263387/",
-    tag: "Paper",
-    provenance: "pre-spl",
+    date: "2016-07-08",
+    areas: ["all-optical-biomaterials"],
   },
   {
     title: "Coupling primary and stem cell-derived cardiomyocytes in an in vitro model of cardiac cell therapy",
@@ -1098,6 +1159,8 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/26858266/",
     tag: "Paper",
     provenance: "pre-spl",
+    date: "2016-02-08",
+    areas: ["stem-cells-genome-editing"],
   },
   {
     title: "Angiotensin II Induced Cardiac Dysfunction on a Chip",
@@ -1108,6 +1171,32 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/26808388/",
     tag: "Paper",
     provenance: "pre-spl",
+    date: "2016-01-25",
+    areas: ["all-optical-biomaterials"],
+  },
+  {
+    title: "Mechanotransduction and Metabolism in Cardiomyocyte Microdomains",
+    authors: "Pasqualini FS, Nesmith AP, Horton RE, Sheehy SP, Parker KK",
+    venue: "BioMed Research International",
+    year: "2016",
+    doi: "10.1155/2016/4081638",
+    href: "https://pubmed.ncbi.nlm.nih.gov/28044126/",
+    tag: "Review",
+    provenance: "pre-spl",
+    date: "2016-01-01",
+    areas: ["all-optical-biomaterials"],
+  },
+  {
+    title: "Laminar ventricular myocardium on a microelectrode array-based chip",
+    authors: "Kujala VJ, Pasqualini FS, Goss JA, Nawroth JC, Parker KK",
+    venue: "Journal of Materials Chemistry B",
+    year: "2016",
+    doi: "10.1039/c6tb00324a",
+    href: "https://pubmed.ncbi.nlm.nih.gov/32263387/",
+    tag: "Paper",
+    provenance: "pre-spl",
+    date: "2016-01-01",
+    areas: ["all-optical-biomaterials"],
   },
   {
     title: "Late Na(+) current and protracted electrical recovery are critical determinants of the aging myopathy",
@@ -1118,6 +1207,7 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/26541940/",
     tag: "Paper",
     provenance: "pre-spl",
+    date: "2015-11-06",
   },
   {
     title: "Structural phenotyping of stem cell-derived cardiomyocytes",
@@ -1128,6 +1218,8 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/25733020/",
     tag: "Paper",
     provenance: "pre-spl",
+    date: "2015-03-01",
+    areas: ["stem-cells-genome-editing"],
   },
   {
     title: "Origin of cardiomyocytes in the adult heart",
@@ -1138,16 +1230,7 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/25552694/",
     tag: "Review",
     provenance: "pre-spl",
-  },
-  {
-    title: "Modeling the mitochondrial cardiomyopathy of Barth syndrome with induced pluripotent stem cell and heart-on-chip technologies",
-    authors: "Wang G, McCain ML, Yang L, He A, Pasqualini FS, Agarwal A, Yuan H, Jiang D, Zhang D, Zangi L, Geva J, Roberts AE, Ma Q, Ding J, Chen J, Wang DZ, Li K, Wang J, Wanders RJ, Kulik W, Vaz FM, Laflamme MA, Murry CE, Chien KR, Kelley RI, Church GM, Parker KK, Pu WT",
-    venue: "Nature Medicine",
-    year: "2014",
-    doi: "10.1038/nm.3545",
-    href: "https://pubmed.ncbi.nlm.nih.gov/24813252/",
-    tag: "Paper",
-    provenance: "pre-spl",
+    date: "2015-01-02",
   },
   {
     title: "Matrix elasticity regulates the optimal cardiac myocyte shape for contractility",
@@ -1158,6 +1241,20 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/24682394/",
     tag: "Paper",
     provenance: "pre-spl",
+    date: "2014-06-01",
+    areas: ["all-optical-biomaterials"],
+  },
+  {
+    title: "Modeling the mitochondrial cardiomyopathy of Barth syndrome with induced pluripotent stem cell and heart-on-chip technologies",
+    authors: "Wang G, McCain ML, Yang L, He A, Pasqualini FS, Agarwal A, Yuan H, Jiang D, Zhang D, Zangi L, Geva J, Roberts AE, Ma Q, Ding J, Chen J, Wang DZ, Li K, Wang J, Wanders RJ, Kulik W, Vaz FM, Laflamme MA, Murry CE, Chien KR, Kelley RI, Church GM, Parker KK, Pu WT",
+    venue: "Nature Medicine",
+    year: "2014",
+    doi: "10.1038/nm.3545",
+    href: "https://pubmed.ncbi.nlm.nih.gov/24813252/",
+    tag: "Paper",
+    provenance: "pre-spl",
+    date: "2014-05-11",
+    areas: ["stem-cells-genome-editing"],
   },
   {
     title: "Quality metrics for stem cell-derived cardiac myocytes",
@@ -1168,6 +1265,8 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/24672752/",
     tag: "Paper",
     provenance: "pre-spl",
+    date: "2014-03-01",
+    areas: ["stem-cells-genome-editing"],
   },
   {
     title: "The contractile strength of vascular smooth muscle myocytes is shape dependent",
@@ -1178,6 +1277,8 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/24406783/",
     tag: "Paper",
     provenance: "pre-spl",
+    date: "2014-01-10",
+    areas: ["all-optical-biomaterials"],
   },
   {
     title: "A novel computational model of the human ventricular action potential and Ca transient",
@@ -1188,6 +1289,8 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/19835882/",
     tag: "Modeling",
     provenance: "pre-spl",
+    date: "2010-01-01",
+    areas: ["computational-modeling-data-analysis"],
   },
   {
     title: "Theoretical investigation of action potential duration dependence on extracellular Ca2+ in human cardiomyocytes",
@@ -1198,8 +1301,13 @@ export const publications: Publication[] = [
     href: "https://pubmed.ncbi.nlm.nih.gov/19121322/",
     tag: "Modeling",
     provenance: "pre-spl",
+    date: "2009-03-01",
+    areas: ["computational-modeling-data-analysis"],
   },
 ];
+
+export const publicationsForArea = (slug: string) =>
+  publications.filter((paper) => paper.areas?.includes(slug));
 
 export const publicationHighlights = {
   selected: publications
@@ -1219,11 +1327,32 @@ export const nonArticleOutputs = [
   { type: "Repository", label: "BIOPOINT", href: "https://github.com/Synthetic-Physiology-Lab/biopoint" },
   { type: "Repository", label: "SEM2", href: "https://github.com/Synthetic-Physiology-Lab/sem2" },
   { type: "Repository", label: "Organelle acidification ODE model", href: "https://github.com/Synthetic-Physiology-Lab/Organelle-acidification-ODE-model" },
-  { type: "Art", label: "SPL art and science gallery", href: "/art-and-science/#gallery" },
+  { type: "Art", label: "SPL Art and Science gallery", href: "/art-and-science/#gallery" },
   { type: "Art", label: "Proliferation, 2025", href: "/art-and-science/#proliferation-2025" },
 ];
 
 const formatCount = (count: number, suffix = "") => `${count}${suffix}`;
+
+/**
+ * Trainees counted on the home page: PhD students and above who trained at SPL,
+ * current team plus alumni. Excludes the director, staff (artist, project
+ * management, administration, research assistants) and BS/MS thesis students.
+ * Approved by Francesco, 13 Oct 2026. Update this list by hand.
+ */
+const trainees = [
+  "Moises Di Sante",
+  "Alessandro Enrico",
+  "Melissa Pezzotti",
+  "Eloisa Torchia",
+  "Sara Rigolli",
+  "Tehreem Ali",
+  "Julius Zimmermann",
+  "Sandipan Chattaraj",
+  "Emanuele Carnevale Baraglia",
+  "Bohdana Horda",
+  "Chimwemwe Msosa",
+  "Ahmed S. Khalil",
+];
 
 export const heroStats = [
   {
@@ -1237,19 +1366,14 @@ export const heroStats = [
     detail: "Auto-counted from the research area database",
   },
   {
-    value: formatCount(team.length, "+"),
+    value: formatCount(trainees.length),
     label: "Trainees to date",
-    detail: "Temporary count from the current team list until alumni history is added",
+    detail: "PhD students and above trained at SPL (current team and alumni); BS/MS thesis students excluded",
   },
   {
     value: formatCount(publications.length),
     label: "Publications",
     detail: "Auto-counted from the publications database",
-  },
-  {
-    value: formatCount(nonArticleOutputs.length, "+"),
-    label: "Other outputs",
-    detail: "Plasmids, cell systems, repositories, and art-science outcomes",
   },
 ];
 

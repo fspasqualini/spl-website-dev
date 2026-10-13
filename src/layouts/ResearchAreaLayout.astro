@@ -1,31 +1,13 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
-import { getImageDimensions, publications, withBase } from "../data/site";
+import { getImageDimensions, publicationsForArea, withBase } from "../data/site";
 import type { Publication } from "../data/site";
 import { getPublicationLabels } from "../data/labels";
 
 const { area } = Astro.props;
-const featuredPapers = area.featuredPapers ?? [];
-const allPapers: Publication[] = area.paperTitles
-  .map((title: string) => publications.find((paper) => paper.title === title))
-  .filter((paper: Publication | undefined): paper is Publication => Boolean(paper));
-const carouselItems =
-  area.featureCards ??
-  featuredPapers
-    .map((feature: { title: string; blurb: string; media: Array<{ type: string; src: string; label: string; text: string; href?: string }> }) => {
-      const paper = publications.find((entry) => entry.title === feature.title);
-      const media = feature.media[0];
-      return media && paper
-        ? {
-            title: paper.title,
-            text: feature.blurb,
-            type: media.type,
-            src: media.src,
-            href: media.href ?? paper.href,
-          }
-        : null;
-    })
-    .filter(Boolean);
+// Papers are derived from the publications data (areas tag), already sorted newest first.
+const allPapers: Publication[] = publicationsForArea(area.slug);
+const carouselItems = area.featureCards ?? [];
 const resources = area.resources ?? [];
 const carouselEyebrow = area.carouselEyebrow ?? "Platforms and capabilities";
 const carouselTitle = area.carouselTitle ?? "In focus";

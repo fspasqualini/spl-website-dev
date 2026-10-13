@@ -1,15 +1,22 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { getImageDimensions, team, withBase } from "../data/site";
+import { alumni, formerThesisStudents, getImageDimensions, team, withBase } from "../data/site";
+
+const formerThesisParagraph =
+  "Former thesis students: " +
+  formerThesisStudents
+    .map((student) => `${student.name} (${student.degree}, ${student.year})`)
+    .join(", ") +
+  ".";
 ---
 
 <BaseLayout
   title="Team | Synthetic Physiology Lab"
   description="Meet the scientists, engineers, artists, and builders behind Synthetic Physiology Lab, a frontier bioengineering group at the University of Pavia."
 >
-  <section class="section">
+  <section class="section team-current-section">
     <div class="container">
-      <p class="eyebrow">Team</p>
+      <p class="eyebrow">Current team</p>
       <h1>Scientists, engineers, artists: come build with us.</h1>
       <p class="lead">Like building for the life sciences, not just studying them? Read our <a href={withBase("/creed/")}>creed</a> and see if this is your kind of work.</p>
       <div class="people-grid">
@@ -32,6 +39,40 @@ import { getImageDimensions, team, withBase } from "../data/site";
           </article>
         ))}
       </div>
+    </div>
+  </section>
+
+  <section class="section alumni-section" aria-labelledby="alumni-heading">
+    <div class="container">
+      <div class="alumni-intro">
+        <div>
+          <p class="eyebrow">Alumni</p>
+          <h2 id="alumni-heading">Built here, carried forward.</h2>
+        </div>
+        <div>
+          <p class="lead">Former members whose work helped shape SPL.</p>
+        </div>
+      </div>
+
+      <ul class="alumni-prose">
+        {alumni.map((person) => (
+          <li>
+            <span class="alumni-name">{person.name}</span>
+            {person.leftYear ? (
+              <span class="alumni-year">, {person.leftYear}</span>
+            ) : null}
+            <span class="alumni-sep"> — </span>
+            <span class="alumni-contribution">{person.contribution}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section former-thesis-section" aria-label="Former thesis students">
+    <div class="container">
+      <p class="eyebrow">Former thesis students</p>
+      <p class="former-thesis-prose">{formerThesisParagraph}</p>
     </div>
   </section>
 </BaseLayout>
