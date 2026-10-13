@@ -678,7 +678,7 @@ export const newsArchive: NewsEntry[] = [
       "Martina Petrelli"
     ],
     "topics": [
-      "Art and science"
+      "Art and Science"
     ],
     "order": 976
   },
@@ -871,7 +871,7 @@ export const newsArchive: NewsEntry[] = [
       "Martina Petrelli"
     ],
     "topics": [
-      "Art and science"
+      "Art and Science"
     ],
     "order": 966
   },
@@ -1383,7 +1383,7 @@ export const newsArchive: NewsEntry[] = [
       }
     ],
     "topics": [
-      "Art and science"
+      "Art and Science"
     ],
     "order": 938
   },
