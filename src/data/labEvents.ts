@@ -91,7 +91,7 @@ export const labEvents: LabEvent[] = [
     date: "14 April 2026",
     sortDate: "2026-04-14",
     kind: "peerReviewedArticle",
-    title: "Deep-learning FUCCI analysis published in npj Imaging",
+    title: "Deep-learning FUCCI analysis published in NPJ Imaging",
     text:
       "Bioimage analysis for multiplexed FUCCI acquisitions, connecting live-cell reporters to quantitative cell-state trajectories.",
     href: "https://www.nature.com/articles/s44303-026-00159-6",

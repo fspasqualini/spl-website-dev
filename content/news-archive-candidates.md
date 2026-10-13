@@ -58,6 +58,13 @@ The blocks below are arranged newest first so they can later map directly to the
 
 ## 2026
 
+### October 2026 — LigHTS published in Advanced Science
+
+- **Status/category:** `READY` · Research · added on development (publish with 15 Oct batch)
+- **Details found:** Published online 12 October 2026 in Advanced Science (DOI 10.1002/advs.78192, article e78192, CC BY 4.0). Journal title: "LigHTS: Biomimetic Hydrogel Photo-Fabrication for Imaging-Based Ultra-High-Throughput Screening". Supersedes the October 2025 bioRxiv preprint in the publications list.
+- **Public link:** [Advanced Science](https://doi.org/10.1002/advs.78192)
+- **Draft website blurb:** “LigHTS is now published in Advanced Science: an all-optical method that photo-fabricates soft, patterned hydrogels across entire 384- and 1536-well plates, bringing biomimetic substrates to imaging-based ultra-high-throughput screening.”
+
 ### July 2026 — ERC Days at UNIVPM
 
 - **Status/category:** `READY` · Events / Research advocacy

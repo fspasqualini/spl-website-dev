@@ -238,7 +238,7 @@ export const researchAreas = [
           "Optical fabrication lets the lab tune surface cues, material geometry, and matrix presentation without leaving standard high-throughput formats.",
         type: "image",
         src: "/assets/scraped/013-all-optical_edited.jpg",
-        href: "https://www.biorxiv.org/content/10.1101/2025.10.23.683892v1",
+        href: "https://doi.org/10.1002/advs.78192",
       },
       {
         title: "Material validation workflows",
@@ -252,7 +252,7 @@ export const researchAreas = [
     paperTitles: [
       "Micro-comb 3D printing: rapid fabrication of tissue-guiding substrates using micro-embossed nozzles",
       "A vertically integrated system for tracking and assessing cell-cycle-aware phenotypes under confinement",
-      "LiGHTS: Massively Parallel Biomimetic Photo-Functionalization for Imaging-Based Ultra-High-Throughput Screening",
+      "LigHTS: Biomimetic Hydrogel Photo-Fabrication for Imaging-Based Ultra-High-Throughput Screening",
       "Fabrication of cell culture hydrogels by robotic liquid handling automation for high-throughput drug testing",
       "Molecular Dynamics Simulation of Structural Assembly and Hydration of Hyaluronic Acid in Salt Aqueous Buffer",
       "Organotypic and Microphysiological Human Tissue Models for Drug Discovery and Development: Current State-of-the-Art and Future Perspectives",
@@ -274,16 +274,16 @@ export const researchAreas = [
     ],
     featuredPapers: [
       {
-        title: "LiGHTS: Massively Parallel Biomimetic Photo-Functionalization for Imaging-Based Ultra-High-Throughput Screening",
+        title: "LigHTS: Biomimetic Hydrogel Photo-Fabrication for Imaging-Based Ultra-High-Throughput Screening",
         blurb:
-          "LiGHTS uses light to pattern biomimetic cues across standard screening formats, turning matrix design into something that can scale with imaging-based discovery.",
+          "LigHTS uses light to pattern biomimetic cues across standard screening formats, turning matrix design into something that can scale with imaging-based discovery.",
         media: [
           {
             type: "image",
             src: "/assets/scraped/013-all-optical_edited.jpg",
             label: "All-optical matrix patterning",
             text: "Photo-functionalized biomaterials for high-throughput imaging.",
-            href: "https://www.biorxiv.org/content/10.1101/2025.10.23.683892v1",
+            href: "https://doi.org/10.1002/advs.78192",
           },
         ],
       },
@@ -324,7 +324,7 @@ export const researchAreas = [
             type: "video",
             src: "https://static-content.springer.com/esm/art%3A10.1038%2Fs44172-025-00575-3/MediaObjects/44172_2025_575_MOESM4_ESM.mp4",
             label: "HYDRA supplementary movie",
-            text: "Article supplementary video from Communications Engineering.",
+            text: "Article supplementary video from NPJ Communications Engineering.",
             href: "https://www.nature.com/articles/s44172-025-00575-3#Sec38",
           },
         ],
@@ -912,6 +912,17 @@ export type Publication = {
 
 export const publications: Publication[] = [
   {
+    title: "LigHTS: Biomimetic Hydrogel Photo-Fabrication for Imaging-Based Ultra-High-Throughput Screening",
+    authors: "Alessandro Enrico, Sara Rigolli, Julius Zimmermann, Melissa Pezzotti, Eloisa Torchia, Moises Di Sante, Ferdinando Auricchio, Francesco S. Pasqualini",
+    venue: "Advanced Science",
+    year: "2026",
+    doi: "10.1002/advs.78192",
+    href: "https://doi.org/10.1002/advs.78192",
+    tag: "Recent",
+    provenance: "spl",
+    highlightOrder: 5,
+  },
+  {
     title: "Engineering Toolkits for High-Throughput and High-Content Phenotyping",
     authors: "Melissa Pezzotti, Francesco S. Pasqualini",
     venue: "Biophysics Reviews",
@@ -956,7 +967,7 @@ export const publications: Publication[] = [
   {
     title: "Bioimage analysis for multiplexed FUCCI acquisitions powered by deep learning",
     authors: "J. Zimmermann, M. Pezzotti, E. Torchia, A. Enrico, M. Di Sante, F.S. Pasqualini",
-    venue: "npj Imaging",
+    venue: "NPJ Imaging",
     year: "2026",
     doi: "10.1038/s44303-026-00159-6",
     href: "https://www.nature.com/articles/s44303-026-00159-6",
@@ -978,24 +989,12 @@ export const publications: Publication[] = [
   {
     title: "Fabrication of cell culture hydrogels by robotic liquid handling automation for high-throughput drug testing",
     authors: "Eloisa Torchia, Moises Di Sante, Bohdana Horda, Marko Mihajlovic, Julius Zimmermann, Melissa Pezzotti, Elisa Cimetta, Sylvain Gabriele, Ferdinando Auricchio, Johan Ulrik Lind, Alessandro Enrico, Francesco Silvio Pasqualini",
-    venue: "Communications Engineering",
+    venue: "NPJ Communications Engineering",
     year: "2025",
     doi: "10.1038/s44172-025-00575-3",
     href: "https://pubmed.ncbi.nlm.nih.gov/41430373/",
     tag: "Recent",
     provenance: "spl",
-    highlightOrder: 5,
-  },
-  {
-    title: "LiGHTS: Massively Parallel Biomimetic Photo-Functionalization for Imaging-Based Ultra-High-Throughput Screening",
-    authors: "Alessandro Enrico, Sara Rigolli, Julius Zimmermann, Melissa Pezzotti, Eloisa Torchia, Moises Di Sante, Ferdinando Auricchio, Francesco S. Pasqualini",
-    venue: "bioRxiv",
-    year: "2025",
-    doi: "10.1101/2025.10.23.683892",
-    href: "https://www.biorxiv.org/content/10.1101/2025.10.23.683892v1",
-    tag: "Preprint",
-    provenance: "spl",
-    highlightOrder: 6,
   },
   {
     title: "BIOPOINT: A particle-based model for probing nuclear mechanics and cell-ECM interactions via experimentally derived parameters",

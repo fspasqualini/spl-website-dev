@@ -35,6 +35,23 @@ export const categoryLabels: Record<NewsCategory, string> = {
 
 export const newsArchive: NewsEntry[] = [
   {
+    "id": "2026-lights-published",
+    "date": "2026-10-01",
+    "datePrecision": "month",
+    "category": "research",
+    "title": "LigHTS published in Advanced Science",
+    "blurb": "LigHTS is now published in Advanced Science: an all-optical method that photo-fabricates soft, patterned hydrogels across entire 384- and 1536-well plates, bringing biomimetic substrates to imaging-based ultra-high-throughput screening.",
+    "links": [
+      {
+        "label": "Advanced Science",
+        "href": "https://doi.org/10.1002/advs.78192"
+      }
+    ],
+    "people": ["Alessandro Enrico", "Sara Rigolli", "Julius Zimmermann", "Melissa Pezzotti", "Eloisa Torchia", "Moises Di Sante", "Ferdinando Auricchio", "Francesco S. Pasqualini"],
+    "topics": ["LigHTS", "Hydrogels", "High-throughput screening"],
+    "order": 1008
+  },
+  {
     "id": "2026-bruker-online-organoid-summit",
     "date": "2026-10-01",
     "datePrecision": "month",
@@ -353,10 +370,10 @@ export const newsArchive: NewsEntry[] = [
     "datePrecision": "month",
     "category": "research",
     "title": "Deep-learning FUCCI analysis published",
-    "blurb": "Our deep-learning workflow for multiplexed FUCCI imaging is published in npj Imaging, turning live-cell reporters into quantitative trajectories of cell state.",
+    "blurb": "Our deep-learning workflow for multiplexed FUCCI imaging is published in NPJ Imaging, turning live-cell reporters into quantitative trajectories of cell state.",
     "links": [
       {
-        "label": "npj Imaging",
+        "label": "NPJ Imaging",
         "href": "https://www.nature.com/articles/s44303-026-00159-6"
       }
     ],
@@ -452,10 +469,10 @@ export const newsArchive: NewsEntry[] = [
     "datePrecision": "month",
     "category": "research",
     "title": "HYDRA published",
-    "blurb": "HYDRA is published in Communications Engineering, showing how robotic liquid handling can fabricate physiologically soft cell-culture hydrogels directly in high-throughput screening plates.",
+    "blurb": "HYDRA is published in NPJ Communications Engineering, showing how robotic liquid handling can fabricate physiologically soft cell-culture hydrogels directly in high-throughput screening plates.",
     "links": [
       {
-        "label": "Communications Engineering",
+        "label": "NPJ Communications Engineering",
         "href": "https://www.nature.com/articles/s44172-025-00575-3"
       }
     ],
