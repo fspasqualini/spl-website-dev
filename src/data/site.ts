@@ -741,6 +741,18 @@ export type Publication = {
 
 export const publications: Publication[] = [
   {
+    title: "Engineering cell culture platforms for outside-in and inside-out mechanobiology across throughput scales",
+    authors: "Eloisa Torchia, Francesco S. Pasqualini",
+    venue: "Biophysics Reviews",
+    year: "2026",
+    doi: "10.1063/5.0342126",
+    href: "https://doi.org/10.1063/5.0342126",
+    tag: "Review",
+    provenance: "spl",
+    date: "2026-10-21",
+    areas: ["all-optical-biomaterials"],
+  },
+  {
     title: "LigHTS: Biomimetic Hydrogel Photo-Fabrication for Imaging-Based Ultra-High-Throughput Screening",
     authors: "Alessandro Enrico, Sara Rigolli, Julius Zimmermann, Melissa Pezzotti, Eloisa Torchia, Moises Di Sante, Ferdinando Auricchio, Francesco S. Pasqualini",
     venue: "Advanced Science",

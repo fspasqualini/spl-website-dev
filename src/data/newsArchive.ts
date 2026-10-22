@@ -35,6 +35,31 @@ export const categoryLabels: Record<NewsCategory, string> = {
 
 export const newsArchive: NewsEntry[] = [
   {
+    "id": "2026-outside-in-inside-out-mechanobiology-review",
+    "date": "2026-10-21",
+    "datePrecision": "day",
+    "category": "research",
+    "title": "Mechanobiology platforms across throughput scales",
+    "blurb": "Eloisa Torchia and Francesco S. Pasqualini's new review in Biophysics Reviews maps cell-culture platforms for mechanobiology by mechanical cue and experimental throughput, from low-throughput devices to high-throughput plates. It covers how stiffness, viscoelasticity, and topography act on cells (outside-in) and how cell state, such as cell-cycle phase, shapes the response (inside-out), and closes with priorities for standardization.",
+    "links": [
+      {
+        "label": "Read the review",
+        "href": "https://doi.org/10.1063/5.0342126"
+      }
+    ],
+    "people": [
+      "Eloisa Torchia",
+      "Francesco S. Pasqualini"
+    ],
+    "topics": [
+      "Mechanobiology",
+      "Cell culture platforms",
+      "High-throughput screening",
+      "Cell cycle"
+    ],
+    "order": 1009
+  },
+  {
     "id": "2026-lights-published",
     "date": "2026-10-01",
     "datePrecision": "month",
