@@ -473,7 +473,7 @@ export const newsArchive: NewsEntry[] = [
     "datePrecision": "month",
     "category": "events",
     "title": "Bioengineering Subgroup Chair-Elect",
-    "blurb": "Francesco has been elected Chair-Elect of the Biophysical Society Bioengineering Subgroup, supporting a community that connects physical principles, engineering, and living systems.",
+    "blurb": "Francesco has been elected Chair-Elect of the Biophysical Society Bioengineering Subgroup, serving as Chair-Elect in 2026 and Chair in 2027, and will organize the subgroup symposium at the 2028 Annual Meeting in San Diego.",
     "links": [
       {
         "label": "BPS Bioengineering Subgroup leadership",
