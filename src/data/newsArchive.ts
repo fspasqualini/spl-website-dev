@@ -22,7 +22,7 @@ export type NewsEntry = {
   topics?: string[];
   order?: number;
   featured?: boolean;
-  /** Pin this item to the homepage "Latest from SPL" box. */
+  /** Pin this item to the homepage "Hottest from SPL" box. */
   homepage?: boolean;
   /** Optional position among pinned items (1 = top). Unordered pins follow, newest first. */
   homepageOrder?: number;
@@ -2236,7 +2236,7 @@ export const entriesByYear = Object.fromEntries(
 ) as Record<string, NewsEntry[]>;
 
 export const featuredNews = sortedNewsArchive.find((entry) => entry.featured)!;
-// Homepage "Latest from SPL / Lab pulse" box (5 items).
+// Homepage "Hottest from SPL / Lab pulse" box (5 items).
 // To pin an item, add `"homepage": true` to its entry; optionally add `"homepageOrder": 1`
 // (1 = top) to fix its position. Pinned items come first (by homepageOrder, then newest first);
 // any free slots are filled with the newest unpinned items. To unpin, remove the flag.
