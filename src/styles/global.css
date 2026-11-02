@@ -308,7 +308,7 @@ p {
 
 .stats {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1px;
   margin-top: 26px;
   border: 1px solid rgba(11, 11, 13, 0.16);
