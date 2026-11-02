@@ -12,6 +12,10 @@ import {
 
 assert.ok(newsArchive.length >= 100, "archive stress fixture must contain at least 100 entries");
 assert.equal(homepageNews.length, 5, "homepage rail must contain five entries");
+const pinned = newsArchive.filter((entry) => entry.homepage);
+if (pinned.length <= 5) {
+  for (const entry of pinned) assert.ok(homepageNews.includes(entry), `pinned item ${entry.id} missing from homepage rail`);
+}
 assert.equal(recentNews.length, 18, "news landing must contain 18 entries");
 assert.equal(newsArchive.filter((entry) => entry.image).length, 1, "only one archive story may have an image");
 assert.equal(newsArchive.filter((entry) => entry.featured).length, 1, "only one archive story may be featured");

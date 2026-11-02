@@ -22,6 +22,10 @@ export type NewsEntry = {
   topics?: string[];
   order?: number;
   featured?: boolean;
+  /** Pin this item to the homepage "Latest from SPL" box. */
+  homepage?: boolean;
+  /** Optional position among pinned items (1 = top). Unordered pins follow, newest first. */
+  homepageOrder?: number;
   image?: { src: string; alt: string };
 };
 
@@ -57,7 +61,9 @@ export const newsArchive: NewsEntry[] = [
       "High-throughput screening",
       "Cell cycle"
     ],
-    "order": 1009
+    "order": 1009,
+    "homepage": true,
+    "homepageOrder": 1
   },
   {
     "id": "2026-lights-published",
@@ -74,7 +80,9 @@ export const newsArchive: NewsEntry[] = [
     ],
     "people": ["Alessandro Enrico", "Sara Rigolli", "Julius Zimmermann", "Melissa Pezzotti", "Eloisa Torchia", "Moises Di Sante", "Ferdinando Auricchio", "Francesco S. Pasqualini"],
     "topics": ["LigHTS", "Hydrogels", "High-throughput screening"],
-    "order": 1008
+    "order": 1008,
+    "homepage": true,
+    "homepageOrder": 2
   },
   {
     "id": "2026-bruker-online-organoid-summit",
@@ -98,7 +106,9 @@ export const newsArchive: NewsEntry[] = [
       "Live-cell phenotyping",
       "Bruker Online Organoid Summit"
     ],
-    "order": 1007
+    "order": 1007,
+    "homepage": true,
+    "homepageOrder": 3
   },
   {
     "id": "2026-francesco-camera-deputati-frontier-research",
@@ -121,7 +131,9 @@ export const newsArchive: NewsEntry[] = [
       "ERC in Italy",
       "Frontier research"
     ],
-    "order": 1006
+    "order": 1006,
+    "homepage": true,
+    "homepageOrder": 4
   },
   {
     "id": "2026-engineering-toolkits-high-content-phenotyping-review",
@@ -146,7 +158,9 @@ export const newsArchive: NewsEntry[] = [
       "Bioengineering",
       "Reproducible workflows"
     ],
-    "order": 1005
+    "order": 1005,
+    "homepage": true,
+    "homepageOrder": 5
   },
   {
     "id": "2026-spl-at-esb-ita-2026",
@@ -2222,7 +2236,22 @@ export const entriesByYear = Object.fromEntries(
 ) as Record<string, NewsEntry[]>;
 
 export const featuredNews = sortedNewsArchive.find((entry) => entry.featured)!;
-export const homepageNews = sortedNewsArchive.slice(0, 5);
+// Homepage "Latest from SPL / Lab pulse" box (5 items).
+// To pin an item, add `"homepage": true` to its entry; optionally add `"homepageOrder": 1`
+// (1 = top) to fix its position. Pinned items come first (by homepageOrder, then newest first);
+// any free slots are filled with the newest unpinned items. To unpin, remove the flag.
+export const HOMEPAGE_NEWS_COUNT = 5;
+const pinnedHomepageNews = sortedNewsArchive
+  .filter((entry) => entry.homepage)
+  .sort(
+    (a, b) =>
+      (a.homepageOrder ?? Number.POSITIVE_INFINITY) - (b.homepageOrder ?? Number.POSITIVE_INFINITY) ||
+      sortedNewsArchive.indexOf(a) - sortedNewsArchive.indexOf(b),
+  );
+export const homepageNews = [
+  ...pinnedHomepageNews,
+  ...sortedNewsArchive.filter((entry) => !entry.homepage),
+].slice(0, HOMEPAGE_NEWS_COUNT);
 export const recentNews = [featuredNews, ...sortedNewsArchive.filter((entry) => !entry.featured).slice(0, 17)];
 
 export const formatNewsDate = (entry: Pick<NewsEntry, "date" | "datePrecision" | "dateLabel">) => {
