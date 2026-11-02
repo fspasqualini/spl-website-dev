@@ -61,9 +61,7 @@ export const newsArchive: NewsEntry[] = [
       "High-throughput screening",
       "Cell cycle"
     ],
-    "order": 1009,
-    "homepage": true,
-    "homepageOrder": 1
+    "order": 1009
   },
   {
     "id": "2026-lights-published",
@@ -82,7 +80,7 @@ export const newsArchive: NewsEntry[] = [
     "topics": ["LigHTS", "Hydrogels", "High-throughput screening"],
     "order": 1008,
     "homepage": true,
-    "homepageOrder": 2
+    "homepageOrder": 1
   },
   {
     "id": "2026-bruker-online-organoid-summit",
@@ -106,9 +104,7 @@ export const newsArchive: NewsEntry[] = [
       "Live-cell phenotyping",
       "Bruker Online Organoid Summit"
     ],
-    "order": 1007,
-    "homepage": true,
-    "homepageOrder": 3
+    "order": 1007
   },
   {
     "id": "2026-francesco-camera-deputati-frontier-research",
@@ -133,7 +129,7 @@ export const newsArchive: NewsEntry[] = [
     ],
     "order": 1006,
     "homepage": true,
-    "homepageOrder": 4
+    "homepageOrder": 2
   },
   {
     "id": "2026-engineering-toolkits-high-content-phenotyping-review",
@@ -158,9 +154,7 @@ export const newsArchive: NewsEntry[] = [
       "Bioengineering",
       "Reproducible workflows"
     ],
-    "order": 1005,
-    "homepage": true,
-    "homepageOrder": 5
+    "order": 1005
   },
   {
     "id": "2026-spl-at-esb-ita-2026",
@@ -237,7 +231,9 @@ export const newsArchive: NewsEntry[] = [
       "Live-cell imaging",
       "Cardiac organoids"
     ],
-    "order": 1002
+    "order": 1002,
+    "homepage": true,
+    "homepageOrder": 3
   },
   {
     "id": "2026-francesco-at-wcb-2026",
@@ -366,7 +362,9 @@ export const newsArchive: NewsEntry[] = [
         "href": "https://www.nature.com/articles/s41592-026-03082-1"
       }
     ],
-    "order": 996
+    "order": 996,
+    "homepage": true,
+    "homepageOrder": 4
   },
   {
     "id": "2026-micro-comb-3d-printing-published",
@@ -500,7 +498,9 @@ export const newsArchive: NewsEntry[] = [
     "topics": [
       "Service"
     ],
-    "order": 988
+    "order": 988,
+    "homepage": true,
+    "homepageOrder": 5
   },
   {
     "id": "2025-hydra-published",
