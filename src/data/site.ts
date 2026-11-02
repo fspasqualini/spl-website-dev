@@ -1370,21 +1370,29 @@ export const heroStats = [
   {
     value: formatCount(fundedLabEvents.length),
     label: "Funded programs",
+    href: "/#funded-programs",
+    ariaTarget: "see funded programs below",
     detail: "Auto-counted from the lab events database",
   },
   {
     value: formatCount(researchAreas.length),
     label: "Integrated research areas",
+    href: "/research/",
+    ariaTarget: "go to Research",
     detail: "Auto-counted from the research area database",
   },
   {
     value: formatCount(trainees.length),
     label: "Trainees to date",
+    href: "/team/",
+    ariaTarget: "go to Team",
     detail: "PhD students and above trained at SPL (current team and alumni); BS/MS thesis students excluded",
   },
   {
     value: formatCount(publications.length),
     label: "Publications",
+    href: "/publications/",
+    ariaTarget: "go to Publications",
     detail: "Auto-counted from the publications database",
   },
 ];

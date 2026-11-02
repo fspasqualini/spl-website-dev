@@ -21,10 +21,10 @@ import { categoryLabels, formatNewsDate, homepageNews } from "../data/news";
       </p>
       <div class="stats" aria-label="Lab highlights">
         {heroStats.map((stat) => (
-          <div class="stat">
+          <a class="stat" href={withBase(stat.href)} aria-label={`${stat.value} ${stat.label}: ${stat.ariaTarget}`}>
             <strong>{stat.value}</strong>
             <span>{stat.label}</span>
-          </div>
+          </a>
         ))}
       </div>
     </div>
@@ -82,7 +82,7 @@ import { categoryLabels, formatNewsDate, homepageNews } from "../data/news";
     </div>
   </section>
 
-  <section class="section band-dark">
+  <section class="section band-dark" id="funded-programs">
     <div class="container split">
       <div>
         <p class="eyebrow">Funded work</p>
